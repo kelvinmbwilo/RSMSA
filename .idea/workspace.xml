@@ -2,15 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a2e222e5-de49-4859-8c87-6358f90c7398" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/database/migrations/2014_08_11_134607_create_stakeholderBranch_table.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/database/migrations/2014_08_11_134706_create_locationLevel_table.php" />
       <change type="MOVED" beforePath="$PROJECT_DIR$/readme.md" afterPath="$PROJECT_DIR$/readme.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/database/migrations/2014_08_11_124551_create_stakeholders_table.php" afterPath="$PROJECT_DIR$/app/database/migrations/2014_08_11_124551_create_stakeholders_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/database/migrations/2014_08_11_124614_create_users_table.php" afterPath="$PROJECT_DIR$/app/database/migrations/2014_08_11_124614_create_users_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/database/migrations/2014_08_11_124742_create_data_table.php" afterPath="$PROJECT_DIR$/app/database/migrations/2014_08_11_124742_create_data_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/database/migrations/2014_08_11_125047_create_datatypeDetails_table.php" afterPath="$PROJECT_DIR$/app/database/migrations/2014_08_11_125047_create_datatypeDetails_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/database/migrations/2014_08_11_125112_create_insurance_table.php" afterPath="$PROJECT_DIR$/app/database/migrations/2014_08_11_125112_create_insurance_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/database/migrations/2014_08_11_125132_create_cars_table.php" afterPath="$PROJECT_DIR$/app/database/migrations/2014_08_11_125132_create_cars_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/database/migrations/2014_08_11_125258_create_license_table.php" afterPath="$PROJECT_DIR$/app/database/migrations/2014_08_11_125258_create_license_table.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/database/migrations/2014_08_11_124644_create_location_table.php" afterPath="$PROJECT_DIR$/app/database/migrations/2014_08_11_124644_create_location_table.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/database/migrations/2014_08_11_124832_create_tableName_table.php" afterPath="$PROJECT_DIR$/app/database/migrations/2014_08_11_124832_create_tableName_table.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/database/migrations/2014_08_11_124854_create_columns_table.php" afterPath="$PROJECT_DIR$/app/database/migrations/2014_08_11_124854_create_columns_table.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/database/migrations/2014_08_11_124938_create_columnsOptions_table.php" afterPath="$PROJECT_DIR$/app/database/migrations/2014_08_11_124938_create_columnsOptions_table.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/database/migrations/2014_08_11_125010_create_tableColumn_table.php" afterPath="$PROJECT_DIR$/app/database/migrations/2014_08_11_125010_create_tableColumn_table.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/autoload.php" afterPath="$PROJECT_DIR$/vendor/autoload.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_real.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_real.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/database.php" afterPath="$PROJECT_DIR$/app/config/database.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="RSMSA.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,8 +43,11 @@
       <file leaf-file-name="2014_08_11_124551_create_stakeholders_table.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_08_11_124551_create_stakeholders_table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="37" selection-start="325" selection-end="325" vertical-scroll-proportion="-9.807693" vertical-offset="0" max-vertical-offset="629">
-              <folding />
+            <state line="19" column="33" selection-start="411" selection-end="411" vertical-scroll-proportion="-9.807693" vertical-offset="51" max-vertical-offset="680">
+              <folding>
+                <marker date="1407766559459" expanded="true" signature="244:445" placeholder="..." />
+                <marker date="1407766559459" expanded="true" signature="292:445" placeholder="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -45,7 +55,7 @@
       <file leaf-file-name="2014_08_11_124938_create_columnsOptions_table.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_08_11_124938_create_columnsOptions_table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="26" selection-start="447" selection-end="447" vertical-scroll-proportion="-16.346153" vertical-offset="0" max-vertical-offset="629">
+            <state line="27" column="26" selection-start="498" selection-end="498" vertical-scroll-proportion="-16.346153" vertical-offset="17" max-vertical-offset="646">
               <folding />
             </state>
           </provider>
@@ -117,7 +127,7 @@
       <file leaf-file-name="2014_08_11_124742_create_data_table.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_08_11_124742_create_data_table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="31" selection-start="341" selection-end="341" vertical-scroll-proportion="0.24107143" vertical-offset="137" max-vertical-offset="697">
+            <state line="30" column="26" selection-start="599" selection-end="599" vertical-scroll-proportion="0.6357143" vertical-offset="137" max-vertical-offset="697">
               <folding />
             </state>
           </provider>
@@ -131,6 +141,7 @@
     </FindUsagesManager>
   </component>
   <component name="Git.Settings">
+    <option name="UPDATE_TYPE" value="MERGE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
@@ -520,7 +531,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_08_11_124938_create_columnsOptions_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="26" selection-start="447" selection-end="447" vertical-scroll-proportion="-16.346153" vertical-offset="0" max-vertical-offset="629">
+        <state line="27" column="26" selection-start="498" selection-end="498" vertical-scroll-proportion="-16.346153" vertical-offset="17" max-vertical-offset="646">
           <folding />
         </state>
       </provider>
@@ -541,8 +552,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_08_11_124551_create_stakeholders_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="37" selection-start="325" selection-end="325" vertical-scroll-proportion="-9.807693" vertical-offset="0" max-vertical-offset="629">
-          <folding />
+        <state line="19" column="33" selection-start="411" selection-end="411" vertical-scroll-proportion="-9.807693" vertical-offset="51" max-vertical-offset="680">
+          <folding>
+            <marker date="1407766559459" expanded="true" signature="244:445" placeholder="..." />
+            <marker date="1407766559459" expanded="true" signature="292:445" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -583,7 +597,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_08_11_124742_create_data_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="31" selection-start="341" selection-end="341" vertical-scroll-proportion="0.24107143" vertical-offset="137" max-vertical-offset="697">
+        <state line="30" column="26" selection-start="599" selection-end="599" vertical-scroll-proportion="0.6357143" vertical-offset="137" max-vertical-offset="697">
           <folding />
         </state>
       </provider>
