@@ -15,7 +15,8 @@ class CreateColumnsOptionsTable extends Migration {
 		Schema::create('rsmsa_columnsOptions', function(Blueprint $table)
 		{
 			$table->increments('id');
-			$table->timestamps();
+            $table->string('optionName');
+            $table->timestamps();
 		});
 	}
 

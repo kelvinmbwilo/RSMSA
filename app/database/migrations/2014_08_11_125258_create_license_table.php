@@ -15,6 +15,12 @@ class CreateLicenseTable extends Migration {
 		Schema::create('rsmsa_license', function(Blueprint $table)
 		{
 			$table->increments('id');
+            $table->string('licenseNumber');
+            $table->string('name');
+            $table->string('dateOfBirth');
+            $table->string('dateOfIssue');
+            $table->string('placeOfResidence');
+            $table->string('CategoryOfVehicle');
 			$table->timestamps();
 		});
 	}

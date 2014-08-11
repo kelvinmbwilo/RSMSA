@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateTableNameTable extends Migration {
+class CreateLocationLevelTable extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -12,10 +12,12 @@ class CreateTableNameTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('rsmsa_tableName', function(Blueprint $table)
+		Schema::create('locationLevel', function(Blueprint $table)
 		{
 			$table->increments('id');
-			$table->string('categoryName');
+			$table->string('name');
+			$table->integer('parentId');
+
 			$table->timestamps();
 		});
 	}
@@ -27,7 +29,7 @@ class CreateTableNameTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('rsmsa_tableName');
+		Schema::drop('locationLevel');
 	}
 
 }
