@@ -15,6 +15,10 @@ class CreateDataTable extends Migration {
 		Schema::create('rsmsa_data', function(Blueprint $table)
 		{
 			$table->increments('id');
+            $table->integer('tableColumnId');
+            $table->string('value');
+            $table->integer('locationId');
+            $table->integer('stakeHolderId');
 			$table->timestamps();
 		});
 	}

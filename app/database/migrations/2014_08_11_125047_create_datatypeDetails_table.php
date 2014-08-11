@@ -15,6 +15,7 @@ class CreateDatatypeDetailsTable extends Migration {
 		Schema::create('rsmsa_datatypeDetails', function(Blueprint $table)
 		{
 			$table->increments('id');
+            $table->string('name');
 			$table->timestamps();
 		});
 	}
