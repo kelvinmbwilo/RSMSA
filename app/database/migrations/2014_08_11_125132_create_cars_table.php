@@ -15,6 +15,12 @@ class CreateCarsTable extends Migration {
 		Schema::create('rsmsa_cars', function(Blueprint $table)
 		{
 			$table->increments('id');
+            $table->string('carType');
+            $table->string('plateNumber');
+            $table->string('carMake');
+            $table->string('carColor');
+            $table->string('ownersName');
+            $table->string('ownersContact');
 			$table->timestamps();
 		});
 	}

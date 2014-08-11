@@ -15,6 +15,10 @@ class CreateInsuranceTable extends Migration {
 		Schema::create('rsmsa_insurance', function(Blueprint $table)
 		{
 			$table->increments('id');
+            $table->string('registrationNumber');
+            $table->string('insuranceNumber');
+            $table->string('dateOfIssue');
+            $table->string('expiryDate');
 			$table->timestamps();
 		});
 	}

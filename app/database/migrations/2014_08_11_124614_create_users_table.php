@@ -3,6 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
+
 class CreateUsersTable extends Migration {
 
 	/**
@@ -15,7 +16,16 @@ class CreateUsersTable extends Migration {
 		Schema::create('rsmsa_users', function(Blueprint $table)
 		{
 			$table->increments('id');
-			$table->timestamps();
+			$table->string('firstName');
+            $table->string('middleName');
+            $table->string('lastName');
+            $table->string('username');
+            $table->string('password');
+            $table->string('email');
+            $table->string('phoneNumber');
+            $table->string('role');
+            $table->string('institution');
+            $table->timestamps();
 		});
 	}
 
