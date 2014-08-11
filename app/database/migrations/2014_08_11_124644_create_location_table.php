@@ -15,6 +15,11 @@ class CreateLocationTable extends Migration {
 		Schema::create('rsmsa_location', function(Blueprint $table)
 		{
 			$table->increments('id');
+			$table->string('name');
+			$table->string('level');
+			$table->string('latitude');
+			$table->string('longitude');
+			$table->integer('parentId');
 			$table->timestamps();
 		});
 	}

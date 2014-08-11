@@ -15,7 +15,11 @@ class CreateTableColumnTable extends Migration {
 		Schema::create('rsmsa_tableColumn', function(Blueprint $table)
 		{
 			$table->increments('id');
-			$table->timestamps();
+			$table->integer('tableNameId');
+			$table->integer('columnsId');
+			$table->integer('columnsOptionsId');
+			$table->integer('datatypeDetailsId');
+            $table->timestamps();
 		});
 	}
 
