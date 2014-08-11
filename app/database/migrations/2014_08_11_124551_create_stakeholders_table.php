@@ -15,7 +15,10 @@ class CreateStakeholdersTable extends Migration {
 		Schema::create('rsmsa_stakeholders', function(Blueprint $table)
 		{
 			$table->increments('id');
-            $table->timestamps();
+			$table->string('name');
+			$table->string('phoneNumber');
+			$table->string('address');
+			$table->timestamps();
 		});
 	}
 
