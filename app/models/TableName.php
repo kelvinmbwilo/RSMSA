@@ -7,8 +7,12 @@ class TableName extends Eloquent {
      *
      * @var string
      */
-    protected $table = 'users';
+    protected $table = 'rsmsa_tablename';
 
     protected  $guarded = array('$id');
+
+    public function column(){
+        return $this->hasMany('TableColumn', 'tableNameId', 'id');
+    }
 
 }

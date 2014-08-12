@@ -7,8 +7,14 @@ class ColumnsOption extends Eloquent {
      *
      * @var string
      */
-    protected $table = 'users';
+    protected $table = 'rsmsa_columnsoption';
 
     protected  $guarded = array('$id');
+
+    public function column(){
+        return $this->belongsTo('Column', 'columnId', 'id');
+    }
+
+
 
 }
