@@ -21,4 +21,9 @@ class StakeHolderBranch extends Eloquent {
         return $this->hasMany('User', 'stakeholderBranchId', 'id');
     }
 
+    public function stakeholder(){
+        return $this->belongsTo('Stakeholder', 'stakeholderId', 'id');
+    }
+
+
 }
