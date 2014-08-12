@@ -13,7 +13,7 @@
 
 Route::get('/', function()
 {
-	return View::make('layout.master');
+	return View::make('dashboard');
 });
 Route::get('user', function()
 {
