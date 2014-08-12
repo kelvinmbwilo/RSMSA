@@ -11,4 +11,10 @@ class Location extends Eloquent {
 
     protected  $guarded = array('$id');
 
+    public function data()
+    {
+        return $this->hasMany('Data', 'locationId', 'id');
+    }
+
+
 }

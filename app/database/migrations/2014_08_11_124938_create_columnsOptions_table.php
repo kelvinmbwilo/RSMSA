@@ -16,6 +16,7 @@ class CreateColumnsOptionsTable extends Migration {
 		{
 			$table->increments('id');
             $table->string('optionName');
+            $table->integer('columnId');
             $table->timestamps();
 		});
 	}

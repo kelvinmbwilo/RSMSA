@@ -11,4 +11,10 @@ class TableColumn extends Eloquent {
 
     protected  $guarded = array('$id');
 
+    public function data()
+    {
+        return $this->hasMany('Data', 'tableColumnId', 'id');
+    }
+
+
 }
