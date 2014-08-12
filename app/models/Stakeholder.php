@@ -7,7 +7,7 @@ class Stakeholder extends Eloquent {
      *
      * @var string
      */
-    protected $table = 'users';
+    protected $table = 'rsmsa_stakeholders';
 
     protected  $guarded = array('$id');
 

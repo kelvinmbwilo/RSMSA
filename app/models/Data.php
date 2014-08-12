@@ -7,7 +7,7 @@ class Data extends Eloquent {
 *
 * @var string
 */
-protected $table = 'users';
+protected $table = 'rsmsa_data';
 
 protected  $guarded = array('$id');
 

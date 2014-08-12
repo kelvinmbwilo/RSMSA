@@ -7,7 +7,7 @@ class Cars extends Eloquent {
      *
      * @var string
      */
-    protected $table = 'users';
+    protected $table = 'rsmsa_Cars';
 
     protected  $guarded = array('$id');
 

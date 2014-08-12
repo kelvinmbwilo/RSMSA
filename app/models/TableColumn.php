@@ -7,7 +7,7 @@ class TableColumn extends Eloquent {
      *
      * @var string
      */
-    protected $table = 'users';
+    protected $table = 'rsmsa_tablecolumn';
 
     protected  $guarded = array('$id');
 

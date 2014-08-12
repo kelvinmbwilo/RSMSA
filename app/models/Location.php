@@ -7,7 +7,7 @@ class Location extends Eloquent {
      *
      * @var string
      */
-    protected $table = 'users';
+    protected $table = 'rsmsa_location';
 
     protected  $guarded = array('$id');
 

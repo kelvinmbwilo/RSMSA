@@ -7,7 +7,7 @@ class DataTypeDetails extends Eloquent {
      *
      * @var string
      */
-    protected $table = 'users';
+    protected $table = 'rsmsa_datatypedetails';
 
     protected  $guarded = array('$id');
 
