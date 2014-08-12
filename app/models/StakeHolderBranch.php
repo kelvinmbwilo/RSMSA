@@ -7,7 +7,7 @@ class StakeHolderBranch extends Eloquent {
      *
      * @var string
      */
-    protected $table = 'rsmsa_stakeholderBranch';
+    protected $table = 'rsmsa_stakeholderbranch';
 
     protected  $guarded = array('$id');
 

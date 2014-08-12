@@ -17,7 +17,6 @@ class CreateLocationLevelTable extends Migration {
 			$table->increments('id');
 			$table->string('name');
 			$table->integer('parentId');
-
 			$table->timestamps();
 		});
 	}
