@@ -64,7 +64,7 @@
       <file leaf-file-name="2014_08_11_125112_create_insurance_table.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_08_11_125112_create_insurance_table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="41" selection-start="501" selection-end="501" vertical-scroll-proportion="0.62355214" vertical-offset="0" max-vertical-offset="697">
+            <state line="7" column="7" selection-start="148" selection-end="148" vertical-scroll-proportion="0.1969112" vertical-offset="0" max-vertical-offset="697">
               <folding />
             </state>
           </provider>
@@ -597,7 +597,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_08_11_125112_create_insurance_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="41" selection-start="501" selection-end="501" vertical-scroll-proportion="0.62355214" vertical-offset="0" max-vertical-offset="697">
+        <state line="7" column="7" selection-start="148" selection-end="148" vertical-scroll-proportion="0.1969112" vertical-offset="0" max-vertical-offset="697">
           <folding />
         </state>
       </provider>
