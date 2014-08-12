@@ -12,7 +12,7 @@ class CreateTableNameTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('rsmsa_tableName', function(Blueprint $table)
+		Schema::create('rsmsa_tablename', function(Blueprint $table)
 		{
 			$table->increments('id');
 			$table->string('categoryName');
@@ -27,7 +27,7 @@ class CreateTableNameTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('rsmsa_tableName');
+		Schema::drop('rsmsa_tablename');
 	}
 
 }
