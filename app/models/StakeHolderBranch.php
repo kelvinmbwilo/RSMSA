@@ -7,12 +7,23 @@ class StakeHolderBranch extends Eloquent {
      *
      * @var string
      */
-    protected $table = 'rsmsa_stakeholderbranch';
+    protected $table = 'rsmsa_stakeholderBranch';
 
     protected  $guarded = array('$id');
+
+    public function data()
+    {
+        return $this->hasMany('Data', 'stakeHolderId', 'id');
+    }
+
+    public function user()
+    {
+        return $this->hasMany('User', 'stakeholderBranchId', 'id');
+    }
 
     public function stakeholder(){
         return $this->belongsTo('Stakeholder', 'stakeholderId', 'id');
     }
+
 
 }
