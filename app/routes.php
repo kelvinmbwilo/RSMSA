@@ -13,5 +13,9 @@
 
 Route::get('/', function()
 {
-	return View::make('hello');
+	return View::make('layout.master');
+});
+Route::get('user', function()
+{
+	return View::make('users.index');
 });

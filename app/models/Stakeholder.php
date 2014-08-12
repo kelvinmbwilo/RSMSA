@@ -2,14 +2,12 @@
 
 class Stakeholder extends Eloquent {
 
-    use UserTrait, RemindableTrait;
-
     /**
      * The database table used by the model.
      *
      * @var string
      */
-    protected $table = 'users';
+    protected $table = 'rsmsa_stakeholders';
 
     protected  $guarded = array('$id');
 
