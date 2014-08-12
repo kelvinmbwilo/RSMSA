@@ -1,7 +1,17 @@
 <?php
+
+class Data extends Eloquent {
+
+use UserTrait, RemindableTrait;
+
 /**
- * Created by PhpStorm.
- * User: rsms
- * Date: 8/11/14
- * Time: 5:22 PM
- */ 
+* The database table used by the model.
+*
+* @var string
+*/
+protected $table = 'users';
+
+protected  $guarded = array('$id');
+
+}
+
