@@ -11,4 +11,8 @@ class DataTypeDetails extends Eloquent {
 
     protected  $guarded = array('$id');
 
+    public function DataThatIs(){
+        return $this->hasMany('TableColumn', 'datatypeDetailsId', 'id');
+    }
+
 }

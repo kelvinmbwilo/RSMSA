@@ -11,4 +11,8 @@ class LocationLevel extends Eloquent {
 
     protected  $guarded = array('$id');
 
+    public function locations(){
+        return $this->hasMany('Location', 'locationLevelId', 'id');
+    }
+
 }

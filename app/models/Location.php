@@ -11,4 +11,8 @@ class Location extends Eloquent {
 
     protected  $guarded = array('$id');
 
+    public function level(){
+        return $this->belongsTo('LocationLevel', 'locationLevelId', 'id');
+    }
+
 }

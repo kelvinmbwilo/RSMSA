@@ -12,7 +12,7 @@ class CreateLocationLevelTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('rsmsa_locationLevel', function(Blueprint $table)
+		Schema::create('rsmsa_locationlevel', function(Blueprint $table)
 		{
 			$table->increments('id');
 			$table->string('name');
@@ -29,7 +29,7 @@ class CreateLocationLevelTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('rsmsa_locationLevel');
+		Schema::drop('rsmsa_locationlevel');
 	}
 
 }

@@ -11,4 +11,8 @@ class StakeHolderBranch extends Eloquent {
 
     protected  $guarded = array('$id');
 
+    public function stakeholder(){
+        return $this->belongsTo('Stakeholder', 'stakeholderId', 'id');
+    }
+
 }

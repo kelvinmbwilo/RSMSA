@@ -12,10 +12,11 @@ class CreateColumnsOptionsTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('rsmsa_columnsOptions', function(Blueprint $table)
+		Schema::create('rsmsa_columnsoptions', function(Blueprint $table)
 		{
 			$table->increments('id');
             $table->string('optionName');
+            $table->integer('columnId');
             $table->timestamps();
 		});
 	}
@@ -27,7 +28,7 @@ class CreateColumnsOptionsTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('rsmsa_columnsOptions');
+		Schema::drop('rsmsa_columnsoptions');
 	}
 
 }

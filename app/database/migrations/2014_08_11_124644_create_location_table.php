@@ -20,6 +20,7 @@ class CreateLocationTable extends Migration {
 			$table->string('latitude');
 			$table->string('longitude');
 			$table->integer('parentId');
+			$table->integer('locationLevelId');
 			$table->timestamps();
 		});
 	}

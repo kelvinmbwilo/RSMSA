@@ -11,4 +11,10 @@ class ColumnsOption extends Eloquent {
 
     protected  $guarded = array('$id');
 
+    public function column(){
+        return $this->belongsTo('Column', 'columnId', 'id');
+    }
+
+
+
 }
