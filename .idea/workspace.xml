@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6662a4ad-95fa-4dcf-82ca-d6bee230b9f9" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\xampp3\htdocs\RSMSA\app\database\migrations\2014_08_11_125112_create_insurance_table.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp3\htdocs\RSMSA\app\database\migrations\2014_08_11_125132_create_cars_table.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp3\htdocs\RSMSA\app\database\migrations\2014_08_11_125258_create_license_table.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp3\htdocs\RSMSA\app\models\Cars.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp3\htdocs\RSMSA\app\models\Insurance.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp3\htdocs\RSMSA\app\models\License.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/database.php" afterPath="$PROJECT_DIR$/app/config/database.php" />
-    </list>
+    <list default="true" id="6662a4ad-95fa-4dcf-82ca-d6bee230b9f9" name="Default" comment="" />
     <ignored path="RSMSA.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -34,7 +26,7 @@
       <file leaf-file-name="Column.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/Column.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="476">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
               <folding />
             </state>
           </provider>
@@ -43,7 +35,7 @@
       <file leaf-file-name="2014_08_13_082413_create_reference_table.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_08_13_082413_create_reference_table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="39" selection-start="242" selection-end="257" vertical-scroll-proportion="-4.5" vertical-offset="104" max-vertical-offset="646">
+            <state line="14" column="39" selection-start="242" selection-end="257" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="663">
               <folding />
             </state>
           </provider>
@@ -52,7 +44,7 @@
       <file leaf-file-name="2014_08_13_082815_create_referencDetails_table.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_08_13_082815_create_referencDetails_table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="40" selection-start="353" selection-end="364" vertical-scroll-proportion="-9.923077" vertical-offset="14" max-vertical-offset="663">
+            <state line="17" column="40" selection-start="353" selection-end="364" vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="680">
               <folding />
             </state>
           </provider>
@@ -61,7 +53,7 @@
       <file leaf-file-name="TableColumn.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/TableColumn.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="0" selection-start="416" selection-end="416" vertical-scroll-proportion="-9.923077" vertical-offset="82" max-vertical-offset="629">
+            <state line="20" column="0" selection-start="416" selection-end="416" vertical-scroll-proportion="0.0" vertical-offset="82" max-vertical-offset="629">
               <folding />
             </state>
           </provider>
@@ -70,7 +62,7 @@
       <file leaf-file-name="Reference.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/Reference.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="59" selection-start="442" selection-end="442" vertical-scroll-proportion="-14.384615" vertical-offset="0" max-vertical-offset="561">
+            <state line="22" column="59" selection-start="442" selection-end="442" vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="561">
               <folding />
             </state>
           </provider>
@@ -79,7 +71,7 @@
       <file leaf-file-name="TableName.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/TableName.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="408">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
               <folding />
             </state>
           </provider>
@@ -88,7 +80,7 @@
       <file leaf-file-name="ReferenceDetails.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/ReferenceDetails.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="63" selection-start="322" selection-end="322" vertical-scroll-proportion="-9.807693" vertical-offset="0" max-vertical-offset="425">
+            <state line="15" column="63" selection-start="322" selection-end="322" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="425">
               <folding />
             </state>
           </provider>
@@ -97,7 +89,7 @@
       <file leaf-file-name="DataReference.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/DataReference.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="47" selection-start="306" selection-end="306" vertical-scroll-proportion="-10.461538" vertical-offset="0" max-vertical-offset="510">
+            <state line="16" column="47" selection-start="306" selection-end="306" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="510">
               <folding />
             </state>
           </provider>
@@ -106,7 +98,7 @@
       <file leaf-file-name="app.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/config/app.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="20" selection-start="442" selection-end="442" vertical-scroll-proportion="61.884617" vertical-offset="1864" max-vertical-offset="3400">
+            <state line="15" column="20" selection-start="442" selection-end="442" vertical-scroll-proportion="0.0" vertical-offset="1864" max-vertical-offset="3400">
               <folding />
             </state>
           </provider>
@@ -195,7 +187,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -248,6 +239,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -292,12 +284,11 @@
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32626426" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32626426" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32930514" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2968278" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3013595" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -305,6 +296,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -326,9 +318,9 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2968278" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -348,6 +340,34 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/models/ReferenceDetails.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="63" selection-start="322" selection-end="322" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="425">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/DataReference.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="47" selection-start="306" selection-end="306" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="510">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="20" selection-start="442" selection-end="442" vertical-scroll-proportion="0.0" vertical-offset="1864" max-vertical-offset="3400">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="28" selection-start="1815" selection-end="1815" vertical-scroll-proportion="0.0" vertical-offset="869" max-vertical-offset="2210">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_08_11_124854_create_columns_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="12" selection-start="319" selection-end="348" vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="663" />
@@ -503,30 +523,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/LocationLevel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="568">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="568" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/Location.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="49" selection-start="294" selection-end="294" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="527">
-          <folding />
-        </state>
+        <state line="15" column="49" selection-start="294" selection-end="294" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="527" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/ColumnsOption.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="366">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="366" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/DataTypeDetails.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="568">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="568" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_08_11_134706_create_locationLevel_table.php">
@@ -536,16 +548,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_08_13_084140_create_dataReference_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="35" selection-start="347" selection-end="353" vertical-scroll-proportion="-10.307693" vertical-offset="4" max-vertical-offset="680">
-          <folding />
-        </state>
+        <state line="17" column="35" selection-start="347" selection-end="353" vertical-scroll-proportion="-10.307693" vertical-offset="4" max-vertical-offset="680" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/Data.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="10" selection-start="13" selection-end="17" vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="595">
-          <folding />
-        </state>
+        <state line="2" column="10" selection-start="13" selection-end="17" vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="595" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/Column.php">
@@ -564,49 +572,49 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/TableColumn.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="416" selection-end="416" vertical-scroll-proportion="-9.923077" vertical-offset="82" max-vertical-offset="629">
+        <state line="20" column="0" selection-start="416" selection-end="416" vertical-scroll-proportion="0.0" vertical-offset="82" max-vertical-offset="629">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_08_13_082413_create_reference_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="39" selection-start="242" selection-end="257" vertical-scroll-proportion="-4.5" vertical-offset="104" max-vertical-offset="646">
+        <state line="14" column="39" selection-start="242" selection-end="257" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="663">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/ReferenceDetails.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="63" selection-start="322" selection-end="322" vertical-scroll-proportion="-9.807693" vertical-offset="0" max-vertical-offset="425">
+        <state line="15" column="63" selection-start="322" selection-end="322" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="425">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_08_13_082815_create_referencDetails_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="40" selection-start="353" selection-end="364" vertical-scroll-proportion="-9.923077" vertical-offset="14" max-vertical-offset="663">
+        <state line="17" column="40" selection-start="353" selection-end="364" vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="680">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/Reference.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="59" selection-start="442" selection-end="442" vertical-scroll-proportion="-14.384615" vertical-offset="0" max-vertical-offset="561">
+        <state line="22" column="59" selection-start="442" selection-end="442" vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="561">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/DataReference.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="47" selection-start="306" selection-end="306" vertical-scroll-proportion="-10.461538" vertical-offset="0" max-vertical-offset="510">
+        <state line="16" column="47" selection-start="306" selection-end="306" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="510">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/app.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="20" selection-start="442" selection-end="442" vertical-scroll-proportion="61.884617" vertical-offset="1864" max-vertical-offset="3400">
+        <state line="15" column="20" selection-start="442" selection-end="442" vertical-scroll-proportion="0.0" vertical-offset="1864" max-vertical-offset="3400">
           <folding />
         </state>
       </provider>
