@@ -1,7 +1,368 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a2e222e5-de49-4859-8c87-6358f90c7398" name="Default" comment="" />
+    <list default="true" id="81f3b6fd-548c-4b26-afd4-70f1f56d4b4f" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/font-awesome/css/font-awesome.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/font-awesome/fonts/fontawesome-webfont.eot?" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/font-awesome/fonts/fontawesome-webfont.eot?v=4.0.3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/font-awesome/fonts/fontawesome-webfont.svg?v=4.0.3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/font-awesome/fonts/fontawesome-webfont.ttf?v=4.0.3.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/font-awesome/fonts/fontawesome-webfont.woff?v=4.0.3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/ajax-demo/explorer-albums.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/ajax-demo/explorer-files-controls.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/ajax-demo/explorer-files.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/ajax-demo/explorer-gallery-controls.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/ajax-demo/explorer-gallery.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/ajax-demo/inbox-message.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/ajax-demo/submenu.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/css/1200.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/css/2x.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/css/480.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/css/768.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/css/992.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/css/Entypo/entypo-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/css/Entypo/entypo-webfont.eot?" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/css/Entypo/entypo-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/css/Entypo/entypo-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/css/Entypo/entypo-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/css/colors.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/css/login.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/css/print.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/css/reset.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/css/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/css/styles/agenda.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/css/styles/calendars.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/css/styles/dashboard.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/css/styles/files.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/css/styles/form.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/css/styles/modal.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/css/styles/progress-slider.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/css/styles/switches.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/css/styles/table.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/demo/gallery/picture-1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/demo/gallery/picture-2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/demo/gallery/picture-3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/demo/gallery/picture-4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/demo/gallery/picture-5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/demo/gallery/picture-6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/demo/gallery/picture-7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/demo/gallery/picture-8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/demo/picto.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/demo/picture.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/effects/dashboard-bottom-shadow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/effects/dashboard-top-shadow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/effects/glow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/effects/wizard-steps-separator.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/favicons/apple-touch-icon-ipad-retina.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/favicons/apple-touch-icon-ipad.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/favicons/apple-touch-icon-retina.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/favicons/apple-touch-icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/favicons/favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/favicons/favicon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/favicons/watermark.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fieldset-bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/_close.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/_documents.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/_favorites.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/_image.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/_movie.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/_music.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/_net.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/_open.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/_programfiles.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/_works.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/aac.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/access.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/avi.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/bat.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/bmp.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/chm.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/css.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/dat.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/default.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/desktop.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/dll.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/excel.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/exe.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/fon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/gif.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/html.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/ini.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/jar.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/jpg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/js.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/log.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/mov.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/mp3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/mpg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/otf.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/other_image.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/other_movie.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/other_music.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/other_music2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/pdf.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/png.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/powerpoint.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/real.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/reg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/rtf.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/swf.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/sys.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/text.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/ttc.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/ttf.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/vbs.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/wav.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/wma.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/wmv.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/word.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/xml.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/xsl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/_close.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/_documents.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/_favorites.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/_image.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/_movie.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/_music.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/_net.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/_open.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/_programfiles.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/_works.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/aac.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/access.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/avi.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/bat.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/bmp.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/chm.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/css.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/dat.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/default.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/desktop.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/dll.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/excel.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/exe.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/fon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/gif.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/html.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/ini.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/jar.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/jpg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/js.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/log.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/mov.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/mp3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/mpg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/otf.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/other_image.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/other_movie.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/other_music.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/other_music2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/pdf.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/png.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/powerpoint.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/real.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/reg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/rtf.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/swf.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/sys.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/text.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/ttc.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/ttf.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/vbs.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/wav.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/wma.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/wmv.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/word.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/xml.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/xsl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/highres/shortcuts.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/login-title.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/menu.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/768/bg_body_reversed_shortcuts_li_after.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/768/bg_shortcuts_li_after.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/992/bg_body_reversed_menu-content_before.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/992/bg_menu-content_after.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/992/bg_menu-content_before.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/black45.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/black75.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_anthracite-gradient_active.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_anthracite-gradient_glossy_hover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_anthracite-gradient_hover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_black-gradient_active.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_black-gradient_glossy_hover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_black-gradient_hover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_blue-gradient_active.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_blue-gradient_glossy_hover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_blue-gradient_hover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_button_active.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_button_glossy_hover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_button_hover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_count_active.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_count_glossy_hover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_count_hover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_green-gradient_active.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_green-gradient_glossy_hover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_green-gradient_hover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_grey-gradient_active.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_grey-gradient_glossy_hover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_grey-gradient_hover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_orange-gradient_active.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_orange-gradient_glossy_hover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_orange-gradient_hover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_red-gradient_active.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_red-gradient_glossy_hover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_red-gradient_hover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_silver-gradient_active.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_silver-gradient_glossy_hover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_silver-gradient_hover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_white-gradient_active.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_white-gradient_glossy_hover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_white-gradient_hover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_anthracite-active_active.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_anthracite-gradient.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_anthracite-gradient_glossy.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_big-menu.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_black-active_active.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_black-gradient.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_black-gradient_disabled.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_black-gradient_glossy.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_black-inputs_input.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_black-inputs_switch-button.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_blue-active_active.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_blue-gradient.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_blue-gradient_glossy.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_button-icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_button-icon_glossy.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_button.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_button_active_button-icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_button_anthracite-gradient_disabled.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_button_blue-gradient_disabled.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_button_disabled.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_button_glossy.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_button_green-gradient_disabled.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_button_grey-gradient_disabled.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_button_orange-gradient_disabled.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_button_red-gradient_disabled.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_button_white-gradient_disabled.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_count.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_count_glossy.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_disabled_button-icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_disabled_switch-on.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_green-active_active.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_green-gradient.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_green-gradient_glossy.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_grey-active_active.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_grey-gradient.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_grey-gradient_glossy.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_hover_button-icon_glossy.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_input-wrapper.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_input.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_message.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_message_glossy.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_modal-bar.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_modal.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_no-touch_drop-down_span_hover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_orange-active_active.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_orange-gradient.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_orange-gradient_glossy.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_red-active_active.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_red-gradient.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_red-gradient_glossy.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_ribbon-inner.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_silver-active_active.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_silver-gradient.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_silver-gradient_disabled.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_silver-gradient_glossy.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_tr_highlight_glossy_th.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_white-active_active.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_white-gradient.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_white-gradient_glossy.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/grey20.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/grey50.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/stripes-black-10.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/stripes-black-20.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/stripes-black-40.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/stripes-white-10.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/stripes-white-20.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/stripes-white-40.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/style/bg_menu-footer.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/style/bg_menu_after.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/style/bg_menu_header.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/style/bg_meter.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/style/bg_profile.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/style/bg_shortcuts.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/splash/ipad-landscape-retina.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/splash/ipad-landscape.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/splash/ipad-portrait-retina.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/splash/ipad-portrait.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/splash/iphone-retina.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/splash/iphone.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/splash/iphone5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/standard/loaders/loading16.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/standard/loaders/loading16_anthracite.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/standard/loaders/loading32.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/standard/loaders/loading32_anthracite.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/standard/loaders/loading64.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/standard/loaders/loading64_anthracite.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/standard/loaders/refreshing16.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/standard/loaders/refreshing16_anthracite.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/standard/loaders/refreshing32.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/standard/loaders/refreshing32_anthracite.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/standard/loaders/refreshing64.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/standard/loaders/refreshing64_anthracite.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/standard/loaders/waiting16.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/standard/loaders/waiting16_anthracite.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/standard/loaders/waiting32.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/standard/loaders/waiting32_anthracite.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/standard/loaders/waiting64.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/standard/loaders/waiting64_anthracite.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/standard/loaders/working16.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/standard/loaders/working16_anthracite.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/standard/loaders/working32.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/standard/loaders/working32_anthracite.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/standard/loaders/working64.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/standard/loaders/working64_anthracite.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/standard/shortcuts.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/standard/sprites.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/textures/fabric.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/textures/grid.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/textures/scratches.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/img/user.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/js/developr.accordions.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/js/developr.agenda.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/js/developr.auto-resizing.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/js/developr.calendar.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/js/developr.confirm.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/js/developr.content-panel.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/js/developr.input.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/js/developr.message.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/js/developr.modal.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/js/developr.navigable.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/js/developr.notify.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/js/developr.progress-slider.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/js/developr.scroll.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/js/developr.table.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/js/developr.tabs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/js/developr.tooltip.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/js/developr.wizard.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/js/libs/DataTables/jquery.dataTables.css?v=1.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/js/libs/DataTables/jquery.dataTables.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/js/libs/ckeditor/ckeditor.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/js/libs/formValidator/developr.validationEngine.css?v=1.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/js/libs/formValidator/jquery.validationEngine.js?v=1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/js/libs/formValidator/languages/jquery.validationEngine-en.js?v=1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/js/libs/glDatePicker/developr.fixed.css?v=1.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/js/libs/glDatePicker/glDatePicker.min.js?v=1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/js/libs/google-code-prettify/prettify.js?v=1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/js/libs/google-code-prettify/sunburst.css?v=1.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/js/libs/jquery-1.10.2.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/js/libs/jquery.details.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/js/libs/jquery.tablesorter.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/js/libs/modernizr.custom.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/js/libs/tinycon.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blacktheme/js/setup.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="RSMSA.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,16 +384,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="left_menu.blade.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layout/left_menu.blade.php">
+      <file leaf-file-name="master.blade.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/layout/master.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="36" selection-start="831" selection-end="831" vertical-scroll-proportion="-3.2692308" vertical-offset="51" max-vertical-offset="952">
-              <folding>
-                <element signature="tag#li#0;tag#ul#0;tag#div#0" expanded="false" />
-                <element signature="tag#li#1;tag#ul#0;tag#div#0" expanded="false" />
-                <element signature="tag#li#4;tag#ul#0;tag#div#0" expanded="false" />
-                <element signature="tag#li#6;tag#ul#0;tag#div#0" expanded="false" />
-              </folding>
+            <state line="53" column="21" selection-start="1968" selection-end="1968" vertical-scroll-proportion="0.0" vertical-offset="954" max-vertical-offset="4842">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -40,37 +396,36 @@
       <file leaf-file-name="dashboard.blade.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/dashboard.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="706" column="5" selection-start="27090" selection-end="27090" vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="272">
+            <state line="3" column="17" selection-start="51" selection-end="65" vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="180">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="master.blade.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/blacktheme/master.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="707" column="13" selection-start="30651" selection-end="30651" vertical-scroll-proportion="-0.1264637" vertical-offset="12780" max-vertical-offset="20700">
               <folding>
-                <element signature="tag#section#0" expanded="false" />
-                <element signature="tag#script#0" expanded="false" />
+                <marker date="1407832901340" expanded="false" signature="37804:37840" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="master.blade.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layout/master.blade.php">
+      <file leaf-file-name="header.blade.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/layout/header.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="226" column="0" selection-start="9038" selection-end="9038" vertical-scroll-proportion="-10.884615" vertical-offset="3559" max-vertical-offset="4590">
+            <state line="240" column="6" selection-start="9873" selection-end="9873" vertical-scroll-proportion="0.0" vertical-offset="3793" max-vertical-offset="4428">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StakeholderController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/StakeholderController.php">
+      <file leaf-file-name="left_menu.blade.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/layout/left_menu.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="6" selection-start="603" selection-end="603" vertical-scroll-proportion="-3.9230769" vertical-offset="612" max-vertical-offset="1615">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Stakeholder.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/Stakeholder.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="31" selection-start="245" selection-end="250" vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="442">
+            <state line="183" column="6" selection-start="7488" selection-end="7488" vertical-scroll-proportion="0.0" vertical-offset="2767" max-vertical-offset="3402">
               <folding />
             </state>
           </provider>
@@ -79,45 +434,7 @@
       <file leaf-file-name="routes.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="21" selection-start="545" selection-end="554" vertical-scroll-proportion="-13.692307" vertical-offset="35" max-vertical-offset="595">
-              <folding>
-                <element signature="e#7#392#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="stakeholders.blade.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/stakeholders.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="71" column="0" selection-start="2791" selection-end="2791" vertical-scroll-proportion="-17.23077" vertical-offset="759" max-vertical-offset="1632">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="form_wizard.blade.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layout/form_wizard.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="12" selection-start="689" selection-end="689" vertical-scroll-proportion="-10.461538" vertical-offset="0" max-vertical-offset="493">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header.blade.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layout/header.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="34" selection-start="791" selection-end="791" vertical-scroll-proportion="17.653847" vertical-offset="816" max-vertical-offset="4182">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="database.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/config/database.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="28" selection-start="1815" selection-end="1815" vertical-scroll-proportion="0.35571688" vertical-offset="807" max-vertical-offset="2210">
+            <state line="15" column="32" selection-start="452" selection-end="452" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="486">
               <folding />
             </state>
           </provider>
@@ -131,62 +448,30 @@
     </FindUsagesManager>
   </component>
   <component name="Git.Settings">
-    <option name="UPDATE_TYPE" value="MERGE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/database/migrations/2014_08_11_124551_create_stakeholders_table.php" />
-        <option value="$PROJECT_DIR$/app/database/migrations/2014_08_11_124614_create_users_table.php" />
-        <option value="$PROJECT_DIR$/app/database/migrations/2014_08_11_125258_create_license_table.php" />
-        <option value="$PROJECT_DIR$/app/database/migrations/2014_08_11_125132_create_cars_table.php" />
-        <option value="$PROJECT_DIR$/app/database/migrations/2014_08_11_125112_create_insurance_table.php" />
-        <option value="$PROJECT_DIR$/app/database/migrations/2014_08_11_124742_create_data_table.php" />
-        <option value="$PROJECT_DIR$/app/models/Cars.php" />
-        <option value="$PROJECT_DIR$/app/models/Data.php" />
-        <option value="$PROJECT_DIR$/app/models/Insurance.php" />
-        <option value="$PROJECT_DIR$/app/models/License.php" />
-        <option value="$PROJECT_DIR$/app/models/User.php" />
-        <option value="$PROJECT_DIR$/app/models/ColumnsTable.php" />
-        <option value="$PROJECT_DIR$/app/models/TableName.php" />
-        <option value="$PROJECT_DIR$/app/models/Column.php" />
-        <option value="$PROJECT_DIR$/app/models/ColumnsOption.php" />
-        <option value="$PROJECT_DIR$/app/models/DataTypeDetails.php" />
-        <option value="$PROJECT_DIR$/app/database/migrations/2014_08_11_134706_create_locationLevel_table.php" />
-        <option value="$PROJECT_DIR$/app/database/migrations/2014_08_11_134607_create_stakeholderBranch_table.php" />
-        <option value="$PROJECT_DIR$/app/database/migrations/2014_08_11_125047_create_datatypeDetails_table.php" />
-        <option value="$PROJECT_DIR$/app/database/migrations/2014_08_11_125010_create_tableColumn_table.php" />
-        <option value="$PROJECT_DIR$/app/database/migrations/2014_08_11_124938_create_columnsOptions_table.php" />
-        <option value="$PROJECT_DIR$/app/database/migrations/2014_08_11_124832_create_tableName_table.php" />
-        <option value="$PROJECT_DIR$/app/database/migrations/2014_08_11_124644_create_location_table.php" />
-        <option value="$PROJECT_DIR$/app/models/LocationLevel.php" />
-        <option value="$PROJECT_DIR$/app/models/TableColumn.php" />
-        <option value="$PROJECT_DIR$/app/models/StakeHolderBranch.php" />
-        <option value="$PROJECT_DIR$/app/models/Location.php" />
-        <option value="$PROJECT_DIR$/app/views/users/index.blade.php" />
-        <option value="$PROJECT_DIR$/app/views/users/stakeholder.blade.php" />
-        <option value="$PROJECT_DIR$/app/views/dashboard.blade.php" />
-        <option value="$PROJECT_DIR$/app/controllers/DashboardController.php" />
-        <option value="$PROJECT_DIR$/app/routes.php" />
-        <option value="$PROJECT_DIR$/app/models/Stakeholder.php" />
-        <option value="$PROJECT_DIR$/app/controllers/StakeholderController.php" />
-        <option value="$PROJECT_DIR$/app/views/layout/header.blade.php" />
-        <option value="$PROJECT_DIR$/app/views/layout/left_menu.blade.php" />
-        <option value="$PROJECT_DIR$/app/views/layout/form_wizard.php" />
-        <option value="$PROJECT_DIR$/app/views/stakeholders.blade.php" />
-        <option value="$PROJECT_DIR$/app/views/layout/master.blade.php" />
-        <option value="$PROJECT_DIR$/app/views/layout/form_wizard.blade.php" />
         <option value="$PROJECT_DIR$/app/config/database.php" />
+        <option value="$PROJECT_DIR$/app/models/StakeHolderBranch.php" />
+        <option value="$PROJECT_DIR$/app/models/Stakeholder.php" />
+        <option value="$PROJECT_DIR$/app/models/TableColumn.php" />
+        <option value="$PROJECT_DIR$/app/views/layout/left_menu.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/layout/header.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/layout/master.blade.php" />
+        <option value="$PROJECT_DIR$/app/routes.php" />
+        <option value="$PROJECT_DIR$/app/views/dashboard.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/blacktheme/master.blade.php" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1376" />
-    <option name="height" value="754" />
+    <option name="x" value="65" />
+    <option name="y" value="52" />
+    <option name="width" value="959" />
+    <option name="height" value="696" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -214,6 +499,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -260,7 +546,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
+              <option name="myItemId" value="fonts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -275,106 +561,15 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RSMSA" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RSMSA" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RSMSA" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RSMSA" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="users" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RSMSA" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RSMSA" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RSMSA" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RSMSA" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="appearance" />
-    <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="options.searchVisible" value="true" />
-    <property name="FullScreen" value="false" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\RSMSA\app\views" />
-    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -395,22 +590,22 @@
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="a2e222e5-de49-4859-8c87-6358f90c7398" name="Default" comment="" />
-      <created>1407758862626</created>
-      <updated>1407758862626</updated>
+      <changelist id="81f3b6fd-548c-4b26-afd4-70f1f56d4b4f" name="Default" comment="" />
+      <created>1407812701977</created>
+      <updated>1407812701977</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1376" height="754" extended-state="6" />
-    <editor active="true" />
+    <frame x="65" y="52" width="959" height="696" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23557693" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32903227" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928678" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19650987" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26506025" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -424,26 +619,6 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32874617" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32928678" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25341427" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -462,292 +637,264 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_08_11_124832_create_tableName_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="663" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_08_11_124854_create_columns_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="663" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_08_11_125010_create_tableColumn_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="24" selection-start="222" selection-end="222" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="714" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layout/master.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="7" selection-start="90" selection-end="90" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="238" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/hello.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="18" selection-start="259" selection-end="259" vertical-scroll-proportion="0.0" vertical-offset="227" max-vertical-offset="816" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/filters.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1632" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="7" selection-start="287" selection-end="287" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="544" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="20" selection-start="111" selection-end="111" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="153" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/filters.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1632" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/database/seeds/DatabaseSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="607" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/Cars.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="34" selection-start="159" selection-end="159" vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="340" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/Data.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="30" selection-start="131" selection-end="131" vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="357" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/Insurance.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="39" selection-start="169" selection-end="169" vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="340" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/License.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="37" selection-start="165" selection-end="165" vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="340" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="35" selection-start="387" selection-end="387" vertical-scroll-proportion="-8.538462" vertical-offset="50" max-vertical-offset="544" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/Column.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="62" selection-start="401" selection-end="403" vertical-scroll-proportion="-11.769231" vertical-offset="0" max-vertical-offset="476" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/ColumnsOption.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="180" selection-end="180" vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="442" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/DataTypeDetails.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="343" selection-end="343" vertical-scroll-proportion="0.45182723" vertical-offset="0" max-vertical-offset="602" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_08_11_134706_create_locationLevel_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="37" selection-start="540" selection-end="540" vertical-scroll-proportion="0.6964286" vertical-offset="120" max-vertical-offset="680" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_08_11_134607_create_stakeholderBranch_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="40" selection-start="596" selection-end="596" vertical-scroll-proportion="0.70535713" vertical-offset="115" max-vertical-offset="680" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_08_11_125258_create_license_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="44" selection-start="360" selection-end="360" vertical-scroll-proportion="0.23562153" vertical-offset="145" max-vertical-offset="731" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_08_11_125132_create_cars_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="5" selection-start="218" selection-end="218" vertical-scroll-proportion="0.070500925" vertical-offset="166" max-vertical-offset="731" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_08_11_125112_create_insurance_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="6" selection-start="176" selection-end="176" vertical-scroll-proportion="-0.96153843" vertical-offset="111" max-vertical-offset="697" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_08_11_125047_create_datatypeDetails_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="37" selection-start="520" selection-end="520" vertical-scroll-proportion="0.7160069" vertical-offset="60" max-vertical-offset="646" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_08_11_125010_create_tableColumn_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="34" selection-start="631" selection-end="631" vertical-scroll-proportion="0.6964286" vertical-offset="137" max-vertical-offset="697" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_08_11_124938_create_columnsOptions_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="36" selection-start="573" selection-end="573" vertical-scroll-proportion="0.8192771" vertical-offset="17" max-vertical-offset="663" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_08_11_124854_create_columns_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="31" selection-start="247" selection-end="247" vertical-scroll-proportion="0.38037866" vertical-offset="0" max-vertical-offset="646" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_08_11_124832_create_tableName_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="34" selection-start="504" selection-end="504" vertical-scroll-proportion="0.7906977" vertical-offset="0" max-vertical-offset="646" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_08_11_124742_create_data_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="19" selection-start="570" selection-end="570" vertical-scroll-proportion="0.62126243" vertical-offset="102" max-vertical-offset="714" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_08_11_124614_create_users_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="24" selection-start="239" selection-end="239" vertical-scroll-proportion="-0.009276438" vertical-offset="243" max-vertical-offset="799" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_08_11_124551_create_stakeholders_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="33" selection-start="411" selection-end="411" vertical-scroll-proportion="0.30612245" vertical-offset="141" max-vertical-offset="680" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/TableName.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="11" selection-start="218" selection-end="316" vertical-scroll-proportion="0.36710963" vertical-offset="0" max-vertical-offset="602" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_08_11_124644_create_location_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="40" selection-start="435" selection-end="435" vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="748" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/LocationLevel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="332" selection-end="332" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="408" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/TableColumn.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="5" selection-start="520" selection-end="520" vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="629" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/StakeHolderBranch.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="26" selection-start="358" selection-end="358" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="595" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/Location.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="45" selection-start="385" selection-end="385" vertical-scroll-proportion="-11.535714" vertical-offset="0" max-vertical-offset="527" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/hello.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="9" selection-start="466" selection-end="466" vertical-scroll-proportion="-17.653847" vertical-offset="0" max-vertical-offset="816" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="12" selection-start="103" selection-end="103" vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="153" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/HomeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="5" selection-start="583" selection-end="583" vertical-scroll-proportion="-13.076923" vertical-offset="0" max-vertical-offset="493">
+        <state line="53" column="21" selection-start="1968" selection-end="1968" vertical-scroll-proportion="0.0" vertical-offset="954" max-vertical-offset="4842">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/DashboardController.php">
+    <entry file="file://$PROJECT_DIR$/app/views/dashboard.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="25" selection-start="13" selection-end="32" vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="1581">
+        <state line="3" column="17" selection-start="51" selection-end="65" vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="180">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/Stakeholder.php">
+    <entry file="file://$PROJECT_DIR$/app/views/blacktheme/master.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="31" selection-start="245" selection-end="250" vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="442">
-          <folding />
+        <state line="707" column="13" selection-start="30651" selection-end="30651" vertical-scroll-proportion="0.0" vertical-offset="12726" max-vertical-offset="20700">
+          <folding>
+            <marker date="1407832901340" expanded="false" signature="37804:37840" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layout/header.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="34" selection-start="791" selection-end="791" vertical-scroll-proportion="17.653847" vertical-offset="816" max-vertical-offset="4182">
+        <state line="240" column="6" selection-start="9873" selection-end="9873" vertical-scroll-proportion="0.0" vertical-offset="3793" max-vertical-offset="4428">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/StakeholderController.php">
+    <entry file="file://$PROJECT_DIR$/app/views/layout/left_menu.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="6" selection-start="603" selection-end="603" vertical-scroll-proportion="-3.9230769" vertical-offset="612" max-vertical-offset="1615">
+        <state line="183" column="6" selection-start="7488" selection-end="7488" vertical-scroll-proportion="0.0" vertical-offset="2767" max-vertical-offset="3402">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="21" selection-start="545" selection-end="554" vertical-scroll-proportion="-13.692307" vertical-offset="35" max-vertical-offset="595">
-          <folding>
-            <element signature="e#7#392#0" expanded="true" />
-          </folding>
+        <state line="15" column="32" selection-start="452" selection-end="452" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="486">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/DataTypeDetails.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="432" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="25" selection-start="890" selection-end="890" vertical-scroll-proportion="0.0" vertical-offset="504" max-vertical-offset="2340" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_08_11_124644_create_location_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="792" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layout/master.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="51" selection-start="392" selection-end="392" vertical-scroll-proportion="0.0" vertical-offset="324" max-vertical-offset="522">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Stakeholder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="44" selection-start="176" selection-end="176" vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="432" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="34" selection-start="527" selection-end="527" vertical-scroll-proportion="0.0" vertical-offset="342" max-vertical-offset="486">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/StakeHolderBranch.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="0" selection-start="340" selection-end="345" vertical-scroll-proportion="0.0" vertical-offset="324" max-vertical-offset="540" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_08_11_124742_create_data_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="756" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_08_11_124614_create_users_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="864" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/users/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="252" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/DataTypeDetails.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="432" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="25" selection-start="890" selection-end="890" vertical-scroll-proportion="0.0" vertical-offset="504" max-vertical-offset="2340" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_08_11_124644_create_location_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="792" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layout/master.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="51" selection-start="392" selection-end="392" vertical-scroll-proportion="0.0" vertical-offset="324" max-vertical-offset="522">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Stakeholder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="44" selection-start="176" selection-end="176" vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="432" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="34" selection-start="527" selection-end="527" vertical-scroll-proportion="0.0" vertical-offset="342" max-vertical-offset="486">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/StakeHolderBranch.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="0" selection-start="340" selection-end="345" vertical-scroll-proportion="0.0" vertical-offset="324" max-vertical-offset="432" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_08_11_124742_create_data_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="756" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_08_11_124614_create_users_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="864" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/users/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="252" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Data.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="13" selection-start="11" selection-end="20" vertical-scroll-proportion="-1.3333334" vertical-offset="0" max-vertical-offset="378" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="17" selection-start="464" selection-end="464" vertical-scroll-proportion="-12.0" vertical-offset="0" max-vertical-offset="522" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_08_11_124644_create_location_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="792" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/users/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="311" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/DataTypeDetails.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="386" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Stakeholder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="44" selection-start="176" selection-end="176" vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="432" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="25" selection-start="890" selection-end="890" vertical-scroll-proportion="0.0" vertical-offset="504" max-vertical-offset="2340" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_08_11_124614_create_users_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="864" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/StakeHolderBranch.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="0" selection-start="340" selection-end="345" vertical-scroll-proportion="-9.148149" vertical-offset="167" max-vertical-offset="630" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_08_11_124551_create_stakeholders_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="42" selection-start="245" selection-end="263" vertical-scroll-proportion="-4.6666665" vertical-offset="108" max-vertical-offset="720" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_08_11_124742_create_data_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="34" selection-start="237" selection-end="247" vertical-scroll-proportion="-2.6666667" vertical-offset="162" max-vertical-offset="738" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/TableColumn.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="0" selection-start="639" selection-end="639" vertical-scroll-proportion="0.6211699" vertical-offset="299" max-vertical-offset="666" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_08_11_124832_create_tableName_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="39" selection-start="242" selection-end="257" vertical-scroll-proportion="0.35097492" vertical-offset="108" max-vertical-offset="684" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layout/header.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="240" column="6" selection-start="9873" selection-end="9873" vertical-scroll-proportion="0.0" vertical-offset="3793" max-vertical-offset="4428">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="32" selection-start="452" selection-end="452" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="486">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layout/left_menu.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="36" selection-start="831" selection-end="831" vertical-scroll-proportion="-3.2692308" vertical-offset="51" max-vertical-offset="952">
-          <folding>
-            <element signature="tag#li#0;tag#ul#0;tag#div#0" expanded="false" />
-            <element signature="tag#li#1;tag#ul#0;tag#div#0" expanded="false" />
-            <element signature="tag#li#4;tag#ul#0;tag#div#0" expanded="false" />
-            <element signature="tag#li#6;tag#ul#0;tag#div#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/dashboard.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="706" column="5" selection-start="27090" selection-end="27090" vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="272">
-          <folding>
-            <element signature="tag#section#0" expanded="false" />
-            <element signature="tag#script#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/stakeholders.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="0" selection-start="2791" selection-end="2791" vertical-scroll-proportion="-17.23077" vertical-offset="759" max-vertical-offset="1632">
+        <state line="183" column="6" selection-start="7488" selection-end="7488" vertical-scroll-proportion="0.0" vertical-offset="2767" max-vertical-offset="3402">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layout/master.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="226" column="0" selection-start="9038" selection-end="9038" vertical-scroll-proportion="-10.884615" vertical-offset="3559" max-vertical-offset="4590">
+        <state line="53" column="21" selection-start="1968" selection-end="1968" vertical-scroll-proportion="0.0" vertical-offset="954" max-vertical-offset="4842">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layout/form_wizard.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/views/dashboard.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="12" selection-start="689" selection-end="689" vertical-scroll-proportion="-10.461538" vertical-offset="0" max-vertical-offset="493">
+        <state line="3" column="17" selection-start="51" selection-end="65" vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="180">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/database.php">
+    <entry file="file://$PROJECT_DIR$/app/views/blacktheme/master.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="28" selection-start="1815" selection-end="1815" vertical-scroll-proportion="0.35571688" vertical-offset="807" max-vertical-offset="2210">
-          <folding />
+        <state line="707" column="13" selection-start="30651" selection-end="30651" vertical-scroll-proportion="-0.1264637" vertical-offset="12780" max-vertical-offset="20700">
+          <folding>
+            <marker date="1407832901340" expanded="false" signature="37804:37840" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
