@@ -15,7 +15,16 @@ Route::get('/', function()
 {
 	return View::make('dashboard');
 });
+
 Route::get('user', function()
 {
 	return View::make('users.index');
 });
+
+Route::get('dashboard', function()
+{
+    return View::make('dashboard');
+});
+Route::resource('dashboard' , 'DashboardController');
+
+Route::resource('stakeholder' , 'StakeholderController');

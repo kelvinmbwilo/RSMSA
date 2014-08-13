@@ -225,6 +225,7 @@
 <script src="{{ asset('js/jquery.customSelect.min.js') }}" ></script>
 <script src="{{ asset('js/respond.min.js') }}" ></script>
 
+
 <!--right slidebar-->
 <script src="{{ asset('js/slidebars.min.js') }}"></script>
 
