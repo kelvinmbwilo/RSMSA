@@ -26,6 +26,8 @@
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
     <link href="{{ asset('css/style-responsive.css') }}" rel="stylesheet" />
 
+    <!--    including jquery library-->
+    <script src="{{ asset('js/jquery.js') }}"></script>
 
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
@@ -214,8 +216,9 @@
 </section>
 
 <!-- js placed at the end of the document so the pages load faster -->
-<script src="{{ asset('js/jquery.js') }}"></script>
 <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+<script type="text/javascript" language="javascript" src="{{ asset('assets/advanced-datatable/media/js/jquery.dataTables.js') }}"></script>
+<script type="text/javascript" src="{{ asset('assets/data-tables/DT_bootstrap.js') }}"></script>
 <script class="include" type="text/javascript" src="{{ asset('js/jquery.dcjqaccordion.2.7.js') }}"></script>
 <script src="{{ asset('js/jquery.scrollTo.min.js') }}"></script>
 <script src="{{ asset('js/jquery.nicescroll.js" type="text/javascript') }}"></script>

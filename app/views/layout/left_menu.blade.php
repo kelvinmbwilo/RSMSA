@@ -19,15 +19,14 @@
         <li class="sub-menu">
             <a href="javascript:;" >
                 <i class="fa fa-book"></i>
-                <span>UI Elements</span>
+                <span>Reference Tables</span>
             </a>
             <ul class="sub">
-                <li><a  href="general.html">General</a></li>
-                <li><a  href="buttons.html">Buttons</a></li>
-                <li><a  href="widget.html">Widget</a></li>
-                <li><a  href="slider.html">Slider</a></li>
-                <li><a  href="nestable.html">Nestable</a></li>
-                <li><a  href="font_awesome.html">Font Awesome</a></li>
+                <li><a  href="{{ url('reference') }}">reference Items</a></li>
+                <li><a  href="{{ url('reference_column') }}">reference Columns</a></li>
+                <li><a  href="{{ url('data-reference') }}">data-reference</a></li>
+                <li><a  href="{{ url('dynamic_table') }}l">dynamic table</a></li>
+
             </ul>
         </li>
 

@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateInsuranceTable extends Migration {
+class CreateReferenceTable extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -12,13 +12,10 @@ class CreateInsuranceTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('rsmsa_insurance', function(Blueprint $table)
+		Schema::create('rsmsa_reference', function(Blueprint $table)
 		{
 			$table->increments('id');
-            $table->string('registrationNumber');
-            $table->string('insuranceNumber');
-            $table->string('dateOfIssue');
-            $table->string('expiryDate');
+			$table->string('name');
 			$table->timestamps();
 		});
 	}
@@ -30,7 +27,7 @@ class CreateInsuranceTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('rsmsa_insurance');
+		Schema::drop('reference');
 	}
 
 }
