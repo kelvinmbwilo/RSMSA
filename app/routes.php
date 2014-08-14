@@ -32,6 +32,16 @@ Route::resource('stakeholder' , 'StakeholderController');
 /***************************************************************/
 //************************References ***************************/
 /***************************************************************/
+//********************************************************/
+//*********************StakeHolder************************/
+//********************************************************/
+Route::get('stakeholder', array('uses' => 'StakeholderController@index'));
+Route::get('stakeholderBranch/{id}', array('uses' => 'StakeholderBranchController@listBranch'));
+
+
+///////////////////////////////////////////////////////
+/////////////References //////////////////////////////
+/////////////////////////////////////////////////////
 Route::get('reference', array('uses'=>'ReferenceController@index')); //display list of references
 Route::get('reference/add', array('uses'=>'ReferenceController@create')); //display form to add new reference
 Route::post('reference/add', array('uses'=>'ReferenceController@store')); //processing addition form
