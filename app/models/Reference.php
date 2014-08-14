@@ -12,12 +12,12 @@ class Reference extends Eloquent {
 
     protected  $guarded = array('$id');
 
-    public function ReferenceDetails()
+    public function referenceDetails()
     {
 
         return $this->hasMany('ReferenceDetails', 'referenceId', 'id');
     }
-    public function ReferencedData()
+    public function referencedData()
     {
 
         return $this->hasMany('DataReference', 'referenceId', 'id');
