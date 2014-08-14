@@ -25,6 +25,12 @@ Route::get('dashboard', function()
 {
     return View::make('dashboard');
 });
+
+
+Route::get('login', function()
+{
+    return View::make('login');
+});
 Route::resource('dashboard' , 'DashboardController');
 
 Route::resource('stakeholder' , 'StakeholderController');
