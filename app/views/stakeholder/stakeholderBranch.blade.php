@@ -9,10 +9,9 @@
         <div class="col-lg-12">
             <section class="panel">
                 <header class="panel-heading">
-                    Stakeholders
-
+                   {{$stakeholder->name}}
                     <button type="submit" class="btn btn-success pull-right"  data-toggle="modal" data-target="#myModal" value="Finish" >
-                        New Stakeholder
+                        New Branch
                     </button>
 
                 </header>
@@ -23,23 +22,21 @@
                             <thead>
                             <tr>
                                 <th>Code</th>
-                                <th>Stakeholder Name</th>
-                                <th class="numeric">Phone</th>
+                                <th>Branch Name</th>
                                 <th class="numeric">Created</th>
                                 <th class="numeric">Updated</th>
                                 <th>Action</th>
                             </tr>
                             </thead>
                             <tbody>
-                            @foreach($stakeHolder as $stakeHolder)
+                            @foreach($stakeholder->branches as $stakeHolderBranch)
                             <tr>
                                 <td>AAC</td>
-                                <td>{{$stakeHolder->name}}</td>
-                                <td class="numeric">{{$stakeHolder->phoneNumber}}</td>
-                                <td class="numeric">{{$stakeHolder->created_at}}</td>
-                                <td class="numeric">{{$stakeHolder->updated_at}}</td>
-                                <td class="table-condensed">
-                                    <div class="btn-group pull-right" >
+                                <td>{{$stakeHolderBranch->name}}</td>
+                                <td class="numeric">{{$stakeHolderBranch->created_at}}</td>
+                                <td class="numeric">{{$stakeHolderBranch->updated_at}}</td>
+                                <td class="table-condensed col-xs-pull-2">
+                                    <div class="btn-group" >
                                         <button type="submit" class="btn btn-primary"  data-toggle="modal" data-target="#myModal" value="Edit">
                                             <i class="fa fa-edit"></i>
                                         </button>
@@ -72,7 +69,7 @@
             </div>
             <div class="modal-body">
 
-                @include('layout.form_wizard')
+                @include('stakeholder.form_wizard')
 
             </div>
             <div class="modal-footer">
@@ -85,10 +82,12 @@
 
 <!-- Delete modal -->
 
-<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-sm">
+<div class="modal fade bs-example-modal-sm " style="padding-top: 200px" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm ">
         <div class="modal-content">
-            ...
+
+            @include('stakeholder.delete')
+
         </div>
     </div>
 </div>

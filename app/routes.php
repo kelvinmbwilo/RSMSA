@@ -29,6 +29,13 @@ Route::resource('dashboard' , 'DashboardController');
 
 Route::resource('stakeholder' , 'StakeholderController');
 
+//********************************************************/
+//*********************StakeHolder************************/
+//********************************************************/
+Route::get('stakeholder', array('uses' => 'StakeholderController@index'));
+Route::get('stakeholderBranch/{id}', array('uses' => 'StakeholderBranchController@listBranch'));
+
+
 ///////////////////////////////////////////////////////
 /////////////References //////////////////////////////
 /////////////////////////////////////////////////////
