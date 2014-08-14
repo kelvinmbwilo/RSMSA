@@ -15,7 +15,7 @@ Route::get('/', function()
 {
 	return View::make('dashboard');
 });
-Route::get('user', function()
+Route::get('user/', function()
 {
 	return View::make('users.index');
 });
