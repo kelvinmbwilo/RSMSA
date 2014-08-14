@@ -12,12 +12,12 @@ class CreateStakeholderBranchTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('rsmsa_stakeholderBranch', function(Blueprint $table)
+		Schema::create('rsmsa_stakeholderbranch', function(Blueprint $table)
 		{
 			$table->increments('id');
 			$table->string('name');
-			$table->string('locationId');
-			$table->string('stakeholderId');
+			$table->integer('locationId');
+			$table->integer('stakeholderId');
             $table->timestamps();
 		});
 	}
@@ -29,7 +29,7 @@ class CreateStakeholderBranchTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('rsmsa_stakeholderBranch');
+		Schema::drop('rsmsa_stakeholderbranch');
 	}
 
 }

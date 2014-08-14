@@ -7,8 +7,19 @@ class Location extends Eloquent {
      *
      * @var string
      */
-    protected $table = 'users';
+    protected $table = 'rsmsa_location';
 
     protected  $guarded = array('$id');
+
+    public function data()
+    {
+        return $this->hasMany('Data', 'locationId', 'id');
+    }
+
+    public function level(){
+        return $this->belongsTo('LocationLevel', 'locationLevelId', 'id');
+    }
+
+
 
 }

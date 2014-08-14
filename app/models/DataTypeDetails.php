@@ -7,8 +7,12 @@ class DataTypeDetails extends Eloquent {
      *
      * @var string
      */
-    protected $table = 'users';
+    protected $table = 'rsmsa_datatypedetails';
 
     protected  $guarded = array('$id');
+
+    public function DataThatIs(){
+        return $this->hasMany('TableColumn', 'datatypeDetailsId', 'id');
+    }
 
 }

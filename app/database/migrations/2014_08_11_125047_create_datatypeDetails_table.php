@@ -12,7 +12,7 @@ class CreateDatatypeDetailsTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('rsmsa_datatypeDetails', function(Blueprint $table)
+		Schema::create('rsmsa_datatypedetails', function(Blueprint $table)
 		{
 			$table->increments('id');
             $table->string('name');
@@ -27,7 +27,7 @@ class CreateDatatypeDetailsTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('rsmsa_datatypeDetails');
+		Schema::drop('rsmsa_datatypedetails');
 	}
 
 }

@@ -7,8 +7,14 @@ class Stakeholder extends Eloquent {
      *
      * @var string
      */
-    protected $table = 'users';
+    protected $table = 'rsmsa_stakeholders';
 
     protected  $guarded = array('$id');
+
+    protected $fillable = array('name');
+
+    public function branches(){
+        return $this->hasMany('StakeHolderBranch');
+    }
 
 }

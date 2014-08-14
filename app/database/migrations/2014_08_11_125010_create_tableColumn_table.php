@@ -12,7 +12,7 @@ class CreateTableColumnTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('rsmsa_tableColumn', function(Blueprint $table)
+		Schema::create('rsmsa_tablecolumn', function(Blueprint $table)
 		{
 			$table->increments('id');
 			$table->integer('tableNameId');
@@ -30,7 +30,7 @@ class CreateTableColumnTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('rsmsa_tableColumn');
+		Schema::drop('rsmsa_tablecolumn');
 	}
 
 }
