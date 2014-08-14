@@ -16,6 +16,29 @@ class StakeholderController extends \BaseController {
 	}
 
 
+    /**
+     * Display the list of branches for a specific stakeholder
+     *
+     * @param  int  $id
+     * @return Response
+     */
+    public function listBranch($id){
+
+
+        $stakeholder = Stakeholder::find($id);
+        return View::make('stakeholder.specificStakeholderBranch', compact('stakeholder'));
+
+    }
+
+    /**
+     *
+     */
+    public function newStakeholderForm(){
+
+        return View::make('stakeholder.addStakeholder');
+    }
+
+
 	/**
 	 * Show the form for creating a new resource.
 	 *
@@ -35,6 +58,21 @@ class StakeholderController extends \BaseController {
 	public function store()
 	{
 		//
+        $input = Input::all();
+        $validation = Validator::make($input, Stakeholder::$rules);
+
+        if ($validation->passes())
+        {
+            Stakeholder::create($input);
+            $stakeHolder = Stakeholder::all();
+            $stakeHolder->toarray();
+            return Redirect::route('stakeholder.stakeholders' , compact('stakeHolder'));
+        }
+
+        return Redirect::route('stakeholder.addStakeholder')
+            ->withInput()
+            ->withErrors($validation)
+            ->with('message', 'There were validation errors.');
 	}
 
 
