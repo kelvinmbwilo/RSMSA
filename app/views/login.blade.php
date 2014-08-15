@@ -8,7 +8,8 @@
     <meta name="keyword" content="FlatLab, Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
     <link rel="shortcut icon" href="http://thevectorlab.net/flatlab/img/favicon.png">
 
-    <title>FlatLab - Flat & Responsive Bootstrap Admin Template</title>
+
+    <title>RSMSA system login page</title>
 
     <!-- Bootstrap core CSS -->
     <link href= "{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
@@ -26,15 +27,15 @@
     <![endif]-->
 </head>
 
-<body class="login-body">
+<body class="login-body"  background-image="url('/img/fabric.png')">
 
 <div class="container">
 
-    <form class="form-signin" action="index.html">
+    <form class="form-signin" action="{{ url('user') }}" method="post">
         <h2 class="form-signin-heading">sign in now</h2>
         <div class="login-wrap">
-            <input type="text" class="form-control" placeholder="User ID" autofocus>
-            <input type="password" class="form-control" placeholder="Password">
+            <input type="text" class="form-control" placeholder="User ID" autofocus name="username">
+            <input type="password" class="form-control" placeholder="Password" name="password">
             <label class="checkbox">
                 <input type="checkbox" value="remember-me"> Remember me
                 <span class="pull-right">

@@ -26,14 +26,21 @@ Route::get('dashboard', function()
     return View::make('dashboard');
 });
 
-
 Route::get('login', function()
 {
-    return View::make('login');
+    return View::make('users.login');
 });
+
+
+
+
 Route::resource('dashboard' , 'DashboardController');
 
 Route::resource('stakeholder' , 'StakeholderController');
+
+Route::resource('login' , 'LoginController');
+
+Route::resource('user' , 'usercontroller');
 
 ///////////////////////////////////////////////////////
 /////////////References //////////////////////////////
@@ -41,3 +48,19 @@ Route::resource('stakeholder' , 'StakeholderController');
 Route::get('reference', array('uses'=>'ReferenceController@index')); //display list of references
 Route::get('reference/add', array('uses'=>'ReferenceController@create')); //display form to add new reference
 Route::post('reference/add', array('uses'=>'ReferenceController@store')); //processing addition form
+
+
+///////////////////////////////////////////////////////
+/////////////user //////////////////////////////
+/////////////////////////////////////////////////////
+Route::get('user', array('uses'=>'UserController@index')); //display list of users
+
+
+
+///////////////////////////////////////////////////////
+/////////////login //////////////////////////////
+/////////////////////////////////////////////////////
+Route::get('users/login', array('uses'=>' logincontroller@index')); //display login form
+Route::post('users/login', array('uses'=>' logincontroller@store')); //process login form
+
+
