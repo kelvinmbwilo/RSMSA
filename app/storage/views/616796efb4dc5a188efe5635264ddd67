@@ -1,0 +1,35 @@
+<?php $__env->startSection('contents'); ?>
+
+
+<section class="panel">
+    <header class="panel-heading">
+        Add New Stakeholder
+    </header>
+    <div class="panel-body">
+        <?php echo Form::open(array('action' => 'StakeholderController@store' , 'method' => 'post', 'class'=>'form')); ?>
+
+        <ul>
+
+            <li class="form-control">
+                <?php echo Form::text('name'); ?>
+
+            </li>
+            <li>
+                <?php echo Form::submit('Submit', array('class' => 'btn pull-right')); ?>
+
+            </li>
+        </ul>
+        <?php echo Form::close(); ?>
+
+
+        <?php if($errors->any()): ?>
+        <ul>
+            <?php echo implode('', $errors->all('<li class="error">:message</li>')); ?>
+
+        </ul>
+        <?php endif; ?>
+    </div>
+</section>
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layout.master', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

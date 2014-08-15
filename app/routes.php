@@ -42,7 +42,6 @@ Route::get('location/levels/delete/{id}', array('uses' => 'LocationLevelControll
 //*********************StakeHolder************************/
 //********************************************************/
 Route::get('stakeholder', array('uses' => 'StakeholderController@index'));
-Route::get('stakeholder/{id}', array('uses' => 'StakeholderController@listBranch'));
 Route::get('stakeholder/add', array('uses' => 'StakeholderController@newStakeholderForm'));
 Route::post('stakeholder/add', array('uses' => 'StakeholderController@store'));
 Route::post('stakeholder/delete/{id}', array('uses' => 'StakeholderController@destroy'));
@@ -50,6 +49,11 @@ Route::get('stakeholder/edit/{id}', array('uses' => 'StakeholderController@edit'
 Route::post('stakeholder/edit/{id}', array('uses'=>'StakeholderController@update'));
 Route::get('stakeholderBranch', array('uses' => 'StakeholderBranchController@index'));
 Route::get('stakeholderBranch/edit/{id}', array('uses' => 'StakeholderBranchController@edit'));
+Route::post('stakeholderBranch/edit/{id}', array('uses' => 'StakeholderBranchController@update'));
+Route::post('stakeholderBranch/delete/{id}', array('uses' => 'StakeholderBranchController@destroy'));
+Route::get('stakeholderBranch/add/{id}', array('uses' => 'StakeholderBranchController@newBranchForm'));
+Route::post('stakeholderBranch/add/{id}', array('uses' => 'StakeholderBranchController@store'));
+Route::get('stakeholder/viewbranch/{id}', array('uses' => 'StakeholderController@listBranch'));
 
 
 

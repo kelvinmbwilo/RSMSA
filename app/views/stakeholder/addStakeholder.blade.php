@@ -8,13 +8,10 @@
         Add New Stakeholder
     </header>
     <div class="panel-body">
-        <h1>Create User</h1>
-
         {{ Form::open(array('action' => 'StakeholderController@store' , 'method' => 'post', 'class'=>'form')) }}
         <ul>
 
-            <li class="tasi-form">
-                {{ Form::label('name', 'Name:') }}
+            <li class="form-control">
                 {{ Form::text('name') }}
             </li>
             <li>

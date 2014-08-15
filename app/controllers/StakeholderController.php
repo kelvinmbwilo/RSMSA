@@ -10,9 +10,9 @@ class StakeholderController extends \BaseController {
 	public function index()
 	{
 		//
-        $stakeHolder = Stakeholder::all();
-        $stakeHolder->toarray();
-        return View::make('stakeholder.stakeholders' , compact('stakeHolder'));
+        $stakeholder = Stakeholder::all();
+        $stakeholder->toarray();
+        return View::make('stakeholder.stakeholders' , compact('stakeholder'));
 	}
 
 
@@ -34,6 +34,7 @@ class StakeholderController extends \BaseController {
      *
      */
     public function newStakeholderForm(){
+
 
         return View::make('stakeholder.addStakeholder');
     }
@@ -69,9 +70,9 @@ class StakeholderController extends \BaseController {
         if ($validation->passes())
         {
             Stakeholder::create($input);
-            $stakeHolder = Stakeholder::all();
-            $stakeHolder->toarray();
-            return View::make('stakeholder.stakeholders', compact('stakeHolder'));
+            $stakeholder = Stakeholder::all();
+            $stakeholder->toarray();
+            return View::make('stakeholder.stakeholders', compact('stakeholder'));
         }
 
         return Redirect::route('stakeholder.addStakeholder')
@@ -122,9 +123,9 @@ class StakeholderController extends \BaseController {
         $stakeholder->save();
 
 
-        $stakeHolder = Stakeholder::all();
-        $stakeHolder->toarray();
-        return View::make('stakeholder.stakeholders', compact('stakeHolder'));
+        $stakeholder = Stakeholder::all();
+        $stakeholder->toarray();
+        return View::make('stakeholder.stakeholders', compact('stakeholder'));
 	}
 
 
@@ -138,9 +139,10 @@ class StakeholderController extends \BaseController {
 	{
 		//
         Stakeholder::find($id)->delete();
-        $stakeHolder = Stakeholder::all();
-        $stakeHolder->toarray();
-        return View::make('stakeholder.stakeholders' , compact('stakeHolder'));
+
+        $stakeholder = Stakeholder::all();
+        $stakeholder->toarray();
+        return View::make('stakeholder.stakeholders' , compact('stakeholder'));
 	}
 
 
