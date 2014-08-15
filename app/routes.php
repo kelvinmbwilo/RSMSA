@@ -42,6 +42,13 @@ Route::resource('login' , 'LoginController');
 
 Route::resource('user' , 'usercontroller');
 
+//********************************************************/
+//*********************StakeHolder************************/
+//********************************************************/
+Route::get('stakeholder', array('uses' => 'StakeholderController@index'));
+Route::get('stakeholderBranch/{id}', array('uses' => 'StakeholderBranchController@listBranch'));
+
+
 ///////////////////////////////////////////////////////
 /////////////References //////////////////////////////
 /////////////////////////////////////////////////////

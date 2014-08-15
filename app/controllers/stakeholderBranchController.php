@@ -1,20 +1,34 @@
 <?php
 
-class StakeholderController extends \BaseController {
+class stakeholderBranchController extends \BaseController {
 
 	/**
 	 * Display a listing of the resource.
 	 *
 	 * @return Response
 	 */
-	public function index()
+	public static function index()
 	{
 		//
-        $stakeHolder = Stakeholder::all();
-        $stakeHolder->toarray();
-        return View::make('stakeholder.stakeholders' , compact('stakeHolder'));
+        $stakeholder = new stakeholder();
+        $stakeholder->toarray();
+        $stakeHolderBranch = StakeHolderBranch::all();
+        $stakeHolderBranch->toarray();
+        return View::make('stakeholder.stakeholderBranch' , compact('stakeHolderBranch'), compact('stakeholder'));
 	}
 
+    /**
+     * Display the list of branches for a specific stakeholder
+     *
+     * @param  int  $id
+     * @return Response
+     */
+    public function listBranch($id){
+
+        $stakeholder = Stakeholder::find($id);
+        return View::make('stakeholder.stakeholderBranch', compact('stakeholder'));
+
+    }
 
 	/**
 	 * Show the form for creating a new resource.
