@@ -10,17 +10,15 @@
     <div class="panel-body">
         <h1>Create User</h1>
 
-        {{ Form::open(array('action' => 'StakeholderController@store' , 'method' => 'post')) }}
+        {{ Form::open(array('action' => 'StakeholderController@store' , 'method' => 'post', 'class'=>'form')) }}
         <ul>
 
-            <li>
+            <li class="tasi-form">
                 {{ Form::label('name', 'Name:') }}
                 {{ Form::text('name') }}
             </li>
-
-
             <li>
-                {{ Form::submit('Submit', array('class' => 'btn')) }}
+                {{ Form::submit('Submit', array('class' => 'btn pull-right')) }}
             </li>
         </ul>
         {{ Form::close() }}

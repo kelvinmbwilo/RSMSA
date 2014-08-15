@@ -58,15 +58,20 @@ class StakeholderController extends \BaseController {
 	public function store()
 	{
 		//
+
+        $rules = array(
+            'name'       => 'required'
+        );
+
         $input = Input::all();
-        $validation = Validator::make($input, Stakeholder::$rules);
+        $validation = Validator::make($input, $rules);
 
         if ($validation->passes())
         {
             Stakeholder::create($input);
             $stakeHolder = Stakeholder::all();
             $stakeHolder->toarray();
-            return Redirect::route('stakeholder.stakeholders' , compact('stakeHolder'));
+            return View::make('stakeholder.stakeholders', compact('stakeHolder'));
         }
 
         return Redirect::route('stakeholder.addStakeholder')
@@ -97,6 +102,9 @@ class StakeholderController extends \BaseController {
 	public function edit($id)
 	{
 		//
+        $stakeholder = Stakeholder::find($id);
+        $stakeholder->toarray();
+        return View::make('stakeholder.editStakeholder' , compact('stakeholder'));
 	}
 
 
@@ -109,6 +117,14 @@ class StakeholderController extends \BaseController {
 	public function update($id)
 	{
 		//
+        $stakeholder=Stakeholder::find($id);
+        $stakeholder->name=Input::get('name');
+        $stakeholder->save();
+
+
+        $stakeHolder = Stakeholder::all();
+        $stakeHolder->toarray();
+        return View::make('stakeholder.stakeholders', compact('stakeHolder'));
 	}
 
 
@@ -121,6 +137,10 @@ class StakeholderController extends \BaseController {
 	public function destroy($id)
 	{
 		//
+        Stakeholder::find($id)->delete();
+        $stakeHolder = Stakeholder::all();
+        $stakeHolder->toarray();
+        return View::make('stakeholder.stakeholders' , compact('stakeHolder'));
 	}
 
 

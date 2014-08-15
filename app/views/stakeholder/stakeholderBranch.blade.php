@@ -57,17 +57,6 @@
     <!-- page end-->
 </section>
 
-<!-- Delete modal -->
-
-<div class="modal fade bs-example-modal-sm " style="padding-top: 20%" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-sm ">
-        <div class="modal-content">
-            @include('stakeholder.delete')
-
-        </div>
-    </div>
-</div>
-
 <!--script for this page-->
 
 <script src="{{ asset('js/jquery.stepy.js') }}"></script>

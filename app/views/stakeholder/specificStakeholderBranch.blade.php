@@ -9,7 +9,6 @@
         <div class="col-lg-12">
             <section class="panel">
                 <header class="panel-heading">
-                    {{{ $stakeholder->name or 'No Branches'}}}
                     <button type="submit" class="btn btn-success pull-right"  data-toggle="modal" data-target="#myModal" value="Finish" >
                         New Branch
                     </button>

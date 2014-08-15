@@ -31,13 +31,17 @@ Route::resource('dashboard' , 'DashboardController');
 /***************************************************************/
 //************************References ***************************/
 /***************************************************************/
+
 //********************************************************/
 //*********************StakeHolder************************/
 //********************************************************/
 Route::get('stakeholder', array('uses' => 'StakeholderController@index'));
+Route::get('stakeholder/{id}', array('uses' => 'StakeholderController@listBranch'));
 Route::get('stakeholder/add', array('uses' => 'StakeholderController@newStakeholderForm'));
 Route::post('stakeholder/add', array('uses' => 'StakeholderController@store'));
-Route::get('stakeholder/{id}', array('uses' => 'StakeholderController@listBranch'));
+Route::post('stakeholder/delete/{id}', array('uses' => 'StakeholderController@destroy'));
+Route::get('stakeholder/edit/{id}', array('uses' => 'StakeholderController@edit'));
+Route::post('stakeholder/edit/{id}', array('uses'=>'StakeholderController@update'));
 Route::get('stakeholderBranch', array('uses' => 'StakeholderBranchController@index'));
 Route::get('stakeholderBranch/edit/{id}', array('uses' => 'StakeholderBranchController@edit'));
 
