@@ -2,699 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a2e222e5-de49-4859-8c87-6358f90c7398" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/gallery/1.jpg" afterPath="$PROJECT_DIR$/public/img/gallery/1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/slider/1.jpg" afterPath="$PROJECT_DIR$/public/img/slider/1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/gallery/2.jpg" afterPath="$PROJECT_DIR$/public/img/gallery/2.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/gallery/3.jpg" afterPath="$PROJECT_DIR$/public/img/gallery/3.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/gallery/4.jpg" afterPath="$PROJECT_DIR$/public/img/gallery/4.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/404_icon.png" afterPath="$PROJECT_DIR$/public/img/404_icon.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/gallery/5.jpg" afterPath="$PROJECT_DIR$/public/img/gallery/5.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/500_icon.png" afterPath="$PROJECT_DIR$/public/img/500_icon.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/gallery/6.jpg" afterPath="$PROJECT_DIR$/public/img/gallery/6.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/font-awesome/fonts/FontAwesome.otf" afterPath="$PROJECT_DIR$/public/assets/font-awesome/fonts/FontAwesome.otf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/jcrop/css/Jcrop.gif" afterPath="$PROJECT_DIR$/public/assets/jcrop/css/Jcrop.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/_close.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/_close.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/_close.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/_close.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/_documents.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/_documents.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/_documents.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/_documents.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/_favorites.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/_favorites.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/_favorites.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/_favorites.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/_image.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/_image.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/_image.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/_image.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/_movie.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/_movie.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/_movie.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/_movie.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/_music.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/_music.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/_music.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/_music.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/_net.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/_net.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/_net.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/_net.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/_open.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/_open.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/_open.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/_open.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/_programfiles.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/_programfiles.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/_programfiles.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/_programfiles.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/_works.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/_works.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/_works.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/_works.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/aac.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/aac.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/aac.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/aac.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/access.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/access.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/access.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/access.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/file-search/ai.png" afterPath="$PROJECT_DIR$/public/img/file-search/ai.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/bootstrap-colorpicker/img/alpha.png" afterPath="$PROJECT_DIR$/public/assets/bootstrap-colorpicker/img/alpha.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/jquery-ui/images/animated-overlay.gif" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/images/animated-overlay.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/favicons/apple-touch-icon-ipad-retina.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/favicons/apple-touch-icon-ipad-retina.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/favicons/apple-touch-icon-ipad.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/favicons/apple-touch-icon-ipad.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/favicons/apple-touch-icon-retina.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/favicons/apple-touch-icon-retina.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/favicons/apple-touch-icon.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/favicons/apple-touch-icon.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/arrow-up.png" afterPath="$PROJECT_DIR$/public/img/arrow-up.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/avatar-mini.jpg" afterPath="$PROJECT_DIR$/public/img/avatar-mini.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/avatar-mini2.jpg" afterPath="$PROJECT_DIR$/public/img/avatar-mini2.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/avatar-mini3.jpg" afterPath="$PROJECT_DIR$/public/img/avatar-mini3.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/avatar-mini4.jpg" afterPath="$PROJECT_DIR$/public/img/avatar-mini4.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/avatar1.jpg" afterPath="$PROJECT_DIR$/public/img/avatar1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/avatar1_small.jpg" afterPath="$PROJECT_DIR$/public/img/avatar1_small.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/avi.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/avi.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/avi.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/avi.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/advanced-datatable/media/images/back_disabled.png" afterPath="$PROJECT_DIR$/public/assets/advanced-datatable/media/images/back_disabled.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/advanced-datatable/media/images/back_enabled.png" afterPath="$PROJECT_DIR$/public/assets/advanced-datatable/media/images/back_enabled.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/advanced-datatable/media/images/back_enabled_hover.png" afterPath="$PROJECT_DIR$/public/assets/advanced-datatable/media/images/back_enabled_hover.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/email-img/banner.jpg" afterPath="$PROJECT_DIR$/public/img/email-img/banner.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/bat.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/bat.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/bat.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/bat.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_anthracite-gradient_active.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_anthracite-gradient_active.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_anthracite-gradient_glossy_hover.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_anthracite-gradient_glossy_hover.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_anthracite-gradient_hover.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_anthracite-gradient_hover.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_black-gradient_active.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_black-gradient_active.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_black-gradient_glossy_hover.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_black-gradient_glossy_hover.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_black-gradient_hover.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_black-gradient_hover.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_blue-gradient_active.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_blue-gradient_active.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_blue-gradient_glossy_hover.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_blue-gradient_glossy_hover.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_blue-gradient_hover.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_blue-gradient_hover.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_button_active.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_button_active.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_button_glossy_hover.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_button_glossy_hover.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_button_hover.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_button_hover.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_count_active.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_count_active.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_count_glossy_hover.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_count_glossy_hover.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_count_hover.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_count_hover.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_green-gradient_active.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_green-gradient_active.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_green-gradient_glossy_hover.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_green-gradient_glossy_hover.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_green-gradient_hover.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_green-gradient_hover.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_grey-gradient_active.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_grey-gradient_active.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_grey-gradient_glossy_hover.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_grey-gradient_glossy_hover.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_grey-gradient_hover.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_grey-gradient_hover.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_orange-gradient_active.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_orange-gradient_active.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_orange-gradient_glossy_hover.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_orange-gradient_glossy_hover.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_orange-gradient_hover.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_orange-gradient_hover.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_red-gradient_active.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_red-gradient_active.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_red-gradient_glossy_hover.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_red-gradient_glossy_hover.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_red-gradient_hover.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_red-gradient_hover.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_silver-gradient_active.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_silver-gradient_active.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_silver-gradient_glossy_hover.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_silver-gradient_glossy_hover.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_silver-gradient_hover.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_silver-gradient_hover.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_white-gradient_active.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_white-gradient_active.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_white-gradient_glossy_hover.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_white-gradient_glossy_hover.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_white-gradient_hover.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_a_white-gradient_hover.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_anthracite-active_active.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_anthracite-active_active.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_anthracite-gradient.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_anthracite-gradient.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_anthracite-gradient_glossy.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_anthracite-gradient_glossy.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_big-menu.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_big-menu.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_black-active_active.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_black-active_active.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_black-gradient.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_black-gradient.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_black-gradient_disabled.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_black-gradient_disabled.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_black-gradient_glossy.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_black-gradient_glossy.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_black-inputs_input.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_black-inputs_input.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_black-inputs_switch-button.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_black-inputs_switch-button.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_blue-active_active.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_blue-active_active.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_blue-gradient.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_blue-gradient.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_blue-gradient_glossy.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_blue-gradient_glossy.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/992/bg_body_reversed_menu-content_before.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/992/bg_body_reversed_menu-content_before.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/768/bg_body_reversed_shortcuts_li_after.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/768/bg_body_reversed_shortcuts_li_after.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_button-icon.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_button-icon.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_button-icon_glossy.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_button-icon_glossy.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_button.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_button.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_button_active_button-icon.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_button_active_button-icon.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_button_anthracite-gradient_disabled.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_button_anthracite-gradient_disabled.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_button_blue-gradient_disabled.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_button_blue-gradient_disabled.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_button_disabled.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_button_disabled.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_button_glossy.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_button_glossy.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_button_green-gradient_disabled.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_button_green-gradient_disabled.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_button_grey-gradient_disabled.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_button_grey-gradient_disabled.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_button_orange-gradient_disabled.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_button_orange-gradient_disabled.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_button_red-gradient_disabled.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_button_red-gradient_disabled.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_button_white-gradient_disabled.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_button_white-gradient_disabled.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_count.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_count.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_count_glossy.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_count_glossy.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_disabled_button-icon.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_disabled_button-icon.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_disabled_switch-on.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_disabled_switch-on.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_green-active_active.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_green-active_active.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_green-gradient.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_green-gradient.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_green-gradient_glossy.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_green-gradient_glossy.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_grey-active_active.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_grey-active_active.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_grey-gradient.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_grey-gradient.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_grey-gradient_glossy.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_grey-gradient_glossy.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_hover_button-icon_glossy.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_hover_button-icon_glossy.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_input-wrapper.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_input-wrapper.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_input.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_input.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/992/bg_menu-content_after.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/992/bg_menu-content_after.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/992/bg_menu-content_before.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/992/bg_menu-content_before.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/style/bg_menu-footer.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/style/bg_menu-footer.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/style/bg_menu_after.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/style/bg_menu_after.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/style/bg_menu_header.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/style/bg_menu_header.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_message.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_message.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_message_glossy.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_message_glossy.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/style/bg_meter.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/style/bg_meter.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_modal-bar.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_modal-bar.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_modal.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_modal.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_no-touch_drop-down_span_hover.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_no-touch_drop-down_span_hover.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_orange-active_active.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_orange-active_active.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_orange-gradient.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_orange-gradient.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_orange-gradient_glossy.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_orange-gradient_glossy.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/style/bg_profile.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/style/bg_profile.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_red-active_active.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_red-active_active.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_red-gradient.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_red-gradient.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_red-gradient_glossy.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_red-gradient_glossy.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_ribbon-inner.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_ribbon-inner.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/style/bg_shortcuts.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/style/bg_shortcuts.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/768/bg_shortcuts_li_after.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/768/bg_shortcuts_li_after.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_silver-active_active.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_silver-active_active.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_silver-gradient.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_silver-gradient.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_silver-gradient_disabled.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_silver-gradient_disabled.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_silver-gradient_glossy.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_silver-gradient_glossy.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_tr_highlight_glossy_th.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_tr_highlight_glossy_th.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_white-active_active.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_white-active_active.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_white-gradient.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_white-gradient.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_white-gradient_glossy.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/colors/bg_white-gradient_glossy.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/black45.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/black45.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/black75.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/black75.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/fancybox/source/blank.gif" afterPath="$PROJECT_DIR$/public/assets/fancybox/source/blank.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/bmp.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/bmp.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/bmp.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/bmp.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/chart-texture.jpg" afterPath="$PROJECT_DIR$/public/img/chart-texture.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/chat-attach.jpg" afterPath="$PROJECT_DIR$/public/img/chat-attach.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/chat-avatar.jpg" afterPath="$PROJECT_DIR$/public/img/chat-avatar.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/chat-avatar2.jpg" afterPath="$PROJECT_DIR$/public/img/chat-avatar2.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/chat-search.png" afterPath="$PROJECT_DIR$/public/img/chat-search.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/checkbox/check-off.png" afterPath="$PROJECT_DIR$/public/img/checkbox/check-off.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/checkbox/check-on.png" afterPath="$PROJECT_DIR$/public/img/checkbox/check-on.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/chm.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/chm.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/chm.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/chm.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/css.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/css.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/css.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/css.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/customSelect-arrow.gif" afterPath="$PROJECT_DIR$/public/img/customSelect-arrow.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/effects/dashboard-bottom-shadow.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/effects/dashboard-bottom-shadow.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/effects/dashboard-top-shadow.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/effects/dashboard-top-shadow.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/dat.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/dat.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/dat.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/dat.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/de.png" afterPath="$PROJECT_DIR$/public/img/flags/de.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/default.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/default.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/default.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/default.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/desktop.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/desktop.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/desktop.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/desktop.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/dll.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/dll.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/dll.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/dll.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/file-search/doc.png" afterPath="$PROJECT_DIR$/public/img/file-search/doc.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/file-search/email.png" afterPath="$PROJECT_DIR$/public/img/file-search/email.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/css/Entypo/entypo-webfont.eot" afterPath="$PROJECT_DIR$/public/blacktheme/css/Entypo/entypo-webfont.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/css/Entypo/entypo-webfont.ttf" afterPath="$PROJECT_DIR$/public/blacktheme/css/Entypo/entypo-webfont.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/css/Entypo/entypo-webfont.woff" afterPath="$PROJECT_DIR$/public/blacktheme/css/Entypo/entypo-webfont.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/file-search/eps.png" afterPath="$PROJECT_DIR$/public/img/file-search/eps.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/es.png" afterPath="$PROJECT_DIR$/public/img/flags/es.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/excel.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/excel.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/excel.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/excel.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/exe.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/exe.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/exe.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/exe.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/textures/fabric.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/textures/fabric.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/fancybox/source/fancybox_loading.gif" afterPath="$PROJECT_DIR$/public/assets/fancybox/source/fancybox_loading.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/fancybox/source/fancybox_overlay.png" afterPath="$PROJECT_DIR$/public/assets/fancybox/source/fancybox_overlay.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/fancybox/source/fancybox_sprite.png" afterPath="$PROJECT_DIR$/public/assets/fancybox/source/fancybox_sprite.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/favicons/favicon.ico" afterPath="$PROJECT_DIR$/public/blacktheme/img/favicons/favicon.ico" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/favicons/favicon.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/favicons/favicon.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/fb-img.jpg" afterPath="$PROJECT_DIR$/public/img/fb-img.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fieldset-bg.gif" afterPath="$PROJECT_DIR$/public/blacktheme/img/fieldset-bg.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/follower-avatar.jpg" afterPath="$PROJECT_DIR$/public/img/follower-avatar.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/fon.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/fon.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/fon.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/fon.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/font-awesome/fonts/fontawesome-webfont.eot" afterPath="$PROJECT_DIR$/public/assets/font-awesome/fonts/fontawesome-webfont.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/font-awesome/fonts/fontawesome-webfont.ttf" afterPath="$PROJECT_DIR$/public/assets/font-awesome/fonts/fontawesome-webfont.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/font-awesome/fonts/fontawesome-webfont.woff" afterPath="$PROJECT_DIR$/public/assets/font-awesome/fonts/fontawesome-webfont.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/advanced-datatable/media/images/forward_disabled.png" afterPath="$PROJECT_DIR$/public/assets/advanced-datatable/media/images/forward_disabled.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/advanced-datatable/media/images/forward_enabled.png" afterPath="$PROJECT_DIR$/public/assets/advanced-datatable/media/images/forward_enabled.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/advanced-datatable/media/images/forward_enabled_hover.png" afterPath="$PROJECT_DIR$/public/assets/advanced-datatable/media/images/forward_enabled_hover.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/fr.png" afterPath="$PROJECT_DIR$/public/img/flags/fr.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/gif.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/gif.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/gif.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/gif.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/effects/glow.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/effects/glow.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/fonts/glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/public/fonts/glyphicons-halflings-regular.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/fonts/glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/public/fonts/glyphicons-halflings-regular.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/grey20.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/grey20.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/grey50.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/grey50.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/textures/grid.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/textures/grid.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/gritter/images/gritter-light.png" afterPath="$PROJECT_DIR$/public/assets/gritter/images/gritter-light.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/gritter/images/gritter.png" afterPath="$PROJECT_DIR$/public/assets/gritter/images/gritter.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/html.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/html.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/html.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/html.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/bootstrap-colorpicker/img/hue.png" afterPath="$PROJECT_DIR$/public/assets/bootstrap-colorpicker/img/hue.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/email-img/icon-cal.png" afterPath="$PROJECT_DIR$/public/img/email-img/icon-cal.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/email-img/icon-tel.png" afterPath="$PROJECT_DIR$/public/img/email-img/icon-tel.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/gritter/images/ie-spacer.gif" afterPath="$PROJECT_DIR$/public/assets/gritter/images/ie-spacer.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/email-img/image1.png" afterPath="$PROJECT_DIR$/public/img/email-img/image1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/email-img/image2.png" afterPath="$PROJECT_DIR$/public/img/email-img/image2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/email-img/image3.png" afterPath="$PROJECT_DIR$/public/img/email-img/image3.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/email-img/image4.png" afterPath="$PROJECT_DIR$/public/img/email-img/image4.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/ini.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/ini.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/ini.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/ini.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/input-spinner.gif" afterPath="$PROJECT_DIR$/public/img/input-spinner.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/splash/ipad-landscape-retina.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/splash/ipad-landscape-retina.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/splash/ipad-landscape.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/splash/ipad-landscape.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/splash/ipad-portrait-retina.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/splash/ipad-portrait-retina.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/splash/ipad-portrait.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/splash/ipad-portrait.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/splash/iphone-retina.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/splash/iphone-retina.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/splash/iphone.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/splash/iphone.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/splash/iphone5.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/splash/iphone5.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/jar.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/jar.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/jar.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/jar.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/jpg.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/jpg.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/jpg.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/jpg.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/file-search/jpg.png" afterPath="$PROJECT_DIR$/public/img/file-search/jpg.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/js.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/js.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/js.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/js.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/left-arrow.png" afterPath="$PROJECT_DIR$/public/img/left-arrow.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/file-uploader/img/loading.gif" afterPath="$PROJECT_DIR$/public/assets/file-uploader/img/loading.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/jquery-file-upload/img/loading.gif" afterPath="$PROJECT_DIR$/public/assets/jquery-file-upload/img/loading.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/standard/loaders/loading16.gif" afterPath="$PROJECT_DIR$/public/blacktheme/img/standard/loaders/loading16.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/standard/loaders/loading16_anthracite.gif" afterPath="$PROJECT_DIR$/public/blacktheme/img/standard/loaders/loading16_anthracite.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/standard/loaders/loading32.gif" afterPath="$PROJECT_DIR$/public/blacktheme/img/standard/loaders/loading32.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/standard/loaders/loading32_anthracite.gif" afterPath="$PROJECT_DIR$/public/blacktheme/img/standard/loaders/loading32_anthracite.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/standard/loaders/loading64.gif" afterPath="$PROJECT_DIR$/public/blacktheme/img/standard/loaders/loading64.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/standard/loaders/loading64_anthracite.gif" afterPath="$PROJECT_DIR$/public/blacktheme/img/standard/loaders/loading64_anthracite.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/lock-bg.jpg" afterPath="$PROJECT_DIR$/public/img/lock-bg.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/log.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/log.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/log.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/log.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/login-title.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/login-title.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/mail-avatar.jpg" afterPath="$PROJECT_DIR$/public/img/mail-avatar.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/email-img/main-img.png" afterPath="$PROJECT_DIR$/public/img/email-img/main-img.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/mask.png" afterPath="$PROJECT_DIR$/public/img/mask.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/menu.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/menu.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/mov.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/mov.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/mov.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/mov.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/mp3.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/mp3.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/mp3.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/mp3.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/mpg.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/mpg.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/mpg.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/mpg.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/nav-expand.png" afterPath="$PROJECT_DIR$/public/img/nav-expand.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/otf.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/otf.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/otf.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/otf.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/other_image.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/other_image.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/other_image.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/other_image.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/other_movie.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/other_movie.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/other_movie.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/other_movie.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/other_music.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/other_music.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/other_music.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/other_music.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/other_music2.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/other_music2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/other_music2.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/other_music2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/pdf.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/pdf.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/pdf.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/pdf.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/file-search/pdf.png" afterPath="$PROJECT_DIR$/public/img/file-search/pdf.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/demo/picto.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/demo/picto.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/demo/gallery/picture-1.jpg" afterPath="$PROJECT_DIR$/public/blacktheme/img/demo/gallery/picture-1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/demo/gallery/picture-2.jpg" afterPath="$PROJECT_DIR$/public/blacktheme/img/demo/gallery/picture-2.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/demo/gallery/picture-3.jpg" afterPath="$PROJECT_DIR$/public/blacktheme/img/demo/gallery/picture-3.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/demo/gallery/picture-4.jpg" afterPath="$PROJECT_DIR$/public/blacktheme/img/demo/gallery/picture-4.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/demo/gallery/picture-5.jpg" afterPath="$PROJECT_DIR$/public/blacktheme/img/demo/gallery/picture-5.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/demo/gallery/picture-6.jpg" afterPath="$PROJECT_DIR$/public/blacktheme/img/demo/gallery/picture-6.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/demo/gallery/picture-7.jpg" afterPath="$PROJECT_DIR$/public/blacktheme/img/demo/gallery/picture-7.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/demo/gallery/picture-8.jpg" afterPath="$PROJECT_DIR$/public/blacktheme/img/demo/gallery/picture-8.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/demo/picture.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/demo/picture.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/png.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/png.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/png.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/png.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/powerpoint.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/powerpoint.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/powerpoint.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/powerpoint.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/file-search/ppt.png" afterPath="$PROJECT_DIR$/public/img/file-search/ppt.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/product-list/pro-1.jpg" afterPath="$PROJECT_DIR$/public/img/product-list/pro-1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/pro-ac-1.png" afterPath="$PROJECT_DIR$/public/img/pro-ac-1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/pro-ac-2.png" afterPath="$PROJECT_DIR$/public/img/pro-ac-2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/product-list/pro-thumb-1.jpg" afterPath="$PROJECT_DIR$/public/img/product-list/pro-thumb-1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/product-list/pro-thumb-2.jpg" afterPath="$PROJECT_DIR$/public/img/product-list/pro-thumb-2.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/product-list/pro-thumb-3.jpg" afterPath="$PROJECT_DIR$/public/img/product-list/pro-thumb-3.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/product-list/pro-thumb-big.jpg" afterPath="$PROJECT_DIR$/public/img/product-list/pro-thumb-big.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/product-list/pro1.jpg" afterPath="$PROJECT_DIR$/public/img/product-list/pro1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/product-list/pro2.jpg" afterPath="$PROJECT_DIR$/public/img/product-list/pro2.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/product-list/pro3.jpg" afterPath="$PROJECT_DIR$/public/img/product-list/pro3.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/product1.jpg" afterPath="$PROJECT_DIR$/public/img/product1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/product2.png" afterPath="$PROJECT_DIR$/public/img/product2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/product3.png" afterPath="$PROJECT_DIR$/public/img/product3.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/profile-avatar.jpg" afterPath="$PROJECT_DIR$/public/img/profile-avatar.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/file-uploader/img/progressbar.gif" afterPath="$PROJECT_DIR$/public/assets/file-uploader/img/progressbar.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/jquery-file-upload/img/progressbar.gif" afterPath="$PROJECT_DIR$/public/assets/jquery-file-upload/img/progressbar.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/file-search/psd.png" afterPath="$PROJECT_DIR$/public/img/file-search/psd.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/checkbox/radio-off.png" afterPath="$PROJECT_DIR$/public/img/checkbox/radio-off.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/checkbox/radio-on.png" afterPath="$PROJECT_DIR$/public/img/checkbox/radio-on.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/real.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/real.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/real.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/real.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/standard/loaders/refreshing16.gif" afterPath="$PROJECT_DIR$/public/blacktheme/img/standard/loaders/refreshing16.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/standard/loaders/refreshing16_anthracite.gif" afterPath="$PROJECT_DIR$/public/blacktheme/img/standard/loaders/refreshing16_anthracite.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/standard/loaders/refreshing32.gif" afterPath="$PROJECT_DIR$/public/blacktheme/img/standard/loaders/refreshing32.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/standard/loaders/refreshing32_anthracite.gif" afterPath="$PROJECT_DIR$/public/blacktheme/img/standard/loaders/refreshing32_anthracite.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/standard/loaders/refreshing64.gif" afterPath="$PROJECT_DIR$/public/blacktheme/img/standard/loaders/refreshing64.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/standard/loaders/refreshing64_anthracite.gif" afterPath="$PROJECT_DIR$/public/blacktheme/img/standard/loaders/refreshing64_anthracite.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/reg.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/reg.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/reg.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/reg.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/right-arrow.png" afterPath="$PROJECT_DIR$/public/img/right-arrow.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/ring.jpg" afterPath="$PROJECT_DIR$/public/img/ring.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/file-search/rss.png" afterPath="$PROJECT_DIR$/public/img/file-search/rss.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/rtf.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/rtf.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/rtf.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/rtf.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/ru.png" afterPath="$PROJECT_DIR$/public/img/flags/ru.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/bootstrap-colorpicker/img/saturation.png" afterPath="$PROJECT_DIR$/public/assets/bootstrap-colorpicker/img/saturation.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/textures/scratches.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/textures/scratches.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/search-icon.jpg" afterPath="$PROJECT_DIR$/public/img/search-icon.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/highres/shortcuts.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/highres/shortcuts.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/standard/shortcuts.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/standard/shortcuts.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/sm-img-1.jpg" afterPath="$PROJECT_DIR$/public/img/sm-img-1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/sm-img-2.jpg" afterPath="$PROJECT_DIR$/public/img/sm-img-2.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/sm-img-3.jpg" afterPath="$PROJECT_DIR$/public/img/sm-img-3.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/email-img/social-facebook.png" afterPath="$PROJECT_DIR$/public/img/email-img/social-facebook.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/email-img/social-google.png" afterPath="$PROJECT_DIR$/public/img/email-img/social-google.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/email-img/social-linkedin.png" afterPath="$PROJECT_DIR$/public/img/email-img/social-linkedin.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/email-img/social-twitter.png" afterPath="$PROJECT_DIR$/public/img/email-img/social-twitter.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/email-img/social-youtube.png" afterPath="$PROJECT_DIR$/public/img/email-img/social-youtube.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/advanced-datatable/media/images/sort_asc.png" afterPath="$PROJECT_DIR$/public/assets/advanced-datatable/media/images/sort_asc.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/data-tables/images/sort_asc.png" afterPath="$PROJECT_DIR$/public/assets/data-tables/images/sort_asc.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/advanced-datatable/media/images/sort_asc_disabled.png" afterPath="$PROJECT_DIR$/public/assets/advanced-datatable/media/images/sort_asc_disabled.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/advanced-datatable/media/images/sort_both.png" afterPath="$PROJECT_DIR$/public/assets/advanced-datatable/media/images/sort_both.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/data-tables/images/sort_both.png" afterPath="$PROJECT_DIR$/public/assets/data-tables/images/sort_both.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/advanced-datatable/media/images/sort_desc.png" afterPath="$PROJECT_DIR$/public/assets/advanced-datatable/media/images/sort_desc.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/data-tables/images/sort_desc.png" afterPath="$PROJECT_DIR$/public/assets/data-tables/images/sort_desc.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/advanced-datatable/media/images/sort_desc_disabled.png" afterPath="$PROJECT_DIR$/public/assets/advanced-datatable/media/images/sort_desc_disabled.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/dropzone/images/spritemap.png" afterPath="$PROJECT_DIR$/public/assets/dropzone/images/spritemap.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/dropzone/images/spritemap@2x.png" afterPath="$PROJECT_DIR$/public/assets/dropzone/images/spritemap@2x.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/standard/sprites.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/standard/sprites.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/stripes-black-10.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/stripes-black-10.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/stripes-black-20.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/stripes-black-20.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/stripes-black-40.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/stripes-black-40.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/stripes-white-10.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/stripes-white-10.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/stripes-white-20.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/stripes-white-20.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/stripes-white-40.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/old-browsers/stripes-white-40.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/swf.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/swf.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/swf.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/swf.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/jquery-multi-select/img/switch.png" afterPath="$PROJECT_DIR$/public/assets/jquery-multi-select/img/switch.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/sys.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/sys.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/sys.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/sys.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/text.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/text.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/text.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/text.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/fuelux/img/tree-icons.png" afterPath="$PROJECT_DIR$/public/assets/fuelux/img/tree-icons.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/ttc.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/ttc.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/ttc.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/ttc.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/ttf.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/ttf.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/ttf.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/ttf.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/jquery-ui/images/ui-bg_diagonals-thick_18_b81900_40x40.png" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/images/ui-bg_diagonals-thick_18_b81900_40x40.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/jquery-ui/images/ui-bg_diagonals-thick_20_666666_40x40.png" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/images/ui-bg_diagonals-thick_20_666666_40x40.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/jquery-ui/images/ui-bg_flat_10_000000_40x100.png" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/images/ui-bg_flat_10_000000_40x100.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/jquery-ui/images/ui-bg_glass_100_f6f6f6_1x400.png" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/images/ui-bg_glass_100_f6f6f6_1x400.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/jquery-ui/images/ui-bg_glass_100_fdf5ce_1x400.png" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/images/ui-bg_glass_100_fdf5ce_1x400.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/jquery-ui/images/ui-bg_glass_65_ffffff_1x400.png" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/images/ui-bg_glass_65_ffffff_1x400.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/jquery-ui/images/ui-bg_gloss-wave_35_f6a828_500x100.png" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/images/ui-bg_gloss-wave_35_f6a828_500x100.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/jquery-ui/images/ui-bg_highlight-soft_100_eeeeee_1x100.png" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/images/ui-bg_highlight-soft_100_eeeeee_1x100.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/jquery-ui/images/ui-bg_highlight-soft_75_ffe45c_1x100.png" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/images/ui-bg_highlight-soft_75_ffe45c_1x100.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/jquery-ui/images/ui-icons_222222_256x240.png" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/images/ui-icons_222222_256x240.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/jquery-ui/images/ui-icons_228ef1_256x240.png" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/images/ui-icons_228ef1_256x240.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/jquery-ui/images/ui-icons_ef8c08_256x240.png" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/images/ui-icons_ef8c08_256x240.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/jquery-ui/images/ui-icons_ffd27a_256x240.png" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/images/ui-icons_ffd27a_256x240.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/jquery-ui/images/ui-icons_ffffff_256x240.png" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/images/ui-icons_ffffff_256x240.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/us.png" afterPath="$PROJECT_DIR$/public/img/flags/us.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/user.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/user.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/photos/user1.png" afterPath="$PROJECT_DIR$/public/img/photos/user1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/photos/user2.png" afterPath="$PROJECT_DIR$/public/img/photos/user2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/photos/user3.png" afterPath="$PROJECT_DIR$/public/img/photos/user3.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/photos/user4.png" afterPath="$PROJECT_DIR$/public/img/photos/user4.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/photos/user5.png" afterPath="$PROJECT_DIR$/public/img/photos/user5.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/vbs.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/vbs.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/vbs.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/vbs.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/vector-lab.jpg" afterPath="$PROJECT_DIR$/public/img/vector-lab.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/email-img/vector-lab.jpg" afterPath="$PROJECT_DIR$/public/img/email-img/vector-lab.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/standard/loaders/waiting16.gif" afterPath="$PROJECT_DIR$/public/blacktheme/img/standard/loaders/waiting16.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/standard/loaders/waiting16_anthracite.gif" afterPath="$PROJECT_DIR$/public/blacktheme/img/standard/loaders/waiting16_anthracite.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/standard/loaders/waiting32.gif" afterPath="$PROJECT_DIR$/public/blacktheme/img/standard/loaders/waiting32.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/standard/loaders/waiting32_anthracite.gif" afterPath="$PROJECT_DIR$/public/blacktheme/img/standard/loaders/waiting32_anthracite.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/standard/loaders/waiting64.gif" afterPath="$PROJECT_DIR$/public/blacktheme/img/standard/loaders/waiting64.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/standard/loaders/waiting64_anthracite.gif" afterPath="$PROJECT_DIR$/public/blacktheme/img/standard/loaders/waiting64_anthracite.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/favicons/watermark.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/favicons/watermark.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/wav.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/wav.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/wav.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/wav.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/effects/wizard-steps-separator.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/effects/wizard-steps-separator.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/wma.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/wma.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/wma.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/wma.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/wmv.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/wmv.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/wmv.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/wmv.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/word.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/word.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/word.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/word.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/standard/loaders/working16.gif" afterPath="$PROJECT_DIR$/public/blacktheme/img/standard/loaders/working16.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/standard/loaders/working16_anthracite.gif" afterPath="$PROJECT_DIR$/public/blacktheme/img/standard/loaders/working16_anthracite.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/standard/loaders/working32.gif" afterPath="$PROJECT_DIR$/public/blacktheme/img/standard/loaders/working32.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/standard/loaders/working32_anthracite.gif" afterPath="$PROJECT_DIR$/public/blacktheme/img/standard/loaders/working32_anthracite.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/standard/loaders/working64.gif" afterPath="$PROJECT_DIR$/public/blacktheme/img/standard/loaders/working64.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/standard/loaders/working64_anthracite.gif" afterPath="$PROJECT_DIR$/public/blacktheme/img/standard/loaders/working64_anthracite.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/file-search/xls.png" afterPath="$PROJECT_DIR$/public/img/file-search/xls.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/xml.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/xml.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/xml.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/xml.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/xsl.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/32/xsl.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/xsl.png" afterPath="$PROJECT_DIR$/public/blacktheme/img/fineFiles/64/xsl.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/file-search/zip.png" afterPath="$PROJECT_DIR$/public/img/file-search/zip.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/css/1200.css" afterPath="$PROJECT_DIR$/public/blacktheme/css/1200.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/database/migrations/2014_08_13_082815_create_referencDetails_table.php" afterPath="$PROJECT_DIR$/app/database/migrations/2014_08_13_082815_create_referencDetails_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/database/migrations/2014_08_13_084140_create_dataReference_table.php" afterPath="$PROJECT_DIR$/app/database/migrations/2014_08_13_084140_create_dataReference_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/css/2x.css" afterPath="$PROJECT_DIR$/public/blacktheme/css/2x.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/css/480.css" afterPath="$PROJECT_DIR$/public/blacktheme/css/480.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/css/768.css" afterPath="$PROJECT_DIR$/public/blacktheme/css/768.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/css/992.css" afterPath="$PROJECT_DIR$/public/blacktheme/css/992.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/chart-master/Chart.js" afterPath="$PROJECT_DIR$/public/assets/chart-master/Chart.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/Column.php" afterPath="$PROJECT_DIR$/app/models/Column.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/data-tables/DT_bootstrap.css" afterPath="$PROJECT_DIR$/public/assets/data-tables/DT_bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/data-tables/DT_bootstrap.js" afterPath="$PROJECT_DIR$/public/assets/data-tables/DT_bootstrap.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/DashboardController.php" afterPath="$PROJECT_DIR$/app/controllers/DashboardController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/DataReference.php" afterPath="$PROJECT_DIR$/app/models/DataReference.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/Reference.php" afterPath="$PROJECT_DIR$/app/models/Reference.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/ReferenceController.php" afterPath="$PROJECT_DIR$/app/controllers/ReferenceController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/ReferenceDetails.php" afterPath="$PROJECT_DIR$/app/models/ReferenceDetails.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/StakeholderController.php" afterPath="$PROJECT_DIR$/app/controllers/StakeholderController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/font-awesome/scss/_bordered-pulled.scss" afterPath="$PROJECT_DIR$/public/assets/font-awesome/scss/_bordered-pulled.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/font-awesome/scss/_core.scss" afterPath="$PROJECT_DIR$/public/assets/font-awesome/scss/_core.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/font-awesome/scss/_fixed-width.scss" afterPath="$PROJECT_DIR$/public/assets/font-awesome/scss/_fixed-width.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/font-awesome/scss/_icons.scss" afterPath="$PROJECT_DIR$/public/assets/font-awesome/scss/_icons.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/font-awesome/scss/_larger.scss" afterPath="$PROJECT_DIR$/public/assets/font-awesome/scss/_larger.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/font-awesome/scss/_list.scss" afterPath="$PROJECT_DIR$/public/assets/font-awesome/scss/_list.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/font-awesome/scss/_mixins.scss" afterPath="$PROJECT_DIR$/public/assets/font-awesome/scss/_mixins.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/font-awesome/scss/_path.scss" afterPath="$PROJECT_DIR$/public/assets/font-awesome/scss/_path.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/font-awesome/scss/_rotated-flipped.scss" afterPath="$PROJECT_DIR$/public/assets/font-awesome/scss/_rotated-flipped.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/font-awesome/scss/_spinning.scss" afterPath="$PROJECT_DIR$/public/assets/font-awesome/scss/_spinning.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/font-awesome/scss/_stacked.scss" afterPath="$PROJECT_DIR$/public/assets/font-awesome/scss/_stacked.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/font-awesome/scss/_variables.scss" afterPath="$PROJECT_DIR$/public/assets/font-awesome/scss/_variables.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/location/add.blade.php" afterPath="$PROJECT_DIR$/app/views/location/add.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/location/location_level/add.blade.php" afterPath="$PROJECT_DIR$/app/views/location/location_level/add.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/reference/data_reference/add.blade.php" afterPath="$PROJECT_DIR$/app/views/reference/data_reference/add.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/advanced-form-components.js" afterPath="$PROJECT_DIR$/public/js/advanced-form-components.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/css/styles/agenda.css" afterPath="$PROJECT_DIR$/public/blacktheme/css/styles/agenda.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/all-chartjs.js" afterPath="$PROJECT_DIR$/public/js/all-chartjs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/bootstrap-colorpicker/js/bootstrap-colorpicker.js" afterPath="$PROJECT_DIR$/public/assets/bootstrap-colorpicker/js/bootstrap-colorpicker.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/bootstrap-datepicker/js/bootstrap-datepicker.js" afterPath="$PROJECT_DIR$/public/assets/bootstrap-datepicker/js/bootstrap-datepicker.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js" afterPath="$PROJECT_DIR$/public/assets/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/bootstrap-fileupload/bootstrap-fileupload.css" afterPath="$PROJECT_DIR$/public/assets/bootstrap-fileupload/bootstrap-fileupload.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/bootstrap-fileupload/bootstrap-fileupload.js" afterPath="$PROJECT_DIR$/public/assets/bootstrap-fileupload/bootstrap-fileupload.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/fullcalendar/fullcalendar/bootstrap-fullcalendar.css" afterPath="$PROJECT_DIR$/public/assets/fullcalendar/fullcalendar/bootstrap-fullcalendar.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/bootstrap-inputmask/bootstrap-inputmask.min.js" afterPath="$PROJECT_DIR$/public/assets/bootstrap-inputmask/bootstrap-inputmask.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/bootstrap-reset.css" afterPath="$PROJECT_DIR$/public/css/bootstrap-reset.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/bootstrap-switch.js" afterPath="$PROJECT_DIR$/public/js/bootstrap-switch.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/bootstrap-timepicker/js/bootstrap-timepicker.js" afterPath="$PROJECT_DIR$/public/assets/bootstrap-timepicker/js/bootstrap-timepicker.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/bootstrap-wysihtml5/bootstrap-wysihtml5.css" afterPath="$PROJECT_DIR$/public/assets/bootstrap-wysihtml5/bootstrap-wysihtml5.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/bootstrap-wysihtml5/bootstrap-wysihtml5.js" afterPath="$PROJECT_DIR$/public/assets/bootstrap-wysihtml5/bootstrap-wysihtml5.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/public/css/bootstrap.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/public/js/bootstrap.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/font-awesome/less/bordered-pulled.less" afterPath="$PROJECT_DIR$/public/assets/font-awesome/less/bordered-pulled.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/css/styles/calendars.css" afterPath="$PROJECT_DIR$/public/blacktheme/css/styles/calendars.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/jquery-file-upload/js/vendor/canvas-to-blob.min.js" afterPath="$PROJECT_DIR$/public/assets/jquery-file-upload/js/vendor/canvas-to-blob.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/ckeditor.js" afterPath="$PROJECT_DIR$/public/assets/ckeditor/ckeditor.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/js/libs/ckeditor/ckeditor.js" afterPath="$PROJECT_DIR$/public/blacktheme/js/libs/ckeditor/ckeditor.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/bootstrap-colorpicker/css/colorpicker.css" afterPath="$PROJECT_DIR$/public/assets/bootstrap-colorpicker/css/colorpicker.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/css/colors.css" afterPath="$PROJECT_DIR$/public/blacktheme/css/colors.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/common-scripts.js" afterPath="$PROJECT_DIR$/public/js/common-scripts.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/font-awesome/less/core.less" afterPath="$PROJECT_DIR$/public/assets/font-awesome/less/core.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/count.js" afterPath="$PROJECT_DIR$/public/js/count.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/soon/custom.js" afterPath="$PROJECT_DIR$/public/js/soon/custom.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/xchart/d3.v3.min.js" afterPath="$PROJECT_DIR$/public/assets/xchart/d3.v3.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/dashboard.blade.php" afterPath="$PROJECT_DIR$/app/views/dashboard.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/css/styles/dashboard.css" afterPath="$PROJECT_DIR$/public/blacktheme/css/styles/dashboard.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/bootstrap-daterangepicker/date.js" afterPath="$PROJECT_DIR$/public/assets/bootstrap-daterangepicker/date.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/bootstrap-datepicker/css/datepicker.css" afterPath="$PROJECT_DIR$/public/assets/bootstrap-datepicker/css/datepicker.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/bootstrap-daterangepicker/daterangepicker-bs3.css" afterPath="$PROJECT_DIR$/public/assets/bootstrap-daterangepicker/daterangepicker-bs3.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/bootstrap-daterangepicker/daterangepicker.css" afterPath="$PROJECT_DIR$/public/assets/bootstrap-daterangepicker/daterangepicker.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/bootstrap-daterangepicker/daterangepicker.js" afterPath="$PROJECT_DIR$/public/assets/bootstrap-daterangepicker/daterangepicker.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/bootstrap-datetimepicker/css/datetimepicker.css" afterPath="$PROJECT_DIR$/public/assets/bootstrap-datetimepicker/css/datetimepicker.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/reference/data_reference/delete.blade.php" afterPath="$PROJECT_DIR$/app/views/reference/data_reference/delete.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/advanced-datatable/media/css/demo_page.css" afterPath="$PROJECT_DIR$/public/assets/advanced-datatable/media/css/demo_page.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/advanced-datatable/media/css/demo_table.css" afterPath="$PROJECT_DIR$/public/assets/advanced-datatable/media/css/demo_table.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/js/developr.accordions.js" afterPath="$PROJECT_DIR$/public/blacktheme/js/developr.accordions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/js/developr.agenda.js" afterPath="$PROJECT_DIR$/public/blacktheme/js/developr.agenda.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/js/developr.auto-resizing.js" afterPath="$PROJECT_DIR$/public/blacktheme/js/developr.auto-resizing.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/js/developr.calendar.js" afterPath="$PROJECT_DIR$/public/blacktheme/js/developr.calendar.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/js/developr.confirm.js" afterPath="$PROJECT_DIR$/public/blacktheme/js/developr.confirm.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/js/developr.content-panel.js" afterPath="$PROJECT_DIR$/public/blacktheme/js/developr.content-panel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/js/developr.input.js" afterPath="$PROJECT_DIR$/public/blacktheme/js/developr.input.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/js/developr.message.js" afterPath="$PROJECT_DIR$/public/blacktheme/js/developr.message.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/js/developr.modal.js" afterPath="$PROJECT_DIR$/public/blacktheme/js/developr.modal.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/js/developr.navigable.js" afterPath="$PROJECT_DIR$/public/blacktheme/js/developr.navigable.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/js/developr.notify.js" afterPath="$PROJECT_DIR$/public/blacktheme/js/developr.notify.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/js/developr.progress-slider.js" afterPath="$PROJECT_DIR$/public/blacktheme/js/developr.progress-slider.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/js/developr.scroll.js" afterPath="$PROJECT_DIR$/public/blacktheme/js/developr.scroll.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/js/developr.table.js" afterPath="$PROJECT_DIR$/public/blacktheme/js/developr.table.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/js/developr.tabs.js" afterPath="$PROJECT_DIR$/public/blacktheme/js/developr.tabs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/js/developr.tooltip.js" afterPath="$PROJECT_DIR$/public/blacktheme/js/developr.tooltip.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/js/developr.wizard.js" afterPath="$PROJECT_DIR$/public/blacktheme/js/developr.wizard.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/draggable-portlet.js" afterPath="$PROJECT_DIR$/public/js/draggable-portlet.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/dropzone/css/dropzone.css" afterPath="$PROJECT_DIR$/public/assets/dropzone/css/dropzone.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/dropzone/dropzone.js" afterPath="$PROJECT_DIR$/public/assets/dropzone/dropzone.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/dynamic_table_init.js" afterPath="$PROJECT_DIR$/public/js/dynamic_table_init.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/easy-pie-chart.js" afterPath="$PROJECT_DIR$/public/js/easy-pie-chart.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/location/edit.blade.php" afterPath="$PROJECT_DIR$/app/views/location/edit.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/location/location_level/edit.blade.php" afterPath="$PROJECT_DIR$/app/views/location/location_level/edit.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/reference/data_reference/edit.blade.php" afterPath="$PROJECT_DIR$/app/views/reference/data_reference/edit.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/editable-table.js" afterPath="$PROJECT_DIR$/public/js/editable-table.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/css/Entypo/entypo-webfont.svg" afterPath="$PROJECT_DIR$/public/blacktheme/css/Entypo/entypo-webfont.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/ajax-demo/explorer-albums.html" afterPath="$PROJECT_DIR$/public/blacktheme/ajax-demo/explorer-albums.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/ajax-demo/explorer-files-controls.html" afterPath="$PROJECT_DIR$/public/blacktheme/ajax-demo/explorer-files-controls.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/ajax-demo/explorer-files.html" afterPath="$PROJECT_DIR$/public/blacktheme/ajax-demo/explorer-files.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/ajax-demo/explorer-gallery-controls.html" afterPath="$PROJECT_DIR$/public/blacktheme/ajax-demo/explorer-gallery-controls.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/ajax-demo/explorer-gallery.html" afterPath="$PROJECT_DIR$/public/blacktheme/ajax-demo/explorer-gallery.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/external-dragging-calendar.js" afterPath="$PROJECT_DIR$/public/js/external-dragging-calendar.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/css/styles/files.css" afterPath="$PROJECT_DIR$/public/blacktheme/css/styles/files.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/font-awesome/less/fixed-width.less" afterPath="$PROJECT_DIR$/public/assets/font-awesome/less/fixed-width.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/flot-chart.js" afterPath="$PROJECT_DIR$/public/js/flot-chart.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/font-awesome/css/font-awesome.css" afterPath="$PROJECT_DIR$/public/assets/font-awesome/css/font-awesome.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/font-awesome/less/font-awesome.less" afterPath="$PROJECT_DIR$/public/assets/font-awesome/less/font-awesome.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/font-awesome/css/font-awesome.min.css" afterPath="$PROJECT_DIR$/public/assets/font-awesome/css/font-awesome.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/font-awesome/scss/font-awesome.scss" afterPath="$PROJECT_DIR$/public/assets/font-awesome/scss/font-awesome.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/font-awesome/fonts/fontawesome-webfont.svg" afterPath="$PROJECT_DIR$/public/assets/font-awesome/fonts/fontawesome-webfont.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/form-component.js" afterPath="$PROJECT_DIR$/public/js/form-component.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/form-image-crop.js" afterPath="$PROJECT_DIR$/public/js/form-image-crop.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/form-validation-script.js" afterPath="$PROJECT_DIR$/public/js/form-validation-script.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/css/styles/form.css" afterPath="$PROJECT_DIR$/public/blacktheme/css/styles/form.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layout/form_wizard.blade.php" afterPath="$PROJECT_DIR$/app/views/layout/form_wizard.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/fullcalendar/fullcalendar/fullcalendar.min.js" afterPath="$PROJECT_DIR$/public/assets/fullcalendar/fullcalendar/fullcalendar.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/ga.js" afterPath="$PROJECT_DIR$/public/js/ga.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/gallery.css" afterPath="$PROJECT_DIR$/public/css/gallery.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/public/fonts/glyphicons-halflings-regular.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/fonts/glyphicons-halflings-regular.ttf.html" afterPath="$PROJECT_DIR$/public/fonts/glyphicons-halflings-regular.ttf.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/gmaps-scripts.js" afterPath="$PROJECT_DIR$/public/js/gmaps-scripts.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/gmaps.js" afterPath="$PROJECT_DIR$/public/js/gmaps.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/gritter.js" afterPath="$PROJECT_DIR$/public/js/gritter.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layout/header.blade.php" afterPath="$PROJECT_DIR$/app/views/layout/header.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/hover-dropdown.js" afterPath="$PROJECT_DIR$/public/js/hover-dropdown.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/font-awesome/less/icons.less" afterPath="$PROJECT_DIR$/public/assets/font-awesome/less/icons.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/image-crop.css" afterPath="$PROJECT_DIR$/public/css/image-crop.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/ajax-demo/inbox-message.html" afterPath="$PROJECT_DIR$/public/blacktheme/ajax-demo/inbox-message.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/location/index.blade.php" afterPath="$PROJECT_DIR$/app/views/location/index.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/location/location_level/index.blade.php" afterPath="$PROJECT_DIR$/app/views/location/location_level/index.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/reference/data_reference/index.blade.php" afterPath="$PROJECT_DIR$/app/views/reference/data_reference/index.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/invoice-print.css" afterPath="$PROJECT_DIR$/public/css/invoice-print.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/js/libs/jquery-1.10.2.min.js" afterPath="$PROJECT_DIR$/public/blacktheme/js/libs/jquery-1.10.2.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/jquery-migrate-1.2.1.min.js" afterPath="$PROJECT_DIR$/public/js/jquery-migrate-1.2.1.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/jquery-ui/jquery-ui-1.10.1.custom.min.css" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/jquery-ui-1.10.1.custom.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/jquery-ui/jquery-ui-1.10.1.custom.min.js" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/jquery-ui-1.10.1.custom.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/jquery-ui-1.9.2.custom.min.js" afterPath="$PROJECT_DIR$/public/js/jquery-ui-1.9.2.custom.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/jcrop/css/jquery.Jcrop.min.css" afterPath="$PROJECT_DIR$/public/assets/jcrop/css/jquery.Jcrop.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/jcrop/js/jquery.Jcrop.min.js" afterPath="$PROJECT_DIR$/public/assets/jcrop/js/jquery.Jcrop.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/jcrop/js/jquery.color.js" afterPath="$PROJECT_DIR$/public/assets/jcrop/js/jquery.color.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/jquery.customSelect.min.js" afterPath="$PROJECT_DIR$/public/js/jquery.customSelect.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/advanced-datatable/media/js/jquery.dataTables.js" afterPath="$PROJECT_DIR$/public/assets/advanced-datatable/media/js/jquery.dataTables.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/data-tables/jquery.dataTables.js" afterPath="$PROJECT_DIR$/public/assets/data-tables/jquery.dataTables.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/js/libs/DataTables/jquery.dataTables.min.js" afterPath="$PROJECT_DIR$/public/blacktheme/js/libs/DataTables/jquery.dataTables.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/jquery.dcjqaccordion.2.7.js" afterPath="$PROJECT_DIR$/public/js/jquery.dcjqaccordion.2.7.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/js/libs/jquery.details.min.js" afterPath="$PROJECT_DIR$/public/blacktheme/js/libs/jquery.details.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/jquery-easy-pie-chart/jquery.easy-pie-chart.css" afterPath="$PROJECT_DIR$/public/assets/jquery-easy-pie-chart/jquery.easy-pie-chart.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/jquery-easy-pie-chart/jquery.easy-pie-chart.js" afterPath="$PROJECT_DIR$/public/assets/jquery-easy-pie-chart/jquery.easy-pie-chart.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/fancybox/source/jquery.fancybox.css" afterPath="$PROJECT_DIR$/public/assets/fancybox/source/jquery.fancybox.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/fancybox/source/jquery.fancybox.js" afterPath="$PROJECT_DIR$/public/assets/fancybox/source/jquery.fancybox.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/file-uploader/js/jquery.fileupload-audio.js" afterPath="$PROJECT_DIR$/public/assets/file-uploader/js/jquery.fileupload-audio.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/jquery-file-upload/js/jquery.fileupload-fp.js" afterPath="$PROJECT_DIR$/public/assets/jquery-file-upload/js/jquery.fileupload-fp.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/file-uploader/js/jquery.fileupload-image.js" afterPath="$PROJECT_DIR$/public/assets/file-uploader/js/jquery.fileupload-image.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/file-uploader/css/jquery.fileupload-noscript.css" afterPath="$PROJECT_DIR$/public/assets/file-uploader/css/jquery.fileupload-noscript.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/file-uploader/js/jquery.fileupload-process.js" afterPath="$PROJECT_DIR$/public/assets/file-uploader/js/jquery.fileupload-process.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/file-uploader/css/jquery.fileupload-ui-noscript.css" afterPath="$PROJECT_DIR$/public/assets/file-uploader/css/jquery.fileupload-ui-noscript.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/file-uploader/css/jquery.fileupload-ui.css" afterPath="$PROJECT_DIR$/public/assets/file-uploader/css/jquery.fileupload-ui.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/jquery-file-upload/css/jquery.fileupload-ui.css" afterPath="$PROJECT_DIR$/public/assets/jquery-file-upload/css/jquery.fileupload-ui.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/file-uploader/js/jquery.fileupload-ui.js" afterPath="$PROJECT_DIR$/public/assets/file-uploader/js/jquery.fileupload-ui.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/jquery-file-upload/js/jquery.fileupload-ui.js" afterPath="$PROJECT_DIR$/public/assets/jquery-file-upload/js/jquery.fileupload-ui.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/file-uploader/js/jquery.fileupload-validate.js" afterPath="$PROJECT_DIR$/public/assets/file-uploader/js/jquery.fileupload-validate.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/file-uploader/js/jquery.fileupload-video.js" afterPath="$PROJECT_DIR$/public/assets/file-uploader/js/jquery.fileupload-video.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/file-uploader/css/jquery.fileupload.css" afterPath="$PROJECT_DIR$/public/assets/file-uploader/css/jquery.fileupload.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/file-uploader/js/jquery.fileupload.js" afterPath="$PROJECT_DIR$/public/assets/file-uploader/js/jquery.fileupload.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/jquery-file-upload/js/jquery.fileupload.js" afterPath="$PROJECT_DIR$/public/assets/jquery-file-upload/js/jquery.fileupload.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/flot/jquery.flot.crosshair.js" afterPath="$PROJECT_DIR$/public/assets/flot/jquery.flot.crosshair.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/flot/jquery.flot.js" afterPath="$PROJECT_DIR$/public/assets/flot/jquery.flot.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/flot/jquery.flot.pie.js" afterPath="$PROJECT_DIR$/public/assets/flot/jquery.flot.pie.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/flot/jquery.flot.resize.js" afterPath="$PROJECT_DIR$/public/assets/flot/jquery.flot.resize.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/flot/jquery.flot.stack.js" afterPath="$PROJECT_DIR$/public/assets/flot/jquery.flot.stack.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/gritter/css/jquery.gritter.css" afterPath="$PROJECT_DIR$/public/assets/gritter/css/jquery.gritter.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/gritter/js/jquery.gritter.js" afterPath="$PROJECT_DIR$/public/assets/gritter/js/jquery.gritter.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/file-uploader/js/jquery.iframe-transport.js" afterPath="$PROJECT_DIR$/public/assets/file-uploader/js/jquery.iframe-transport.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/jquery-file-upload/js/jquery.iframe-transport.js" afterPath="$PROJECT_DIR$/public/assets/jquery-file-upload/js/jquery.iframe-transport.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/jquery.js" afterPath="$PROJECT_DIR$/public/js/jquery.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/jquery-knob/js/jquery.knob.js" afterPath="$PROJECT_DIR$/public/assets/jquery-knob/js/jquery.knob.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/jquery-multi-select/js/jquery.multi-select.js" afterPath="$PROJECT_DIR$/public/assets/jquery-multi-select/js/jquery.multi-select.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/nestable/jquery.nestable.css" afterPath="$PROJECT_DIR$/public/assets/nestable/jquery.nestable.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/nestable/jquery.nestable.js" afterPath="$PROJECT_DIR$/public/assets/nestable/jquery.nestable.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/jquery.nicescroll.js" afterPath="$PROJECT_DIR$/public/js/jquery.nicescroll.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/jquery.pulsate.min.js" afterPath="$PROJECT_DIR$/public/js/jquery.pulsate.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/jquery-multi-select/js/jquery.quicksearch.js" afterPath="$PROJECT_DIR$/public/assets/jquery-multi-select/js/jquery.quicksearch.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/jquery.scrollTo.min.js" afterPath="$PROJECT_DIR$/public/js/jquery.scrollTo.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/jquery.sparkline.js" afterPath="$PROJECT_DIR$/public/js/jquery.sparkline.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/jquery.stepy.js" afterPath="$PROJECT_DIR$/public/js/jquery.stepy.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/js/libs/jquery.tablesorter.min.js" afterPath="$PROJECT_DIR$/public/blacktheme/js/libs/jquery.tablesorter.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/jquery.tagsinput.js" afterPath="$PROJECT_DIR$/public/js/jquery.tagsinput.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/jquery.ui.touch-punch.min.js" afterPath="$PROJECT_DIR$/public/js/jquery.ui.touch-punch.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/file-uploader/js/vendor/jquery.ui.widget.js" afterPath="$PROJECT_DIR$/public/assets/file-uploader/js/vendor/jquery.ui.widget.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/jquery-file-upload/js/vendor/jquery.ui.widget.js" afterPath="$PROJECT_DIR$/public/assets/jquery-file-upload/js/vendor/jquery.ui.widget.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/jquery.validate.min.js" afterPath="$PROJECT_DIR$/public/js/jquery.validate.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/font-awesome/less/larger.less" afterPath="$PROJECT_DIR$/public/assets/font-awesome/less/larger.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layout/left_menu.blade.php" afterPath="$PROJECT_DIR$/app/views/layout/left_menu.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/location/list.blade.php" afterPath="$PROJECT_DIR$/app/views/location/list.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/location/location_level/list.blade.php" afterPath="$PROJECT_DIR$/app/views/location/location_level/list.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/font-awesome/less/list.less" afterPath="$PROJECT_DIR$/public/assets/font-awesome/less/list.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/jquery-file-upload/js/vendor/load-image.min.js" afterPath="$PROJECT_DIR$/public/assets/jquery-file-upload/js/vendor/load-image.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/css/login.css" afterPath="$PROJECT_DIR$/public/blacktheme/css/login.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/file-uploader/js/main.js" afterPath="$PROJECT_DIR$/public/assets/file-uploader/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/blacktheme/master.blade.php" afterPath="$PROJECT_DIR$/app/views/blacktheme/master.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layout/master.blade.php" afterPath="$PROJECT_DIR$/app/views/layout/master.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/font-awesome/less/mixins.less" afterPath="$PROJECT_DIR$/public/assets/font-awesome/less/mixins.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/css/styles/modal.css" afterPath="$PROJECT_DIR$/public/blacktheme/css/styles/modal.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/js/libs/modernizr.custom.js" afterPath="$PROJECT_DIR$/public/blacktheme/js/libs/modernizr.custom.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/modernizr.custom.js" afterPath="$PROJECT_DIR$/public/js/modernizr.custom.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/bootstrap-daterangepicker/moment.min.js" afterPath="$PROJECT_DIR$/public/assets/bootstrap-daterangepicker/moment.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/morris-script.js" afterPath="$PROJECT_DIR$/public/js/morris-script.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/morris.js-0.4.3/morris.css" afterPath="$PROJECT_DIR$/public/assets/morris.js-0.4.3/morris.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/morris.js-0.4.3/morris.min.js" afterPath="$PROJECT_DIR$/public/assets/morris.js-0.4.3/morris.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/jquery-multi-select/css/multi-select.css" afterPath="$PROJECT_DIR$/public/assets/jquery-multi-select/css/multi-select.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/nestable.js" afterPath="$PROJECT_DIR$/public/js/nestable.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/owl.carousel.css" afterPath="$PROJECT_DIR$/public/css/owl.carousel.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/owl.carousel.js" afterPath="$PROJECT_DIR$/public/js/owl.carousel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/font-awesome/less/path.less" afterPath="$PROJECT_DIR$/public/assets/font-awesome/less/path.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/soon/plugins.js" afterPath="$PROJECT_DIR$/public/js/soon/plugins.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/css/print.css" afterPath="$PROJECT_DIR$/public/blacktheme/css/print.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/css/styles/progress-slider.css" afterPath="$PROJECT_DIR$/public/blacktheme/css/styles/progress-slider.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/pulstate.js" afterPath="$PROJECT_DIR$/public/js/pulstate.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/morris.js-0.4.3/raphael-min.js" afterPath="$PROJECT_DIR$/public/assets/morris.js-0.4.3/raphael-min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/css/reset.css" afterPath="$PROJECT_DIR$/public/blacktheme/css/reset.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/respond.min.js" afterPath="$PROJECT_DIR$/public/js/respond.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/font-awesome/less/rotated-flipped.less" afterPath="$PROJECT_DIR$/public/assets/font-awesome/less/rotated-flipped.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/routes.php" afterPath="$PROJECT_DIR$/app/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/js/setup.js" afterPath="$PROJECT_DIR$/public/blacktheme/js/setup.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/slidebars.css" afterPath="$PROJECT_DIR$/public/css/slidebars.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/slidebars.min.js" afterPath="$PROJECT_DIR$/public/js/slidebars.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/sliders.js" afterPath="$PROJECT_DIR$/public/js/sliders.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/soon.css" afterPath="$PROJECT_DIR$/public/css/soon.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/sparkline-chart.js" afterPath="$PROJECT_DIR$/public/js/sparkline-chart.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/fuelux/js/spinner.min.js" afterPath="$PROJECT_DIR$/public/assets/fuelux/js/spinner.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/font-awesome/less/spinning.less" afterPath="$PROJECT_DIR$/public/assets/font-awesome/less/spinning.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/font-awesome/less/stacked.less" afterPath="$PROJECT_DIR$/public/assets/font-awesome/less/stacked.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/stakeholders.blade.php" afterPath="$PROJECT_DIR$/app/views/stakeholders.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/style-responsive.css" afterPath="$PROJECT_DIR$/public/css/style-responsive.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/css/style.css" afterPath="$PROJECT_DIR$/public/blacktheme/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/style.css" afterPath="$PROJECT_DIR$/public/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/ajax-demo/submenu.html" afterPath="$PROJECT_DIR$/public/blacktheme/ajax-demo/submenu.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/css/styles/switches.css" afterPath="$PROJECT_DIR$/public/blacktheme/css/styles/switches.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/table-responsive.css" afterPath="$PROJECT_DIR$/public/css/table-responsive.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/css/styles/table.css" afterPath="$PROJECT_DIR$/public/blacktheme/css/styles/table.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/tasks.css" afterPath="$PROJECT_DIR$/public/css/tasks.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/tasks.js" afterPath="$PROJECT_DIR$/public/js/tasks.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/bootstrap-timepicker/compiled/timepicker.css" afterPath="$PROJECT_DIR$/public/assets/bootstrap-timepicker/compiled/timepicker.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blacktheme/js/libs/tinycon.min.js" afterPath="$PROJECT_DIR$/public/blacktheme/js/libs/tinycon.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/jquery-file-upload/js/vendor/tmpl.min.js" afterPath="$PROJECT_DIR$/public/assets/jquery-file-upload/js/vendor/tmpl.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/toucheffects.js" afterPath="$PROJECT_DIR$/public/js/toucheffects.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/fuelux/css/tree-style.css" afterPath="$PROJECT_DIR$/public/assets/fuelux/css/tree-style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/tree.js" afterPath="$PROJECT_DIR$/public/js/tree.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/fuelux/js/tree.min.js" afterPath="$PROJECT_DIR$/public/assets/fuelux/js/tree.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/font-awesome/less/variables.less" afterPath="$PROJECT_DIR$/public/assets/font-awesome/less/variables.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/bootstrap-wysihtml5/wysihtml5-0.3.0.js" afterPath="$PROJECT_DIR$/public/assets/bootstrap-wysihtml5/wysihtml5-0.3.0.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/xchart/xcharts.css" afterPath="$PROJECT_DIR$/public/assets/xchart/xcharts.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/xchart/xcharts.min.js" afterPath="$PROJECT_DIR$/public/assets/xchart/xcharts.min.js" />
     </list>
     <ignored path="RSMSA.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -726,10 +34,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="left_menu.blade.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="left_menu.blade.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layout/left_menu.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="53" selection-start="1670" selection-end="1670" vertical-scroll-proportion="1.0712166" vertical-offset="341" max-vertical-offset="1854">
+            <state line="39" column="13" selection-start="1563" selection-end="1563" vertical-scroll-proportion="-2.0" vertical-offset="648" max-vertical-offset="1818">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routes.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/routes.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="33" column="20" selection-start="883" selection-end="883" vertical-scroll-proportion="0.3888889" vertical-offset="306" max-vertical-offset="1044">
               <folding />
             </state>
           </provider>
@@ -772,6 +89,7 @@
         <option value="$PROJECT_DIR$/app/models/TableName.php" />
         <option value="$PROJECT_DIR$/app/models/User.php" />
         <option value="$PROJECT_DIR$/app/views/layout/left_menu.blade.php" />
+        <option value="$PROJECT_DIR$/app/routes.php" />
       </list>
     </option>
   </component>
@@ -876,7 +194,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
+              <option name="myItemId" value="location" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -921,14 +239,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="27" width="1368" height="742" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32761577" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32761577" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928678" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19561933" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19864048" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -958,9 +276,9 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25341427" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -980,6 +298,20 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/models/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="7" selection-start="359" selection-end="359" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="666">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layout/left_menu.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="13" selection-start="1563" selection-end="1563" vertical-scroll-proportion="0.0" vertical-offset="702" max-vertical-offset="1818">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/User.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="7" selection-start="359" selection-end="359" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="666">
@@ -1205,7 +537,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layout/left_menu.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="53" selection-start="1670" selection-end="1670" vertical-scroll-proportion="1.0712166" vertical-offset="341" max-vertical-offset="1854">
+        <state line="39" column="13" selection-start="1563" selection-end="1563" vertical-scroll-proportion="-2.0" vertical-offset="648" max-vertical-offset="1818">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="20" selection-start="883" selection-end="883" vertical-scroll-proportion="0.3888889" vertical-offset="306" max-vertical-offset="1044">
           <folding />
         </state>
       </provider>

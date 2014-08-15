@@ -29,8 +29,14 @@ Route::resource('dashboard' , 'DashboardController');
 
 
 /***************************************************************/
-//************************References ***************************/
+//************************Locations Levels ***************************/
 /***************************************************************/
+Route::get('location/levels', array('uses' => 'LocationLevelController@index')); //display a list of locations
+Route::get('location/levels/add', array('uses' => 'LocationLevelController@create')); //display a form to create new location level
+Route::post('location/levels/add', array('uses' => 'LocationLevelController@store')); //process a form to create new location level
+Route::get('location/levels/edit/{id}', array('uses' => 'LocationLevelController@edit')); //display a form to update a level of location
+Route::post('location/levels/edit/{id}', array('uses' => 'LocationLevelController@update')); //process a form to update a level of location
+Route::get('location/levels/delete/{id}', array('uses' => 'LocationLevelController@destroy')); //delete a level of location
 
 //********************************************************/
 //*********************StakeHolder************************/
