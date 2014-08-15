@@ -10,7 +10,7 @@
                 <i class="fa fa-cogs"></i>Stakeholder</a>
              <ul class="sub">
                 <li><a  href="{{ url('stakeholder') }}">Main Stakeholders</a></li>
-                <li><a  href="#">Stakeholder Branches</a></li>
+                <li><a  href="{{ url('stakeholderBranch') }}">Stakeholder Branches</a></li>
             </ul>
         </li>
 

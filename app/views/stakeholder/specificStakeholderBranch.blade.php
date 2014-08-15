@@ -22,22 +22,28 @@
                             <tr>
                                 <th>Code</th>
                                 <th>Branch Name</th>
-                                <th class="numeric">Created</th>
+                                <th class="numeric">Phone Number</th>
+                                <th>Address</th>
+                                <th>Email</th>
+                                <th class="numeric">Updated</th>
                                 <th class="numeric">Updated</th>
                                 <th>Action</th>
                             </tr>
                             </thead>
                             <tbody>
-                            @foreach($stakeHolderBranch as $stakeHolderBranch)
+                            @foreach($stakeholder->branches as $stakeHolderBranch)
                             <tr>
                                 <td>AAC</td>
                                 <td>{{$stakeHolderBranch->name}}</td>
+                                <td class="numeric">{{$stakeHolderBranch->PhoneNumber}}</td>
+                                <td>{{$stakeHolderBranch->address}}</td>
+                                <td>{{$stakeHolderBranch->email}}</td>
                                 <td class="numeric">{{$stakeHolderBranch->created_at}}</td>
                                 <td class="numeric">{{$stakeHolderBranch->updated_at}}</td>
                                 <td class="table-condensed col-xs-pull-2">
                                     <div class="btn-group" >
                                         <a  class="btn btn-primary"  href="{{ url("stakeholderBranch/edit/{$stakeHolderBranch->id}") }}">
-                                            <i class="fa fa-edit"></i>
+                                        <i class="fa fa-edit"></i>
                                         </a>
                                         <button type="button" class="btn btn-danger" data-toggle="modal" data-target=".bs-example-modal-sm" >
                                             <i class="fa fa-trash-o"></i>
@@ -57,11 +63,19 @@
     <!-- page end-->
 </section>
 
+<!-- Delete modal -->
+
+<div class="modal fade bs-example-modal-sm " style="padding-top: 20%" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm ">
+        <div class="modal-content">
+
+            @include('stakeholder.delete')
+
+        </div>
+    </div>
+</div>
+
 <!--script for this page-->
 
 <script src="{{ asset('js/jquery.stepy.js') }}"></script>
-
-
-
-
 @stop

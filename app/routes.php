@@ -38,11 +38,23 @@ Route::resource('dashboard' , 'DashboardController');
 
 Route::resource('stakeholder' , 'StakeholderController');
 
+/***************************************************************/
+//************************References ***************************/
+/***************************************************************/
+
 //********************************************************/
 //*********************StakeHolder************************/
 //********************************************************/
 Route::get('stakeholder', array('uses' => 'StakeholderController@index'));
-Route::get('stakeholderBranch/{id}', array('uses' => 'StakeholderBranchController@listBranch'));
+Route::get('stakeholder/{id}', array('uses' => 'StakeholderController@listBranch'));
+Route::get('stakeholder/add', array('uses' => 'StakeholderController@newStakeholderForm'));
+Route::post('stakeholder/add', array('uses' => 'StakeholderController@store'));
+Route::post('stakeholder/delete/{id}', array('uses' => 'StakeholderController@destroy'));
+Route::get('stakeholder/edit/{id}', array('uses' => 'StakeholderController@edit'));
+Route::post('stakeholder/edit/{id}', array('uses'=>'StakeholderController@update'));
+Route::get('stakeholderBranch', array('uses' => 'StakeholderBranchController@index'));
+Route::get('stakeholderBranch/edit/{id}', array('uses' => 'StakeholderBranchController@edit'));
+
 
 
 ///////////////////////////////////////////////////////
@@ -72,3 +84,8 @@ Route::post('login', array('uses'=>'LoginController@store')); //process login fo
 
 
 
+Route::post('reference/add', array('uses'=>'ReferenceController@store')); //processing addition form
+Route::get('reference/edit/{id}', array('uses'=>'ReferenceController@edit')); //display form to edit a reference of a certain id
+Route::post('reference/edit/{id}', array('uses'=>'ReferenceController@update')); //display form to edit a reference of a certain id
+Route::get('reference/delete/{id}', array('uses'=>'ReferenceController@destroy')); //processing deletion of a reference of a certain id
+Route::get('reference/viewColumn/{id}', array('uses'=>'ReferenceController@viewColumn')); //displaying a list of the reference details
