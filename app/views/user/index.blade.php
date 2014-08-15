@@ -2,28 +2,29 @@
 
 @section('contents')
 
-<a href="{{ url('user/add') }}" class="btn btn-success pull-right">Add new user</a>
 
-<div class="panel-body">
-<div class="adv-table">
+
+<div class="panel panel-success">
+<div class="panel-heading">list of users<a href="{{ url('user/add') }}" class="btn btn-success btn-row pull-right">Add new user</a></div>
+    <div class="panel-body">
 <table  class="display table table-bordered table-striped" id="dynamic-table">
 <thead>
 <tr>
-    <th>firstname</th>
-    <th>middlename</th>
-    <th>lastname</th>
-    <th>username</th>
-    <th>email</th>
-    <th>phonenumber</th>
-    <th>role</th>
-    <th>stakeholderbranchid</th>
-    <th>action</th>
+    <th>First Name</th>
+    <th>Middle Name</th>
+    <th>Last Name</th>
+    <th>User Name</th>
+    <th>Email</th>
+    <th>Phone Number</th>
+    <th>Role</th>
+    <th>Stakeholder Branchid</th>
+    <th>Action</th>
 </thead>
 <tbody>
 @foreach(User::all() as $user)
 <tr>
 
-    <td>{{ $user->	firstName }}</td>
+    <td>{{ $user->firstName }}</td>
     <td>{{ $user->middleName }}</td>
     <td>{{ $user->lastName}}</td>
     <td>{{ $user->username }}</td>
@@ -31,7 +32,16 @@
     <td>{{ $user->phoneNumber }}</td>
     <td>{{ $user->role }}</td>
     <td>{{ $user->stakeholderBranchId }}</td>
-    <td></td>
+    <td class="table-condensed col-xs-pull-2">
+        <div class="btn-group" >
+            <a href="{{ url('user/edit')}}/{{$user->id}}" class="btn btn-primary" >
+                <i class="fa fa-edit"></i>
+            </a>
+            <a data-toggle="modal" class="open-DeleteDialog btn btn-danger" data-id="{{$user->id}}" href="#deleteDialog">
+                <i class="fa fa-trash-o"></i>
+            </a>
+        </div>
+    </td>
 
 </tr>
 @endforeach
@@ -39,15 +49,15 @@
 </tbody>
 <tfoot>
 <tr>
-    <th>firstname</th>
-    <th>middlename</th>
-    <th>lastname</th>
-    <th>username</th>
-    <th>email</th>
-    <th>phonenumber</th>
-    <th>role</th>
-    <th>stakeholderbranchid</th>
-    <th>action</th>
+    <th>First Name</th>
+    <th>Middle Name</th>
+    <th>Last Name</th>
+    <th>User Name</th>
+    <th>Email</th>
+    <th>Phone Number</th>
+    <th>Role</th>
+    <th>Stakeholder Branchid</th>
+    <th>Action</th>
 
 </tr>
 </tfoot>
@@ -56,8 +66,32 @@
 </div>
 
 
+<!-- Delete modal -->
+
+<div class="modal fade bs-example-modal-sm" id="deleteDialog" role="dialog" aria-hidden="true" style="padding-top: 20%" tabindex="-1">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-body">
+
+
+            <?php
+                $user_id = 'userId';
+            ?>
+            @include('user.delete')
+
+        </div>
+    </div>
+</div>
+
+
+<script>
+    $(document).on("click", ".open-DeleteDialog", function(){
+        var myId = $(this).data('id');
+        $(".modal-body #DeleteButton").attr("href","{{url('user/delete')}}/"+myId);
+    });
+</script>
+
 <!--dynamic table initialization -->
-<script src="js/dynamic_table_init.js"></script>
+<script src="{{ asset('js/dynamic_table_init.js') }}"></script>
 
 
 @stop

@@ -38,10 +38,6 @@ Route::resource('dashboard' , 'DashboardController');
 
 Route::resource('stakeholder' , 'StakeholderController');
 
-Route::resource('login' , 'LoginController');
-
-Route::resource('user' , 'usercontroller');
-
 //********************************************************/
 //*********************StakeHolder************************/
 //********************************************************/
@@ -57,17 +53,22 @@ Route::get('reference/add', array('uses'=>'ReferenceController@create')); //disp
 Route::post('reference/add', array('uses'=>'ReferenceController@store')); //processing addition form
 
 
-///////////////////////////////////////////////////////
-/////////////user //////////////////////////////
-/////////////////////////////////////////////////////
+//********************************************************/
+//*********************User************************/
+//********************************************************/
 Route::get('user', array('uses'=>'UserController@index')); //display list of users
+Route::get('user/add', array('uses'=>'UserController@create')); //add users
+Route::post('user/add', array('uses'=>'UserController@store')); //processing added users
+Route::get('user/delete/{id}', array('uses'=>'UserController@destroy')); //add users
+Route::get('user/edit/{id}', array('uses'=>'UserController@update')); //edit users
+Route::post('user/edit/{id}', array('uses'=>'UserController@edit')); //edit users
 
 
+//********************************************************/
+//*********************Login************************/
+//********************************************************/
+Route::get('login', array('uses'=>'LoginController@index')); //display login form
+Route::post('login', array('uses'=>'LoginController@store')); //process login form
 
-///////////////////////////////////////////////////////
-/////////////login //////////////////////////////
-/////////////////////////////////////////////////////
-Route::get('users/login', array('uses'=>' logincontroller@index')); //display login form
-Route::post('users/login', array('uses'=>' logincontroller@store')); //process login form
 
 

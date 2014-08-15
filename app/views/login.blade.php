@@ -27,11 +27,11 @@
     <![endif]-->
 </head>
 
-<body class="login-body"  background-image="url('/img/fabric.png')">
+<body class="login-body"  style="background-image:url('{{asset('img/fabric.png')}}')">
 
 <div class="container">
 
-    <form class="form-signin" action="{{ url('user') }}" method="post">
+    <form class="form-signin" action="{{ url('login') }}"  method="post">
         <h2 class="form-signin-heading">sign in now</h2>
         <div class="login-wrap">
             <input type="text" class="form-control" placeholder="User ID" autofocus name="username">
@@ -43,7 +43,7 @@
 
                 </span>
             </label>
-            <button class="btn btn-lg btn-login btn-block" type="submit">Sign in</button>
+            <button class="btn btn-lg btn-login btn-block"  name="submit" type="submit">Sign in</button>
 
 
 
@@ -64,7 +64,7 @@
                     </div>
                     <div class="modal-footer">
                         <button data-dismiss="modal" class="btn btn-default" type="button">Cancel</button>
-                        <button class="btn btn-success" type="button">Submit</button>
+                        <button class="btn btn-success"  type="button">Submit</button>
                     </div>
                 </div>
             </div>
@@ -82,6 +82,10 @@
 
 <script src="{{ asset('js/bootstrap.min.js') }}"></script>
 <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+
+<!--common script for all pages-->
+<script src="{{ asset('js/common-scripts.js') }}"></script>
+
 
 
 

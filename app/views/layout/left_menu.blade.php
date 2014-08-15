@@ -49,9 +49,9 @@
             </a>
         </li>
         <li>
-            <a  href="login.html">
+            <a  href="{{ url('user') }}">
                 <i class="fa fa-user"></i>
-                <span>Login Page</span>
+                <span>User</span>
             </a>
         </li>
 
