@@ -6,14 +6,12 @@
         </li>
 
         <li class="sub-menu">
-            <a  href="{{ url('stakeholder') }}">
+            <a  href="#">
                 <i class="fa fa-cogs"></i>Stakeholder</a>
-            <!-- <ul class="sub">
-                <li><a  href="boxed_page.html">Boxed Page</a></li>
-                <li><a  href="horizontal_menu.html">Horizontal Menu</a></li>
-                <li><a  href="language_switch_bar.html">Language Switch Bar</a></li>
-                <li><a  href="email_template.html" target="_blank">Email Template</a></li>
-            </ul> -->
+             <ul class="sub">
+                <li><a  href="{{ url('stakeholder') }}">Main Stakeholders</a></li>
+                <li><a  href="{{ url('stakeholderBranch') }}">Stakeholder Branches</a></li>
+            </ul>
         </li>
 
         <li class="sub-menu">

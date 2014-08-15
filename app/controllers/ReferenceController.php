@@ -31,16 +31,26 @@ class ReferenceController extends \BaseController {
 	 */
 	public function store()
 	{
-		$email =  "User Created Successful";
+		$success =  "Reference Created Successful";
         $reference = Reference::create(array(
-            'name' => Input::get('email')
+            'name' => Input::get('referenceName')
+
         ));
-        ReferenceDetails::create(array(
-            'referenceId'=> $reference->id,
-            'name' =>
-        ));
-        return View::make('reference.data_reference.index',compact('email'));
+        for($i =0 ;$i < Input::get('col_count'); $i++ ){
+            $j = $i+1;
+            if(Input::get('column'.$j)!= ''){
+                DataReference::create(array(
+                    'referenceId' => $reference->id,
+                    'name' => Input::get('column'.$j)
+                ));
+
+            }
+        }
+
+        return View::make('reference.data_reference.index',compact('success'));
+
 	}
+
 
 
 	/**
@@ -61,10 +71,13 @@ class ReferenceController extends \BaseController {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function edit($id)
-	{
-		//
-	}
+
+    public function edit($id)
+    {
+        $reference =Reference::find($id);
+
+        return View::make('reference.data_reference.edit',compact("reference"));
+    }
 
 
 	/**
@@ -75,9 +88,53 @@ class ReferenceController extends \BaseController {
 	 */
 	public function update($id)
 	{
-		//
+        $reference=Reference::find($id);
+        $reference->name=Input::get('referenceName');
+        $reference->save();
+        $detailCount=count($reference->referenceDetails);
+        for($i =0 ;$i < Input::get('col_count'); $i++ )
+        {
+            $j = $i+1;
+            if($j<=$detailCount)
+            {
+                if(Input::get('column'.$j)== ''){
+                    $referenceDetails= ReferenceDetails::find(Input::get('columnid'.$j));
+                    $referenceDetails->delete();
+                }else{
+                    $referenceDetails= ReferenceDetails::find(Input::get('columnid'.$j));
+                    $referenceDetails->name=Input::get('column'.$j);
+                    $referenceDetails->save();
+                }
+
+            }else{
+                if(Input::get('column'.$j)!= '')
+                {
+                    DataReference::create(array(
+                        'referenceId' => $reference->id,
+                        'name' => Input::get('column'.$j)
+                    ));
+                }
+
+            }
+
+
+
+        }
+        return View::make('reference.data_reference.index');
 	}
 
+
+    /**
+     * display a list of the specified resource in storage.
+     *
+     * @param  int  $id
+     * @return Response
+     */
+    public function viewColumn($id)
+    {
+         $reference=Reference::find($id);
+        return View::make('reference.data_reference.viewColumn', compact("reference"));
+    }
 
 	/**
 	 * Remove the specified resource from storage.
@@ -87,7 +144,15 @@ class ReferenceController extends \BaseController {
 	 */
 	public function destroy($id)
 	{
-		//
+        $referenceObj= Reference::find($id);
+
+        foreach($referenceObj->referenceDetails as $detail){
+
+            $detail->delete();
+        }
+        $referenceObj->delete();
+
+        return View::make('reference.data_reference.index');
 	}
 
 

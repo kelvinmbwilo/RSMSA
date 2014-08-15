@@ -6,12 +6,12 @@ class ReferenceDetails extends Eloquent {
      *
      * @var string
      */
-    protected $table = 'rsmsa_reference';
+    protected $table = 'rsmsa_referencedetails';
 
 
     protected  $guarded = array('$id');
 
-    public function Reference()
+    public function reference()
     {
         return $this->belongsTo('Reference', 'referenceId', 'id');
     }

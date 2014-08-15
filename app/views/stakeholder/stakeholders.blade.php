@@ -1,7 +1,6 @@
 @extends('layout.master')
-
 @section('contents')
-
+@include('stakeholder.delete')
 <!--main content start-->
 <section class="wrapper">
     <!-- page start-->
@@ -10,10 +9,9 @@
             <section class="panel">
                 <header class="panel-heading">
                     Stakeholders
-
-                    <button type="submit" class="btn btn-success pull-right"  data-toggle="modal" data-target="#myModal" value="Finish" >
+                    <a class="btn btn-success pull-right" href={{ url('stakeholder/add') }}>
                         New Stakeholder
-                    </button>
+                    </a>
 
                 </header>
 
@@ -24,9 +22,10 @@
                             <tr>
                                 <th>Code</th>
                                 <th>Stakeholder Name</th>
-                                <th class="numeric">Phone</th>
                                 <th class="numeric">Created</th>
                                 <th class="numeric">Updated</th>
+                                <th>Branches</th>
+                                <th>Action</th>
                             </tr>
                             </thead>
                             <tbody>
@@ -34,9 +33,26 @@
                             <tr>
                                 <td>AAC</td>
                                 <td>{{$stakeHolder->name}}</td>
-                                <td class="numeric">{{$stakeHolder->phoneNumber}}</td>
                                 <td class="numeric">{{$stakeHolder->created_at}}</td>
                                 <td class="numeric">{{$stakeHolder->updated_at}}</td>
+                                <td>
+                                    <a class="btn btn-info" href='{{ url("stakeholder/{$stakeHolder->id}") }}'>
+                                        <i class="fa fa-level-down"></i>
+                                        Branches
+                                    </a>
+                                </td>
+                                <td class="table-condensed col-xs-pull-2">
+                                    <div class="btn-group" >
+                                        <a class="btn btn-primary" href="{{ url("stakeholder/edit/{$stakeHolder->id}") }}">
+                                            <i class="fa fa-edit"></i>
+                                        </a>
+                                        {{ Form::open(array('action' => array('StakeholderController@destroy', $stakeHolder->id), 'method' => 'post', 'class' => 'pull-right')) }}
+                                            <button class="btn  btn-danger" type="button" data-toggle="modal" data-target="#confirmDelete" data-title="Delete User" data-message="Are you sure you want to delete this user ?">
+                                                <i class="glyphicon glyphicon-trash"></i>
+                                            </button>
+                                        {{ Form::close() }}
+                                    </div>
+                                </td>
                             </tr>
                             @endforeach
                             </tbody>
@@ -49,43 +65,7 @@
     </div>
     <!-- page end-->
 </section>
-
-<!-- Modal -->
-
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-            </div>
-            <div class="modal-body">
-                @include('layout.form_wizard')
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
-        </div>
-    </div>
-</div>
-
 <!--script for this page-->
 
 <script src="{{ asset('js/jquery.stepy.js') }}"></script>
-
-<script>
-    //step wizard
-
-    $(function() {
-        $('#default').stepy({
-            backLabel: 'Previous',
-            block: true,
-            nextLabel: 'Next',
-            titleClick: true,
-            titleTarget: '.stepy-tab'
-        });
-    });
-</script>
-
 @stop

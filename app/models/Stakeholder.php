@@ -14,7 +14,7 @@ class Stakeholder extends Eloquent {
     protected $fillable = array('name');
 
     public function branches(){
-        return $this->hasMany('StakeHolderBranch');
+        return $this->hasMany('StakeHolderBranch','stakeholderId', 'id' );
     }
 
 }
