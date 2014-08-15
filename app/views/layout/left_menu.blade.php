@@ -33,6 +33,17 @@
         <li class="sub-menu">
             <a href="javascript:;" >
                 <i class="fa fa-cogs"></i>
+                <span>Locations</span>
+            </a>
+            <ul class="sub">
+                <li><a  href="{{ url('location/units') }}">Administrative Units</a></li>
+                <li><a  href="{{ url('location/levels') }}">Administrative Levels</a></li>
+            </ul>
+        </li>
+
+        <li class="sub-menu">
+            <a href="javascript:;" >
+                <i class="fa fa-cogs"></i>
                 <span>Components</span>
             </a>
             <ul class="sub">
