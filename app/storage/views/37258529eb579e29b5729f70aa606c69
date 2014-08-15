@@ -1,6 +1,4 @@
-@extends('layout.master')
-
-@section('contents')
+<?php $__env->startSection('contents'); ?>
 
 <!--main content start-->
 <section class="wrapper">
@@ -24,16 +22,16 @@
                             </tr>
                             </thead>
                             <tbody>
-                            @foreach($stakeHolderBranch as $stakeHolderBranch)
+                            <?php foreach($stakeHolderBranch as $stakeHolderBranch): ?>
                             <tr>
                                 <td>AAC</td>
-                                <td>{{$stakeHolderBranch->name}}</td>
-                                <td>{{$stakeHolderBranch->stakeholder->name}}</td>
-                                <td class="numeric">{{$stakeHolderBranch->created_at}}</td>
-                                <td class="numeric">{{$stakeHolderBranch->updated_at}}</td>
+                                <td><?php echo $stakeHolderBranch->name; ?></td>
+                                <td><?php echo $stakeHolderBranch->stakeholder->name; ?></td>
+                                <td class="numeric"><?php echo $stakeHolderBranch->created_at; ?></td>
+                                <td class="numeric"><?php echo $stakeHolderBranch->updated_at; ?></td>
 
                             </tr>
-                            @endforeach
+                            <?php endforeach; ?>
                             </tbody>
                         </table>
                     </section>
@@ -47,9 +45,10 @@
 
 <!--script for this page-->
 
-<script src="{{ asset('js/jquery.stepy.js') }}"></script>
+<script src="<?php echo asset('js/jquery.stepy.js'); ?>"></script>
 
 
 
 
-@stop
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layout.master', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
