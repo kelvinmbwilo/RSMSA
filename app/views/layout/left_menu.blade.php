@@ -16,14 +16,24 @@
 
         <li class="sub-menu">
             <a href="javascript:;" >
-                <i class="fa fa-book"></i>
+                <i class="fa fa-th-large"></i>
                 <span>Reference Tables</span>
             </a>
             <ul class="sub">
-                <li><a  href="{{ url('reference') }}">reference Items</a></li>
-                <li><a  href="{{ url('reference_column') }}">reference Columns</a></li>
-                <li><a  href="{{ url('data-reference') }}">data-reference</a></li>
-                <li><a  href="{{ url('dynamic_table') }}l">dynamic table</a></li>
+                <li><a  href="{{ url('reference') }}">References</a></li>
+                <li><a  href="{{ url('dynamic_table') }}">Dynamic table</a></li>
+
+            </ul>
+        </li>
+        <li class="sub-menu">
+            <a href="javascript:;" >
+                <i class="fa fa-th-list"></i>
+                <span>Data Tables</span>
+            </a>
+            <ul class="sub">
+                <li><a  href="{{ url('table_name') }}">Table Names</a></li>
+                <li><a  href="{{ url('table_data') }}">Table data</a></li>
+
 
             </ul>
         </li>

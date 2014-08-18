@@ -10,25 +10,27 @@
         <!-- page start-->
         <section class="panel">
             <header class="panel-heading">
-                Editable Table
+
+                <div class="btn-group ">
+                    <button class="btn dropdown-toggle" data-toggle="dropdown">Tools <i class="fa fa-angle-down"></i>
+                    </button>
+                    <ul class="dropdown-menu pull-right ">
+                        <li><a href="editable_table.html#">Print</a></li>
+                        <li><a href="editable_table.html#">Save as PDF</a></li>
+                        <li><a href="editable_table.html#">Export to Excel</a></li>
+                    </ul>
+                </div>
+                <h4 > References </h4>
             </header>
             <div class="panel-body">
                 <div class="adv-table editable-table ">
-                    <div class="clearfix">
-                        <div class="btn-group">
+                    <div class="clearfix" >
+                        <div class="btn-group pull-right" >
                             <a id="editable-sample_new" class="btn btn-success" href="{{url('reference/add')}}">
                                 Add New <i class="fa fa-plus"></i>
                             </a>
                         </div>
-                        <div class="btn-group pull-right">
-                            <button class="btn dropdown-toggle" data-toggle="dropdown">Tools <i class="fa fa-angle-down"></i>
-                            </button>
-                            <ul class="dropdown-menu pull-right">
-                                <li><a href="editable_table.html#">Print</a></li>
-                                <li><a href="editable_table.html#">Save as PDF</a></li>
-                                <li><a href="editable_table.html#">Export to Excel</a></li>
-                            </ul>
-                        </div>
+
                     </div>
                     <div class="space15"></div>
                     <table class="table table-striped table-hover table-bordered" id="editable-sample">
@@ -37,7 +39,7 @@
                             <th>#no</th>
                             <th>Name</th>
                             <th>Last Update</th>
-                            <th colspan="3">Action</th>
+                            <th>Action</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -46,10 +48,11 @@
                             <td>{{ $ref->id }}</td>
                             <td>{{ $ref->name }}</td>
                             <td>{{ $ref->updated_at }}</td>
-                            <td><a class="edit" href="{{ url("reference/edit/{$ref->id}")}}">Edit</a></td>
-                            <td><a class="edit" href="{{ url("reference/edit/{$ref->id}")}}">Edit</a></td>
-                            <td><a class="delete" href="{{ url("reference/delete/{$ref->id}")}}">Delete</a></td>
-                            <td><a class="viewColumn" href='{{ url("reference/viewColumn/{$ref->id}")}}' id="{{$ref->id}}">ViewColumn</a></td>
+                            <td class="btn-group">
+                                <a class="btn btn-success btn-xs"  href="{{ url("reference/edit/{$ref->id}")}}"><i class="fa fa-edit"></i></a>
+                                <a class="btn btn-danger btn-xs" href="{{ url("reference/delete/{$ref->id}")}}"> <i class="fa fa-trash-o"></i></a>
+                                <a class="viewColumn btn btn-warning btn-xs" id="{{$ref->id}}"><i class="fa fa-arrow-left"></i>ViewColumn</a>
+                            </td>
                             @endforeach
                         </tr>
                         </tbody>
@@ -86,7 +89,7 @@
                 if (origin.data('ajax') !== 'cached') {
                     $.ajax({
                         type: 'GET',
-                        url: '{{url('reference/viewColumn/13')}}',
+                        url: '{{url('reference/viewColumn')}}/'+$(this).attr("id"),
                         success: function(data) {
                             // update our tooltip content with our returned data and cache it
                             origin.tooltipster('content', data).data('ajax', 'cached');

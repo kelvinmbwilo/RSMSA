@@ -115,13 +115,7 @@
         </li>
         <li>
             <a href="index.html#">
-                <span class="photo"><img alt="avatar" src="img/avatar-mini2.jpg"></span>
-                                    <span class="subject">
-                                    <span class="from">Jhon Doe</span>
-                                    <span class="time">10 mins</span>
-                                    </span>
-                                    <span class="message">
-                                     Hi, Jhon Doe Bhai how are you ?
+                <span class="photo">
                                     </span>
             </a>
         </li>
@@ -221,7 +215,7 @@
         <li class="dropdown">
             <a data-toggle="dropdown" class="dropdown-toggle" href="index.html#">
                 <img alt="" src="img/avatar1_small.jpg">
-                <span class="username">{{Auth::user()->name()}}</span>
+                <span class="username">martha</span>
                 <b class="caret"></b>
             </a>
             <ul class="dropdown-menu extended logout">
