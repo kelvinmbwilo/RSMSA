@@ -61,7 +61,7 @@
                             <fieldset title="Step 3" class="step" id="default-step-2" >
                                 <legend> </legend>
                                 <div class="form-group">
-                                    <label class="col-lg-2 control-label">Refernce Name</label>
+                                    <label class="col-lg-2 control-label">Reference Name</label>
                                     <div class="col-lg-10">
                                         <p class="form-control-static refName1">value of reference name</p>
                                     </div>

@@ -63,6 +63,15 @@ Route::get('stakeholderBranch/edit/{id}', array('uses' => 'StakeholderBranchCont
 Route::get('reference', array('uses'=>'ReferenceController@index')); //display list of references
 Route::get('reference/add', array('uses'=>'ReferenceController@create')); //display form to add new reference
 Route::post('reference/add', array('uses'=>'ReferenceController@store')); //processing addition form
+Route::post('reference/add', array('uses'=>'ReferenceController@store')); //processing addition form
+Route::get('reference/edit/{id}', array('uses'=>'ReferenceController@edit')); //display form to edit a reference of a certain id
+Route::post('reference/edit/{id}', array('uses'=>'ReferenceController@update')); //display form to edit a reference of a certain id
+Route::get('reference/delete/{id}', array('uses'=>'ReferenceController@destroy')); //processing deletion of a reference of a certain id
+Route::get('reference/viewColumn/{id}', array('uses'=>'ReferenceController@viewColumn')); //displaying a list of the reference details
+Route::get('dynamic_tablel', array('uses'=>'ReferenceController@viewreference')); //displaying available references
+Route::get('dynamic_tablel/referenceform', array('uses'=>'ReferenceController@createreferenceform')); //displaying form to add reference
+
+
 
 
 //********************************************************/
@@ -73,19 +82,29 @@ Route::get('user/add', array('uses'=>'UserController@create')); //add users
 Route::post('user/add', array('uses'=>'UserController@store')); //processing added users
 Route::get('user/delete/{id}', array('uses'=>'UserController@destroy')); //add users
 Route::get('user/edit/{id}', array('uses'=>'UserController@update')); //edit users
-Route::post('user/edit/{id}', array('uses'=>'UserController@edit')); //edit users
+Route::post('user/edit/{id}', array('uses'=>'UserController@edit')); //process edited users
+Route::get('userindex', array('uses'=>'UserController@index'));//displaying messages
+
+
 
 
 //********************************************************/
 //*********************Login************************/
 //********************************************************/
 Route::get('login', array('uses'=>'LoginController@index')); //display login form
-Route::post('login', array('uses'=>'LoginController@store')); //process login form
+Route::post('login', array('uses'=>'LoginController@login')); //process login form
+Route::get('logout', array('uses'=>'LoginController@logout')); //process logout functionality
 
 
 
-Route::post('reference/add', array('uses'=>'ReferenceController@store')); //processing addition form
-Route::get('reference/edit/{id}', array('uses'=>'ReferenceController@edit')); //display form to edit a reference of a certain id
-Route::post('reference/edit/{id}', array('uses'=>'ReferenceController@update')); //display form to edit a reference of a certain id
-Route::get('reference/delete/{id}', array('uses'=>'ReferenceController@destroy')); //processing deletion of a reference of a certain id
-Route::get('reference/viewColumn/{id}', array('uses'=>'ReferenceController@viewColumn')); //displaying a list of the reference details
+
+//********************************************************/
+//*********************Data type************************/
+//********************************************************/
+Route::get('datatype', array('uses'=>'DatatypeController@index')); //display list of datatypes
+Route::get('datatype/add', array('uses'=>'DatatypeController@create')); //add datatypes
+Route::post('datatype/add', array('uses'=>'DatatypeController@store')); //processing added datatypes
+Route::get('datatype/delete/{id}', array('uses'=>'DatatypeController@destroy')); //delete specific datatype
+Route::get('datatype/edit/{id}', array('uses'=>'DatatypeController@update')); //edit specific datatype
+Route::post('datatype/edit/{id}', array('uses'=>'DatatypeController@edit')); //process edited datatype
+Route::get('index', array('uses'=>'DatatypeController@index'));//displaying messages

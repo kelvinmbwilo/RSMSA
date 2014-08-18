@@ -47,6 +47,7 @@
                             <td>{{ $ref->name }}</td>
                             <td>{{ $ref->updated_at }}</td>
                             <td><a class="edit" href="{{ url("reference/edit/{$ref->id}")}}">Edit</a></td>
+                            <td><a class="edit" href="{{ url("reference/edit/{$ref->id}")}}">Edit</a></td>
                             <td><a class="delete" href="{{ url("reference/delete/{$ref->id}")}}">Delete</a></td>
                             <td><a class="viewColumn" href='{{ url("reference/viewColumn/{$ref->id}")}}' id="{{$ref->id}}">ViewColumn</a></td>
                             @endforeach

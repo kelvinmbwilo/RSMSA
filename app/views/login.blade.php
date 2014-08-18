@@ -33,6 +33,17 @@
 
     <form class="form-signin" action="{{ url('login') }}"  method="post">
         <h2 class="form-signin-heading">sign in now</h2>
+
+        @foreach($errors->all() as $error)
+        <div class="alert alert-danger">{{ $error }}</div>
+        @endforeach
+
+            @if ($alert = Session::get('alert-fail'))
+                 <div class="alert alert-danger">
+                    {{ $alert }}
+                 </div>
+        @endif
+
         <div class="login-wrap">
             <input type="text" class="form-control" placeholder="User ID" autofocus name="username">
             <input type="password" class="form-control" placeholder="Password" name="password">

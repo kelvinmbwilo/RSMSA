@@ -9,7 +9,7 @@ class DatatypeController extends \BaseController {
 	 */
 	public function index()
 	{
-        return View::make('datatype');
+        return View::make('datatype.index');
 	}
 
 
@@ -20,7 +20,7 @@ class DatatypeController extends \BaseController {
 	 */
 	public function create()
 	{
-		//
+        return View::make('datatype.add');
 	}
 
 
@@ -30,8 +30,25 @@ class DatatypeController extends \BaseController {
 	 * @return Response
 	 */
 	public function store()
-	{
-		//
+    {
+        // validate the info, create rules for the inputs
+        $rules = array(
+            'name' => 'unique:rsmsa_datatypedetails', // make sure the data type is unique
+        );
+
+        // run the validation rules on the inputs from the form
+        $validator = Validator::make(Input::all(), $rules);
+
+        if ($validator->fails()) {
+            return Redirect::to('create')
+                ->withErrors($validator);
+        }else{
+            $datatype = DataTypeDetails::create(array(
+                'name' => Input::get('name')
+            ));
+            return Redirect::to("index")->With("alert-success","Data Type Created successful!");
+        }
+
 	}
 
 
@@ -55,8 +72,14 @@ class DatatypeController extends \BaseController {
 	 */
 	public function edit($id)
 	{
-		//
-	}
+        $type = DataTypeDetails::find($id);
+        $type->name=Input::get('name');
+
+        $type->save();
+        return Redirect::to("index")->With("alert-success","Data type edited successful!");
+
+
+    }
 
 
 	/**
@@ -67,7 +90,8 @@ class DatatypeController extends \BaseController {
 	 */
 	public function update($id)
 	{
-		//
+        $type = DataTypeDetails::find($id);
+        return View::make('datatype.edit', compact('type'));
 	}
 
 
@@ -79,8 +103,10 @@ class DatatypeController extends \BaseController {
 	 */
 	public function destroy($id)
 	{
-		//
-	}
+        $type =DataTypeDetails::find($id);
+        $type->delete();
+        return Redirect::to("index")->With("alert-success","Data Type Deleted successful!");
+    }
 
 
 }

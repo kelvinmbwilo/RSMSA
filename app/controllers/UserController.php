@@ -38,7 +38,7 @@ class UserController extends \BaseController {
             'middleName' => Input::get('middlename'),
             'lastName' => Input::get('lastname'),
             'username' => Input::get('username'),
-            'password' => Input::get('password'),
+            'password' =>Hash::make(Input::get('password')),
             'email' => Input::get('email'),
             'phoneNumber' => Input::get('phonenumber'),
             'role' => Input::get('role'),
@@ -46,6 +46,8 @@ class UserController extends \BaseController {
 
 
         ));
+        return Redirect::to("userindex")->With("alert-success","New user added successful!");
+
 
 	}
 
@@ -76,13 +78,14 @@ class UserController extends \BaseController {
         $user->middleName=Input::get('middlename');
         $user->lastName=Input::get('lastname');
         $user->username=Input::get('username');
-        $user->password=Input::get('password');
+        $user->password=Hash::make(Input::get('password'));
         $user->email=Input::get('email');
         $user->phoneNumber=Input::get('phonenumber');
         $user->role=Input::get('role');
         $user->stakeholderBranchId=Input::get('branchid');
         $user->save();
 
+        return Redirect::to("userindex")->With("alert-success","User edited successful!");
 
 
 
@@ -112,7 +115,8 @@ class UserController extends \BaseController {
 	public function destroy($id)
 	{
       $user = User::find($id);
-        $user->delete();
+      $user->delete();
+      return Redirect::to("userindex")->With("alert-success","User Deleted successful!");
 
 	}
 

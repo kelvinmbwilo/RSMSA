@@ -155,5 +155,18 @@ class ReferenceController extends \BaseController {
         return View::make('reference.data_reference.index');
 	}
 
+    public function viewreference()
+    {
+
+        return View::make('reference.data_reference.addreference');
+    }
+
+    public function createreferenceform()
+    {
+        return View::make('reference.data_reference.referenceform');
+        $reference=Reference::find($id);
+
+    }
+
 
 }

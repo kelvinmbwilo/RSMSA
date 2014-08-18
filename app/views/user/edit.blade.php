@@ -3,9 +3,7 @@
 @section('contents')
 
 <fieldset><legend>Edit user</legend>
-    @if(isset($message))
-    <h3 class="text-success"> {{$message}}</h3>
-    @endif
+
     <form action="{{ url('user/edit')}}/{{$user->id}}" method="post">
         <div class="entry">
             <div class="row">
@@ -64,7 +62,7 @@
                                             <hr>
                                             <div class="sep"></div>
 
-                                            <a type="submit" name="submit" class="btn btn-primary" href="{{ url('user')}}">Edit</a>
+                                            <button type="submit" name="submit" class="btn btn-primary">Edit</button>
                                             <a class="btn btn-danger" href="{{ url('user') }}"> Cancel</a>
                                         </div>
                                     </div>

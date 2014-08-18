@@ -55,6 +55,14 @@
             </a>
         </li>
 
+<!--        datatype details-->
+        <li>
+            <a  href="{{ url('datatype') }}">
+                <i class="fa fa-database"></i>
+                <span>Data type</span>
+            </a>
+        </li>
+
         <!--multi level menu start-->
         <li class="sub-menu">
             <a href="javascript:;" >

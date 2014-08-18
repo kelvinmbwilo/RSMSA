@@ -17,6 +17,7 @@ class CreateReferencDetailsTable extends Migration {
 			$table->increments('id');
 			$table->integer('referenceId');
 			$table->string('name');
+			$table->string('dataTypeId');
 			$table->timestamps();
 		});
 	}

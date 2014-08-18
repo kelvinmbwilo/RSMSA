@@ -5,8 +5,16 @@
 
 
 <div class="panel panel-success">
+
+
 <div class="panel-heading">list of users<a href="{{ url('user/add') }}" class="btn btn-success btn-row pull-right">Add new user</a></div>
+    @if ($alert = Session::get('alert-success'))
+    <div class="alert alert-success">
+        {{ $alert }}
+    </div>
+    @endif
     <div class="panel-body">
+
 <table  class="display table table-bordered table-striped" id="dynamic-table">
 <thead>
 <tr>
@@ -34,10 +42,10 @@
     <td>{{ $user->stakeholderBranchId }}</td>
     <td class="table-condensed col-xs-pull-2">
         <div class="btn-group" >
-            <a href="{{ url('user/edit')}}/{{$user->id}}" class="btn btn-primary" >
+            <a href="{{ url('user/edit')}}/{{$user->id}}" class="btn btn-primary" title="edit">
                 <i class="fa fa-edit"></i>
             </a>
-            <a data-toggle="modal" class="open-DeleteDialog btn btn-danger" data-id="{{$user->id}}" href="#deleteDialog">
+            <a data-toggle="modal" class="open-DeleteDialog btn btn-danger" data-id="{{$user->id}}" href="#deleteDialog" title="delete">
                 <i class="fa fa-trash-o"></i>
             </a>
         </div>

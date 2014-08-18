@@ -4,7 +4,8 @@
 
 
 <fieldset><legend>Add new user</legend>
-<form action="" method="post">
+<form action=""{{url('user/add')}}"" method="post">
+
     <div class="entry">
         <div class="row">
             <div class="col-lg-2"><p>First Name</p></div>
@@ -32,7 +33,7 @@
                     <div class="entry">
                         <div class="row">
                             <div class="col-lg-2"><p>Password</p></div>
-                            <div class="col-lg-2"> <input type="text"  name= "password" class="form-control"/> </div>
+                            <div class="col-lg-2"> <input type="password"  name= "password" class="form-control"/> </div>
 
                         </div>
                         <div class="entry">
