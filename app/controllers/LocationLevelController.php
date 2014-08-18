@@ -9,7 +9,8 @@ class LocationLevelController extends \BaseController {
 	 */
 	public function index()
 	{
-		return View::make('location.location_level.index');
+        $levels = LocationLevel::all();
+		return View::make('location.location_level.index',compact('levels'));
 	}
 
 

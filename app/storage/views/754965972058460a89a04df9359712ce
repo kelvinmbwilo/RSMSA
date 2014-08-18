@@ -1,6 +1,4 @@
-@extends('layout.master')
-
-@section('contents')
+<?php $__env->startSection('contents'); ?>
 <section class="wrapper">
     <!-- page start-->
     <div class="row">
@@ -8,7 +6,7 @@
             <section class="panel">
                 <header class="panel-heading">
                     Location Levels
-                    <a class="btn btn-success pull-right" href={{ url('location/level/add') }}>
+                    <a class="btn btn-success pull-right" href=<?php echo url('location/level/add'); ?>>
                     New Location Level
                     </a>
 
@@ -27,31 +25,33 @@
                             </thead>
                             <tbody>
                             <?php $j = 0 ?>
-                            @foreach($levels as $level)
+                            <?php foreach($levels as $level): ?>
                             <tr>
-                                <td>{{ ++$j }}</td>
-                                <td>{{$level->name}}</td>
-                                <td>{{$level->parentId}}</td>
+                                <td><?php echo ++$j; ?></td>
+                                <td><?php echo $level->name; ?></td>
+                                <td><?php echo $level->parentId; ?></td>
                                 <td>
-                                    <a class="btn btn-info" href='{{ url("location/level/{$level->id}/units") }}'>
+                                    <a class="btn btn-info" href='<?php echo url("location/level/{$level->id}/units"); ?>'>
                                         <i class="fa fa-level-down"></i>
                                         Administrative Units
                                     </a>
                                 </td>
                                 <td class="table-condensed col-xs-pull-2">
                                     <div class="btn-group" >
-                                        <a class="btn btn-primary" href="{{ url("location/level/edit/{$level->id}") }}">
+                                        <a class="btn btn-primary" href="<?php echo url("location/level/edit/{$level->id}"); ?>">
                                         <i class="fa fa-edit"></i>
                                         </a>
-                                        {{ Form::open(array('action' => array('LocationLevel@destroy', $stakeHolder->id), 'method' => 'post', 'class' => 'pull-right')) }}
+                                        <?php echo Form::open(array('action' => array('LocationLevel@destroy', $stakeHolder->id), 'method' => 'post', 'class' => 'pull-right')); ?>
+
                                         <button class="btn  btn-danger" type="button" data-toggle="modal" data-target="#confirmDelete" data-title="Delete User" data-message="Are you sure you want to delete this user ?">
                                             <i class="glyphicon glyphicon-trash"></i>
                                         </button>
-                                        {{ Form::close() }}
+                                        <?php echo Form::close(); ?>
+
                                     </div>
                                 </td>
                             </tr>
-                            @endforeach
+                            <?php endforeach; ?>
                             </tbody>
                         </table>
                     </section>
@@ -63,4 +63,5 @@
     <!-- page end-->
 </section>
 <!--script for this page-->
-@stop
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layout.master', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
