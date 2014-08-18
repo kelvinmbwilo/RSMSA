@@ -157,14 +157,19 @@ class ReferenceController extends \BaseController {
 
     public function viewreference()
     {
+        $table = Reference::all();
+        $table->toarray();
+        return View::make('reference.data_reference.addreference', compact('table'));
 
-        return View::make('reference.data_reference.addreference');
     }
 
-    public function createreferenceform()
-    {
-        return View::make('reference.data_reference.referenceform');
-        $reference=Reference::find($id);
+
+
+    public function returncolumns(){
+        $table = Reference::find(Input::get('select'));
+        $mycol = $table->ReferenceDetails;
+
+        return View::make('reference.data_reference.test', compact('mycol'));
 
     }
 

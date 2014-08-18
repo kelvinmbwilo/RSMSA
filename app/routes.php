@@ -83,6 +83,7 @@ Route::get('reference/delete/{id}', array('uses'=>'ReferenceController@destroy')
 Route::get('reference/viewColumn/{id}', array('uses'=>'ReferenceController@viewColumn')); //displaying a list of the reference details
 Route::get('dynamic_tablel', array('uses'=>'ReferenceController@viewreference')); //displaying available references
 Route::get('dynamic_tablel/referenceform', array('uses'=>'ReferenceController@createreferenceform')); //displaying form to add reference
+Route::post('dynamic_tablel/getcolumn', array('uses' => 'ReferenceController@returncolumns'));
 
 
 
