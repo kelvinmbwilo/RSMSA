@@ -1,0 +1,26 @@
+<?php $__env->startSection('contents'); ?>
+<?php echo $column->categoryName; ?>
+
+
+
+<section class="panel">
+    <header class="panel-heading">
+        Add New Option
+    </header>
+    <div class="panel-body">
+        <form action="" method="post">
+            <div class="form-group">
+                <label for="exampleInputEmail1">Option Name </label>
+                <input type="email" class="form-control" id="Sumatra" placeholder="Enter name">
+            </div>
+
+            <button type="submit" class="btn btn-info">Submit</button>
+        </form>
+
+    </div>
+</section>
+
+
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layout.master', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
