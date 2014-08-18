@@ -205,7 +205,7 @@ class ReferenceController extends \BaseController {
         });
         $type="";
         foreach($tableName1->referenceDetails as $column){
-            if($column->dataType->name=="interger")
+            if($column->dataType->name=="integer")
             {
                 $type="int(10)";
                 DB::statement( 'ALTER TABLE '.$tableName.' ADD '.$column->name.'  '.$type );

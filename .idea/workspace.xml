@@ -2,52 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6662a4ad-95fa-4dcf-82ca-d6bee230b9f9" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/views/00236fd71b3849cd574b6d871a414fd6" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/views/095db1e034ed1d79e103db465bf825f4" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/views/114cfcc3463418ccf4a816a5bfcab82e" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/views/6f4b189ab4486f4f00ef071e0d9c5247" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/views/861583fcdd0bb7cfcf2a4ff6b1d346c6" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/views/a3755d086394d605fcb9dd4251e0d9a2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/views/ae932db9bd113c3cd4fee4a5a777b951" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/views/c03f3af25bdbadce412661fa5557fa0b" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/views/d25ac7fbe4459b79f258dbb6433b4edb" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp3\htdocs\RSMSA\app\storage\views\04e0ca38bf9d1db1f20d983ab16a067b" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp3\htdocs\RSMSA\app\storage\views\05ef26031cd1c7744d9d8f69e668ea55" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp3\htdocs\RSMSA\app\storage\views\0d2b363acb47a1e557b20b8a7149fab6" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp3\htdocs\RSMSA\app\storage\views\1aa217a907624694a354830b3224343a" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp3\htdocs\RSMSA\app\storage\views\1ea7b7c14512709f5baf3ef88d68e519" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp3\htdocs\RSMSA\app\storage\views\208fe9c10d3607c960350fc8e8ea4692" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp3\htdocs\RSMSA\app\storage\views\2727e03eec818ae19309912ec323d384" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp3\htdocs\RSMSA\app\storage\views\28c83f6173e94386f53eeab91bf83ceb" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp3\htdocs\RSMSA\app\storage\views\37258529eb579e29b5729f70aa606c69" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp3\htdocs\RSMSA\app\storage\views\43d9b80462e3017bb176ff1c1e247025" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp3\htdocs\RSMSA\app\storage\views\44dbb3a24d5126db3722760ed494de6e" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp3\htdocs\RSMSA\app\storage\views\4b5dec5209960800722ed9a078c021f3" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp3\htdocs\RSMSA\app\storage\views\4c1f8d2933370634d21be3d25a8c4b19" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp3\htdocs\RSMSA\app\storage\views\54e58267ae2f5a967d8ecbe18a9cd10a" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp3\htdocs\RSMSA\app\storage\views\56403002d13628a748e8c3f59c75bf7b" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp3\htdocs\RSMSA\app\storage\views\58e0ae1d39c44cad17bf31bd543a2cbb" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp3\htdocs\RSMSA\app\storage\views\616796efb4dc5a188efe5635264ddd67" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp3\htdocs\RSMSA\app\storage\views\640e54fc59b01d396cb50c089cea3575" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp3\htdocs\RSMSA\app\storage\views\76edf50d157f66388c15c8b43d939f6b" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp3\htdocs\RSMSA\app\storage\views\83e5861cd477d91452ecbb072196231b" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp3\htdocs\RSMSA\app\storage\views\964acf07756bae0fc879f221b82c5244" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp3\htdocs\RSMSA\app\storage\views\a6b55af335d6d062ef33eb481c0bad8e" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp3\htdocs\RSMSA\app\storage\views\a86e62ea28b8d9a420b36983b9de6fd9" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp3\htdocs\RSMSA\app\storage\views\b12f3f6ef43bb3afc278224236ae055f" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp3\htdocs\RSMSA\app\storage\views\c79942a144200803db17f684907b465c" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp3\htdocs\RSMSA\app\storage\views\d8258ea8428769c7939dd6c5e53539bc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp3\htdocs\RSMSA\app\storage\views\dd7395d8cc9a10f1122757e1a7013434" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp3\htdocs\RSMSA\app\storage\views\ed76208fe79badba484964b80d6140db" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp3\htdocs\RSMSA\app\storage\views\ed7874da1f007a06bd767de8b8f659b6" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp3\htdocs\RSMSA\app\storage\views\edd83d19ee5cfd6e418b88eb8337fb5b" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp3\htdocs\RSMSA\app\storage\views\fbe73f45be923f1a8e3d236ac43f5216" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp3\htdocs\RSMSA\app\storage\views\ff2a194445244e2d551dbdd0bb069e65" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp3\htdocs\RSMSA\app\storage\views\ff6ca705875ace0fdb38b847dc633ca1" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/Column.php" afterPath="$PROJECT_DIR$/app/models/Column.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layout/header.blade.php" afterPath="$PROJECT_DIR$/app/views/layout/header.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/ReferenceController.php" afterPath="$PROJECT_DIR$/app/controllers/ReferenceController.php" />
     </list>
     <ignored path="RSMSA.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -88,19 +43,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="viewColumn.blade.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="viewColumn.blade.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/table_name/viewColumn.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="24" selection-start="1393" selection-end="1393" vertical-scroll-proportion="1.0164949" vertical-offset="51" max-vertical-offset="1802">
+            <state line="32" column="24" selection-start="1393" selection-end="1393" vertical-scroll-proportion="-18.961538" vertical-offset="51" max-vertical-offset="1802">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.blade.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/user/index.blade.php">
+      <file leaf-file-name="ReferenceController.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/ReferenceController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="18" selection-start="491" selection-end="495" vertical-scroll-proportion="-1.5384616" vertical-offset="260" max-vertical-offset="1870">
+            <state line="207" column="45" selection-start="4535" selection-end="4535" vertical-scroll-proportion="0.27108434" vertical-offset="3384" max-vertical-offset="5066">
               <folding />
             </state>
           </provider>
@@ -217,13 +172,13 @@
         <option value="$PROJECT_DIR$/app/models/ReferenceDetails.php" />
         <option value="$PROJECT_DIR$/app/routes.php" />
         <option value="$PROJECT_DIR$/app/views/reference/data_reference/add.blade.php" />
-        <option value="$PROJECT_DIR$/app/controllers/ReferenceController.php" />
         <option value="$PROJECT_DIR$/app/views/table_name/add.blade.php" />
         <option value="$PROJECT_DIR$/app/controllers/TableController.php" />
         <option value="$PROJECT_DIR$/app/database/migrations/2014_08_13_082815_create_referencDetails_table.php" />
         <option value="$PROJECT_DIR$/app/database/migrations/2014_08_11_124854_create_columns_table.php" />
         <option value="$PROJECT_DIR$/app/views/layout/header.blade.php" />
         <option value="$PROJECT_DIR$/app/models/Column.php" />
+        <option value="$PROJECT_DIR$/app/controllers/ReferenceController.php" />
       </list>
     </option>
   </component>
@@ -434,7 +389,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="1" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -667,11 +622,6 @@
         <state line="14" column="36" selection-start="235" selection-end="251" vertical-scroll-proportion="-8.538462" vertical-offset="16" max-vertical-offset="561" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/ReferenceController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="185" column="40" selection-start="3973" selection-end="3973" vertical-scroll-proportion="4.730769" vertical-offset="3268" max-vertical-offset="4828" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/reference/data_reference/add.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="57" column="42" selection-start="2825" selection-end="3277" vertical-scroll-proportion="-3.6679537" vertical-offset="2869" max-vertical-offset="3570">
@@ -784,7 +734,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/table_name/viewColumn.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="24" selection-start="1393" selection-end="1393" vertical-scroll-proportion="1.0164949" vertical-offset="51" max-vertical-offset="1802">
+        <state line="32" column="24" selection-start="1393" selection-end="1393" vertical-scroll-proportion="-18.961538" vertical-offset="51" max-vertical-offset="1802">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/ReferenceController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="207" column="45" selection-start="4535" selection-end="4535" vertical-scroll-proportion="0.27108434" vertical-offset="3384" max-vertical-offset="5066">
           <folding />
         </state>
       </provider>
