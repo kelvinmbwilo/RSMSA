@@ -4,18 +4,22 @@
     </header>
     <div class="panel-body">
         <span id="responce" style="opacity: 0; color: "> Successful.. </span>
-        {{ Form::open(array('action' => 'StakeholderController@store' , 'method' => 'post', 'class'=>'form')) }}
+        <?php echo Form::open(array('action' => 'StakeholderController@store' , 'method' => 'post', 'class'=>'form')); ?>
+
              <div class="form-group">
                  <label>Name</label>
                  <input type="text" id="name" class="form-control" name="name"/>
              </div>
-                {{ Form::submit('Submit', array('class' => 'btn pull-right')) }}
-        {{ Form::close() }}
+                <?php echo Form::submit('Submit', array('class' => 'btn pull-right')); ?>
 
-        @if ($errors->any())
+        <?php echo Form::close(); ?>
+
+
+        <?php if($errors->any()): ?>
         <ul>
-            {{ implode('', $errors->all('<li class="error">:message</li>')) }}
+            <?php echo implode('', $errors->all('<li class="error">:message</li>')); ?>
+
         </ul>
-        @endif
+        <?php endif; ?>
     </div>
 </section>

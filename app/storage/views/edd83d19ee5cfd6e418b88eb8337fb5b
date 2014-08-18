@@ -1,6 +1,4 @@
-@extends('layout.master')
-
-@section('contents')
+<?php $__env->startSection('contents'); ?>
 
 <!--main content start-->
 <h2> Home </h2>
@@ -27,4 +25,6 @@
 
 </script>
 
-@stop
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layout.master', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

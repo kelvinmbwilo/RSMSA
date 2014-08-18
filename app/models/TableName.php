@@ -12,7 +12,7 @@ class TableName extends Eloquent {
     protected  $guarded = array('$id');
 
     public function column(){
-        return $this->hasMany('TableColumn', 'tableNameId', 'id');
+        return $this->hasMany('Column', 'tableId', 'id');
     }
 
 }

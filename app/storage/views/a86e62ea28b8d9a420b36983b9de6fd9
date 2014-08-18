@@ -1,0 +1,31 @@
+<?php $__env->startSection('contents'); ?>
+<section class="panel">
+<div class="panel-body">
+    <form class="form" action='' method="post">
+        <?php foreach($mycol as $columns): ?>
+        <?php
+        $datatype = $columns->datatype->name;
+            if($datatype == 'String'){
+         ?>
+            <div class="form-group">
+                <label ><?php echo $columns->columnName; ?></label>
+                <input type="text" class="form-control" name="name" id="name" placeholder="Enter <?php echo $columns->columnName; ?>">
+            </div>
+        <?php
+        }else{
+        ?>
+        <div class="form-group">
+            <label ><?php echo $columns->columnName; ?></label>
+            <input type="text" class="form-control" name="name" id="name" placeholder="Enter name">
+        </div>
+        <?php } ?>
+        <?php endforeach; ?>
+
+        <button type="submit" class="btn btn-info pull-right">Submit</button>
+    </form>
+
+</div>
+</section>
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layout.master', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

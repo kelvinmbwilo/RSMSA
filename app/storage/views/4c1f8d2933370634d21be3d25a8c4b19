@@ -1,0 +1,101 @@
+<?php $__env->startSection('contents'); ?>
+<link href="<?php echo asset('css/tooltipster.css'); ?>" rel="stylesheet" />
+<?php if(isset($name)): ?>
+<h3 class="text-success"> <?php echo $name; ?></h3>
+<?php endif; ?>
+
+    <section class="wrapper site-min-height">
+        <!-- page start-->
+        <section class="panel">
+            <header class="panel-heading">
+                Editable Table
+            </header>
+            <div class="panel-body">
+                <div class="adv-table editable-table ">
+                    <div class="clearfix">
+                        <div class="btn-group">
+                            <a id="editable-sample_new" class="btn btn-success" href="<?php echo url('reference/add'); ?>">
+                                Add New <i class="fa fa-plus"></i>
+                            </a>
+                        </div>
+                        <div class="btn-group pull-right">
+                            <button class="btn dropdown-toggle" data-toggle="dropdown">Tools <i class="fa fa-angle-down"></i>
+                            </button>
+                            <ul class="dropdown-menu pull-right">
+                                <li><a href="editable_table.html#">Print</a></li>
+                                <li><a href="editable_table.html#">Save as PDF</a></li>
+                                <li><a href="editable_table.html#">Export to Excel</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="space15"></div>
+                    <table class="table table-striped table-hover table-bordered" id="editable-sample">
+                        <thead>
+                        <tr>
+                            <th>#no</th>
+                            <th>Name</th>
+                            <th>Last Update</th>
+                            <th colspan="3">Action</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <?php foreach(Reference::all() as $ref): ?>
+                        <tr>
+                            <td><?php echo $ref->id; ?></td>
+                            <td><?php echo $ref->name; ?></td>
+                            <td><?php echo $ref->updated_at; ?></td>
+                            <td><a class="edit" href="<?php echo url("reference/edit/{$ref->id}"); ?>">Edit</a></td>
+                            <td><a class="delete" href="<?php echo url("reference/delete/{$ref->id}"); ?>">Delete</a></td>
+                            <td><a class="viewColumn" href='<?php echo url("reference/viewColumn/{$ref->id}"); ?>' id="<?php echo $ref->id; ?>">ViewColumn</a></td>
+                            <?php endforeach; ?>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <!-- page end-->
+    </section>
+
+<!--main content end-->
+<!--script for this page only-->
+
+<script src="<?php echo asset('js/dynamic_table_init.js'); ?>"></script>
+<script src="<?php echo asset('js/jquery.tooltipster.js'); ?>"></script>
+
+
+
+<script>
+    jQuery(document).ready(function() {
+
+
+        $('.viewColumn').tooltipster({
+            content: 'Loading...',
+            contentAsHTML:true,
+            thead:'tooltipster-shadow.css',
+            position:'left',
+            functionBefore: function(origin, continueTooltip) {
+
+                // we'll make this function asynchronous and allow the tooltip to go ahead and show the loading notification while fetching our data
+                continueTooltip();
+
+                // next, we want to check if our data has already been cached
+                if (origin.data('ajax') !== 'cached') {
+                    $.ajax({
+                        type: 'GET',
+                        url: '<?php echo url('reference/viewColumn/13'); ?>',
+                        success: function(data) {
+                            // update our tooltip content with our returned data and cache it
+                            origin.tooltipster('content', data).data('ajax', 'cached');
+                        }
+                    });
+                }
+            }
+        });
+    });
+
+
+</script>
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layout.master', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
