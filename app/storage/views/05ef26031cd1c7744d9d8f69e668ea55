@@ -40,21 +40,16 @@
                             <fieldset title="Step 2" class="step" id="default-step-1" >
                                 <legend> </legend>
                                 <div>
-                                <h4>Enter the characteristics of <span id="refName"></span> <button class="btn-success btn btn-xs pull-right" id="addColumn">add column</button></h4>
+                                <h4>Enter the characteristics of <span id="refName"></span>
+                                   <button class="btn-success btn btn-xs pull-right" id="addColumn">add column</button></h4>
                                    <span class="text-danger" id="errorlebal"></span>
                                     <div class="form-group">
                                     <div class="col-md-8 col-md-offset-1">
                                         <input type="text" class="form-control input-sm columns" placeholder="category name" name="column1">
                                     </div>
                                 </div>
-
-
                                 </div>
-
-
-
-                            </fieldset
-                                >
+                            </fieldset>
 
                             <fieldset title="Step 3" class="step" id="default-step-2" >
                                 <legend> </legend>
@@ -110,7 +105,7 @@
            ids++;
            var column = '<div class="form-group">';
                column+='<div class="col-md-8 col-md-offset-1">';
-               column+=' <input type="text" class="form-control input-sm columns" placeholder="category name" name="column'+ids+'">';
+               column+='<input type="text" class="form-control input-sm columns" placeholder="category name" name="column'+ids+'">';
                column+="</div></div>";
 
            $(this).parent().parent().append(column);

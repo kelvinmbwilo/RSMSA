@@ -1,23 +1,15 @@
-@extends('layout.master')
-
-@section('contents')
-
-
 <section class="panel">
     <header class="panel-heading">
         Add New Stakeholder
     </header>
     <div class="panel-body">
+        <span id="responce" style="opacity: 0; color: "> Successful.. </span>
         {{ Form::open(array('action' => 'StakeholderController@store' , 'method' => 'post', 'class'=>'form')) }}
-        <ul>
-
-            <li class="form-control">
-                {{ Form::text('name') }}
-            </li>
-            <li>
+             <div class="form-group">
+                 <label>Name</label>
+                 <input type="text" id="name" class="form-control" name="name"/>
+             </div>
                 {{ Form::submit('Submit', array('class' => 'btn pull-right')) }}
-            </li>
-        </ul>
         {{ Form::close() }}
 
         @if ($errors->any())
@@ -27,5 +19,3 @@
         @endif
     </div>
 </section>
-
-@stop

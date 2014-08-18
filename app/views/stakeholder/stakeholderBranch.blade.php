@@ -13,7 +13,7 @@
 
                 <div class="panel-body">
                     <section id="unseen">
-                        <table class="table table-bordered table-striped table-condensed">
+                        <table id="dynamic-table" class="table table-bordered table-striped table-condensed">
                             <thead>
                             <tr>
                                 <th>Code</th>
@@ -47,7 +47,7 @@
 
 <!--script for this page-->
 
-<script src="{{ asset('js/jquery.stepy.js') }}"></script>
+<script src="{{ asset('js/dynamic_table_init.js') }}"></script>
 
 
 
