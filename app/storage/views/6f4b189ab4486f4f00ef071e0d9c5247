@@ -10,7 +10,7 @@
                 <i class="fa fa-cogs"></i>Stakeholder</a>
              <ul class="sub">
                 <li><a  href="<?php echo url('stakeholder'); ?>">Main Stakeholders</a></li>
-                <li><a  href="#">Stakeholder Branches</a></li>
+                <li><a  href="<?php echo url('stakeholderBranch'); ?>">Stakeholder Branches</a></li>
             </ul>
         </li>
 
@@ -41,11 +41,11 @@
         <li class="sub-menu">
             <a href="javascript:;" >
                 <i class="fa fa-cogs"></i>
-                <span>Components</span>
+                <span>Data</span>
             </a>
             <ul class="sub">
-                <li><a  href="grids.html">Grids</a></li>
-                <li><a  href="calendar.html">Calendar</a></li>
+                <li><a  href="<?php echo url('data/home'); ?>">View</a></li>
+                <li><a  href="<?php echo url('data/add'); ?>">Add</a></li>
                 <li><a  href="gallery.html">Gallery</a></li>
                 <li><a  href="todo_list.html">Todo List</a></li>
                 <li><a  href="draggable_portlet.html">Draggable Portlet</a></li>
@@ -59,9 +59,17 @@
             </a>
         </li>
         <li>
-            <a  href="login.html">
+            <a  href="<?php echo url('user'); ?>">
                 <i class="fa fa-user"></i>
-                <span>Login Page</span>
+                <span>User</span>
+            </a>
+        </li>
+
+<!--        datatype details-->
+        <li>
+            <a  href="<?php echo url('datatype'); ?>">
+                <i class="fa fa-database"></i>
+                <span>Data type</span>
             </a>
         </li>
 

@@ -1148,6 +1148,7 @@
       <column name="columnName" sqlType="VARCHAR" length="255" precision="0" nullable="false" jdbcType="12"/>
       <column name="tableId" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
       <column name="columnOptionId" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
+      <column name="typeId" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
       <column name="created_at" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="JzAwMDAtMDAtMDAgMDA6MDA6MDAn"/>
       <column name="updated_at" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="JzAwMDAtMDAtMDAgMDA6MDA6MDAn"/>
       <primary-key name="PRIMARY" columns="id"/>
@@ -1216,6 +1217,7 @@
     <table name="rsmsa_referencedetails" schema="" catalog="rsmsa" type="TABLE">
       <column name="id" sqlType="INT UNSIGNED" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
       <column name="referenceId" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
+      <column name="dataTypeId" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
       <column name="name" sqlType="VARCHAR" length="255" precision="0" nullable="false" jdbcType="12"/>
       <column name="created_at" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="JzAwMDAtMDAtMDAgMDA6MDA6MDAn"/>
       <column name="updated_at" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="JzAwMDAtMDAtMDAgMDA6MDA6MDAn"/>

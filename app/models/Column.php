@@ -14,8 +14,7 @@ class Column extends Eloquent {
     public function table()
     {
         return $this->belongsTo('TableName', 'tableId', 'id');
-    public function table(){
-        return $this->belongsTo('TableName', 'tableId', 'id');
+
     }
 
     public function options(){
