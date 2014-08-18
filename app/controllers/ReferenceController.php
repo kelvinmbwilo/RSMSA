@@ -106,7 +106,8 @@ class ReferenceController extends \BaseController {
         $reference->name=Input::get('referenceName');
         $reference->save();
         $detailCount=count($reference->referenceDetails);
-        for($i =0 ;$i < Input::get('col_count'); $i++ ){
+        for($i =0 ;$i < Input::get('col_count'); $i++ )
+        {
             $j = $i+1;
             if($j<=$detailCount)
             {
@@ -170,6 +171,19 @@ class ReferenceController extends \BaseController {
 
         return View::make('reference.data_reference.index');
 	}
+
+    public function viewreference()
+    {
+
+        return View::make('reference.data_reference.addreference');
+    }
+
+    public function createreferenceform()
+    {
+        return View::make('reference.data_reference.referenceform');
+        $reference=Reference::find($id);
+
+    }
 
 
     /**

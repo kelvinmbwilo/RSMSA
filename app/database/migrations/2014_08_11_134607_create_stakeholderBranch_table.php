@@ -16,6 +16,9 @@ class CreateStakeholderBranchTable extends Migration {
 		{
 			$table->increments('id');
 			$table->string('name');
+            $table->string('phoneNumber');
+            $table->string('address');
+            $table->string('email');
 			$table->integer('locationId');
 			$table->integer('stakeholderId');
             $table->timestamps();

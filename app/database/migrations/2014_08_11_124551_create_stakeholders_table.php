@@ -16,8 +16,6 @@ class CreateStakeholdersTable extends Migration {
 		{
 			$table->increments('id');
 			$table->string('name');
-			$table->string('phoneNumber');
-			$table->string('address');
 			$table->timestamps();
 		});
 	}

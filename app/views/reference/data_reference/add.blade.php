@@ -42,7 +42,8 @@
                             <fieldset title="details" class="step" id="default-step-1" >
                                 <legend> </legend>
                                 <div>
-                                <h4>Enter the characteristics of <span id="refName"></span> <button class="btn-success btn btn-xs pull-right" id="addColumn">add column</button></h4>
+                                <h4>Enter the characteristics of <span id="refName"></span>
+                                   <button class="btn-success btn btn-xs pull-right" id="addColumn">add column</button></h4>
                                    <span class="text-danger" id="errorlebal"></span>
                                     <div class="form-group">
                                     <div class="col-md-7">
@@ -60,6 +61,7 @@
 
 
                                 </div>
+                            </fieldset>
 
 
 
@@ -68,7 +70,7 @@
                             <fieldset title="summary" class="step" id="default-step-2" >
                                 <legend> </legend>
                                 <div class="form-group">
-                                    <label class="col-lg-2 control-label">Refernce Name</label>
+                                    <label class="col-lg-2 control-label">Reference Name</label>
                                     <div class="col-lg-10">
                                         <p class="form-control-static refName1">value of reference name</p>
                                     </div>

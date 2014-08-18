@@ -10,10 +10,34 @@ class StakeholderController extends \BaseController {
 	public function index()
 	{
 		//
-        $stakeHolder = Stakeholder::all();
-        $stakeHolder->toarray();
-        return View::make('stakeholder.stakeholders' , compact('stakeHolder'));
+        $stakeholder = Stakeholder::all();
+        $stakeholder->toarray();
+        return View::make('stakeholder.stakeholders' , compact('stakeholder'));
 	}
+
+
+    /**
+     * Display the list of branches for a specific stakeholder
+     *
+     * @param  int  $id
+     * @return Response
+     */
+    public function listBranch($id){
+
+
+        $stakeholder = Stakeholder::find($id);
+        return View::make('stakeholder.specificStakeholderBranch', compact('stakeholder'));
+
+    }
+
+    /**
+     *
+     */
+    public function newStakeholderForm(){
+
+
+        return View::make('stakeholder.addStakeholder');
+    }
 
 
 	/**
@@ -35,6 +59,26 @@ class StakeholderController extends \BaseController {
 	public function store()
 	{
 		//
+
+        $rules = array(
+            'name'       => 'required'
+        );
+
+        $input = Input::all();
+        $validation = Validator::make($input, $rules);
+
+        if ($validation->passes())
+        {
+            Stakeholder::create($input);
+            $stakeholder = Stakeholder::all();
+            $stakeholder->toarray();
+            return View::make('stakeholder.stakeholders', compact('stakeholder'));
+        }
+
+        return Redirect::route('stakeholder.addStakeholder')
+            ->withInput()
+            ->withErrors($validation)
+            ->with('message', 'There were validation errors.');
 	}
 
 
@@ -59,6 +103,9 @@ class StakeholderController extends \BaseController {
 	public function edit($id)
 	{
 		//
+        $stakeholder = Stakeholder::find($id);
+        $stakeholder->toarray();
+        return View::make('stakeholder.editStakeholder' , compact('stakeholder'));
 	}
 
 
@@ -71,6 +118,14 @@ class StakeholderController extends \BaseController {
 	public function update($id)
 	{
 		//
+        $stakeholder=Stakeholder::find($id);
+        $stakeholder->name=Input::get('name');
+        $stakeholder->save();
+
+
+        $stakeholder = Stakeholder::all();
+        $stakeholder->toarray();
+        return View::make('stakeholder.stakeholders', compact('stakeholder'));
 	}
 
 
@@ -83,6 +138,11 @@ class StakeholderController extends \BaseController {
 	public function destroy($id)
 	{
 		//
+        Stakeholder::find($id)->delete();
+
+        $stakeholder = Stakeholder::all();
+        $stakeholder->toarray();
+        return View::make('stakeholder.stakeholders' , compact('stakeholder'));
 	}
 
 

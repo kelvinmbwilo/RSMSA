@@ -11,10 +11,21 @@ class StakeHolderBranch extends Eloquent {
 
     protected  $guarded = array('$id');
 
-    public function data()
+    public function integerdata()
     {
-        return $this->hasMany('Data', 'stakeHolderId', 'id');
+        return $this->hasMany('IntegerData', 'stakeHolderId', 'id');
     }
+
+    public function stringdata()
+    {
+        return $this->hasMany('StringData', 'stakeHolderId', 'id');
+    }
+
+    public function filedata()
+    {
+        return $this->hasMany('FileData', 'stakeHolderId', 'id');
+    }
+
 
     public function user()
     {

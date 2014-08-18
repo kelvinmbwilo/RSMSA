@@ -16,6 +16,7 @@ class TableName extends Eloquent {
     }
     public function tableColumn(){
         return $this->hasMany('TableColumn', 'tableNameId', 'id');
+        return $this->hasMany('Column', 'tableId', 'id');
     }
 
 }
