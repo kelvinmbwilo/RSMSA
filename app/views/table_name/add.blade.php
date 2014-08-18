@@ -12,50 +12,55 @@
             <div class="col-lg-12">
                 <section class="panel">
                     <header class="panel-heading">
-                        Fill this form to complete registration of a Reference
+                        Fill this form to complete registration of a Table
                     </header>
                     <div class="panel-body">
                         <div class="stepy-tab ">
                             <ul id="default-titles" class="stepy-titles clearfix btn-xs">
                                 <li id="default-title-0" class="current-step">
-                                    <div>Reference</div>
+                                    <div>table</div>
                                 </li>
                                 <li id="default-title-1" class="">
-                                    <div>details</div>
+                                    <div>column</div>
                                 </li>
+
                                 <li id="default-title-2" class="">
                                     <div>summary</div>
                                 </li>
                             </ul>
                         </div>
-                        <form class="form-horizontal" id="default" method="post" action="{{ url('reference/add')}}">
-                            <fieldset title="Reference" class="step" id="default-step-0">
+                        <form class="form-horizontal" id="default" method="post" action="{{ url('table_name/add')}}">
+                            <fieldset title="table" class="step" id="default-step-0">
                                 <legend> </legend>
                                 <div class="form-group">
-                                    <label class="col-lg-2 control-label">Reference Name</label>
+                                    <label class="col-lg-2 control-label">Table Name</label>
                                     <div class="col-lg-10">
-                                        <input type="text" class="form-control" placeholder="enter a Name" name="referenceName">
+                                        <input type="text" class="form-control" placeholder="enter a Name" name="tableName">
                                     </div>
                                 </div>
 
                             </fieldset>
-                            <fieldset title="details" class="step" id="default-step-1" >
+                            <fieldset title="column" class="step" id="default-step-1" >
                                 <legend> </legend>
-                                <div>
-                                <h4>Enter the characteristics of <span id="refName"></span> <button class="btn-success btn btn-xs pull-right" id="addColumn">add column</button></h4>
-                                   <span class="text-danger" id="errorlebal"></span>
-                                    <div class="form-group">
-                                    <div class="col-md-7">
-                                        <input type="text" class="form-control input-sm columns" placeholder="category name" name="column1">
-                                    </div>
-                                      <div class="col-md-5">
 
-                                        <select name="data1" class="form-control">
-                                            @foreach(DataTypeDetails::all() as $data)
-                                            <option value="{{$data->id}}" id="option">{{$data->name}}</option>
-                                            @endforeach
-                                        </select>
-                                    </div>
+                                <div>
+                                        <div class="row">
+                                        <h5>Enter the column(s) of <span id="tbName"></span></h5>
+                                        <button class="btn-success btn btn-xs pull-right" id="addColumn">add column</button>
+                                        </div>
+
+                                    <span class="text-danger" id="errorlebal"></span>
+                                    <div class="form-group">
+                                        <div class="col-sm-7">
+                                            <input type="text" class="form-control input-sm columns" placeholder="column name" name="column1">
+                                        </div>
+                                        <div class="col-sm-5">
+                                            <select name="data1" class="form-control input-sm">
+                                                @foreach(DataTypeDetails::all() as $data)
+                                                <option value="{{$data->id}}" id="option">{{$data->name}}</option>
+                                                @endforeach
+                                            </select>
+                                        </div>
                                     </div>
 
 
@@ -64,13 +69,14 @@
 
 
                             </fieldset>
+
 
                             <fieldset title="summary" class="step" id="default-step-2" >
                                 <legend> </legend>
                                 <div class="form-group">
-                                    <label class="col-lg-2 control-label">Refernce Name</label>
+                                    <label class="col-lg-2 control-label">Table Name</label>
                                     <div class="col-lg-10">
-                                        <p class="form-control-static refName1">value of reference name</p>
+                                        <p class="form-control-static tbName1"></p>
                                     </div>
                                 </div>
                                 <div id="checkings">
@@ -103,10 +109,10 @@
 
 
 
-    //step wizard
+//step wizard
 
 
-    <!--script for this page-->
+<!--script for this page-->
 
 
 
@@ -115,27 +121,27 @@
 
     $(function() {
         var ids = 1;
-       $('#addColumn').click(function(){
-           ids++;
-           var column ='<div class="form-group">';
-               column+='<div class="col-sm-7">';
-               column+='<input type="text" class="form-control input-sm columns" placeholder="column name" name="column'+ids+'">';
-               column+="</div>";
-               column+='<div class="col-sm-5">';
-               column+='<select name="data'+ids+'" class="form-control">';
-               column+="@foreach(DataTypeDetails::all() as $data)";
-               column+='<option value="{{$data->id}}" >{{$data->name}}</option>';
-               column+="@endforeach";
-               column+="</select>";
-               column+="</div>";
-               column+="</div>";
+        $('#addColumn').click(function(){
+            ids++;
+            var column ='<div class="form-group">';
+            column+='<div class="col-sm-7">';
+            column+='<input type="text" class="form-control input-sm columns" placeholder="column name" name="column'+ids+'">';
+            column+="</div>";
+            column+='<div class="col-sm-5">';
+            column+='<select name="data'+ids+'" class="form-control input-sm">';
+            column+="@foreach(DataTypeDetails::all() as $data)";
+            column+='<option value="{{$data->id}}" >{{$data->name}}</option>';
+            column+="@endforeach";
+            column+="</select>";
+            column+="</div>";
+            column+="</div>";
 
 
-           $(this).parent().parent().append(column);
-           $('input[name=column'+ids+']').focus();
+            $(this).parent().parent().append(column);
+            $('input[name=column'+ids+']').focus();
 
 
-       })
+        })
 
         $('#default').stepy({
             backLabel: 'Previous',
@@ -151,48 +157,51 @@
             },
             select: function(index) {
                 if(index == 2){
-                    if($('input[name=referenceName]').val() == ""){
+                    if($('input[name=tableName]').val() == ""){
                         $('form').stepy('step', 1);
-                        $('input[name=referenceName]').attr('placeholder','Please Fill This Area First').focus()
+                        $('input[name=tableName]').attr('placeholder','Please Fill This Area First').focus()
                     }else{
-                        $("#refName").html($('input[name=referenceName]').val());
+                        $("#tbName").html($('input[name=tableName]').val());
                     }
                 }
 
                 if(index == 3){
-                    if($('input[name=referenceName]').val() == ""){
+                    if($('input[name=tableName]').val() == ""){
                         $('form').stepy('step', 1);
-                        $('input[name=referenceName]').attr('placeholder','Please Fill This Area First').focus()
+                        $('input[name=tableName]').attr('placeholder','Please Fill This Area First').focus()
 
                     }else{
-                        var reference =  $('input[name=referenceName]').val();
-                        var colums = new Array();
+
                         var col ="";
                         var counter = 0;
                         var col_count =0;
                         $(".columns").each(function(){
                             col_count++;
                             if($(this).val() != ''){
-                            col +='<div class="form-group">';
-                            col +='<label class="col-lg-2 control-label">category '+ ++counter +'</label>';
-                            col +='<div class="col-lg-10">';
-                            col +='<p class="form-control-static">'+ $(this).val() +'</p>';
-                            col +='</div></div>'
+                                col +='<div class="form-group">';
+                                col +='<label class="col-lg-2 control-label">column'+ ++counter +'</label>';
+                                col +='<div class="col-lg-10">';
+                                col +='<p class="form-control-static">'+ $(this).val() +'</p>';
+                                col +='</div></div>'
                             }
                         });
+                        var columnName =  $('input[name=tableName]').val();
                         if(col == ""){
                             $('form').stepy('step', 2);
-                            $('#errorlebal').fadeIn().html('Fill At least One Characteristic').delay(3000).fadeOut();
+                            $('#errorlebal').fadeIn().html('Fill At least One Column').delay(3000).fadeOut();
                             $('input[name=column1]').focus()
                         }else{
                             $("input[name=col_count]").remove();
                             $('#default').append('<input type="hidden"  name="col_count" value="'+col_count+'">')
                             $("#checkings").html('').append(col);
-                            $(".refName1").html(reference);
+                            $(".tbName1").html(columnName);
+
                         }
 
                     }
                 }
+
+
 
 
             }

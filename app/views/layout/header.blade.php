@@ -115,13 +115,7 @@
         </li>
         <li>
             <a href="index.html#">
-                <span class="photo"><img alt="avatar" src="img/avatar-mini2.jpg"></span>
-                                    <span class="subject">
-                                    <span class="from">Jhon Doe</span>
-                                    <span class="time">10 mins</span>
-                                    </span>
-                                    <span class="message">
-                                     Hi, Jhon Doe Bhai how are you ?
+                <span class="photo">
                                     </span>
             </a>
         </li>
