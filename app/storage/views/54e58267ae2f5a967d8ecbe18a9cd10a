@@ -1,9 +1,7 @@
-@extends('layout.master')
+<?php $__env->startSection('contents'); ?>
 
-@section('contents')
-
-<link href="{{ asset('css/style.css') }}" rel="stylesheet">
-<link href="{{ asset('css/style-responsive.css') }}" rel="stylesheet" />
+<link href="<?php echo asset('css/style.css'); ?>" rel="stylesheet">
+<link href="<?php echo asset('css/style-responsive.css'); ?>" rel="stylesheet" />
 <!--main content start-->
 
     <section class="wrapper site-min-height">
@@ -28,13 +26,13 @@
                                 </li>
                             </ul>
                         </div>
-                        <form class="form-horizontal" id="default" method="post" action="{{ url("table_name/edit/{$table->id}")}}">
+                        <form class="form-horizontal" id="default" method="post" action="<?php echo url("table_name/edit/{$table->id}"); ?>">
                         <fieldset title="Table" class="step" id="default-step-0">
                             <legend> </legend>
                             <div class="form-group">
                                 <label class="col-lg-2 control-label">Table Name</label>
                                 <div class="col-lg-10">
-                                    <input type="text" class="form-control" name="tableName" value="{{$table->categoryName}}">
+                                    <input type="text" class="form-control" name="tableName" value="<?php echo $table->categoryName; ?>">
                                 </div>
                             </div>
 
@@ -45,22 +43,22 @@
                                 <h4>Edit the columns of <span id="tbName1"></span> <button class="btn-success btn btn-xs pull-right" id="addColumn">add column</button></h4>
                                 <span class="text-danger" id="errorlebal"></span>
                                 <?php $i=1; $k=1; ?>
-                                @foreach($table->column as $column)
+                                <?php foreach($table->column as $column): ?>
                                 <div class="form-group">
                                     <div class="col-sm-7">
-                                        <input type="text" class="form-control input-sm columns"  name="column{{$i++}}" value="{{$column->columnName}}">
-                                        <input type="hidden"  name="columnid{{$k++}}" value="{{$column->id}}">
+                                        <input type="text" class="form-control input-sm columns"  name="column<?php echo $i++; ?>" value="<?php echo $column->columnName; ?>">
+                                        <input type="hidden"  name="columnid<?php echo $k++; ?>" value="<?php echo $column->id; ?>">
                                     </div>
                                     <div class="col-sm-5">
                                         <select name="data1" class="form-control input-sm">
-                                            <option value="{{$column->typeId}}" id="option">{{$column->datatype->name}}</option>
-                                            @foreach(DataTypeDetails::all() as $data)
-                                            <option value="{{$data->id}}" id="option">{{$data->name}}</option>
-                                            @endforeach
+                                            <option value="<?php echo $column->typeId; ?>" id="option"><?php echo $column->datatype->name; ?></option>
+                                            <?php foreach(DataTypeDetails::all() as $data): ?>
+                                            <option value="<?php echo $data->id; ?>" id="option"><?php echo $data->name; ?></option>
+                                            <?php endforeach; ?>
                                         </select>
                                     </div>
                                 </div>
-                                @endforeach
+                                <?php endforeach; ?>
 
 
                             </div>
@@ -93,17 +91,17 @@
 
 </section>
 
-<script src="{{ asset('js/jquery.js') }}"></script>
-<script src="{{ asset('js/bootstrap.min.js') }}"></script>
-<script src="{{ asset('js/jquery.scrollTo.min.js') }}"></script>
-<script src="{{ asset('js/jquery.nicescroll.js') }}"></script>
-<script src="{{ asset('js/respond.min.js') }}"></script>
-<script src="{{ asset('js/jquery.stepy.js') }}"></script>
+<script src="<?php echo asset('js/jquery.js'); ?>"></script>
+<script src="<?php echo asset('js/bootstrap.min.js'); ?>"></script>
+<script src="<?php echo asset('js/jquery.scrollTo.min.js'); ?>"></script>
+<script src="<?php echo asset('js/jquery.nicescroll.js'); ?>"></script>
+<script src="<?php echo asset('js/respond.min.js'); ?>"></script>
+<script src="<?php echo asset('js/jquery.stepy.js'); ?>"></script>
 
 
-<script src="{{ asset('css/style.css') }}"></script>
-<script src="{{ asset('css/style-responsive.css') }}"></script>
-<script src="{{ asset('css/styles/colors.css') }}"></script>
+<script src="<?php echo asset('css/style.css'); ?>"></script>
+<script src="<?php echo asset('css/style-responsive.css'); ?>"></script>
+<script src="<?php echo asset('css/styles/colors.css'); ?>"></script>
 
 
 
@@ -118,7 +116,7 @@
 
 
     $(function() {
-        var ids = {{count($table->column)}};
+        var ids = <?php echo count($table->column); ?>;
     $('#addColumn').click(function(){
         ids++;
         var column ='<div class="form-group">';
@@ -127,9 +125,9 @@
         column+="</div>";
         column+='<div class="col-sm-5">';
         column+='<select name="data'+ids+'" class="form-control input-sm">';
-        column+="@foreach(DataTypeDetails::all() as $data)";
-        column+='<option value="{{$data->id}}" >{{$data->name}}</option>';
-        column+="@endforeach";
+        column+="<?php foreach(DataTypeDetails::all() as $data): ?>";
+        column+='<option value="<?php echo $data->id; ?>" ><?php echo $data->name; ?></option>';
+        column+="<?php endforeach; ?>";
         column+="</select>";
         column+="</div>";
         column+="</div>";
@@ -204,4 +202,5 @@
 </script>
 
 
-@stop
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layout.master', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

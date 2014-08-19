@@ -61,10 +61,6 @@ Route::post('stakeholderBranch/add/{id}', array('uses' => 'StakeholderBranchCont
 Route::get('stakeholder/viewbranch/{id}', array('uses' => 'StakeholderController@listBranch'));
 
 
-/***************************************************************/
-//************************References ***************************/
-/***************************************************************/
-
 //******************************************************************************//
 //******************************* DATA *****************************************//
 //******************************************************************************//
@@ -74,9 +70,10 @@ Route::get('data/home', array('uses' => 'DataController@index'));
 //Route:get('data/getcol/{tablename}', array('uses' => 'DaraController@returncolumns'));
 
 
-///////////////////////////////////////////////////////
-/////////////References //////////////////////////////
-/////////////////////////////////////////////////////
+
+/***************************************************************/
+//************************References ***************************/
+/***************************************************************/
 Route::get('reference', array('uses'=>'ReferenceController@index')); //display list of references
 Route::get('dynamic_table', array('uses'=>'ReferenceController@dynamicTable')); //display list of references
 Route::get('reference/add', array('uses'=>'ReferenceController@create')); //display form to add new reference
@@ -97,6 +94,7 @@ Route::get('reference/deleteColumn/{id}', array('uses'=>'ReferenceController@del
 //************************Table Name****************************/
 /***************************************************************/
 Route::get('table_name', array('uses'=>'TableController@index')); //display list of table names
+Route::get('table_name/back', array('uses'=>'TableController@back')); //display list of table names
 Route::get('dynamic_table', array('uses'=>'TableController@dynamicTable')); //display list of table name
 Route::get('table_name/add', array('uses'=>'TableController@create')); //display form to add new table name
 Route::post('table_name/add', array('uses'=>'TableController@store')); //processing addition form

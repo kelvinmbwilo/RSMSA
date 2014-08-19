@@ -35,6 +35,7 @@
                                     <label class="col-lg-2 control-label">Reference Name</label>
                                     <div class="col-lg-10">
                                         <input type="text" class="form-control" name="referenceName" value="{{$reference->name}}">
+
                                     </div>
                                 </div>
 
@@ -47,12 +48,23 @@
                                     <?php $i=1; $k=1; ?>
                                     @foreach($reference->referenceDetails as $detail)
                                     <div class="form-group">
-                                        <div class="col-md-8 col-md-offset-1">
+                                        <?php  $detail2=$detail->name ?>
+                                        <div class="col-sm-7 ">
                                             <input type="text" class="form-control input-sm columns"  name="column{{$i++}}" value="{{$detail->name}}">
                                             <input type="hidden"  name="columnid{{$k++}}" value="{{$detail->id}}">
+                                            <input type="hidden"  name="columnName{{$k++}}" value="{{$detail2}}">
+                                        </div>
+                                        <div class="col-sm-5">
+                                            <select name="data1" class="form-control input-sm">
+                                                <option value="{{$detail->dataTypeId}}" id="option">{{$detail->dataType->name}}</option>
+                                                @foreach(DataTypeDetails::all() as $data)
+                                                <option value="{{$data->id}}" id="option">{{$data->name}}</option>
+                                                @endforeach
+                                            </select>
                                         </div>
                                     </div>
                                     @endforeach
+
 
 
                                 </div>
@@ -114,10 +126,18 @@
         var ids = {{count($reference->referenceDetails)}};
         $('#addColumn').click(function(){
             ids++;
-            var column = '<div class="form-group">';
-            column+='<div class="col-md-8 col-md-offset-1">';
-            column+=' <input type="text" class="form-control input-sm columns" placeholder="category name" name="column'+ids+'">';
-            column+="</div></div>";
+            var column ='<div class="form-group">';
+            column+='<div class="col-sm-7">';
+            column+='<input type="text" class="form-control input-sm columns" placeholder="column name" name="column'+ids+'">';
+            column+="</div>";
+            column+='<div class="col-sm-5">';
+            column+='<select name="data'+ids+'" class="form-control">';
+            column+="@foreach(DataTypeDetails::all() as $data)";
+            column+='<option value="{{$data->id}}" >{{$data->name}}</option>';
+            column+="@endforeach";
+            column+="</select>";
+            column+="</div>";
+            column+="</div>";
 
             $(this).parent().parent().append(column);
             $('input[name=column'+ids+']').focus();

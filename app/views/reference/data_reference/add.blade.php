@@ -4,8 +4,7 @@
 
 <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 <link href="{{ asset('css/style-responsive.css') }}" rel="stylesheet" />
-<!--main content start-->
-<section id="main-content">
+
     <section class="wrapper site-min-height">
         <!-- page start-->
         <div class="row">
@@ -42,7 +41,7 @@
                             <fieldset title="details" class="step" id="default-step-1" >
                                 <legend> </legend>
                                 <div>
-                                <h4>Enter the characteristics of <span id="refName"></span>
+                                <h4>Enter the columns of <span id="refName"></span>
                                    <button class="btn-success btn btn-xs pull-right" id="addColumn">add column</button></h4>
                                    <span class="text-danger" id="errorlebal"></span>
                                     <div class="form-group">
@@ -89,7 +88,7 @@
         </div>
         <!-- page end-->
     </section>
-</section>
+
 
 <script src="{{ asset('js/jquery.js') }}"></script>
 <script src="{{ asset('js/bootstrap.min.js') }}"></script>

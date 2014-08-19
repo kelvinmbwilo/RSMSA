@@ -103,39 +103,76 @@ class ReferenceController extends \BaseController {
 	public function update($id)
 	{
         $reference=Reference::find($id);
+        $oldTable=Reference::find($id);
         $reference->name=Input::get('referenceName');
+        if($oldTable->name!=Input::get('referenceName'))
+        DB::statement('RENAME TABLE '.$oldTable->name.' TO '.$reference->name);
         $reference->save();
+
         $detailCount=count($reference->referenceDetails);
-        for($i =0 ;$i < Input::get('col_count'); $i++ )
-        {
+        for($i =0 ;$i < Input::get('col_count'); $i++ ){
             $j = $i+1;
+
             if($j<=$detailCount)
             {
                 if(Input::get('column'.$j)== ''){
-                    $referenceDetails= ReferenceDetails::find(Input::get('columnid'.$j));
+                    $referenceDetails=ReferenceDetails::find(Input::get('columnid'.$j));
+                    DB::statement( 'ALTER TABLE rsmsa_'.$reference->name.' DROP '.$referenceDetails->name );
                     $referenceDetails->delete();
                 }else{
-                    $referenceDetails= ReferenceDetails::find(Input::get('columnid'.$j));
-                    $referenceDetails->name=Input::get('column'.$j);
-                    $referenceDetails->save();
-                }
+                    $referenceDetails=ReferenceDetails::find(Input::get('columnid'.$j));
+
+                   $dataType=DataTypeDetails::find(Input::get('data'.$j));
+                    $OldColumn1=Input::get('columnName'.$j);
+                    echo "jjj".$OldColumn1."ttt";
+                    echo  "1".$referenceDetails."k";
+//                   if($dataType->name== "integer"){
+//                       $type="int(11)";
+//                        $referenceDetails->name=Input::get('column'.$j);
+//                        if($OldColumn1!=$referenceDetails->name)
+//                           DB::statement( 'ALTER TABLE rsmsa_'.$reference->name.' change '.$OldColumn1.' '.$referenceDetails->name.'  '.$type );
+//                        $referenceDetails->save();
+//                    }
+//                    if($dataType->name == "string"){
+//                        $type="varchar(255)";
+//                        $referenceDetails->name=Input::get('column'.$j);
+//                        if($OldColumn1!=$referenceDetails->name)
+//                            DB::statement( 'ALTER TABLE rsmsa_'.$reference->name.' change '.$OldColumn1.' '.$referenceDetails->name.'  '.$type );
+//                        $referenceDetails->save();
+//                    }
+
+              }
 
             }else{
-                if(Input::get('column'.$j)!= '')
-                {
-                    DataReference::create(array(
+                if(Input::get('column'.$j)!= ''){
+                    ReferenceDetails::create(array(
                         'referenceId' => $reference->id,
-                        'name' => Input::get('column'.$j)
+                        'name' => Input::get('column'.$j),
+                        'dataTypeId'=>Input::get('data'.$j)
                     ));
+                    $dataType=DataTypeDetails::find(Input::get('data'.$j));
+                    $col=ReferenceDetails::find(Input::get('columnid'.$j));
+                    if($dataType->name=="integer")
+                    {
+                        $type="int(10)";
+                        DB::statement( 'ALTER TABLE '. $reference->name.' ADD '.$col->name.'  '.$type );
+                    }
+                    if($dataType->name=="string")
+                    {
+                        $type="varchar(100)";
+                        DB::statement( 'ALTER TABLE '. $reference->name.' ADD '.$col->name.'  '.$type );
+                    }
                 }
 
             }
 
 
 
+
         }
 
-	}
+        return View::make('reference.data_reference.index');
+    }
 
 
     /**
@@ -162,11 +199,11 @@ class ReferenceController extends \BaseController {
 
         foreach($referenceObj->referenceDetails as $detail){
 
-            $this->deleteColumn($detail->id);
+            DB::statement( 'ALTER TABLE rsmsa_'.$referenceObj->name.' drop '.$detail->name);
             $detail->delete();
 
         }
-        $this->deleteTable($id);
+        Schema::drop("rsmsa_".$referenceObj->name);
         $referenceObj->delete();
 
         return View::make('reference.data_reference.index');
@@ -209,7 +246,8 @@ class ReferenceController extends \BaseController {
             {
                 $type="int(10)";
                 DB::statement( 'ALTER TABLE '.$tableName.' ADD '.$column->name.'  '.$type );
-            } if($column->dataType->name=="string")
+            }
+            if($column->dataType->name=="string")
             {
                 $type="varchar(100)";
                  DB::statement( 'ALTER TABLE '.$tableName.' ADD '.$column->name.'  '.$type );
@@ -225,37 +263,6 @@ class ReferenceController extends \BaseController {
      */
     public function editTable($id)
     {
-        $reference=Reference::find($id);
-        $reference->name=Input::get('referenceName');
-        $reference->save();
-        $detailCount=count($reference->referenceDetails);
-        for($i =0 ;$i < Input::get('col_count'); $i++ ){
-            $j = $i+1;
-            if($j<=$detailCount)
-            {
-                if(Input::get('column'.$j)== ''){
-                    $referenceDetails= ReferenceDetails::find(Input::get('columnid'.$j));
-                    $referenceDetails->delete();
-                }else{
-                    $referenceDetails= ReferenceDetails::find(Input::get('columnid'.$j));
-                    $referenceDetails->name=Input::get('column'.$j);
-                    $referenceDetails->save();
-                }
-
-            }else{
-                if(Input::get('column'.$j)!= '')
-                {
-                    DataReference::create(array(
-                        'referenceId' => $reference->id,
-                        'name' => Input::get('column'.$j)
-                    ));
-                }
-
-            }
-
-
-
-        }
 
     }
     /**
@@ -278,13 +285,10 @@ class ReferenceController extends \BaseController {
     public function deleteColumn($id)
     {
         $column1=ReferenceDetails::find($id);
-        $column=$column1->name;
+        $column2=$column1->name;
         $tableName=$column1->reference;
         $tableName=$tableName->name;
-        Schema::table($tableName, function($table)
-        {
-            $table->dropColumn($column);
-        });
+
     }
 
 
