@@ -60,9 +60,17 @@
             </a>
         </li>
         <li>
-            <a  href="login.html">
+            <a  href="{{ url('user') }}">
                 <i class="fa fa-user"></i>
-                <span>Login Page</span>
+                <span>User</span>
+            </a>
+        </li>
+
+<!--        datatype details-->
+        <li>
+            <a  href="{{ url('datatype') }}">
+                <i class="fa fa-database"></i>
+                <span>Data type</span>
             </a>
         </li>
 

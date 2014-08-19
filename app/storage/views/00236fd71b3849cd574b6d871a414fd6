@@ -13,21 +13,21 @@
                         Fill this form to complete registration of a Reference
                     </header>
                     <div class="panel-body">
-                        <div class="stepy-tab">
-                            <ul id="default-titles" class="stepy-titles clearfix">
+                        <div class="stepy-tab ">
+                            <ul id="default-titles" class="stepy-titles clearfix btn-xs">
                                 <li id="default-title-0" class="current-step">
-                                    <div>Step 1</div>
+                                    <div>Reference</div>
                                 </li>
                                 <li id="default-title-1" class="">
-                                    <div>Step 2</div>
+                                    <div>details</div>
                                 </li>
                                 <li id="default-title-2" class="">
-                                    <div>Step 3</div>
+                                    <div>summary</div>
                                 </li>
                             </ul>
                         </div>
                         <form class="form-horizontal" id="default" method="post" action="<?php echo url('reference/add'); ?>">
-                            <fieldset title="Step1" class="step" id="default-step-0">
+                            <fieldset title="Reference" class="step" id="default-step-0">
                                 <legend> </legend>
                                 <div class="form-group">
                                     <label class="col-lg-2 control-label">Reference Name</label>
@@ -37,29 +37,38 @@
                                 </div>
 
                             </fieldset>
-                            <fieldset title="Step 2" class="step" id="default-step-1" >
+                            <fieldset title="details" class="step" id="default-step-1" >
                                 <legend> </legend>
                                 <div>
-                                <h4>Enter the characteristics of <span id="refName"></span> <button class="btn-success btn btn-xs pull-right" id="addColumn">add column</button></h4>
+                                <h4>Enter the characteristics of <span id="refName"></span>
+                                   <button class="btn-success btn btn-xs pull-right" id="addColumn">add column</button></h4>
                                    <span class="text-danger" id="errorlebal"></span>
                                     <div class="form-group">
-                                    <div class="col-md-8 col-md-offset-1">
+                                    <div class="col-md-7">
                                         <input type="text" class="form-control input-sm columns" placeholder="category name" name="column1">
                                     </div>
-                                </div>
+                                      <div class="col-md-5">
+
+                                        <select name="data1" class="form-control">
+                                            <?php foreach(DataTypeDetails::all() as $data): ?>
+                                            <option value="<?php echo $data->id; ?>" id="option"><?php echo $data->name; ?></option>
+                                            <?php endforeach; ?>
+                                        </select>
+                                    </div>
+                                    </div>
 
 
                                 </div>
+                            </fieldset>
 
 
 
-                            </fieldset
-                                >
+                            </fieldset>
 
-                            <fieldset title="Step 3" class="step" id="default-step-2" >
+                            <fieldset title="summary" class="step" id="default-step-2" >
                                 <legend> </legend>
                                 <div class="form-group">
-                                    <label class="col-lg-2 control-label">Refernce Name</label>
+                                    <label class="col-lg-2 control-label">Reference Name</label>
                                     <div class="col-lg-10">
                                         <p class="form-control-static refName1">value of reference name</p>
                                     </div>
@@ -108,10 +117,19 @@
         var ids = 1;
        $('#addColumn').click(function(){
            ids++;
-           var column = '<div class="form-group">';
-               column+='<div class="col-md-8 col-md-offset-1">';
-               column+=' <input type="text" class="form-control input-sm columns" placeholder="category name" name="column'+ids+'">';
-               column+="</div></div>";
+           var column ='<div class="form-group">';
+               column+='<div class="col-sm-7">';
+               column+='<input type="text" class="form-control input-sm columns" placeholder="column name" name="column'+ids+'">';
+               column+="</div>";
+               column+='<div class="col-sm-5">';
+               column+='<select name="data'+ids+'" class="form-control">';
+               column+="<?php foreach(DataTypeDetails::all() as $data): ?>";
+               column+='<option value="<?php echo $data->id; ?>" ><?php echo $data->name; ?></option>';
+               column+="<?php endforeach; ?>";
+               column+="</select>";
+               column+="</div>";
+               column+="</div>";
+
 
            $(this).parent().parent().append(column);
            $('input[name=column'+ids+']').focus();

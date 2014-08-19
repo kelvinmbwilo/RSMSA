@@ -14,6 +14,9 @@ class ReferenceDetails extends Eloquent {
     public function reference()
     {
         return $this->belongsTo('Reference', 'referenceId', 'id');
+    } public function dataType()
+    {
+        return $this->belongsTo('DataTypeDetails', 'dataTypeId', 'id');
     }
 
 
