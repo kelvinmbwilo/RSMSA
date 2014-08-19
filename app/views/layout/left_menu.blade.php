@@ -35,15 +35,12 @@
                 <span>Data</span>
             </a>
             <ul class="sub">
+                <li><a  href="{{ url('data/home') }}">View</a></li>
                 <li><a  href="{{ url('data/add') }}">Add</a></li>
-                <li><a  href="{{ url('data/home') }}">View Statistics</a></li>
-                <?php
-                   $datatypes = TableName::all();
-                   $datatypes->toarray();
-                   foreach($datatypes as $types){
-                ?>
-                <li><a  href='{{ url("data/view/{$types->id}") }}' >{{ $types->categoryName }}</a></li>
-                <?php } ?>
+                <li><a  href="gallery.html">Gallery</a></li>
+                <li><a  href="todo_list.html">Todo List</a></li>
+                <li><a  href="draggable_portlet.html">Draggable Portlet</a></li>
+                <li><a  href="tree.html">Tree View</a></li>
             </ul>
         </li>
         <li>
@@ -53,9 +50,17 @@
             </a>
         </li>
         <li>
-            <a  href="login.html">
+            <a  href="{{ url('user') }}">
                 <i class="fa fa-user"></i>
-                <span>Login Page</span>
+                <span>User</span>
+            </a>
+        </li>
+
+<!--        datatype details-->
+        <li>
+            <a  href="{{ url('datatype') }}">
+                <i class="fa fa-database"></i>
+                <span>Data type</span>
             </a>
         </li>
 

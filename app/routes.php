@@ -25,7 +25,18 @@ Route::get('dashboard', function()
 {
     return View::make('dashboard');
 });
+
+Route::get('login', function()
+{
+    return View::make('users.login');
+});
+
+
+
+
 Route::resource('dashboard' , 'DashboardController');
+
+Route::resource('stakeholder' , 'StakeholderController');
 
 
 /***************************************************************/
@@ -50,7 +61,6 @@ Route::post('stakeholderBranch/add/{id}', array('uses' => 'StakeholderBranchCont
 Route::get('stakeholder/viewbranch/{id}', array('uses' => 'StakeholderController@listBranch'));
 
 
-
 //******************************************************************************//
 //******************************* DATA *****************************************//
 //******************************************************************************//
@@ -62,13 +72,83 @@ Route::get('data/view/{id}', array('uses' => 'DataController@viewtable'));
 //Route:get('data/getcol/{tablename}', array('uses' => 'DaraController@returncolumns'));
 
 
-///////////////////////////////////////////////////////
-/////////////References //////////////////////////////
-/////////////////////////////////////////////////////
+
+/***************************************************************/
+//************************References ***************************/
+/***************************************************************/
 Route::get('reference', array('uses'=>'ReferenceController@index')); //display list of references
+Route::get('dynamic_table', array('uses'=>'ReferenceController@dynamicTable')); //display list of references
 Route::get('reference/add', array('uses'=>'ReferenceController@create')); //display form to add new reference
+Route::post('reference/add', array('uses'=>'ReferenceController@store')); //processing addition form
 Route::post('reference/add', array('uses'=>'ReferenceController@store')); //processing addition form
 Route::get('reference/edit/{id}', array('uses'=>'ReferenceController@edit')); //display form to edit a reference of a certain id
 Route::post('reference/edit/{id}', array('uses'=>'ReferenceController@update')); //display form to edit a reference of a certain id
 Route::get('reference/delete/{id}', array('uses'=>'ReferenceController@destroy')); //processing deletion of a reference of a certain id
 Route::get('reference/viewColumn/{id}', array('uses'=>'ReferenceController@viewColumn')); //displaying a list of the reference details
+Route::get('reference/createTable/{id}', array('uses'=>'ReferenceController@createTable')); //displaying a list of the reference details
+Route::get('reference/editTable/{id}', array('uses'=>'ReferenceController@editTable')); //displaying a list of the reference details
+Route::get('reference/deleteTable/{id}', array('uses'=>'ReferenceController@deleteTable')); //displaying a list of the reference details
+Route::get('reference/deleteColumn/{id}', array('uses'=>'ReferenceController@deleteColumn')); //displaying a list of the reference details
+
+
+
+/***************************************************************/
+//************************Table Name****************************/
+/***************************************************************/
+Route::get('table_name', array('uses'=>'TableController@index')); //display list of table names
+Route::get('table_name/back', array('uses'=>'TableController@back')); //display list of table names
+Route::get('dynamic_table', array('uses'=>'TableController@dynamicTable')); //display list of table name
+Route::get('table_name/add', array('uses'=>'TableController@create')); //display form to add new table name
+Route::post('table_name/add', array('uses'=>'TableController@store')); //processing addition form
+Route::get('table_name/edit/{id}', array('uses'=>'TableController@edit')); //display form to edit a tableName of a certain id
+Route::get('table_name/editColumn/{id}', array('uses'=>'TableController@editColumn')); //display form to edit a tableName of a certain id
+Route::post('table_name/edit/{id}', array('uses'=>'TableController@update')); //display form to edit a tableName of a certain id
+Route::post('table_name/editColumn/{id}', array('uses'=>'TableController@updateColumn')); //display form to edit a tableName of a certain id
+Route::get('table_name/delete/{id}', array('uses'=>'TableController@destroy')); //processing deletion of a tableName of a certain id
+Route::get('table_name/deleteColumn/{id}', array('uses'=>'TableController@destroyColumn')); //processing deletion of a column and its options of a certain id
+Route::get('table_name/view_column/{id}', array('uses'=>'TableController@view_Column')); //display form to add new column option
+Route::get('table_name/viewColumnOptions/{id}', array('uses'=>'TableController@viewColumnOption')); //display form to add new column option
+Route::get('table_name/add_column/{id}', array('uses'=>'TableController@addColumn')); //displaying a list of the tableName details
+Route::post('table_name/add_column/{id}', array('uses'=>'TableController@storeColumn')); //displaying a list of the tableName details
+Route::get('table_name/add_optionColumn/{id}', array('uses'=>'TableController@addOptionColumn')); //displaying a list of the tableName details
+Route::post('table_name/add_optionColumn/{id}', array('uses'=>'TableController@storeOptionColumn')); //displaying a list of the tableName detailsRoute::get('reference/viewColumn/{id}', array('uses'=>'ReferenceController@viewColumn')); //displaying a list of the reference details
+Route::get('dynamic_tablel', array('uses'=>'ReferenceController@viewreference')); //displaying available references
+Route::get('dynamic_tablel/referenceform', array('uses'=>'ReferenceController@createreferenceform')); //displaying form to add reference
+
+
+
+
+//********************************************************/
+//*********************User************************/
+//********************************************************/
+Route::get('user', array('uses'=>'UserController@index')); //display list of users
+Route::get('user/add', array('uses'=>'UserController@create')); //add users
+Route::post('user/add', array('uses'=>'UserController@store')); //processing added users
+Route::get('user/delete/{id}', array('uses'=>'UserController@destroy')); //add users
+Route::get('user/edit/{id}', array('uses'=>'UserController@update')); //edit users
+Route::post('user/edit/{id}', array('uses'=>'UserController@edit')); //process edited users
+Route::get('userindex', array('uses'=>'UserController@index'));//displaying messages
+
+
+
+
+//********************************************************/
+//*********************Login************************/
+//********************************************************/
+Route::get('login', array('uses'=>'LoginController@index')); //display login form
+Route::post('login', array('uses'=>'LoginController@login')); //process login form
+Route::get('logout', array('uses'=>'LoginController@logout')); //process logout functionality
+
+
+
+
+//********************************************************/
+//*********************Data type************************/
+//********************************************************/
+Route::get('datatype', array('uses'=>'DatatypeController@index')); //display list of datatypes
+Route::get('datatype/add', array('uses'=>'DatatypeController@create')); //add datatypes
+Route::post('datatype/add', array('uses'=>'DatatypeController@store')); //processing added datatypes
+Route::get('datatype/delete/{id}', array('uses'=>'DatatypeController@destroy')); //delete specific datatype
+Route::get('datatype/edit/{id}', array('uses'=>'DatatypeController@update')); //edit specific datatype
+Route::post('datatype/edit/{id}', array('uses'=>'DatatypeController@edit')); //process edited datatype
+Route::get('index', array('uses'=>'DatatypeController@index'));//displaying messages

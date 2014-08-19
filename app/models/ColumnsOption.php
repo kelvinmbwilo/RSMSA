@@ -7,7 +7,7 @@ class ColumnsOption extends Eloquent {
      *
      * @var string
      */
-    protected $table = 'rsmsa_columnsoption';
+    protected $table = 'rsmsa_columnsoptions';
 
     protected  $guarded = array('$id');
 

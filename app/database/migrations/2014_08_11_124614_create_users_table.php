@@ -25,6 +25,7 @@ class CreateUsersTable extends Migration {
             $table->string('phoneNumber');
             $table->string('role');
             $table->integer('stakeholderBranchId');
+            $table->string('remember_token');
             $table->timestamps();
 		});
 	}

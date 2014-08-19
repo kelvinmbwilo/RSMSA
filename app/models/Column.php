@@ -11,8 +11,10 @@ class Column extends Eloquent {
 
     protected  $guarded = array('$id');
 
-    public function table(){
+    public function table()
+    {
         return $this->belongsTo('TableName', 'tableId', 'id');
+
     }
 
     public function data(){
