@@ -1,138 +1,69 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Isaiah
+ * Date: 8/19/14
+ * Time: 11:05 AM
+ */ ?>
 @extends('layout.master')
 
 @section('contents')
 
 <!--main content start-->
-<a class="btn btn-success pull-right" href={{ url('data/add') }}>
-<i class="fa fa-adn">
-    New
-</i>
-</a>
-
+<header class="panel-heading">
+    <a class="btn btn-success pull-right" href={{ url('data/add') }}>
+    <i class="fa fa-adn">
+        New
+    </i>
+    </a>
+</header>
 <section class="wrapper">
-    <!--state overview start-->
-    <div class="row state-overview">
-        <div class="col-lg-3 col-sm-6">
-            <section class="panel">
-                <div class="symbol terques">
-                    <i class="fa fa-user"></i>
-                </div>
-                <div class="value">
-                    <h1 class="count">
-                        0
-                    </h1>
-                    <p>New Users</p>
-                </div>
-            </section>
-        </div>
-        <div class="col-lg-3 col-sm-6">
-            <section class="panel">
-                <div class="symbol red">
-                    <i class="fa fa-tags"></i>
-                </div>
-                <div class="value">
-                    <h1 class=" count2">
-                        0
-                    </h1>
-                    <p>Sales</p>
-                </div>
-            </section>
-        </div>
-        <div class="col-lg-3 col-sm-6">
-            <section class="panel">
-                <div class="symbol yellow">
-                    <i class="fa fa-shopping-cart"></i>
-                </div>
-                <div class="value">
-                    <h1 class=" count3">
-                        0
-                    </h1>
-                    <p>New Order</p>
-                </div>
-            </section>
-        </div>
-        <div class="col-lg-3 col-sm-6">
-            <section class="panel">
-                <div class="symbol blue">
-                    <i class="fa fa-bar-chart-o"></i>
-                </div>
-                <div class="value">
-                    <h1 class=" count4">
-                        0
-                    </h1>
-                    <p>Total Profit</p>
-                </div>
-            </section>
-        </div>
-    </div>
-    <!--state overview end-->
+
+    <?php
+       $data = Data::all();
+       $data->toarray();
+    ?>
 
     <div class="row">
+        <!-- Data Table Start -->
         <div class="col-lg-8">
-            <!--custom chart start-->
-            <div class="border-head">
-                <h3>Earning Graph</h3>
-            </div>
-            <div class="custom-bar-chart">
-                <ul class="y-axis">
-                    <li><span>100</span></li>
-                    <li><span>80</span></li>
-                    <li><span>60</span></li>
-                    <li><span>40</span></li>
-                    <li><span>20</span></li>
-                    <li><span>0</span></li>
-                </ul>
-                <div class="bar">
-                    <div class="title">JAN</div>
-                    <div class="value tooltips" data-original-title="80%" data-toggle="tooltip" data-placement="top">80%</div>
-                </div>
-                <div class="bar ">
-                    <div class="title">FEB</div>
-                    <div class="value tooltips" data-original-title="50%" data-toggle="tooltip" data-placement="top">50%</div>
-                </div>
-                <div class="bar ">
-                    <div class="title">MAR</div>
-                    <div class="value tooltips" data-original-title="40%" data-toggle="tooltip" data-placement="top">40%</div>
-                </div>
-                <div class="bar ">
-                    <div class="title">APR</div>
-                    <div class="value tooltips" data-original-title="55%" data-toggle="tooltip" data-placement="top">55%</div>
-                </div>
-                <div class="bar">
-                    <div class="title">MAY</div>
-                    <div class="value tooltips" data-original-title="20%" data-toggle="tooltip" data-placement="top">20%</div>
-                </div>
-                <div class="bar ">
-                    <div class="title">JUN</div>
-                    <div class="value tooltips" data-original-title="39%" data-toggle="tooltip" data-placement="top">39%</div>
-                </div>
-                <div class="bar">
-                    <div class="title">JUL</div>
-                    <div class="value tooltips" data-original-title="75%" data-toggle="tooltip" data-placement="top">75%</div>
-                </div>
-                <div class="bar ">
-                    <div class="title">AUG</div>
-                    <div class="value tooltips" data-original-title="45%" data-toggle="tooltip" data-placement="top">45%</div>
-                </div>
-                <div class="bar ">
-                    <div class="title">SEP</div>
-                    <div class="value tooltips" data-original-title="50%" data-toggle="tooltip" data-placement="top">50%</div>
-                </div>
-                <div class="bar ">
-                    <div class="title">OCT</div>
-                    <div class="value tooltips" data-original-title="42%" data-toggle="tooltip" data-placement="top">42%</div>
-                </div>
-                <div class="bar ">
-                    <div class="title">NOV</div>
-                    <div class="value tooltips" data-original-title="60%" data-toggle="tooltip" data-placement="top">60%</div>
-                </div>
-                <div class="bar ">
-                    <div class="title">DEC</div>
-                    <div class="value tooltips" data-original-title="90%" data-toggle="tooltip" data-placement="top">90%</div>
-                </div>
-            </div>
-            <!--custom chart end-->
+            <header class="panel-heading">
+                Road Offence Data
+            </header>
+            <section id="unseen">
+                <table class="table table-bordered table-striped table-condensed " id="dynamic-table">
+                    <thead>
+                    <tr>
+                        <th> </th>
+                        <th>Type</th>
+                        <th>Value</th>
+                        <th>Location</th>
+                        <th>Provider</th>
+                        <th class="numeric">Updated</th>
+                        <th class="numeric">Updated</th>
+                        <th>Action</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    @foreach($data as $dt)
+                    @if(!is_null($dt))
+                    <tr>
+                        <td>AAC</td>
+                        <td>{{$dt->table->categoryName}}</td>
+                        <td>{{$dt->value}}</td>
+                        <td>{{$dt->locationId}}</td>
+                        <td>{{$dt->StakeHolderBranch->name}}</td>
+                        <td>{{$dt->created_at}}</td>
+                        <td>{{$dt->updated_at}}</td>
+                        <td><a href="#">Edit</a></td>
+                    </tr>
+                    @endif
+                    @endforeach
+                    </tbody>
+                </table>
+            </section>
         </div>
+        <!-- Datatable ends -->
         <div class="col-lg-4">
             <!--new earning start-->
             <div class="panel terques-chart">
@@ -178,6 +109,10 @@
         </div>
     </div>
 
+
+
     </section>
+
+<script src="{{ asset('js/dynamic_table_init.js') }}"></script>
 
 @stop

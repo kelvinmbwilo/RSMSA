@@ -11,7 +11,23 @@ class DataController extends \BaseController {
 	{
 		//
         return View::make('data.view');
-	}
+
+    }
+
+    /**
+     * @param $id
+     *
+     * @returns the specific table view of a type
+     * of data..
+     */
+    public function viewtable($id){
+
+        $table = TableName::find($id);
+        $colums = $table->column;
+
+        return View::make('data.specific_table', compact('table'));
+
+    }
 
 
 	/**
@@ -31,7 +47,7 @@ class DataController extends \BaseController {
         $table = TableName::find(Input::get('select'));
         $mycol = $table->column;
 
-        return View::make('data.test', compact('mycol'));
+        return View::make('data.test', compact('mycol', 'table'));
 
     }
 
@@ -41,9 +57,24 @@ class DataController extends \BaseController {
 	 *
 	 * @return Response
 	 */
-	public function store()
+	public function store($id)
 	{
 		//
+        $count = $id;
+
+        for($i=1; $i<=$count; $i++){
+            $newData = Data::create(array(
+                'tableColumnId' => Input::get('table'),
+                'columnId' => Input::get($i.'_column'),
+                'value' => Input::get($i.'_value'),
+                'datTag' => '2',
+                'locationId' => '',
+                'stakeholderId' => '1'
+            ));
+        }
+
+        return View::make('data.view');
+
 
 	}
 

@@ -20,6 +20,7 @@
                 <span>Reference Tables</span>
             </a>
             <ul class="sub">
+
                 <li><a  href="{{ url('reference') }}">reference Items</a></li>
                 <li><a  href="{{ url('reference_column') }}">reference Columns</a></li>
                 <li><a  href="{{ url('data-reference') }}">data-reference</a></li>
@@ -34,12 +35,15 @@
                 <span>Data</span>
             </a>
             <ul class="sub">
-                <li><a  href="{{ url('data/home') }}">View</a></li>
                 <li><a  href="{{ url('data/add') }}">Add</a></li>
-                <li><a  href="gallery.html">Gallery</a></li>
-                <li><a  href="todo_list.html">Todo List</a></li>
-                <li><a  href="draggable_portlet.html">Draggable Portlet</a></li>
-                <li><a  href="tree.html">Tree View</a></li>
+                <li><a  href="{{ url('data/home') }}">View Statistics</a></li>
+                <?php
+                   $datatypes = TableName::all();
+                   $datatypes->toarray();
+                   foreach($datatypes as $types){
+                ?>
+                <li><a  href='{{ url("data/view/{$types->id}") }}' >{{ $types->categoryName }}</a></li>
+                <?php } ?>
             </ul>
         </li>
         <li>

@@ -1,3 +1,11 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Isaiah
+ * Date: 8/19/14
+ * Time: 11:05 AM
+ */ ?>
+
 @extends('layout.master')
 
 @section('contents')
@@ -36,7 +44,7 @@
                             <tr>
                                 <td>AAC</td>
                                 <td>{{$stakeHolderBranch->name}}</td>
-                                <td class="numeric">{{$stakeHolderBranch->PhoneNumber}}</td>
+                                <td>{{$stakeHolderBranch->PhoneNumber}}</td>
                                 <td>{{$stakeHolderBranch->address}}</td>
                                 <td>{{$stakeHolderBranch->email}}</td>
                                 <td class="numeric">{{$stakeHolderBranch->created_at}}</td>

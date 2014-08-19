@@ -56,7 +56,9 @@ Route::get('stakeholder/viewbranch/{id}', array('uses' => 'StakeholderController
 //******************************************************************************//
 Route::post('data/add/getcolumn', array('uses' => 'DataController@returncolumns'));
 Route::get('data/add', array('uses' => 'DataController@create'));
+Route::post('data/add/{count}', array('uses' => 'DataController@store'));
 Route::get('data/home', array('uses' => 'DataController@index'));
+Route::get('data/view/{id}', array('uses' => 'DataController@viewtable'));
 //Route:get('data/getcol/{tablename}', array('uses' => 'DaraController@returncolumns'));
 
 

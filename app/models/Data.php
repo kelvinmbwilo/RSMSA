@@ -12,10 +12,15 @@ protected $table = 'rsmsa_data';
 
 protected  $guarded = array('$id');
 
-    public function tableColumn()
+    public function table()
     {
-        return $this->belongsTo('TableColumn', 'tableColumnId', 'id');
+        return $this->belongsTo('TableName', 'tableColumnId', 'id');
     }
+
+    public function column(){
+        return $this->belongsTo('Column', 'columnId', 'id');
+    }
+
     public function location()
     {
         return $this->belongsTo('Location', 'locationId', 'id');
