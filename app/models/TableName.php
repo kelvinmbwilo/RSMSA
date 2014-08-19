@@ -19,4 +19,8 @@ class TableName extends Eloquent {
         return $this->hasMany('Data', 'tableColumnId', 'id');
     }
 
+    public function tag(){
+        return $this->hasMany('DataTag', 'tableId', 'id');
+    }
+
 }

@@ -21,8 +21,9 @@
     $id = $table->id;
     $count = 0;
     $columns = $table->column;
-    $data = $table->data;
-    $data->toarray();
+    $tags = $table->tag;
+    $myData = $table->data;
+    $myData->toarray();
     ?>
     <div class="row">
         <!-- Data Table Start -->
@@ -31,13 +32,13 @@
                 {{ $table->categoryName }} Data
             </header>
             <section id="unseen">
-                <table class="table table-bordered table-striped table-condensed " id="dynamic-table">
-                    <?php
+                <?php
                     $count = 0;
                     foreach ($columns as $colm) {
-                    $count++;
+                        $count++;
                     }
-                    ?>
+                ?>
+                <table class="table table-bordered table-striped table-condensed " id="dynamic-table">
                     <thead>
                     <tr>
                         <th>code</th>
@@ -48,18 +49,25 @@
                     </tr>
                     </thead>
                     <tbody>
+                    <?php foreach($tags as $tag){
+                        $currentTag = $tag->datatagId;
+                        $data = $tag->data;
+                        ?>
                     <tr>
                            <td>AAC</td>
-                        <?php foreach($columns as $col){
+                        <?php
+                        foreach($columns as $col){
                             $temp = $col->id;
                                  foreach($data as $dat){
                                      if($dat->column->id == $temp){ ?>
                                                <td>{{ $dat->value }}</td>
                                       <?php }
                                  }
-                        }  ?>
+                        }
+                       ?>
                            <td><a href="#">Report</a></td>
                     </tr>
+                    <?php } ?>
                     </tbody>
                 </table>
             </section>
@@ -67,5 +75,6 @@
     </div>
 </section>
 
+<script src="{{ asset('js/dynamic_table_init.js') }}"></script>
 
 @stop

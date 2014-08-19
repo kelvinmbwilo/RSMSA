@@ -2,6 +2,8 @@
 
 class DataController extends \BaseController {
 
+    public $tag_count = 1;
+
 	/**
 	 * Display a listing of the resource.
 	 *
@@ -54,24 +56,29 @@ class DataController extends \BaseController {
 
 	/**
 	 * Store a newly created resource in storage.
-	 *
+	 * @param id
 	 * @return Response
 	 */
 	public function store($id)
 	{
 		//
         $count = $id;
-
-        for($i=1; $i<=$count; $i++){
+         for($i=1; $i<=$count; $i++){
             $newData = Data::create(array(
                 'tableColumnId' => Input::get('table'),
                 'columnId' => Input::get($i.'_column'),
                 'value' => Input::get($i.'_value'),
-                'datTag' => '2',
+                'datTag' => '5',
                 'locationId' => '',
                 'stakeholderId' => '1'
             ));
         }
+
+        $tag = DataTag::create(array(
+           'tableId' => Input::get('table'),
+            'datatagId' => '5'
+        ));
+
 
         return View::make('data.view');
 

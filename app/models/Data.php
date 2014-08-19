@@ -30,5 +30,9 @@ protected  $guarded = array('$id');
         return $this->belongsTo('StakeHolderBranch', 'stakeHolderId', 'id');
     }
 
+    public function tag(){
+        return $this->belongsTo('DataTag', 'datTag', 'datatagId');
+    }
+
 }
 

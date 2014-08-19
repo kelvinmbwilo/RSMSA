@@ -17,6 +17,7 @@ class CreateDataTable extends Migration {
         {
             $table->increments('id');
             $table->integer('tableColumnId');
+            $table->integer('columnId');
             $table->string('value');
             $table->integer('datTag');
             $table->integer('locationId');

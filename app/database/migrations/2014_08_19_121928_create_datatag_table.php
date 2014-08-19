@@ -13,11 +13,11 @@ class CreateDatatagTable extends Migration {
     public function up()
     {
         //
-        Schema::create('rsmsa_data', function(Blueprint $table)
+        Schema::create('rsmsa_datatag', function(Blueprint $table)
         {
             $table->increments('id');
             $table->integer('tableId');
-            $table->integer('dataId');
+            $table->integer('datatagId');
             $table->timestamps();
         });
     }
@@ -30,7 +30,7 @@ class CreateDatatagTable extends Migration {
     public function down()
     {
         //
-        Schema::drop('rsmsa_data');
+        Schema::drop('rsmsa_datatag');
     }
 
 }
