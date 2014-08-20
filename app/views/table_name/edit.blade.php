@@ -44,7 +44,7 @@
                             <div>
                                 <h4>Edit the columns of <span id="tbName1"></span> <button class="btn-success btn btn-xs pull-right" id="addColumn">add column</button></h4>
                                 <span class="text-danger" id="errorlebal"></span>
-                                <?php $i=1; $k=1; ?>
+                                <?php $i=1; $k=1; $x=1; ?>
                                 @foreach($table->column as $column)
                                 <div class="form-group">
                                     <div class="col-sm-7">
@@ -52,7 +52,7 @@
                                         <input type="hidden"  name="columnid{{$k++}}" value="{{$column->id}}">
                                     </div>
                                     <div class="col-sm-5">
-                                        <select name="data1" class="form-control input-sm">
+                                        <select name="data{{$x++}}" class="form-control input-sm">
                                             <option value="{{$column->typeId}}" id="option">{{$column->datatype->name}}</option>
                                             @foreach(DataTypeDetails::all() as $data)
                                             <option value="{{$data->id}}" id="option">{{$data->name}}</option>

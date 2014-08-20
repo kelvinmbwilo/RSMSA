@@ -13,7 +13,7 @@ class DataTag extends Eloquent {
      *
      * @var string
      */
-    protected $table = 'rsmsa_datatag';
+    protected $table ='rsmsa_datatag';
 
     protected  $guarded = array('$id');
 

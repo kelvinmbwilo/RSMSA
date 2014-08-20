@@ -2,11 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6662a4ad-95fa-4dcf-82ca-d6bee230b9f9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/views/00236fd71b3849cd574b6d871a414fd6" afterPath="$PROJECT_DIR$/app/storage/views/00236fd71b3849cd574b6d871a414fd6" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/views/6f4b189ab4486f4f00ef071e0d9c5247" afterPath="$PROJECT_DIR$/app/storage/views/6f4b189ab4486f4f00ef071e0d9c5247" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/reference/data_reference/add.blade.php" afterPath="$PROJECT_DIR$/app/views/reference/data_reference/add.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/views/04e0ca38bf9d1db1f20d983ab16a067b" afterPath="$PROJECT_DIR$/app/storage/views/04e0ca38bf9d1db1f20d983ab16a067b" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/views/095db1e034ed1d79e103db465bf825f4" afterPath="$PROJECT_DIR$/app/storage/views/095db1e034ed1d79e103db465bf825f4" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/views/1ea7b7c14512709f5baf3ef88d68e519" afterPath="$PROJECT_DIR$/app/storage/views/1ea7b7c14512709f5baf3ef88d68e519" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/views/54e58267ae2f5a967d8ecbe18a9cd10a" afterPath="$PROJECT_DIR$/app/storage/views/54e58267ae2f5a967d8ecbe18a9cd10a" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/views/894d6dd398d863b7486cdcb013da7ad6" afterPath="$PROJECT_DIR$/app/storage/views/894d6dd398d863b7486cdcb013da7ad6" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/DataController.php" afterPath="$PROJECT_DIR$/app/controllers/DataController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/DataTag.php" afterPath="$PROJECT_DIR$/app/models/DataTag.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/table_name/add.blade.php" afterPath="$PROJECT_DIR$/app/views/table_name/add.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layout/left_menu.blade.php" afterPath="$PROJECT_DIR$/app/views/layout/left_menu.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/views/ae932db9bd113c3cd4fee4a5a777b951" afterPath="$PROJECT_DIR$/app/storage/views/ae932db9bd113c3cd4fee4a5a777b951" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/table_name/edit.blade.php" afterPath="$PROJECT_DIR$/app/views/table_name/edit.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/reference/data_reference/index.blade.php" afterPath="$PROJECT_DIR$/app/views/reference/data_reference/index.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/routes.php" afterPath="$PROJECT_DIR$/app/routes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/data/test.blade.php" afterPath="$PROJECT_DIR$/app/views/data/test.blade.php" />
     </list>
     <ignored path="RSMSA.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,64 +38,82 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="add.blade.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/reference/data_reference/add.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="150" column="53" selection-start="6225" selection-end="6225" vertical-scroll-proportion="-7.8461537" vertical-offset="2346" max-vertical-offset="3587">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="routes.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="routes.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="96" column="65" selection-start="5074" selection-end="5074" vertical-scroll-proportion="1.4461248" vertical-offset="714" max-vertical-offset="2567">
+            <state line="40" column="0" selection-start="804" selection-end="804" vertical-scroll-proportion="56.23077" vertical-offset="1989" max-vertical-offset="2516">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ReferenceController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/ReferenceController.php">
+      <file leaf-file-name="index.blade.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/reference/data_reference/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="125" column="51" selection-start="2874" selection-end="2874" vertical-scroll-proportion="0.0" vertical-offset="1921" max-vertical-offset="5134">
+            <state line="59" column="0" selection-start="2682" selection-end="2682" vertical-scroll-proportion="-13.076923" vertical-offset="663" max-vertical-offset="1887">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ReferenceDetails.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/ReferenceDetails.php">
+      <file leaf-file-name="index.blade.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/table_name/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="6" selection-start="12" selection-end="28" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="476">
+            <state line="11" column="7" selection-start="285" selection-end="869" vertical-scroll-proportion="-1.3076923" vertical-offset="153" max-vertical-offset="1343">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="editColumn.blade.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/table_name/editColumn.blade.php">
+      <file leaf-file-name="add.blade.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/table_name/add.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="0" selection-start="208" selection-end="208" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="3315">
+            <state line="184" column="59" selection-start="7577" selection-end="7577" vertical-scroll-proportion="0.29032257" vertical-offset="2975" max-vertical-offset="3808">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.blade.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/data/test.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="39" column="14" selection-start="1083" selection-end="1083" vertical-scroll-proportion="-12.923077" vertical-offset="242" max-vertical-offset="1207">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DataController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/DataController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="67" column="17" selection-start="1210" selection-end="1210" vertical-scroll-proportion="-19.307692" vertical-offset="637" max-vertical-offset="2533">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="edit.blade.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/reference/data_reference/edit.blade.php">
+        <entry file="file://$PROJECT_DIR$/app/views/table_name/edit.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="66" column="0" selection-start="4012" selection-end="4012" vertical-scroll-proportion="0.0" vertical-offset="1734" max-vertical-offset="3706">
+            <state line="54" column="64" selection-start="3039" selection-end="3039" vertical-scroll-proportion="-5.8846154" vertical-offset="765" max-vertical-offset="3604">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="add.blade.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/table_name/add.blade.php">
+      <file leaf-file-name="TableController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/TableController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="155" column="57" selection-start="6345" selection-end="6345" vertical-scroll-proportion="-5.9615383" vertical-offset="2480" max-vertical-offset="3791">
+            <state line="232" column="60" selection-start="5561" selection-end="5561" vertical-scroll-proportion="0.65384614" vertical-offset="3961" max-vertical-offset="6001">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DataTag.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/DataTag.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="22" selection-start="232" selection-end="232" vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="476">
               <folding />
             </state>
           </provider>
@@ -115,8 +142,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/config/app.php" />
-        <option value="$PROJECT_DIR$/app/database/migrations/2014_08_11_124644_create_location_table.php" />
         <option value="$PROJECT_DIR$/app/database/migrations/2014_08_11_124551_create_stakeholders_table.php" />
         <option value="$PROJECT_DIR$/app/database/migrations/2014_08_11_124832_create_tableName_table.php" />
         <option value="$PROJECT_DIR$/app/database/migrations/2014_08_11_125010_create_tableColumn_table.php" />
@@ -154,17 +179,20 @@
         <option value="$PROJECT_DIR$/app/models/Column.php" />
         <option value="$PROJECT_DIR$/app/models/Reference.php" />
         <option value="$PROJECT_DIR$/app/views/table_name/index.blade.php" />
-        <option value="$PROJECT_DIR$/app/views/table_name/edit.blade.php" />
         <option value="$PROJECT_DIR$/app/views/table_name/editColumn.blade.php" />
         <option value="$PROJECT_DIR$/app/views/table_name/viewColumn.blade.php" />
-        <option value="$PROJECT_DIR$/app/routes.php" />
-        <option value="$PROJECT_DIR$/app/controllers/TableController.php" />
-        <option value="$PROJECT_DIR$/app/views/reference/data_reference/index.blade.php" />
         <option value="$PROJECT_DIR$/app/controllers/ReferenceController.php" />
         <option value="$PROJECT_DIR$/app/views/reference/data_reference/edit.blade.php" />
         <option value="$PROJECT_DIR$/app/views/reference/data_reference/add.blade.php" />
-        <option value="$PROJECT_DIR$/app/views/table_name/add.blade.php" />
         <option value="$PROJECT_DIR$/app/views/layout/left_menu.blade.php" />
+        <option value="$PROJECT_DIR$/app/routes.php" />
+        <option value="$PROJECT_DIR$/app/views/reference/data_reference/index.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/data/test.blade.php" />
+        <option value="$PROJECT_DIR$/app/models/DataTag.php" />
+        <option value="$PROJECT_DIR$/app/controllers/DataController.php" />
+        <option value="$PROJECT_DIR$/app/views/table_name/edit.blade.php" />
+        <option value="$PROJECT_DIR$/app/controllers/TableController.php" />
+        <option value="$PROJECT_DIR$/app/views/table_name/add.blade.php" />
       </list>
     </option>
   </component>
@@ -309,76 +337,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="reference" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RSMSA" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RSMSA" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="reference" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data_reference" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RSMSA" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RSMSA" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RSMSA" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RSMSA" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -398,6 +356,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="database" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RSMSA" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RSMSA" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -505,21 +481,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/models/Data.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="10" selection-start="13" selection-end="17" vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="595" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_08_13_082413_create_reference_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="39" selection-start="242" selection-end="257" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="663" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="20" selection-start="442" selection-end="442" vertical-scroll-proportion="0.0" vertical-offset="1864" max-vertical-offset="3400" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/dashboard.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="12121" />
@@ -691,16 +652,6 @@
         <state line="2" column="6" selection-start="13" selection-end="26" vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="646" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/table_name/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="58" selection-start="2297" selection-end="2297" vertical-scroll-proportion="-13.076923" vertical-offset="561" max-vertical-offset="1343" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/table_name/edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="0" selection-start="4538" selection-end="4538" vertical-scroll-proportion="-9.153846" vertical-offset="1326" max-vertical-offset="3604" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/Column.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="20" selection-start="438" selection-end="446" vertical-scroll-proportion="-14.576923" vertical-offset="12" max-vertical-offset="578" />
@@ -718,19 +669,9 @@
         <state line="4" column="74" selection-start="190" selection-end="190" vertical-scroll-proportion="-2.6153846" vertical-offset="0" max-vertical-offset="1836" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/TableController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="46" selection-start="426" selection-end="426" vertical-scroll-proportion="-13.730769" vertical-offset="0" max-vertical-offset="6001" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layout/header.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="217" column="39" selection-start="8697" selection-end="8697" vertical-scroll-proportion="-43.5" vertical-offset="2558" max-vertical-offset="4080" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/reference/data_reference/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="75" selection-start="2553" selection-end="2553" vertical-scroll-proportion="0.47628084" vertical-offset="650" max-vertical-offset="1887" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/ReferenceDetails.php">
@@ -761,13 +702,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/table_name/add.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="155" column="57" selection-start="6345" selection-end="6345" vertical-scroll-proportion="-5.9615383" vertical-offset="2480" max-vertical-offset="3791">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layout/left_menu.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="54" column="48" selection-start="1910" selection-end="1910" vertical-scroll-proportion="-28.692308" vertical-offset="172" max-vertical-offset="1785">
@@ -777,7 +711,63 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="65" selection-start="5074" selection-end="5074" vertical-scroll-proportion="1.4461248" vertical-offset="714" max-vertical-offset="2567">
+        <state line="40" column="0" selection-start="804" selection-end="804" vertical-scroll-proportion="56.23077" vertical-offset="1989" max-vertical-offset="2516">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/table_name/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="7" selection-start="285" selection-end="869" vertical-scroll-proportion="-1.3076923" vertical-offset="153" max-vertical-offset="1343">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/reference/data_reference/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="0" selection-start="2682" selection-end="2682" vertical-scroll-proportion="-13.076923" vertical-offset="663" max-vertical-offset="1887">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/data/test.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="14" selection-start="1083" selection-end="1083" vertical-scroll-proportion="-12.923077" vertical-offset="242" max-vertical-offset="1207">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/DataTag.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="22" selection-start="232" selection-end="232" vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="476">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/DataController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="67" column="17" selection-start="1210" selection-end="1210" vertical-scroll-proportion="-19.307692" vertical-offset="637" max-vertical-offset="2533">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/table_name/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="64" selection-start="3039" selection-end="3039" vertical-scroll-proportion="-5.8846154" vertical-offset="765" max-vertical-offset="3604">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/TableController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="232" column="60" selection-start="5561" selection-end="5561" vertical-scroll-proportion="0.65384614" vertical-offset="3961" max-vertical-offset="6001">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/table_name/add.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="184" column="59" selection-start="7577" selection-end="7577" vertical-scroll-proportion="0.29032257" vertical-offset="2975" max-vertical-offset="3808">
           <folding />
         </state>
       </provider>
