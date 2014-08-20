@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateStringdataTable extends Migration {
+class CreateDatatagTable extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -13,14 +13,11 @@ class CreateStringdataTable extends Migration {
     public function up()
     {
         //
-        Schema::create('rsmsa_stringdata', function(Blueprint $table)
+        Schema::create('rsmsa_datatag', function(Blueprint $table)
         {
             $table->increments('id');
-            $table->integer('tableColumnId');
-            $table->string('value');
-            $table->integer('datTag');
-            $table->integer('locationId');
-            $table->integer('stakeHolderId');
+            $table->integer('tableId');
+            $table->integer('datatagId');
             $table->timestamps();
         });
     }
@@ -33,8 +30,7 @@ class CreateStringdataTable extends Migration {
     public function down()
     {
         //
-        Schema::drop('rsmsa_stringdata');
+        Schema::drop('rsmsa_datatag');
     }
-
 
 }

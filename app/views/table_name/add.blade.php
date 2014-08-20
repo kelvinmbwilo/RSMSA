@@ -153,7 +153,7 @@
             duration  : 600,
             transition: 'fade',
             finish:function(){
-                alert('am done')
+                alert('This will create the described table')
             },
             select: function(index) {
                 if(index == 2){
@@ -177,11 +177,15 @@
                         var col_count =0;
                         $(".columns").each(function(){
                             col_count++;
+                            var data =$('input[name=data1]').val()
                             if($(this).val() != ''){
                                 col +='<div class="form-group">';
-                                col +='<label class="col-lg-2 control-label">column'+ ++counter +'</label>';
-                                col +='<div class="col-lg-10">';
+                                col +='<label class="col-md-2 control-label">column'+ ++counter +'</label>';
+                                col +='<div class="col-sm-5">';
                                 col +='<p class="form-control-static">'+ $(this).val() +'</p>';
+                                col +='</div>';
+                                col +='<div class="col-md-3 pull-left">';
+                                col +='<p class="form-control-static">{'+ $('input[name=data1]').val() +'}</p>';
                                 col +='</div></div>'
                             }
                         });
