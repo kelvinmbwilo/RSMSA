@@ -1,9 +1,7 @@
-@extends('layout.master')
+<?php $__env->startSection('contents'); ?>
 
-@section('contents')
-
-<link href="{{ asset('css/style.css') }}" rel="stylesheet">
-<link href="{{ asset('css/style-responsive.css') }}" rel="stylesheet" />
+<link href="<?php echo asset('css/style.css'); ?>" rel="stylesheet">
+<link href="<?php echo asset('css/style-responsive.css'); ?>" rel="stylesheet" />
 <!--main content start-->
 
     <section class="wrapper site-min-height">
@@ -26,13 +24,13 @@
 
                             </ul>
                         </div>
-                        <form class="form-horizontal" id="default" method="post" action="{{ url("table_name/editColumn/{$coll->id}")}}">
+                        <form class="form-horizontal" id="default" method="post" action="<?php echo url("table_name/editColumn/{$coll->id}"); ?>">
                         <fieldset title=column class="step" id="default-step-0">
                             <legend> </legend>
                             <div class="form-group">
                                 <label class="col-lg-2 control-label">Column Name</label>
                                 <div class="col-lg-10">
-                                    <input type="text" class="form-control" name="columnName" value="{{$coll->columnName}}">
+                                    <input type="text" class="form-control" name="columnName" value="<?php echo $coll->columnName; ?>">
                                 </div>
                             </div>
 
@@ -43,14 +41,14 @@
                                 <h4>Edit the options of column <span class="colName1"></span> <button class="btn-success btn btn-xs pull-right" id="addColumn">add option</button></h4>
                                 <span class="text-danger" id="errorlebal"></span>
                                 <?php $i=1; $k=1; ?>
-                                @foreach($coll->options as $option)
+                                <?php foreach($coll->options as $option): ?>
                                 <div class="form-group">
                                     <div class="col-md-8 col-md-offset-1">
-                                        <input type="text" class="form-control input-sm columns"  name="option{{$i++}}" value="{{$option->optionName}}">
-                                        <input type="hidden"  name="optionid{{$k++}}" value="{{$option->id}}">
+                                        <input type="text" class="form-control input-sm columns"  name="option<?php echo $i++; ?>" value="<?php echo $option->optionName; ?>">
+                                        <input type="hidden"  name="optionid<?php echo $k++; ?>" value="<?php echo $option->id; ?>">
                                     </div>
                                 </div>
-                                @endforeach
+                                <?php endforeach; ?>
 
 
                             </div>
@@ -84,17 +82,17 @@
     </section>
 
 
-<script src="{{ asset('js/jquery.js') }}"></script>
-<script src="{{ asset('js/bootstrap.min.js') }}"></script>
-<script src="{{ asset('js/jquery.scrollTo.min.js') }}"></script>
-<script src="{{ asset('js/jquery.nicescroll.js') }}"></script>
-<script src="{{ asset('js/respond.min.js') }}"></script>
-<script src="{{ asset('js/jquery.stepy.js') }}"></script>
+<script src="<?php echo asset('js/jquery.js'); ?>"></script>
+<script src="<?php echo asset('js/bootstrap.min.js'); ?>"></script>
+<script src="<?php echo asset('js/jquery.scrollTo.min.js'); ?>"></script>
+<script src="<?php echo asset('js/jquery.nicescroll.js'); ?>"></script>
+<script src="<?php echo asset('js/respond.min.js'); ?>"></script>
+<script src="<?php echo asset('js/jquery.stepy.js'); ?>"></script>
 
 
-<script src="{{ asset('css/style.css') }}"></script>
-<script src="{{ asset('css/style-responsive.css') }}"></script>
-<script src="{{ asset('css/styles/colors.css') }}"></script>
+<script src="<?php echo asset('css/style.css'); ?>"></script>
+<script src="<?php echo asset('css/style-responsive.css'); ?>"></script>
+<script src="<?php echo asset('css/styles/colors.css'); ?>"></script>
 
 
 
@@ -109,7 +107,7 @@
 
 
     $(function() {
-        var ids = {{count($coll->options)}};
+        var ids = <?php echo count($coll->options); ?>;
        $('#addColumn').click(function(){
         ids++;
         var column = '<div class="form-group">';
@@ -187,4 +185,5 @@
 </script>
 
 
-@stop
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layout.master', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

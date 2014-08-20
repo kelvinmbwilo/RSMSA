@@ -23,7 +23,7 @@
             <h4 > Table Name </h4>
         </header>
         <div class="panel-body">
-            <div class="adv-table editable-table ">
+
                 <div class="clearfix" >
                     <div class="btn-group pull-right" >
                         <a id="editable-sample_new" class="btn btn-success" href="{{url('table_name/add')}}">
@@ -32,7 +32,7 @@
                     </div>
 
                 </div>
-                <div class="space15"></div>
+
                 <table class="table table-striped table-hover table-bordered" id="dynamic-table">
                     <thead>
                     <tr>
@@ -49,16 +49,16 @@
                         <td>{{ $tbName->categoryName }}</td>
                         <td>{{ $tbName->updated_at }}</td>
                         <td class="btn-group">
-                            <a class="btn btn-success btn-xs"  href="{{ url("table_name/edit/{$tbName->id}")}}"><i class="fa fa-edit"></i></a>
-                            <a class="btn btn-danger btn-xs" href="{{ url("table_name/delete/{$tbName->id}")}}"> <i class="fa fa-trash-o"></i></a>
-                            <a class=" btn btn-info btn-xs"  href="{{ url("table_name/view_column/{$tbName->id}")}}">viewColumn<i class="fa fa-plus"></i></a>
+                            <a class="btn btn-success btn-sm"  href="{{ url("table_name/edit/{$tbName->id}")}}"><i class="fa fa-edit"></i></a>
+                            <a class="btn btn-danger btn-sm" href="{{ url("table_name/delete/{$tbName->id}")}}"> <i class="fa fa-trash-o"></i></a>
+                            <a class=" btn btn-info btn-sm"  href="{{ url("table_name/view_column/{$tbName->id}")}}">viewColumn<i class="fa fa-plus"></i></a>
 
                         </td>
                         @endforeach
                     </tr>
                     </tbody>
                 </table>
-            </div>
+
         </div>
     </section>
     <!-- page end-->

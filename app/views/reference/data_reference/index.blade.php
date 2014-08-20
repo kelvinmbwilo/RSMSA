@@ -49,9 +49,9 @@
                             <td>{{ $ref->name }}</td>
                             <td>{{ $ref->updated_at }}</td>
                             <td class="btn-group">
-                                <a class="btn btn-success btn-xs"  href="{{ url("reference/edit/{$ref->id}")}}"><i class="fa fa-edit"></i></a>
-                                <a class="btn btn-danger btn-xs" href="{{ url("reference/delete/{$ref->id}")}}"> <i class="fa fa-trash-o"></i></a>
-                                <a class="viewColumn btn btn-warning btn-xs" id="{{$ref->id}}"><i class="fa fa-arrow-left"></i>ViewColumn</a>
+                                <a class="btn btn-success btn-sm"  href="{{ url("reference/edit/{$ref->id}")}}"><i class="fa fa-edit"></i></a>
+                                <a class="btn btn-danger btn-sm" href="{{ url("reference/delete/{$ref->id}")}}"> <i class="fa fa-trash-o"></i></a>
+                                <a class="viewColumn btn btn-warning btn-sm" id="{{$ref->id}}"><i class="fa fa-arrow-left"></i>ViewColumn</a>
                             </td>
                             @endforeach
                         </tr>

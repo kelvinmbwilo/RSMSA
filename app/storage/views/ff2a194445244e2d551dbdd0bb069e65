@@ -1,0 +1,9 @@
+<table>
+    <?php foreach($column->options as $column): ?>
+
+    <tr>
+        <td><?php echo $column->optionName; ?></td>
+    </tr>
+
+    <?php endforeach; ?>
+</table>

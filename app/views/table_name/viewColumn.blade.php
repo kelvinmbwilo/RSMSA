@@ -2,9 +2,11 @@
 
 @section('contents')
 <link href="{{ asset('css/tooltipster.css') }}" rel="stylesheet" />
+<a class="btn btn-default pull-left btn-sm"  href="{{ url("table_name/back")}}" ><i class="fa fa-arrow-left"></i>Back
+</a>
 <section class="wrapper site-min-height">
     <!-- page start-->
-    <section class="panel">
+     <section class="panel">
         <header class="panel-heading">
 
             <div class="btn-group ">
@@ -48,10 +50,10 @@
 <!--                            @endforeach-->
 <!--                        </td>-->
                         <td class="btn-group">
-                            <a class="btn btn-success btn-xs"  href="{{ url("table_name/editColumn/{$coll->id}")}}"><i class="fa fa-edit"></i></a>
-                            <a class="btn btn-success btn-xs"  href="{{ url("table_name/add_optionColumn/{$coll->id}")}}"><i class="fa fa-plus"> addOption</i></a>
-                            <a class="btn btn-danger btn-xs"  href="{{ url("table_name/deleteColumn/{$coll->id}")}}"><i class="fa fa-trash-o"></i></a>
-                            <a class="viewColumn btn btn-warning btn-xs"  id="{{$coll->id}}">viewOptions<i class="fa fa-arrow-right"></i></a>
+                            <a class="btn btn-success btn-sm"  href="{{ url("table_name/editColumn/{$coll->id}")}}"><i class="fa fa-edit"></i></a>
+                            <a class="btn btn-danger btn-sm"  href="{{ url("table_name/deleteColumn/{$coll->id}")}}"><i class="fa fa-trash-o"></i></a>
+                            <a class="btn btn-info btn-sm"  href="{{ url("table_name/add_optionColumn/{$coll->id}")}}"><i class="fa fa-plus"> addOption</i></a>
+                             <a class="viewColumn btn btn-warning btn-sm"  id="{{$coll->id}}">viewOptions<i class="fa fa-arrow-right"></i></a>
                         </td>
                         @endforeach
                     </tr>
@@ -86,7 +88,7 @@
                 if (origin.data('ajax') !== 'cached') {
                     $.ajax({
                         type: 'GET',
-                        url: '{{url('table_name/viewColumnOptions/3')}}',
+                        url: '{{url('table_name/viewColumnOptions')}}/'+$(this).attr("id"),
                         success: function(data) {
                         // update our tooltip content with our returned data and cache it
                         origin.tooltipster('content', data).data('ajax', 'cached');

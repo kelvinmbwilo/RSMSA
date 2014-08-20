@@ -11,6 +11,16 @@ class TableController extends \BaseController {
     {
         return View::make('table_name.index');
     }
+    /**
+     * Going back to the parent.
+     *
+     * @return Response
+     */
+    public function back()
+    {
+        //return Redirect::back();
+        return View::make('table_name.index');
+    }
 
     /**
      * Display a listing of the resource.
@@ -220,6 +230,7 @@ class TableController extends \BaseController {
                 }else{
                     $colDetails= Column::find(Input::get('columnid'.$j));
                     $colDetails->columnName=Input::get('column'.$j);
+                    $colDetails->typeId=Input::get('data'.$j);
                     $colDetails->save();
                 }
 
@@ -228,7 +239,8 @@ class TableController extends \BaseController {
                 {
                     Column::create(array(
                         'tableId' => $table->id,
-                        'columnName' => Input::get('column'.$j)
+                        'columnName' => Input::get('column'.$j),
+                        'typeId' => Input::get('data'.$j)
                     ));
                 }
 
@@ -257,7 +269,7 @@ class TableController extends \BaseController {
             $j = $i+1;
             if($j<=$detailCount)
             {
-                if(Input::get('column'.$j)== ''){
+                if(Input::get('option'.$j)==''){
                     $colDetails= ColumnsOption::find(Input::get('optionid'.$j));
                     $colDetails->delete();
                 }else{
@@ -267,11 +279,11 @@ class TableController extends \BaseController {
                 }
 
             }else{
-                if(Input::get('option'.$j)!= '')
+                if(Input::get('option'.$j)!='')
                 {
                     ColumnsOption::create(array(
                         'columnId' => $column->id,
-                        'optionName' => Input::get('column'.$j)
+                        'optionName' => Input::get('option'.$j)
                     ));
                 }
 
