@@ -25,7 +25,6 @@ class DataController extends \BaseController {
     public function viewtable($id){
 
         $table = TableName::find($id);
-        $colums = $table->column;
 
         return View::make('data.specific_table', compact('table'));
 

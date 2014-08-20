@@ -2,15 +2,15 @@
     <!-- sidebar menu start-->
     <ul class="sidebar-menu" id="nav-accordion">
         <li>
-            <a  href="{{ url('dashboard') }}"> <i class="fa fa-book"></i>Dashboard</a>
+            <a  href="<?php echo url('dashboard'); ?>"> <i class="fa fa-book"></i>Dashboard</a>
         </li>
 
         <li class="sub-menu">
             <a  href="#">
                 <i class="fa fa-cogs"></i>Stakeholder</a>
              <ul class="sub">
-                <li><a  href="{{ url('stakeholder') }}">Main Stakeholders</a></li>
-                <li><a  href="{{ url('stakeholderBranch') }}">Stakeholder Branches</a></li>
+                <li><a  href="<?php echo url('stakeholder'); ?>">Main Stakeholders</a></li>
+                <li><a  href="<?php echo url('stakeholderBranch'); ?>">Stakeholder Branches</a></li>
             </ul>
         </li>
 
@@ -21,10 +21,10 @@
             </a>
             <ul class="sub">
 
-                <li><a  href="{{ url('reference') }}">reference Items</a></li>
-                <li><a  href="{{ url('reference_column') }}">reference Columns</a></li>
-                <li><a  href="{{ url('data-reference') }}">data-reference</a></li>
-                <li><a  href="{{ url('dynamic_table') }}l">dynamic table</a></li>
+                <li><a  href="<?php echo url('reference'); ?>">reference Items</a></li>
+                <li><a  href="<?php echo url('reference_column'); ?>">reference Columns</a></li>
+                <li><a  href="<?php echo url('data-reference'); ?>">data-reference</a></li>
+                <li><a  href="<?php echo url('dynamic_table'); ?>l">dynamic table</a></li>
 
             </ul>
         </li>
@@ -35,13 +35,13 @@
                 <span>Data</span>
             </a>
             <ul class="sub">
-                <li><a  href="{{ url('data/home') }}">View</a></li>
-                <li><a  href="{{ url('data/add') }}">Add</a></li>
+                <li><a  href="<?php echo url('data/home'); ?>">View</a></li>
+                <li><a  href="<?php echo url('data/add'); ?>">Add</a></li>
                 <?php
                     $table = TableName::all();
                     foreach($table as $tbl){
                         ?>
-                        <li><a  href='{{ url("data/view/{$tbl->id}") }}'>{{ $tbl->categoryName }}</a></li>
+                        <li><a  href='<?php echo url("data/view/{$tbl->id}"); ?>'><?php echo $tbl->categoryName; ?></a></li>
                     <?php
                     }
                 ?>
@@ -54,7 +54,7 @@
             </a>
         </li>
         <li>
-            <a  href="{{ url('user') }}">
+            <a  href="<?php echo url('user'); ?>">
                 <i class="fa fa-user"></i>
                 <span>User</span>
             </a>
@@ -62,7 +62,7 @@
 
 <!--        datatype details-->
         <li>
-            <a  href="{{ url('datatype') }}">
+            <a  href="<?php echo url('datatype'); ?>">
                 <i class="fa fa-database"></i>
                 <span>Data type</span>
             </a>
