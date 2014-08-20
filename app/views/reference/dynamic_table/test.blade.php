@@ -5,18 +5,18 @@
         <form class="form" action='' method="post">
             @foreach($mycol as $ReferenceDetails)
             <?php
-            $datatype = $ReferenceDetails->reference->referenceId;
+            $datatype = $reference->datatype->name;
             if($datatype == 'String'){
                 ?>
                 <div class="form-group">
-                    <label >{{ $ReferenceDetails->ReferenceDetailsName }}</label>
-                    <input type="text" class="form-control" name="name" id="name" placeholder="Enter {{ $ReferenceDetails->ReferenceDetailsName }}">
+                    <label >{{ $reference->name }}</label>
+                    <input type="text" class="form-control" name="name" id="name" placeholder="Enter {{ $reference->name }}">
                 </div>
             <?php
             }else{
                 ?>
                 <div class="form-group">
-                    <label >{{ $ReferenceDetails->ReferenceDetailsName }}</label>
+                    <label >{{ $reference->Referencename }}</label>
                     <input type="number" class="form-control" name="name" id="name" placeholder="Enter name">
                 </div>
             <?php } ?>

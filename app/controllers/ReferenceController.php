@@ -19,8 +19,22 @@ class ReferenceController extends \BaseController {
      */
     public function dynamicTable()
     {
-        return View::make('reference.dynamic_table.index');
+        $reference = Reference::all();
+        $reference->toarray();
+        return View::make('reference.dynamic_table.index', compact('reference'));
+
     }
+
+
+    public function returnReferences(){
+        $reference = Reference::find(Input::get('select'));
+        $mycol = $reference->ReferenceDetails;
+
+        return View::make('reference.data_reference.test', compact('mycol'));
+
+    }
+
+
 
     /**
 	 * Show the form for creating a new resource.
@@ -172,23 +186,7 @@ class ReferenceController extends \BaseController {
         return View::make('reference.data_reference.index');
 	}
 
-    public function viewreference()
-    {
-        $table = Reference::all();
-        $table->toarray();
-        return View::make('reference.data_reference.addreference', compact('table'));
 
-    }
-
-
-
-    public function returncolumns(){
-        $table = Reference::find(Input::get('select'));
-        $mycol = $table->ReferenceDetails;
-
-        return View::make('reference.data_reference.test', compact('mycol'));
-
-    }
 
 
     /**
