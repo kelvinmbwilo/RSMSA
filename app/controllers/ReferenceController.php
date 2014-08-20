@@ -19,18 +19,41 @@ class ReferenceController extends \BaseController {
      */
     public function dynamicTable()
     {
-        $reference = Reference::all();
-        $reference->toarray();
-        return View::make('reference.dynamic_table.index', compact('reference'));
+        return View::make('reference.dynamic_table.index');
+           }
+
+
+    public function returnReferences(){
+
+        $reference=Reference::find(Input::get('select'));
+        $mycol=$reference->referenceDetails;
+
+     return View::make('reference.dynamic_table.test', compact('mycol','reference'));
 
     }
 
 
-    public function returnReferences(){
-        $reference = Reference::find(Input::get('select'));
-        $mycol = $reference->ReferenceDetails;
+    public function storeDynamicTable($id){
 
-        return View::make('reference.data_reference.test', compact('mycol'));
+        $reference= Reference::find($id);
+        $tableName = $reference->name;
+        $tableName ="rsmsa_".$tableName;
+
+
+
+        $id = DB::table($tableName)->insertGetId(
+            array('created_at'=>(new DateTime())->format('Y-m-d H:i:s'),
+                'updated_at'=>(new DateTime())->format('Y-m-d H:i:s'),
+
+
+            ));
+        foreach ($reference->referenceDetails as $col){
+            DB::table($tableName)
+                ->where('id',$id)
+                ->update(array($col->name => Input::get('name'.$col->id)));
+
+
+        }
 
     }
 

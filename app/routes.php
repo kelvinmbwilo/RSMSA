@@ -87,8 +87,8 @@ Route::get('reference/editTable/{id}', array('uses'=>'ReferenceController@editTa
 Route::get('reference/deleteTable/{id}', array('uses'=>'ReferenceController@deleteTable')); //displaying a list of the reference details
 Route::get('reference/deleteColumn/{id}', array('uses'=>'ReferenceController@deleteColumn')); //displaying a list of the reference details
 Route::get('dynamic_table', array('uses'=>'ReferenceController@dynamicTable')); //displaying list of references
-Route::get('dynamic_table/referenceform', array('uses'=>'ReferenceController@createreferenceform')); //displaying form to add reference
-Route::post('dynamic_table/getColumn', array('uses' => 'ReferenceController@returnReferences'));
+Route::post('dynamic_table/getColumn', array('uses' => 'ReferenceController@returnReferences'));//return form for specific reference
+Route::post('dynamic_table/test/{id}', array('uses'=>'ReferenceController@storeDynamicTable')); //processing added users
 
 
 

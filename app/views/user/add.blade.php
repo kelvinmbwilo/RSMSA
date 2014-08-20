@@ -4,7 +4,7 @@
 
 
 <fieldset><legend>Add new user</legend>
-<form action=""{{url('user/add')}}"" method="post">
+<form action="{{url('user/add')}}" method="post">
 
     <div class="entry">
         <div class="row">

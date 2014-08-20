@@ -7,10 +7,13 @@
     </header>
     <div class="panel-body">
         <span id="responce" style="opacity: 0; color: "> Successful.. </span>
+      <?php   $reference=Reference::all();
+        $reference->toarray();?>
         <form class="form" action='{{url("dynamic_table/getColumn")}}' method="post">
             <div class="form-group">
                 <label class="col-lg-2 control-label">Select Reference Type</label>
                 <div class="col-lg-10">
+
                     <select name="select" class="form-control">
                         <option>-- select one --</option>
                         @foreach($reference as $ref)

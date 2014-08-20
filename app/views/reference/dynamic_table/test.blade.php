@@ -2,22 +2,23 @@
 @section('contents')
 <section class="panel">
     <div class="panel-body">
-        <form class="form" action='' method="post">
-            @foreach($mycol as $ReferenceDetails)
+
+        <form action="{{ url('dynamic_table/test')}}/{{$reference->id}}" method="post">
+            @foreach($mycol as $referencedetails)
             <?php
-            $datatype = $reference->datatype->name;
-            if($datatype == 'String'){
+            $datatype = $referencedetails->dataType->name;
+            if($datatype == 'string'){
                 ?>
                 <div class="form-group">
-                    <label >{{ $reference->name }}</label>
-                    <input type="text" class="form-control" name="name" id="name" placeholder="Enter {{ $reference->name }}">
+                    <label >{{ $referencedetails->name }}</label>
+                    <input type="text" class="form-control" name="name{{$referencedetails->id}}" placeholder="Enter name">
                 </div>
             <?php
             }else{
                 ?>
                 <div class="form-group">
-                    <label >{{ $reference->Referencename }}</label>
-                    <input type="number" class="form-control" name="name" id="name" placeholder="Enter name">
+                    <label >{{ $referencedetails->name }}</label>
+                    <input type="number" class="form-control" name="name{{$referencedetails->id}}" placeholder="Enter number">
                 </div>
             <?php } ?>
             @endforeach

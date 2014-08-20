@@ -6,13 +6,16 @@
     </header>
     <div class="panel-body">
         <span id="responce" style="opacity: 0; color: "> Successful.. </span>
+      <?php   $reference=Reference::all();
+        $reference->toarray();?>
         <form class="form" action='<?php echo url("dynamic_table/getColumn"); ?>' method="post">
             <div class="form-group">
                 <label class="col-lg-2 control-label">Select Reference Type</label>
                 <div class="col-lg-10">
+
                     <select name="select" class="form-control">
                         <option>-- select one --</option>
-                        <?php foreach($me as $ref): ?>
+                        <?php foreach($reference as $ref): ?>
                         <option value="<?php echo $ref->id; ?>"><?php echo $ref->name; ?></option>
                         <?php endforeach; ?>
                     </select>
