@@ -54,6 +54,7 @@ class ReferenceController extends \BaseController {
 
 
         }
+        return View::make('reference.dynamic_table.index');
 
     }
 
