@@ -17,6 +17,10 @@ class Column extends Eloquent {
 
     }
 
+    public function data(){
+        return $this->hasMany('Data', 'columnId', 'id');
+    }
+
     public function options(){
         return $this->hasMany('ColumnsOption', 'columnId', 'id');
     }

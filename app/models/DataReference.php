@@ -12,18 +12,11 @@ class DataReference extends Eloquent {
 
     protected  $guarded = array('$id');
 
-    public function filedata()
+    public function data()
     {
-        return $this->belongsTo('FileData', 'dataId', 'id');
+        return $this->belongsTo('Data', 'dataId', 'id');
     }
-    public function integerdata()
-    {
-        return $this->belongsTo('IntegerData', 'dataId', 'id');
-    }
-    public function stringdata()
-    {
-        return $this->belongsTo('StringData', 'dataId', 'id');
-    }
+
     public function reference()
     {
         return $this->belongsTo('Reference', 'referenceId', 'id');

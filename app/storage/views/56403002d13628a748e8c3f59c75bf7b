@@ -5,13 +5,13 @@
  * Date: 8/19/14
  * Time: 11:05 AM
  */ ?>
-@extends('layout.master')
 
-@section('contents')
+
+<?php $__env->startSection('contents'); ?>
 
 <!--main content start-->
 <header class="panel-heading">
-    <a class="btn btn-success pull-right" href={{ url('data/add') }}>
+    <a class="btn btn-success pull-right" href=<?php echo url('data/add'); ?>>
     <i class="fa fa-adn">
         New
     </i>
@@ -45,20 +45,20 @@
                     </tr>
                     </thead>
                     <tbody>
-                    @foreach($data as $dt)
-                    @if(!is_null($dt))
+                    <?php foreach($data as $dt): ?>
+                    <?php if(!is_null($dt)): ?>
                     <tr>
                         <td>AAC</td>
-                        <td>{{$dt->table->categoryName}}</td>
-                        <td>{{$dt->value}}</td>
-                        <td>{{$dt->locationId}}</td>
-                        <td>{{$dt->StakeHolderBranch->name}}</td>
-                        <td>{{$dt->created_at}}</td>
-                        <td>{{$dt->updated_at}}</td>
+                        <td><?php echo $dt->table->categoryName; ?></td>
+                        <td><?php echo $dt->value; ?></td>
+                        <td><?php echo $dt->locationId; ?></td>
+                        <td><?php echo $dt->StakeHolderBranch->name; ?></td>
+                        <td><?php echo $dt->created_at; ?></td>
+                        <td><?php echo $dt->updated_at; ?></td>
                         <td><a href="#">Edit</a></td>
                     </tr>
-                    @endif
-                    @endforeach
+                    <?php endif; ?>
+                    <?php endforeach; ?>
                     </tbody>
                 </table>
             </section>
@@ -113,6 +113,7 @@
 
     </section>
 
-<script src="{{ asset('js/dynamic_table_init.js') }}"></script>
+<script src="<?php echo asset('js/dynamic_table_init.js'); ?>"></script>
 
-@stop
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layout.master', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

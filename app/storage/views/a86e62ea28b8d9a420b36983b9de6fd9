@@ -6,8 +6,8 @@
  * Time: 11:05 AM
  */ ?>
 
-@extends('layout.master')
-@section('contents')
+
+<?php $__env->startSection('contents'); ?>
 <section class="panel">
 <div class="panel-body">
     <?php
@@ -17,13 +17,13 @@
         $col_count++;
     }
     ?>
-    <form id="myform" class="form" action='{{ url("data/add/{$col_count}") }}' method="post">
+    <form id="myform" class="form" action='<?php echo url("data/add/{$col_count}"); ?>' method="post">
 
-                <input type="hidden" class="form-control" name="table" value="{{ $table->id }}">
+                <input type="hidden" class="form-control" name="table" value="<?php echo $table->id; ?>">
 
-        @foreach($mycol as $columns)
+        <?php foreach($mycol as $columns): ?>
 
-                <input type="hidden" class="form-control" name="{{ $val.'_column' }}" value="{{ $columns->id }}">
+                <input type="hidden" class="form-control" name="<?php echo $val.'_column'; ?>" value="<?php echo $columns->id; ?>">
 
         <?php
                 $datatype = $columns->datatype->name;
@@ -31,8 +31,8 @@
          ?>
 
                 <div class="form-group">
-                    <label >{{ $columns->columnName }}</label>
-                    <input type="text" class="form-control" name="{{ $val.'_value' }}" placeholder="Enter {{ $columns->columnName }}">
+                    <label ><?php echo $columns->columnName; ?></label>
+                    <input type="text" class="form-control" name="<?php echo $val.'_value'; ?>" placeholder="Enter <?php echo $columns->columnName; ?>">
                 </div>
 
         <?php
@@ -40,13 +40,13 @@
         }else{
         ?>
         <div class="form-group">
-            <label >{{ $columns->columnName }}</label>
+            <label ><?php echo $columns->columnName; ?></label>
             <input type="number" class="form-control" name="name" id="name" placeholder="Enter name">
         </div>
         <?php
             $val++;
             } ?>
-        @endforeach
+        <?php endforeach; ?>
 
         <button type="submit" class="btn btn-info pull-right">Submit</button>
     </form>
@@ -68,4 +68,5 @@
         i++;
     }
 </script>
-@stop
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layout.master', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

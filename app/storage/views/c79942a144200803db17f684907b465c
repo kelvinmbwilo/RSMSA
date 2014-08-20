@@ -35,15 +35,16 @@
                 <span>Data</span>
             </a>
             <ul class="sub">
+                <li><a  href="<?php echo url('data/home'); ?>">View</a></li>
                 <li><a  href="<?php echo url('data/add'); ?>">Add</a></li>
-                <li><a  href="<?php echo url('data/home'); ?>">View Statistics</a></li>
                 <?php
-                   $datatypes = TableName::all();
-                   $datatypes->toarray();
-                   foreach($datatypes as $types){
+                    $table = TableName::all();
+                    foreach($table as $tbl){
+                        ?>
+                        <li><a  href='<?php echo url("data/view/{$tbl->id}"); ?>'><?php echo $tbl->categoryName; ?></a></li>
+                    <?php
+                    }
                 ?>
-                <li><a  href='<?php echo url("data/view/{$types->id}"); ?>' ><?php echo $types->categoryName; ?></a></li>
-                <?php } ?>
             </ul>
         </li>
         <li>
@@ -53,9 +54,17 @@
             </a>
         </li>
         <li>
-            <a  href="login.html">
+            <a  href="<?php echo url('user'); ?>">
                 <i class="fa fa-user"></i>
-                <span>Login Page</span>
+                <span>User</span>
+            </a>
+        </li>
+
+<!--        datatype details-->
+        <li>
+            <a  href="<?php echo url('datatype'); ?>">
+                <i class="fa fa-database"></i>
+                <span>Data type</span>
             </a>
         </li>
 
