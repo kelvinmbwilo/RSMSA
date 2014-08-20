@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+@if(Auth::guest())
+{{Redirect::to("login")}}
+@else
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -268,3 +271,4 @@
 
 </body>
 </html>
+@endif
