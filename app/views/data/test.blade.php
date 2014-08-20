@@ -27,7 +27,7 @@
 
         <?php
                 $datatype = $columns->datatype->name;
-                if($datatype == 'String'){
+                if($datatype == 'string'){
          ?>
 
                 <div class="form-group">
