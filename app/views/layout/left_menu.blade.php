@@ -21,10 +21,8 @@
             </a>
             <ul class="sub">
 
-                <li><a  href="{{ url('reference') }}">reference Items</a></li>
-                <li><a  href="{{ url('reference_column') }}">reference Columns</a></li>
-                <li><a  href="{{ url('data-reference') }}">data-reference</a></li>
-                <li><a  href="{{ url('dynamic_table') }}l">dynamic table</a></li>
+                <li><a  href="{{ url('reference') }}">Reference Management</a></li>
+                <li><a  href="{{ url('dynamic_table') }}l">Dynamic Tables</a></li>
 
             </ul>
         </li>
@@ -47,11 +45,15 @@
                 ?>
             </ul>
         </li>
-        <li>
-            <a href="google_maps.html" >
-                <i class="fa fa-map-marker"></i>
-                <span>Google Maps </span>
+        <li class="sub-menu">
+            <a href="javascript:;" >
+                <i class="fa fa-book"></i>
+                <span>Data Tables</span>
             </a>
+            <ul class="sub">
+
+                <li><a  href="{{ url('table_name') }}">Data Table Management</a></li>
+             </ul>
         </li>
         <li>
             <a  href="{{ url('user') }}">

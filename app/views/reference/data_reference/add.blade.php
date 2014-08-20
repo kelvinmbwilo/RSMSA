@@ -148,7 +148,7 @@
             duration  : 600,
             transition: 'fade',
             finish:function(){
-                alert('am done')
+                alert('This will create the reference described')
             },
             select: function(index) {
                 if(index == 2){

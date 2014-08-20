@@ -153,7 +153,7 @@
             duration  : 600,
             transition: 'fade',
             finish:function(){
-                alert('am done')
+                alert('This will create the described table')
             },
             select: function(index) {
                 if(index == 2){
