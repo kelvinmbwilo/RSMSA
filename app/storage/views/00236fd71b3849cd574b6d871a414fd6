@@ -146,7 +146,7 @@
             duration  : 600,
             transition: 'fade',
             finish:function(){
-                alert('it will create the table described')
+                alert('This will create the reference described')
             },
             select: function(index) {
                 if(index == 2){

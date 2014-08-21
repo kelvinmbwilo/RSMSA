@@ -5,7 +5,7 @@
 <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 <link href="{{ asset('css/style-responsive.css') }}" rel="stylesheet" />
 <!--main content start-->
-<section id="main-content">
+
     <section class="wrapper site-min-height">
         <!-- page start-->
         <div class="row">
@@ -92,7 +92,7 @@
             </div>
         </div>
         <!-- page end-->
-    </section>
+
 </section>
 
 <script src="{{ asset('js/jquery.js') }}"></script>
@@ -109,7 +109,7 @@
 
 
 
-//step wizard
+
 
 
 <!--script for this page-->
@@ -175,17 +175,18 @@
                         var col ="";
                         var counter = 0;
                         var col_count =0;
+                        var inc =0;
                         $(".columns").each(function(){
                             col_count++;
-                            var data =$('input[name=data1]').val()
+
                             if($(this).val() != ''){
                                 col +='<div class="form-group">';
                                 col +='<label class="col-md-2 control-label">column'+ ++counter +'</label>';
-                                col +='<div class="col-sm-5">';
+                                col +='<div class="col-sm-2">';
                                 col +='<p class="form-control-static">'+ $(this).val() +'</p>';
                                 col +='</div>';
                                 col +='<div class="col-md-3 pull-left">';
-                                col +='<p class="form-control-static">{'+ $('input[name=data1]').val() +'}</p>';
+                                col +='<p class="form-control-static">{'+ $("select[name=data"+ ++inc+"]").find(":selected").text() +'}</p>';
                                 col +='</div></div>'
                             }
                         });

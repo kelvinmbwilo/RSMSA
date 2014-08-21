@@ -12,13 +12,13 @@
     <title>RSMSA system login page</title>
 
     <!-- Bootstrap core CSS -->
-    <link href= "{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/bootstrap-reset.css') }}" rel="stylesheet">
+    <link href= "<?php echo asset('css/bootstrap.min.css'); ?>" rel="stylesheet">
+    <link href="<?php echo asset('css/bootstrap-reset.css'); ?>" rel="stylesheet">
     <!--external css-->
-    <link href=""{{ asset('assets/font-awesome/css/font-awesome.css') }}" rel="stylesheet" />
+    <link href=""<?php echo asset('assets/font-awesome/css/font-awesome.css'); ?>" rel="stylesheet" />
     <!-- Custom styles for this template -->
-    <link href= "{{ asset('css/style.css') }}" rel="stylesheet">
-    <link href= "{{ asset('css/style-responsive.css') }}" rel="stylesheet" />
+    <link href= "<?php echo asset('css/style.css'); ?>" rel="stylesheet">
+    <link href= "<?php echo asset('css/style-responsive.css'); ?>" rel="stylesheet" />
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
     <!--[if lt IE 9]>
@@ -27,22 +27,23 @@
     <![endif]-->
 </head>
 
-<body class="login-body"  style="background-image:url('{{asset('img/fabric.png')}}')">
-{{Hash::make("1234")}}
+<body class="login-body"  style="background-image:url('<?php echo asset('img/fabric.png'); ?>')">
+
 <div class="container">
 
-    <form class="form-signin" action="{{ url('login') }}"  method="post">
+    <form class="form-signin" action="<?php echo url('login'); ?>"  method="post">
         <h2 class="form-signin-heading">sign in now</h2>
 
-        @foreach($errors->all() as $error)
-        <div class="alert alert-danger">{{ $error }}</div>
-        @endforeach
+        <?php foreach($errors->all() as $error): ?>
+        <div class="alert alert-danger"><?php echo $error; ?></div>
+        <?php endforeach; ?>
 
-            @if ($alert = Session::get('alert-fail'))
+            <?php if($alert = Session::get('alert-fail')): ?>
                  <div class="alert alert-danger">
-                    {{ $alert }}
+                    <?php echo $alert; ?>
+
                  </div>
-        @endif
+        <?php endif; ?>
 
         <div class="login-wrap">
             <input type="text" class="form-control" placeholder="User ID" autofocus name="username">
@@ -91,11 +92,11 @@
 <!-- js placed at the end of the document so the pages load faster -->
 
 
-<script src="{{ asset('js/bootstrap.min.js') }}"></script>
-<script src="{{ asset('js/bootstrap.min.js') }}"></script>
+<script src="<?php echo asset('js/bootstrap.min.js'); ?>"></script>
+<script src="<?php echo asset('js/bootstrap.min.js'); ?>"></script>
 
 <!--common script for all pages-->
-<script src="{{ asset('js/common-scripts.js') }}"></script>
+<script src="<?php echo asset('js/common-scripts.js'); ?>"></script>
 
 
 

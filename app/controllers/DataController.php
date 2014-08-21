@@ -60,22 +60,29 @@ class DataController extends \BaseController {
 	 */
 	public function store($id)
 	{
-		//
+
+		$tag=DataTag::orderBy("datatagId","DESC")->first();
+        if($tag!=""){
+           $t=$tag->datatagId+1;
+        }else{
+            $t=0;
+        }
+
         $count = $id;
          for($i=1; $i<=$count; $i++){
-            $newData = Data::create(array(
+            Data::create(array(
                 'tableColumnId' => Input::get('table'),
                 'columnId' => Input::get($i.'_column'),
                 'value' => Input::get($i.'_value'),
-                'datTag' => '5',
+                'datTag' => $t,
                 'locationId' => '',
                 'stakeholderId' => '1'
             ));
         }
 
-        $tag = DataTag::create(array(
+         DataTag::create(array(
            'tableId' => Input::get('table'),
-            'datatagId' => '5'
+            'datatagId' => $t
         ));
 
 

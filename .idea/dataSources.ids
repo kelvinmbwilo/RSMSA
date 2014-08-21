@@ -1164,7 +1164,9 @@
     <table name="rsmsa_data" schema="" catalog="rsmsa" type="TABLE">
       <column name="id" sqlType="INT UNSIGNED" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
       <column name="tableColumnId" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
+      <column name="columnId" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
       <column name="value" sqlType="VARCHAR" length="255" precision="0" nullable="false" jdbcType="12"/>
+      <column name="datTag" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
       <column name="locationId" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
       <column name="stakeHolderId" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
       <column name="created_at" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="JzAwMDAtMDAtMDAgMDA6MDA6MDAn"/>
@@ -1176,6 +1178,14 @@
       <column name="dataId" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
       <column name="referenceId" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
       <column name="DynamicTableId" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
+      <column name="created_at" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="JzAwMDAtMDAtMDAgMDA6MDA6MDAn"/>
+      <column name="updated_at" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="JzAwMDAtMDAtMDAgMDA6MDA6MDAn"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+    <table name="rsmsa_datatag" schema="" catalog="rsmsa" type="TABLE">
+      <column name="id" sqlType="INT UNSIGNED" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="tableId" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
+      <column name="datatagId" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
       <column name="created_at" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="JzAwMDAtMDAtMDAgMDA6MDA6MDAn"/>
       <column name="updated_at" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="JzAwMDAtMDAtMDAgMDA6MDA6MDAn"/>
       <primary-key name="PRIMARY" columns="id"/>
@@ -1226,6 +1236,9 @@
     <table name="rsmsa_stakeholderbranch" schema="" catalog="rsmsa" type="TABLE">
       <column name="id" sqlType="INT UNSIGNED" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
       <column name="name" sqlType="VARCHAR" length="255" precision="0" nullable="false" jdbcType="12"/>
+      <column name="phoneNumber" sqlType="VARCHAR" length="255" precision="0" nullable="false" jdbcType="12"/>
+      <column name="address" sqlType="VARCHAR" length="255" precision="0" nullable="false" jdbcType="12"/>
+      <column name="email" sqlType="VARCHAR" length="255" precision="0" nullable="false" jdbcType="12"/>
       <column name="locationId" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
       <column name="stakeholderId" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
       <column name="created_at" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="JzAwMDAtMDAtMDAgMDA6MDA6MDAn"/>
@@ -1235,18 +1248,6 @@
     <table name="rsmsa_stakeholders" schema="" catalog="rsmsa" type="TABLE">
       <column name="id" sqlType="INT UNSIGNED" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
       <column name="name" sqlType="VARCHAR" length="255" precision="0" nullable="false" jdbcType="12"/>
-      <column name="phoneNumber" sqlType="VARCHAR" length="255" precision="0" nullable="false" jdbcType="12"/>
-      <column name="address" sqlType="VARCHAR" length="255" precision="0" nullable="false" jdbcType="12"/>
-      <column name="created_at" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="JzAwMDAtMDAtMDAgMDA6MDA6MDAn"/>
-      <column name="updated_at" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="JzAwMDAtMDAtMDAgMDA6MDA6MDAn"/>
-      <primary-key name="PRIMARY" columns="id"/>
-    </table>
-    <table name="rsmsa_tablecolumn" schema="" catalog="rsmsa" type="TABLE">
-      <column name="id" sqlType="INT UNSIGNED" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
-      <column name="tableNameId" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
-      <column name="columnsId" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
-      <column name="columnsOptionsId" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
-      <column name="datatypeDetailsId" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
       <column name="created_at" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="JzAwMDAtMDAtMDAgMDA6MDA6MDAn"/>
       <column name="updated_at" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="JzAwMDAtMDAtMDAgMDA6MDA6MDAn"/>
       <primary-key name="PRIMARY" columns="id"/>
@@ -1269,6 +1270,7 @@
       <column name="phoneNumber" sqlType="VARCHAR" length="255" precision="0" nullable="false" jdbcType="12"/>
       <column name="role" sqlType="VARCHAR" length="255" precision="0" nullable="false" jdbcType="12"/>
       <column name="stakeholderBranchId" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
+      <column name="remember_token" sqlType="VARCHAR" length="255" precision="0" nullable="false" jdbcType="12"/>
       <column name="created_at" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="JzAwMDAtMDAtMDAgMDA6MDA6MDAn"/>
       <column name="updated_at" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="JzAwMDAtMDAtMDAgMDA6MDA6MDAn"/>
       <primary-key name="PRIMARY" columns="id"/>

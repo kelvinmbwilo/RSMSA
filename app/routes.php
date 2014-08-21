@@ -39,9 +39,6 @@ Route::resource('dashboard' , 'DashboardController');
 Route::resource('stakeholder' , 'StakeholderController');
 
 
-/***************************************************************/
-//************************References ***************************/
-/***************************************************************/
 
 //********************************************************/
 //*********************StakeHolder************************/
@@ -77,7 +74,6 @@ Route::get('data/view/{id}', array('uses' => 'DataController@viewtable'));
 //************************References ***************************/
 /***************************************************************/
 Route::get('reference', array('uses'=>'ReferenceController@index')); //display list of references
-Route::get('dynamic_table', array('uses'=>'ReferenceController@dynamicTable')); //display list of references
 Route::get('reference/add', array('uses'=>'ReferenceController@create')); //display form to add new reference
 Route::post('reference/add', array('uses'=>'ReferenceController@store')); //processing addition form
 Route::post('reference/add', array('uses'=>'ReferenceController@store')); //processing addition form
@@ -89,6 +85,9 @@ Route::get('reference/createTable/{id}', array('uses'=>'ReferenceController@crea
 Route::get('reference/editTable/{id}', array('uses'=>'ReferenceController@editTable')); //displaying a list of the reference details
 Route::get('reference/deleteTable/{id}', array('uses'=>'ReferenceController@deleteTable')); //displaying a list of the reference details
 Route::get('reference/deleteColumn/{id}', array('uses'=>'ReferenceController@deleteColumn')); //displaying a list of the reference details
+Route::get('dynamic_table', array('uses'=>'ReferenceController@dynamicTable')); //displaying list of references
+Route::post('dynamic_table/getColumn', array('uses' => 'ReferenceController@returnReferences'));//return form for specific reference
+Route::post('dynamic_table/test/{id}', array('uses'=>'ReferenceController@storeDynamicTable')); //processing added users
 
 
 
@@ -112,8 +111,7 @@ Route::get('table_name/add_column/{id}', array('uses'=>'TableController@addColum
 Route::post('table_name/add_column/{id}', array('uses'=>'TableController@storeColumn')); //displaying a list of the tableName details
 Route::get('table_name/add_optionColumn/{id}', array('uses'=>'TableController@addOptionColumn')); //displaying a list of the tableName details
 Route::post('table_name/add_optionColumn/{id}', array('uses'=>'TableController@storeOptionColumn')); //displaying a list of the tableName detailsRoute::get('reference/viewColumn/{id}', array('uses'=>'ReferenceController@viewColumn')); //displaying a list of the reference details
-Route::get('dynamic_tablel', array('uses'=>'ReferenceController@viewreference')); //displaying available references
-Route::get('dynamic_tablel/referenceform', array('uses'=>'ReferenceController@createreferenceform')); //displaying form to add reference
+
 
 
 

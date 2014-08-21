@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+<?php if(Auth::guest()): ?>
+<?php echo Redirect::to("login"); ?>
+
+<?php else: ?>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -268,3 +272,4 @@
 
 </body>
 </html>
+<?php endif; ?>

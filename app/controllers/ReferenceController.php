@@ -20,7 +20,45 @@ class ReferenceController extends \BaseController {
     public function dynamicTable()
     {
         return View::make('reference.dynamic_table.index');
+           }
+
+
+    public function returnReferences(){
+
+        $reference=Reference::find(Input::get('select'));
+        $mycol=$reference->referenceDetails;
+
+     return View::make('reference.dynamic_table.test', compact('mycol','reference'));
+
     }
+
+
+    public function storeDynamicTable($id){
+
+        $reference= Reference::find($id);
+        $tableName = $reference->name;
+        $tableName ="rsmsa_".$tableName;
+
+
+
+        $id = DB::table($tableName)->insertGetId(
+            array('created_at'=>(new DateTime())->format('Y-m-d H:i:s'),
+                'updated_at'=>(new DateTime())->format('Y-m-d H:i:s'),
+
+
+            ));
+        foreach ($reference->referenceDetails as $col){
+            DB::table($tableName)
+                ->where('id',$id)
+                ->update(array($col->name => Input::get('name'.$col->id)));
+
+
+        }
+        return View::make('reference.dynamic_table.index');
+
+    }
+
+
 
     /**
 	 * Show the form for creating a new resource.
@@ -209,18 +247,7 @@ class ReferenceController extends \BaseController {
         return View::make('reference.data_reference.index');
 	}
 
-    public function viewreference()
-    {
 
-        return View::make('reference.data_reference.addreference');
-    }
-
-    public function createreferenceform()
-    {
-        return View::make('reference.data_reference.referenceform');
-        $reference=Reference::find($id);
-
-    }
 
 
     /**

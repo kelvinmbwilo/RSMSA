@@ -22,7 +22,7 @@
             <ul class="sub">
 
                 <li><a  href="{{ url('reference') }}">Reference Management</a></li>
-                <li><a  href="{{ url('dynamic_table') }}l">Dynamic Tables</a></li>
+                <li><a  href="{{ url('dynamic_table') }}">Dynamic Tables</a></li>
 
             </ul>
         </li>
