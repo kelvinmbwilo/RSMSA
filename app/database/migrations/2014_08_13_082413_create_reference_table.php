@@ -16,6 +16,7 @@ class CreateReferenceTable extends Migration {
 		{
 			$table->increments('id');
 			$table->string('name');
+            $table->integer('columnId');
 			$table->timestamps();
 		});
 	}

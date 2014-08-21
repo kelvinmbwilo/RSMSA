@@ -45,17 +45,18 @@
                                    <button class="btn-success btn btn-xs pull-right" id="addColumn">add column</button></h4>
                                    <span class="text-danger" id="errorlebal"></span>
                                     <div class="form-group">
-                                    <div class="col-md-7">
+                                    <div class="col-md-5">
                                         <input type="text" class="form-control input-sm columns" placeholder="category name" name="column1">
                                     </div>
-                                      <div class="col-md-5">
+                                      <div class="col-md-3">
 
                                         <select name="data1" class="form-control">
                                             @foreach(DataTypeDetails::all() as $data)
                                             <option value="{{$data->id}}" id="option">{{$data->name}}</option>
                                             @endforeach
                                         </select>
-                                    </div>
+                                       </div>
+
                                     </div>
 
 
@@ -119,10 +120,10 @@
        $('#addColumn').click(function(){
            ids++;
            var column ='<div class="form-group">';
-               column+='<div class="col-sm-7">';
+               column+='<div class="col-sm-5">';
                column+='<input type="text" class="form-control input-sm columns" placeholder="column name" name="column'+ids+'">';
                column+="</div>";
-               column+='<div class="col-sm-5">';
+               column+='<div class="col-sm-3">';
                column+='<select name="data'+ids+'" class="form-control">';
                column+="@foreach(DataTypeDetails::all() as $data)";
                column+='<option value="{{$data->id}}" >{{$data->name}}</option>';

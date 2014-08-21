@@ -22,6 +22,11 @@ class Reference extends Eloquent {
 
         return $this->hasMany('DataReference', 'referenceId', 'id');
     }
+    public function column()
+    {
+
+        return $this->hasMany('Column', 'referenceId', 'id');
+    }
 
 
 

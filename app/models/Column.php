@@ -28,5 +28,8 @@ class Column extends Eloquent {
     public function datatype(){
         return $this->belongsTo('DataTypeDetails', 'typeId', 'id');
     }
+    public function referenced(){
+        return $this->belongsTo('Reference', 'columnId', 'id');
+    }
 
 }
