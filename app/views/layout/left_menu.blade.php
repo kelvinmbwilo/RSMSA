@@ -35,14 +35,10 @@
             <ul class="sub">
                 <li><a  href="{{ url('data/home') }}">View</a></li>
                 <li><a  href="{{ url('data/add') }}">Add</a></li>
-                <?php
-                    $table = TableName::all();
-                    foreach($table as $tbl){
-                        ?>
+                    @foreach(TableName::all() as $tbl)
                         <li><a  href='{{ url("data/view/{$tbl->id}") }}'>{{ $tbl->categoryName }}</a></li>
-                    <?php
-                    }
-                ?>
+                    @endforeach
+
             </ul>
         </li>
         <li class="sub-menu">
