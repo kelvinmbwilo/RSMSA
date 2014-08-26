@@ -4,8 +4,7 @@
 
 <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 <link href="{{ asset('css/style-responsive.css') }}" rel="stylesheet" />
-<!--main content start-->
-<section id="main-content">
+
     <section class="wrapper site-min-height">
         <!-- page start-->
         <div class="row">
@@ -42,21 +41,22 @@
                             <fieldset title="details" class="step" id="default-step-1" >
                                 <legend> </legend>
                                 <div>
-                                <h4>Enter the characteristics of <span id="refName"></span>
+                                <h4>Enter the columns of <span id="refName"></span>
                                    <button class="btn-success btn btn-xs pull-right" id="addColumn">add column</button></h4>
                                    <span class="text-danger" id="errorlebal"></span>
                                     <div class="form-group">
-                                    <div class="col-md-7">
+                                    <div class="col-md-5">
                                         <input type="text" class="form-control input-sm columns" placeholder="category name" name="column1">
                                     </div>
-                                      <div class="col-md-5">
+                                      <div class="col-md-3">
 
                                         <select name="data1" class="form-control">
                                             @foreach(DataTypeDetails::all() as $data)
                                             <option value="{{$data->id}}" id="option">{{$data->name}}</option>
                                             @endforeach
                                         </select>
-                                    </div>
+                                       </div>
+
                                     </div>
 
 
@@ -89,7 +89,7 @@
         </div>
         <!-- page end-->
     </section>
-</section>
+
 
 <script src="{{ asset('js/jquery.js') }}"></script>
 <script src="{{ asset('js/bootstrap.min.js') }}"></script>
@@ -120,10 +120,10 @@
        $('#addColumn').click(function(){
            ids++;
            var column ='<div class="form-group">';
-               column+='<div class="col-sm-7">';
+               column+='<div class="col-sm-5">';
                column+='<input type="text" class="form-control input-sm columns" placeholder="column name" name="column'+ids+'">';
                column+="</div>";
-               column+='<div class="col-sm-5">';
+               column+='<div class="col-sm-3">';
                column+='<select name="data'+ids+'" class="form-control">';
                column+="@foreach(DataTypeDetails::all() as $data)";
                column+='<option value="{{$data->id}}" >{{$data->name}}</option>';
@@ -149,7 +149,7 @@
             duration  : 600,
             transition: 'fade',
             finish:function(){
-                alert('am done')
+                alert('This will create the reference described')
             },
             select: function(index) {
                 if(index == 2){

@@ -2,8 +2,7 @@
 
 <link href="<?php echo asset('css/style.css'); ?>" rel="stylesheet">
 <link href="<?php echo asset('css/style-responsive.css'); ?>" rel="stylesheet" />
-<!--main content start-->
-<section id="main-content">
+
     <section class="wrapper site-min-height">
         <!-- page start-->
         <div class="row">
@@ -40,21 +39,22 @@
                             <fieldset title="details" class="step" id="default-step-1" >
                                 <legend> </legend>
                                 <div>
-                                <h4>Enter the characteristics of <span id="refName"></span>
+                                <h4>Enter the columns of <span id="refName"></span>
                                    <button class="btn-success btn btn-xs pull-right" id="addColumn">add column</button></h4>
                                    <span class="text-danger" id="errorlebal"></span>
                                     <div class="form-group">
-                                    <div class="col-md-7">
+                                    <div class="col-md-5">
                                         <input type="text" class="form-control input-sm columns" placeholder="category name" name="column1">
                                     </div>
-                                      <div class="col-md-5">
+                                      <div class="col-md-3">
 
                                         <select name="data1" class="form-control">
                                             <?php foreach(DataTypeDetails::all() as $data): ?>
                                             <option value="<?php echo $data->id; ?>" id="option"><?php echo $data->name; ?></option>
                                             <?php endforeach; ?>
                                         </select>
-                                    </div>
+                                       </div>
+
                                     </div>
 
 
@@ -87,7 +87,7 @@
         </div>
         <!-- page end-->
     </section>
-</section>
+
 
 <script src="<?php echo asset('js/jquery.js'); ?>"></script>
 <script src="<?php echo asset('js/bootstrap.min.js'); ?>"></script>
@@ -147,7 +147,7 @@
             duration  : 600,
             transition: 'fade',
             finish:function(){
-                alert('am done')
+                alert('This will create the reference described')
             },
             select: function(index) {
                 if(index == 2){

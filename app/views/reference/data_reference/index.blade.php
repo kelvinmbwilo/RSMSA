@@ -23,7 +23,7 @@
                 <h4 > References </h4>
             </header>
             <div class="panel-body">
-                <div class="adv-table editable-table ">
+
                     <div class="clearfix" >
                         <div class="btn-group pull-right" >
                             <a id="editable-sample_new" class="btn btn-success" href="{{url('reference/add')}}">
@@ -32,8 +32,8 @@
                         </div>
 
                     </div>
-                    <div class="space15"></div>
-                    <table class="table table-striped table-hover table-bordered" id="editable-sample">
+
+                    <table class="table table-striped table-hover table-bordered" id="dynamic-table">
                         <thead>
                         <tr>
                             <th>#no</th>
@@ -49,15 +49,15 @@
                             <td>{{ $ref->name }}</td>
                             <td>{{ $ref->updated_at }}</td>
                             <td class="btn-group">
-                                <a class="btn btn-success btn-xs"  href="{{ url("reference/edit/{$ref->id}")}}"><i class="fa fa-edit"></i></a>
-                                <a class="btn btn-danger btn-xs" href="{{ url("reference/delete/{$ref->id}")}}"> <i class="fa fa-trash-o"></i></a>
-                                <a class="viewColumn btn btn-warning btn-xs" id="{{$ref->id}}"><i class="fa fa-arrow-left"></i>ViewColumn</a>
+                                <a class="btn btn-success btn-sm"  href="{{ url("reference/edit/{$ref->id}")}}"><i class="fa fa-edit"></i></a>
+                                <a class="btn btn-danger btn-sm" href="{{ url("reference/delete/{$ref->id}")}}"> <i class="fa fa-trash-o"></i></a>
+                                <a class="viewColumn btn btn-warning btn-sm" id="{{$ref->id}}"><i class="fa fa-arrow-left"></i>ViewColumn</a>
                             </td>
                             @endforeach
                         </tr>
                         </tbody>
                     </table>
-                </div>
+
             </div>
         </section>
         <!-- page end-->

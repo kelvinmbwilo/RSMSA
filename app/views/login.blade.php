@@ -28,7 +28,7 @@
 </head>
 
 <body class="login-body"  style="background-image:url('{{asset('img/fabric.png')}}')">
-
+{{Hash::make("1234")}}
 <div class="container">
 
     <form class="form-signin" action="{{ url('login') }}"  method="post">

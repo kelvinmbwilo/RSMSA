@@ -11,6 +11,16 @@ class TableController extends \BaseController {
     {
         return View::make('table_name.index');
     }
+    /**
+     * Going back to the parent.
+     *
+     * @return Response
+     */
+    public function back()
+    {
+        //return Redirect::back();
+        return View::make('table_name.index');
+    }
 
     /**
      * Display a listing of the resource.
@@ -74,7 +84,7 @@ class TableController extends \BaseController {
 
 
     /**
-     * Store a newly created table and its in storage.
+     * Store a newly created table and its in column.
      *
      * @return Response
      */ 
@@ -88,12 +98,17 @@ class TableController extends \BaseController {
         for($i =0 ;$i < Input::get('col_count'); $i++ ){
             $j = $i+1;
             if(Input::get('column'.$j)!= ''){
-                Column::create(array(
+                $col=Column::create(array(
                     'tableId' => $tableName->id,
                    'columnName' => Input::get('column'.$j),
-                    'typeId'=>Input::get('data'.$j)
+                    'typeId'=>Input::get('data'.$j),
+                    'referenceId'=>Input::get('name'.$j)
                 ));
-
+                if(Input::get('name'.$j)!=0){
+                 $ref =Reference::find(Input::get('name'.$j));
+                 $ref->columnId=$col->id;
+                 $ref->save();
+                }
             }
         }
 
@@ -110,7 +125,8 @@ class TableController extends \BaseController {
 
         Column::create(array(
         'tableId' => $id,
-        'columnName' => Input::get('column1')
+        'columnName' => Input::get('column1'),
+        'referenceId'=> Input::get('reference')
     ));
         for($i =0 ;$i < Input::get('col_count'); $i++ ){
             $j = $i+1;
@@ -119,7 +135,7 @@ class TableController extends \BaseController {
                     'columnId' => $id,
                    'optionName' => Input::get('option'.$j)
                 ));
-               echo "am in";
+
             }
         }
        $table=TableName::find($id);
@@ -220,6 +236,8 @@ class TableController extends \BaseController {
                 }else{
                     $colDetails= Column::find(Input::get('columnid'.$j));
                     $colDetails->columnName=Input::get('column'.$j);
+                    $colDetails->typeId=Input::get('data'.$j);
+                    $colDetails->referenceId=Input::get('name'.$j);
                     $colDetails->save();
                 }
 
@@ -228,7 +246,9 @@ class TableController extends \BaseController {
                 {
                     Column::create(array(
                         'tableId' => $table->id,
-                        'columnName' => Input::get('column'.$j)
+                        'columnName' => Input::get('column'.$j),
+                        'typeId' => Input::get('data'.$j),
+                        'referenceId'=>Input::get('name'.$j)
                     ));
                 }
 
@@ -257,7 +277,7 @@ class TableController extends \BaseController {
             $j = $i+1;
             if($j<=$detailCount)
             {
-                if(Input::get('column'.$j)== ''){
+                if(Input::get('option'.$j)==''){
                     $colDetails= ColumnsOption::find(Input::get('optionid'.$j));
                     $colDetails->delete();
                 }else{
@@ -267,11 +287,11 @@ class TableController extends \BaseController {
                 }
 
             }else{
-                if(Input::get('option'.$j)!= '')
+                if(Input::get('option'.$j)!='')
                 {
                     ColumnsOption::create(array(
                         'columnId' => $column->id,
-                        'optionName' => Input::get('column'.$j)
+                        'optionName' => Input::get('option'.$j)
                     ));
                 }
 

@@ -1,0 +1,11 @@
+
+
+<table>
+      <?php foreach($reference->referenceDetails as $column): ?>
+
+       <tr>
+           <td><?php echo $column->name; ?></td>
+       </tr>
+
+    <?php endforeach; ?>
+</table>

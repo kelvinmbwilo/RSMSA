@@ -3,20 +3,21 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateFiledataTable extends Migration {
+class CreateDataTable extends Migration {
 
-	/**
-	 * Run the migrations.
-	 *
-	 * @return void
-	 */
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
     public function up()
     {
         //
-        Schema::create('rsmsa_filedata', function(Blueprint $table)
+        Schema::create('rsmsa_data', function(Blueprint $table)
         {
             $table->increments('id');
             $table->integer('tableColumnId');
+            $table->integer('columnId');
             $table->string('value');
             $table->integer('datTag');
             $table->integer('locationId');
@@ -33,7 +34,8 @@ class CreateFiledataTable extends Migration {
     public function down()
     {
         //
-        Schema::drop('rsmsa_filedata');
+        Schema::drop('rsmsa_data');
     }
+
 
 }

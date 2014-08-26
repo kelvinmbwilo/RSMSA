@@ -16,14 +16,24 @@
 
         <li class="sub-menu">
             <a href="javascript:;" >
-                <i class="fa fa-book"></i>
+                <i class="fa fa-th-large"></i>
                 <span>Reference Tables</span>
             </a>
             <ul class="sub">
-                <li><a  href="{{ url('reference') }}">reference Items</a></li>
-                <li><a  href="{{ url('reference_column') }}">reference Columns</a></li>
-                <li><a  href="{{ url('data-reference') }}">data-reference</a></li>
-                <li><a  href="{{ url('dynamic_table') }}l">dynamic table</a></li>
+                <li><a  href="{{ url('reference') }}">References</a></li>
+                <li><a  href="{{ url('dynamic_table') }}">Dynamic table</a></li>
+
+            </ul>
+        </li>
+        <li class="sub-menu">
+            <a href="javascript:;" >
+                <i class="fa fa-th-list"></i>
+                <span>Data Tables</span>
+            </a>
+            <ul class="sub">
+                <li><a  href="{{ url('table_name') }}">Table Names</a></li>
+                <li><a  href="{{ url('table_data') }}">Table data</a></li>
+
 
             </ul>
         </li>
@@ -42,22 +52,26 @@
         <li class="sub-menu">
             <a href="javascript:;" >
                 <i class="fa fa-cogs"></i>
-                <span>Components</span>
+                <span>Data</span>
             </a>
             <ul class="sub">
-                <li><a  href="grids.html">Grids</a></li>
-                <li><a  href="calendar.html">Calendar</a></li>
+                <li><a  href="{{ url('data/home') }}">View</a></li>
+                <li><a  href="{{ url('data/add') }}">Add</a></li>
                 <li><a  href="gallery.html">Gallery</a></li>
                 <li><a  href="todo_list.html">Todo List</a></li>
                 <li><a  href="draggable_portlet.html">Draggable Portlet</a></li>
                 <li><a  href="tree.html">Tree View</a></li>
             </ul>
         </li>
-        <li>
-            <a href="google_maps.html" >
-                <i class="fa fa-map-marker"></i>
-                <span>Google Maps </span>
+        <li class="sub-menu">
+            <a href="javascript:;" >
+                <i class="fa fa-book"></i>
+                <span>Data Tables</span>
             </a>
+            <ul class="sub">
+
+                <li><a  href="{{ url('table_name') }}">Data Table Management</a></li>
+             </ul>
         </li>
         <li>
             <a  href="{{ url('user') }}">

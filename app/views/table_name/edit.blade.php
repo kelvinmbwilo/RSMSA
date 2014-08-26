@@ -5,7 +5,7 @@
 <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 <link href="{{ asset('css/style-responsive.css') }}" rel="stylesheet" />
 <!--main content start-->
-<section id="main-content">
+
     <section class="wrapper site-min-height">
         <!-- page start-->
         <div class="row">
@@ -44,12 +44,20 @@
                             <div>
                                 <h4>Edit the columns of <span id="tbName1"></span> <button class="btn-success btn btn-xs pull-right" id="addColumn">add column</button></h4>
                                 <span class="text-danger" id="errorlebal"></span>
-                                <?php $i=1; $k=1; ?>
+                                <?php $i=1; $k=1; $x=1; ?>
                                 @foreach($table->column as $column)
                                 <div class="form-group">
-                                    <div class="col-md-8 col-md-offset-1">
+                                    <div class="col-sm-7">
                                         <input type="text" class="form-control input-sm columns"  name="column{{$i++}}" value="{{$column->columnName}}">
                                         <input type="hidden"  name="columnid{{$k++}}" value="{{$column->id}}">
+                                    </div>
+                                    <div class="col-sm-5">
+                                        <select name="data{{$x++}}" class="form-control input-sm">
+                                            <option value="{{$column->typeId}}" id="option">{{$column->datatype->name}}</option>
+                                            @foreach(DataTypeDetails::all() as $data)
+                                            <option value="{{$data->id}}" id="option">{{$data->name}}</option>
+                                            @endforeach
+                                        </select>
                                     </div>
                                 </div>
                                 @endforeach
@@ -59,8 +67,7 @@
 
 
 
-                        </fieldset
-                            >
+                        </fieldset>
 
                         <fieldset title="Summary" class="step" id="default-step-2" >
                             <legend> </legend>
@@ -83,7 +90,7 @@
             </div>
         </div>
         <!-- page end-->
-    </section>
+
 </section>
 
 <script src="{{ asset('js/jquery.js') }}"></script>
@@ -114,10 +121,18 @@
         var ids = {{count($table->column)}};
     $('#addColumn').click(function(){
         ids++;
-        var column = '<div class="form-group">';
-        column+='<div class="col-md-8 col-md-offset-1">';
-        column+=' <input type="text" class="form-control input-sm columns" placeholder="category name" name="column'+ids+'">';
-        column+="</div></div>";
+        var column ='<div class="form-group">';
+        column+='<div class="col-sm-7">';
+        column+='<input type="text" class="form-control input-sm columns" placeholder="column name" name="column'+ids+'">';
+        column+="</div>";
+        column+='<div class="col-sm-5">';
+        column+='<select name="data'+ids+'" class="form-control input-sm">';
+        column+="@foreach(DataTypeDetails::all() as $data)";
+        column+='<option value="{{$data->id}}" >{{$data->name}}</option>';
+        column+="@endforeach";
+        column+="</select>";
+        column+="</div>";
+        column+="</div>";
 
         $(this).parent().parent().append(column);
         $('input[name=column'+ids+']').focus();

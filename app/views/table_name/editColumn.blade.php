@@ -5,7 +5,7 @@
 <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 <link href="{{ asset('css/style-responsive.css') }}" rel="stylesheet" />
 <!--main content start-->
-<section id="main-content">
+
     <section class="wrapper site-min-height">
         <!-- page start-->
         <div class="row">
@@ -27,7 +27,7 @@
                             </ul>
                         </div>
                         <form class="form-horizontal" id="default" method="post" action="{{ url("table_name/editColumn/{$coll->id}")}}">
-                        <fieldset title="Table" class="step" id="default-step-0">
+                        <fieldset title=column class="step" id="default-step-0">
                             <legend> </legend>
                             <div class="form-group">
                                 <label class="col-lg-2 control-label">Column Name</label>
@@ -37,10 +37,10 @@
                             </div>
 
                         </fieldset>
-                        <fieldset title="Column" class="step" id="default-step-1" >
+                        <fieldset title="options" class="step" id="default-step-1" >
                             <legend> </legend>
                             <div>
-                                <h4>Edit the columns of <span id="colName1"></span> <button class="btn-success btn btn-xs pull-right" id="addColumn">add column</button></h4>
+                                <h4>Edit the options of column <span class="colName1"></span> <button class="btn-success btn btn-xs pull-right" id="addColumn">add option</button></h4>
                                 <span class="text-danger" id="errorlebal"></span>
                                 <?php $i=1; $k=1; ?>
                                 @foreach($coll->options as $option)
@@ -82,7 +82,7 @@
         </div>
         <!-- page end-->
     </section>
-</section>
+
 
 <script src="{{ asset('js/jquery.js') }}"></script>
 <script src="{{ asset('js/bootstrap.min.js') }}"></script>
@@ -109,7 +109,7 @@
 
 
     $(function() {
-        var ids = {{count($coll->option)}};
+        var ids = {{count($coll->options)}};
        $('#addColumn').click(function(){
         ids++;
         var column = '<div class="form-group">';
@@ -151,7 +151,7 @@
                     $('input[name=columnName]').attr('placeholder','Please Fill This Area First').focus()
 
                 }else{
-                    var table =  $('input[name=columnName]').val();
+                    var table =$('input[name=columnName]').val();
                     var col ="";
                     var counter = 0;
                     var col_count =0;

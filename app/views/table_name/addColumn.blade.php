@@ -12,11 +12,23 @@
         <form class="form_default" method="post" action="{{ url("table_name/add_column/{$table->id}")}}" >
         <div>
             <button class="btn-success btn btn-xs pull-right" id="addColumn">add column</button>
-
-        </div>
-        <div class="form-group">
             <label for="exampleInputEmail1">Column Name </label>
+        </div>
+
+        <div class="form-group">
+
+            <div class="col-md-4">
             <input type="text" class="form-control" id="Sumatra" placeholder="Enter name" name="column1">
+            </div>
+            <div class="col-md-4">
+
+                <select name="reference" class="form-control">
+                    <option value="0" id="option"><-select a reference if it has one-></option>
+                    @foreach(Reference::all() as $ref)
+                    <option value="{{$ref->id}}" id="option">{{$ref->name}}</option>
+                    @endforeach
+                </select>
+            </div>
         </div>
 
         <button type="submit" class="btn btn-danger">submit</button>

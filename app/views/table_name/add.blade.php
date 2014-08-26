@@ -5,7 +5,7 @@
 <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 <link href="{{ asset('css/style-responsive.css') }}" rel="stylesheet" />
 <!--main content start-->
-<section id="main-content">
+
     <section class="wrapper site-min-height">
         <!-- page start-->
         <div class="row">
@@ -51,13 +51,22 @@
 
                                     <span class="text-danger" id="errorlebal"></span>
                                     <div class="form-group">
-                                        <div class="col-sm-7">
+                                        <div class="col-sm-5">
                                             <input type="text" class="form-control input-sm columns" placeholder="column name" name="column1">
                                         </div>
-                                        <div class="col-sm-5">
+                                        <div class="col-sm-3">
                                             <select name="data1" class="form-control input-sm">
                                                 @foreach(DataTypeDetails::all() as $data)
                                                 <option value="{{$data->id}}" id="option">{{$data->name}}</option>
+                                                @endforeach
+                                            </select>
+                                        </div>
+                                        <div class="col-md-4">
+
+                                            <select name="name1" class="form-control">
+                                                <option value="0" id="option"><-select a reference if it has one-></option>
+                                                @foreach(Reference::all() as $ref)
+                                                <option value="{{$ref->id}}" id="option">{{$ref->name}}</option>
                                                 @endforeach
                                             </select>
                                         </div>
@@ -92,7 +101,7 @@
             </div>
         </div>
         <!-- page end-->
-    </section>
+
 </section>
 
 <script src="{{ asset('js/jquery.js') }}"></script>
@@ -109,7 +118,7 @@
 
 
 
-//step wizard
+
 
 
 <!--script for this page-->
@@ -124,13 +133,21 @@
         $('#addColumn').click(function(){
             ids++;
             var column ='<div class="form-group">';
-            column+='<div class="col-sm-7">';
+            column+='<div class="col-sm-5">';
             column+='<input type="text" class="form-control input-sm columns" placeholder="column name" name="column'+ids+'">';
             column+="</div>";
-            column+='<div class="col-sm-5">';
+            column+='<div class="col-sm-3">';
             column+='<select name="data'+ids+'" class="form-control input-sm">';
             column+="@foreach(DataTypeDetails::all() as $data)";
             column+='<option value="{{$data->id}}" >{{$data->name}}</option>';
+            column+="@endforeach";
+            column+="</select>";
+            column+="</div>";
+            column+='<div class="col-sm-4">';
+            column+='<select name="name'+ids+'" class="form-control">';
+            column+='<option value="0" ><-select a reference if it has one-></option>';
+            column+="@foreach(Reference::all() as $ref)";
+            column+='<option value="{{$ref->id}}" >{{$ref->name}}</option>';
             column+="@endforeach";
             column+="</select>";
             column+="</div>";
@@ -153,7 +170,7 @@
             duration  : 600,
             transition: 'fade',
             finish:function(){
-                alert('am done')
+                alert('This will create the described table')
             },
             select: function(index) {
                 if(index == 2){
@@ -175,13 +192,18 @@
                         var col ="";
                         var counter = 0;
                         var col_count =0;
+                        var inc =0;
                         $(".columns").each(function(){
                             col_count++;
+
                             if($(this).val() != ''){
                                 col +='<div class="form-group">';
-                                col +='<label class="col-lg-2 control-label">column'+ ++counter +'</label>';
-                                col +='<div class="col-lg-10">';
+                                col +='<label class="col-md-2 control-label">column'+ ++counter +'</label>';
+                                col +='<div class="col-sm-2">';
                                 col +='<p class="form-control-static">'+ $(this).val() +'</p>';
+                                col +='</div>';
+                                col +='<div class="col-md-3 pull-left">';
+                                col +='<p class="form-control-static">{'+ $("select[name=data"+ ++inc+"]").find(":selected").text() +'}</p>';
                                 col +='</div></div>'
                             }
                         });

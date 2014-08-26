@@ -1,0 +1,33 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Isaiah
+ * Date: 8/19/14
+ * Time: 11:05 AM
+ */ ?>
+
+<section class="panel">
+    <header class="panel-heading">
+        Add New Stakeholder
+    </header>
+    <div class="panel-body">
+        <span id="responce" style="opacity: 0; color: "> Successful.. </span>
+        <?php echo Form::open(array('action' => 'StakeholderController@store' , 'method' => 'post', 'class'=>'form')); ?>
+
+             <div class="form-group">
+                 <label>Name</label>
+                 <input type="text" id="name" class="form-control" name="name"/>
+             </div>
+                <?php echo Form::submit('Submit', array('class' => 'btn pull-right')); ?>
+
+        <?php echo Form::close(); ?>
+
+
+        <?php if($errors->any()): ?>
+        <ul>
+            <?php echo implode('', $errors->all('<li class="error">:message</li>')); ?>
+
+        </ul>
+        <?php endif; ?>
+    </div>
+</section>
