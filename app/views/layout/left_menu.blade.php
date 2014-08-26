@@ -57,10 +57,11 @@
             <ul class="sub">
                 <li><a  href="{{ url('data/home') }}">View</a></li>
                 <li><a  href="{{ url('data/add') }}">Add</a></li>
-                <li><a  href="gallery.html">Gallery</a></li>
-                <li><a  href="todo_list.html">Todo List</a></li>
-                <li><a  href="draggable_portlet.html">Draggable Portlet</a></li>
-                <li><a  href="tree.html">Tree View</a></li>
+
+                    @foreach(TableName::all() as $tbl)
+                      <li><a   href="{{ url("data/view/{$tbl->id}")}}">{{$tbl->categoryName}}</a></li>
+                    @endforeach
+
             </ul>
         </li>
         <li class="sub-menu">
