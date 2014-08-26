@@ -16,8 +16,8 @@ class Location extends Eloquent {
         return $this->hasMany('Data', 'locationId', 'id');
     }
 
-    public function level(){
-        return $this->belongsTo('LocationLevel', 'locationLevelId', 'id');
+    public function getlevel(){
+        return $this->belongsTo('LocationLevel', 'level', 'id');
     }
 
 

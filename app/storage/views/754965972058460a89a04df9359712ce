@@ -6,10 +6,9 @@
             <section class="panel">
                 <header class="panel-heading">
                     Location Levels
-                    <a class="btn btn-success pull-right" href=<?php echo url('location/level/add'); ?>>
+                    <a class="btn btn-success pull-right" href="<?php echo url('location/levels/add'); ?>">
                     New Location Level
                     </a>
-
                 </header>
 
                 <div class="panel-body">
@@ -29,24 +28,24 @@
                             <tr>
                                 <td><?php echo ++$j; ?></td>
                                 <td><?php echo $level->name; ?></td>
-                                <td><?php echo $level->parentId; ?></td>
-                                <td>
-                                    <a class="btn btn-info" href='<?php echo url("location/level/{$level->id}/units"); ?>'>
-                                        <i class="fa fa-level-down"></i>
-                                        Administrative Units
-                                    </a>
+                                <td><?php if($level->parentId != 0): ?><?php echo LocationLevel::find($level->parentId)->name; ?>
+
+                                    <?php else: ?>
+                                    Top Level
+                                    <?php endif; ?>
                                 </td>
-                                <td class="table-condensed col-xs-pull-2">
+                                <td class="table-condensed col-xs-pull-2" id="<?php echo $level->id; ?>">
                                     <div class="btn-group" >
-                                        <a class="btn btn-primary" href="<?php echo url("location/level/edit/{$level->id}"); ?>">
+                                        <a class="btn btn-info" href='<?php echo url("location/level/{$level->id}/units"); ?>'>
+                                            <i class="fa fa-level-down"></i>
+                                            Units
+                                        </a>
+                                        <a class="btn btn-primary" title="edit location level" href='<?php echo url("location/levels/edit/{$level->id}"); ?>'>
                                         <i class="fa fa-edit"></i>
                                         </a>
-                                        <?php echo Form::open(array('action' => array('LocationLevel@destroy', $stakeHolder->id), 'method' => 'post', 'class' => 'pull-right')); ?>
-
-                                        <button class="btn  btn-danger" type="button" data-toggle="modal" data-target="#confirmDelete" data-title="Delete User" data-message="Are you sure you want to delete this user ?">
-                                            <i class="glyphicon glyphicon-trash"></i>
-                                        </button>
-                                        <?php echo Form::close(); ?>
+                                        <a class="btn btn-danger deletelevel" title="delete location level" href='#delete'>
+                                        <i class="fa fa-trash-o"></i>
+                                        </a>
 
                                     </div>
                                 </td>
@@ -57,6 +56,26 @@
                     </section>
                 </div>
             </section>
+            <script>
+                $(document).ready(function(){
+                    $(".deletelevel").click(function(){
+                        var id1 = $(this).parent().parent().attr('id');
+                        $(".deletelevel").show("slow").parent().parent().parent().find("span").remove();
+                        var btn = $(this).parent().parent().parent();
+                        $(this).hide("slow").parent().parent().append("<span><br>Are You Sure <br /> <a href='#s' id='yes' class='btn btn-success btn-xs'><i class='fa fa-check'></i> Yes</a> <a href='#s' id='no' class='btn btn-danger btn-xs'> <i class='fa fa-times'></i> No</a></span>");
+                        $("#no").click(function(){
+                            $(this).parent().parent().find(".deletelevel").show("slow");
+                            $(this).parent().parent().find("span").remove();
+                        });
+                        $("#yes").click(function(){
+                            $(this).parent().html("<br><i class='fa fa-spinner fa-spin'></i>deleting...");
+                            $.post("<?php echo url('location/levels/delete') ?>/"+id1,function(data){
+                                btn.hide("slow").next("hr").hide("slow");
+                            });
+                        });
+                    });//endof deleting category
+                })
+            </script>
         </div>
 
     </div>

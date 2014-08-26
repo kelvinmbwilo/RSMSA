@@ -1,6 +1,4 @@
-@extends('layout.master')
-
-@section('contents')
+<?php $__env->startSection('contents'); ?>
 <section class="wrapper">
     <!-- page start-->
     <div class="row">
@@ -8,7 +6,7 @@
             <section class="panel">
                 <header class="panel-heading">
                     Locations
-                    <a class="btn btn-success pull-right" href="{{ url('location/add') }}">
+                    <a class="btn btn-success pull-right" href="<?php echo url('location/add'); ?>">
                         Add New
                     </a>
                 </header>
@@ -29,26 +27,27 @@
                             </thead>
                             <tbody>
                             <?php $j = 0 ?>
-                            @foreach($location as $level)
+                            <?php foreach($location as $level): ?>
                             <tr>
-                                <td>{{ ++$j }}</td>
-                                <td>{{ $level->name }}</td>
-                                <td>{{ $level->getlevel->name }}</td>
-                                <td>@if($level->parentId != 0){{Location::find($level->parentId)->name }}
-                                    @else
-                                    No Parent
-                                    @endif
-                                </td>
-                                <td>{{ $level->latitude }}</td>
-                                <td>{{ $level->longitude }}</td>
+                                <td><?php echo ++$j; ?></td>
+                                <td><?php echo $level->name; ?></td>
+                                <td><?php echo $level->getlevel->name; ?></td>
+                                <td><?php if($level->parentId != 0): ?><?php echo Location::find($level->parentId)->name; ?>
 
-                                <td class="table-condensed col-xs-pull-2" id="{{ $level->id }}">
+                                    <?php else: ?>
+                                    No Parent
+                                    <?php endif; ?>
+                                </td>
+                                <td><?php echo $level->latitude; ?></td>
+                                <td><?php echo $level->longitude; ?></td>
+
+                                <td class="table-condensed col-xs-pull-2" id="<?php echo $level->id; ?>">
                                     <div class="btn-group" >
-                                        <a class="btn btn-info" href='{{ url("location/child/{$level->id}") }}'>
+                                        <a class="btn btn-info" href='<?php echo url("location/child/{$level->id}"); ?>'>
                                             <i class="fa fa-level-down"></i>
                                             Units
                                         </a>
-                                        <a class="btn btn-primary" title="edit location level" href='{{ url("location/edit/{$level->id}") }}'>
+                                        <a class="btn btn-primary" title="edit location level" href='<?php echo url("location/edit/{$level->id}"); ?>'>
                                             <i class="fa fa-edit"></i>
                                         </a>
                                         <a class="btn btn-danger deletelevel" title="delete location level" href='#delete'>
@@ -58,7 +57,7 @@
                                     </div>
                                 </td>
                             </tr>
-                            @endforeach
+                            <?php endforeach; ?>
                             </tbody>
                         </table>
                     </section>
@@ -90,4 +89,5 @@
     <!-- page end-->
 </section>
 <!--script for this page-->
-@stop
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layout.master', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

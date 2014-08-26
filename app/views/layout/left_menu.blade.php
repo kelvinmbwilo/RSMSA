@@ -34,7 +34,7 @@
                 <span>Locations</span>
             </a>
             <ul class="sub">
-                <li><a  href="{{ url('location/units') }}">Administrative Units</a></li>
+                <li><a  href="{{ url('location/') }}">Administrative Units</a></li>
                 <li><a  href="{{ url('location/levels') }}">Administrative Levels</a></li>
             </ul>
         </li>

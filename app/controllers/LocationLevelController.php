@@ -21,7 +21,7 @@ class LocationLevelController extends \BaseController {
 	 */
 	public function create()
 	{
-		//
+		return View::make('location.location_level.add');
 	}
 
 
@@ -32,7 +32,12 @@ class LocationLevelController extends \BaseController {
 	 */
 	public function store()
 	{
-		//
+		$level = LocationLevel::create(array(
+           'name' => Input::get('location_name'),
+           'parentId' => Input::get('parent_level')
+        ));
+        $msg = "Location Level Added Successful";
+        return View::make('location.location_level.add',compact('msg','level'));
 	}
 
 
@@ -56,7 +61,8 @@ class LocationLevelController extends \BaseController {
 	 */
 	public function edit($id)
 	{
-		//
+		$level = LocationLevel::find($id);
+        return View::make('location.location_level.edit',compact('level'));
 	}
 
 
@@ -68,7 +74,12 @@ class LocationLevelController extends \BaseController {
 	 */
 	public function update($id)
 	{
-		//
+		$level = LocationLevel::find($id);
+        $level->name = Input::get('location_name');
+        $level->parentId = Input::get('parent_level');
+        $level->save();
+        $msg = "Location Level Updated Successful";
+        return View::make('location.location_level.edit',compact('msg','level'));
 	}
 
 
@@ -80,7 +91,8 @@ class LocationLevelController extends \BaseController {
 	 */
 	public function destroy($id)
 	{
-		//
+		$level = LocationLevel::find($id);
+        $level->delete();
 	}
 
 
