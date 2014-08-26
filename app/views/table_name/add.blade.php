@@ -51,13 +51,22 @@
 
                                     <span class="text-danger" id="errorlebal"></span>
                                     <div class="form-group">
-                                        <div class="col-sm-7">
+                                        <div class="col-sm-5">
                                             <input type="text" class="form-control input-sm columns" placeholder="column name" name="column1">
                                         </div>
-                                        <div class="col-sm-5">
+                                        <div class="col-sm-3">
                                             <select name="data1" class="form-control input-sm">
                                                 @foreach(DataTypeDetails::all() as $data)
                                                 <option value="{{$data->id}}" id="option">{{$data->name}}</option>
+                                                @endforeach
+                                            </select>
+                                        </div>
+                                        <div class="col-md-4">
+
+                                            <select name="name1" class="form-control">
+                                                <option value="0" id="option"><-select a reference if it has one-></option>
+                                                @foreach(Reference::all() as $ref)
+                                                <option value="{{$ref->id}}" id="option">{{$ref->name}}</option>
                                                 @endforeach
                                             </select>
                                         </div>
@@ -124,13 +133,21 @@
         $('#addColumn').click(function(){
             ids++;
             var column ='<div class="form-group">';
-            column+='<div class="col-sm-7">';
+            column+='<div class="col-sm-5">';
             column+='<input type="text" class="form-control input-sm columns" placeholder="column name" name="column'+ids+'">';
             column+="</div>";
-            column+='<div class="col-sm-5">';
+            column+='<div class="col-sm-3">';
             column+='<select name="data'+ids+'" class="form-control input-sm">';
             column+="@foreach(DataTypeDetails::all() as $data)";
             column+='<option value="{{$data->id}}" >{{$data->name}}</option>';
+            column+="@endforeach";
+            column+="</select>";
+            column+="</div>";
+            column+='<div class="col-sm-4">';
+            column+='<select name="name'+ids+'" class="form-control">';
+            column+='<option value="0" ><-select a reference if it has one-></option>';
+            column+="@foreach(Reference::all() as $ref)";
+            column+='<option value="{{$ref->id}}" >{{$ref->name}}</option>';
             column+="@endforeach";
             column+="</select>";
             column+="</div>";

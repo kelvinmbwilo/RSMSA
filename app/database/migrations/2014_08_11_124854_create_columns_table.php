@@ -17,6 +17,7 @@ class CreateColumnsTable extends Migration {
 			$table->increments('id');
 			$table->string('columnName');
 			$table->integer('tableId');
+			$table->integer('referenceId');
 			$table->integer('columnOptionId');
             $table->integer('typeId');
 			$table->timestamps();

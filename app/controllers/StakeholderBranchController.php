@@ -1,6 +1,6 @@
 <?php
 
-class stakeholderBranchController extends \BaseController {
+class StakeholderBranchController extends \BaseController {
 
 	/**
 	 * Display a listing of the resource.

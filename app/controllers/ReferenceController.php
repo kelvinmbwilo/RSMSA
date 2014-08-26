@@ -91,7 +91,8 @@ class ReferenceController extends \BaseController {
                 DataReference::create(array(
                     'referenceId' => $reference->id,
                     'name' => Input::get('column'.$j),
-                    'dataTypeId'=>Input::get('data'.$j)
+                    'dataTypeId'=>Input::get('data'.$j),
+
                 ));
 
             }
