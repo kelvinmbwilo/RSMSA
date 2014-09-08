@@ -1,0 +1,32 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Isaiah
+ * Date: 8/19/14
+ * Time: 11:05 AM
+ */ ?>
+
+
+
+<?php $__env->startSection('contents'); ?>
+
+<section class="panel">
+    <header class="panel-heading">
+        <?php echo e(isset($stakeholder->name) ? $stakeholder->name : 'No Branches'); ?>
+
+    </header>
+    <div class="panel-body">
+        <form action='<?php echo url("stakeholder/edit/{$stakeholder->id}"); ?>' method="post">
+            <div class="form-group">
+                <label> Name </label>
+                <input type="text" class="form-control" name="name" id="name" placeholder=<?php echo e(isset($stakeholder->name) ? $stakeholder->name : 'Name'); ?>>
+            </div>
+            <button type="submit" class="btn btn-info pull-right">Submit</button>
+            <button type="submit" class="btn btn-default pull-right">Cancel</button>
+        </form>
+
+    </div>
+</section>
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layout.master', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
