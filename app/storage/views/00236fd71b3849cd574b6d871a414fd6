@@ -118,10 +118,10 @@
        $('#addColumn').click(function(){
            ids++;
            var column ='<div class="form-group">';
-               column+='<div class="col-sm-7">';
+               column+='<div class="col-sm-5">';
                column+='<input type="text" class="form-control input-sm columns" placeholder="column name" name="column'+ids+'">';
                column+="</div>";
-               column+='<div class="col-sm-5">';
+               column+='<div class="col-sm-3">';
                column+='<select name="data'+ids+'" class="form-control">';
                column+="<?php foreach(DataTypeDetails::all() as $data): ?>";
                column+='<option value="<?php echo $data->id; ?>" ><?php echo $data->name; ?></option>';
