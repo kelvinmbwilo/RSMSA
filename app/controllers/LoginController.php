@@ -36,19 +36,26 @@ class LoginController extends \BaseController {
             );
 
             // attempt to do the login
-            if (Auth::attempt($userdata)) {
-
-                // validation successful!
-                // redirect them to the secure section or whatever
-                 return Redirect::to('dashboard');
-
-
-            } else {
-
-                // validation not successful, send back to form
-                return Redirect::to('login')->with("alert-fail","Incorrect username or password!!");
-
+            if(Input::get('remember') == "remember-me"){ //keep the user logged in
+                if (Auth::attempt($userdata,true)) {
+                    // validation successful!
+                    // redirect them to the secure section or whatever
+                    return Redirect::to('dashboard');
+                } else {
+                    // validation not successful, send back to form
+                    return Redirect::to('login')->with("alert-fail","Incorrect username or password!!");
+                }
+            }else{
+                if (Auth::attempt($userdata)) {
+                    // validation successful!
+                    // redirect them to the secure section or whatever
+                    return Redirect::to('dashboard');
+                } else {
+                    // validation not successful, send back to form
+                    return Redirect::to('login')->with("alert-fail","Incorrect username or password!!");
+                }
             }
+
 
         }
     }
