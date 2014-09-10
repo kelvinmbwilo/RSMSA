@@ -29,7 +29,6 @@
 </head>
 
 <body class="login-body"  style="background-image:url('<?php echo asset('img/fabric.png'); ?>')">
-<?php echo Hash::make("1234"); ?>
 
 <div class="container">
 
