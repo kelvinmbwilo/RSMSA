@@ -1,8 +1,8 @@
 <?php $__env->startSection('contents'); ?>
 
-<section class="panel">
-    <header class="panel-heading">
-        References
+<section class="panel panel-success">
+    <header class="panel-heading ">
+      Add data to reference
     </header>
     <div class="panel-body">
         <span id="responce" style="opacity: 0; color: "> Successful.. </span>
@@ -20,7 +20,7 @@
                         <?php endforeach; ?>
                     </select>
                 </div>
-                <?php echo Form::submit('Submit', array('class' => 'btn pull-right')); ?>
+                <?php echo Form::submit('Submit', array('class' => 'btn pull-right btn-info')); ?>
 
                 <?php echo Form::close(); ?>
 

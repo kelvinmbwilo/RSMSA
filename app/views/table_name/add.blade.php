@@ -6,13 +6,12 @@
 <link href="{{ asset('css/style-responsive.css') }}" rel="stylesheet" />
 <!--main content start-->
 
-    <section class="wrapper site-min-height">
-        <!-- page start-->
+
         <div class="row">
             <div class="col-lg-12">
-                <section class="panel">
+                <section class="panel panel-success">
                     <header class="panel-heading">
-                        Fill this form to complete registration of a Table
+                        Form to complete registration of a table
                     </header>
                     <div class="panel-body">
                         <div class="stepy-tab ">
@@ -100,9 +99,7 @@
                 </section>
             </div>
         </div>
-        <!-- page end-->
 
-</section>
 
 <script src="{{ asset('js/jquery.js') }}"></script>
 <script src="{{ asset('js/bootstrap.min.js') }}"></script>

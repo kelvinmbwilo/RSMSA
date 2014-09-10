@@ -2,43 +2,33 @@
 
 @section('contents')
 <link href="{{ asset('css/tooltipster.css') }}" rel="stylesheet" />
-@if(isset($name))
-<h3 class="text-success"> {{ $name }}</h3>
-@endif
+<!--@if(isset($name))-->
+<!--<h3 class="text-success"> {{ $name }}</h3>-->
+<!--@endif-->
 
-    <section class="wrapper site-min-height">
         <!-- page start-->
-        <section class="panel">
-            <header class="panel-heading">
+        <section class="panel panel-success">
+            <header class="panel-heading panel-success">
+        List of References
+          <a  class="btn btn-success btn-xs pull-right" href="{{url('reference/add')}}">
+                    New Reference <i class="fa fa-plus"></i>
+                </a>
 
-                <div class="btn-group ">
-                    <button class="btn dropdown-toggle" data-toggle="dropdown">Tools <i class="fa fa-angle-down"></i>
-                    </button>
-                    <ul class="dropdown-menu pull-right ">
-                        <li><a href="editable_table.html#">Print</a></li>
-                        <li><a href="editable_table.html#">Save as PDF</a></li>
-                        <li><a href="editable_table.html#">Export to Excel</a></li>
-                    </ul>
-                </div>
-                <h4 > References </h4>
             </header>
+
+
+
+
             <div class="panel-body">
 
-                    <div class="clearfix" >
-                        <div class="btn-group pull-right" >
-                            <a id="editable-sample_new" class="btn btn-success" href="{{url('reference/add')}}">
-                                Add New <i class="fa fa-plus"></i>
-                            </a>
-                        </div>
 
-                    </div>
 
                     <table class="table table-striped table-hover table-bordered" id="dynamic-table">
                         <thead>
                         <tr>
                             <th>#no</th>
                             <th>Name</th>
-                            <th>Last Update</th>
+
                             <th>Action</th>
                         </tr>
                         </thead>
@@ -47,11 +37,11 @@
                         <tr>
                             <td>{{ $ref->id }}</td>
                             <td>{{ $ref->name }}</td>
-                            <td>{{ $ref->updated_at }}</td>
+
                             <td class="btn-group">
-                                <a class="btn btn-success btn-sm"  href="{{ url("reference/edit/{$ref->id}")}}"><i class="fa fa-edit"></i></a>
-                                <a class="btn btn-danger btn-sm" href="{{ url("reference/delete/{$ref->id}")}}"> <i class="fa fa-trash-o"></i></a>
-                                <a class="viewColumn btn btn-warning btn-sm" id="{{$ref->id}}"><i class="fa fa-arrow-left"></i>ViewColumn</a>
+                                <a class="btn btn-info btn-xs"  href="{{ url("reference/edit/{$ref->id}")}}"><i class="fa fa-edit"></i></a>
+                                <a class="btn btn-danger btn-xs" href="{{ url("reference/delete/{$ref->id}")}}"> <i class="fa fa-trash-o"></i></a>
+                                <a class="viewColumn btn btn-warning btn-xs" id="{{$ref->id}}"><i class="fa fa-arrow-left"></i>ViewColumn</a>
                             </td>
                             @endforeach
                         </tr>
@@ -60,8 +50,7 @@
 
             </div>
         </section>
-        <!-- page end-->
-    </section>
+
 
 <!--main content end-->
 <!--script for this page only-->

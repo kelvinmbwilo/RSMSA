@@ -1,9 +1,10 @@
 <?php $__env->startSection('contents'); ?>
-<section class="panel">
+<section class="panel panel-success">
     <div class="panel-body">
 
         <form action="<?php echo url('dynamic_table/test'); ?>/<?php echo $reference->id; ?>" method="post">
             <?php foreach($mycol as $referencedetails): ?>
+
             <?php
             $datatype = $referencedetails->dataType->name;
             if($datatype == 'string'){

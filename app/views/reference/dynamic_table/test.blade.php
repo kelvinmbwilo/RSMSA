@@ -1,10 +1,11 @@
 @extends('layout.master')
 @section('contents')
-<section class="panel">
+<section class="panel panel-success">
     <div class="panel-body">
 
         <form action="{{ url('dynamic_table/test')}}/{{$reference->id}}" method="post">
             @foreach($mycol as $referencedetails)
+
             <?php
             $datatype = $referencedetails->dataType->name;
             if($datatype == 'string'){
