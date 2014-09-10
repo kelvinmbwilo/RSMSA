@@ -49,12 +49,13 @@
                     @if(!is_null($dt))
                     <tr>
                         <td>AAC</td>
-                        <td></td>
-                        <td>{{$dt->value}}</td>
-                        <td>{{$dt->locationId}}</td>
-                        <td>{{$dt->StakeHolderBranch->name}}</td>
-                        <td>{{$dt->created_at}}</td>
-                        <td>{{$dt->updated_at}}</td>
+
+                        <td>@if($dt->table){{$dt->table->categoryName}} @endif</td>
+                        <td>@if($dt->value){{$dt->value}} @endif</td>
+                        <td>@if($dt->location){{$dt->location->name}} @endif</td>
+                        <td>@if($dt->StakeHolderBranch){{$dt->StakeHolderBranch->name}} @endif</td>
+                        <td>@if($dt->created_at){{$dt->created_at}} @endif</td>
+                        <td>@if($dt->updated_at){{$dt->updated_at}} @endif</td>
                         <td><a href="#">Edit</a></td>
                     </tr>
                     @endif

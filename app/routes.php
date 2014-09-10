@@ -97,13 +97,13 @@ Route::get('data/view/{id}', array('uses' => 'DataController@viewtable'));
 /***************************************************************/
 Route::get('reference', array('uses'=>'ReferenceController@index')); //display list of references
 Route::get('reference/add', array('uses'=>'ReferenceController@create')); //display form to add new reference
-Route::post('reference/add', array('uses'=>'ReferenceController@store')); //processing addition form
+
 Route::post('reference/add', array('uses'=>'ReferenceController@store')); //processing addition form
 Route::get('reference/edit/{id}', array('uses'=>'ReferenceController@edit')); //display form to edit a reference of a certain id
 Route::post('reference/edit/{id}', array('uses'=>'ReferenceController@update')); //display form to edit a reference of a certain id
 Route::get('reference/delete/{id}', array('uses'=>'ReferenceController@destroy')); //processing deletion of a reference of a certain id
 Route::get('reference/viewColumn/{id}', array('uses'=>'ReferenceController@viewColumn')); //displaying a list of the reference details
-Route::get('reference/createTable/{id}', array('uses'=>'ReferenceController@createTable')); //displaying a list of the reference details
+Route::get('reference/createTable/{id}', array('uses'=>'ReferenceController@createTable')); //creating at reference table in the database
 Route::get('reference/editTable/{id}', array('uses'=>'ReferenceController@editTable')); //displaying a list of the reference details
 Route::get('reference/deleteTable/{id}', array('uses'=>'ReferenceController@deleteTable')); //displaying a list of the reference details
 Route::get('reference/deleteColumn/{id}', array('uses'=>'ReferenceController@deleteColumn')); //displaying a list of the reference details

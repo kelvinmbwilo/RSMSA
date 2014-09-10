@@ -1,9 +1,9 @@
 @extends('layout.master')
 @section('contents')
 
-<section class="panel">
-    <header class="panel-heading">
-        References
+<section class="panel panel-success">
+    <header class="panel-heading ">
+      Add data to reference
     </header>
     <div class="panel-body">
         <span id="responce" style="opacity: 0; color: "> Successful.. </span>
@@ -21,7 +21,7 @@
                         @endforeach
                     </select>
                 </div>
-                {{ Form::submit('Submit', array('class' => 'btn pull-right')) }}
+                {{ Form::submit('Submit', array('class' => 'btn pull-right btn-info')) }}
                 {{ Form::close() }}
 
                 @if ($errors->any())

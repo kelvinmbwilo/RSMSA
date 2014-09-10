@@ -5,13 +5,12 @@
 <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 <link href="{{ asset('css/style-responsive.css') }}" rel="stylesheet" />
 
-    <section class="wrapper site-min-height">
-        <!-- page start-->
+
         <div class="row">
             <div class="col-lg-12">
-                <section class="panel">
-                    <header class="panel-heading">
-                        Fill this form to complete registration of a Reference
+                <section class="panel panel-success">
+                    <header class="panel-heading panel-success">
+                        Form to complete registration of a Reference
                     </header>
                     <div class="panel-body">
                         <div class="stepy-tab ">
@@ -87,8 +86,7 @@
                 </section>
             </div>
         </div>
-        <!-- page end-->
-    </section>
+
 
 
 <script src="{{ asset('js/jquery.js') }}"></script>
@@ -105,7 +103,7 @@
 
 
 
-    //step wizard
+
 
 
     <!--script for this page-->

@@ -1,11 +1,11 @@
 
 
 <table>
-      @foreach($reference->referenceDetails as $column)
+    @foreach($reference->referenceDetails as $column)
 
-       <tr>
-           <td>{{$column->name}}</td>
-       </tr>
+    <tr>
+        <td>{{$column->name}}</td>
+    </tr>
 
     @endforeach
 </table>

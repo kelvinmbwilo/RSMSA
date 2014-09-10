@@ -92,8 +92,30 @@ class LocationLevelController extends \BaseController {
 	public function destroy($id)
 	{
 		$level = LocationLevel::find($id);
+        $child = LocationLevel::where("parentId",$level->id)->get();
+        if($child){
+        foreach($child as $childlevel){
+            $this->deletelocation($childlevel);
+        }
+    }
         $level->delete();
 	}
+
+    /**
+     * Delete a specific Location.
+     *
+     * @param  Locationlevel  $location
+     * @return Response
+     */
+    public function deletelocation($location){
+        $child = LocationLevel::where("parentId",$location->id)->get();
+        if($child){
+        foreach($child as $childlevel){
+            $this->deletelocation($childlevel);
+        }
+        }
+        $location->delete();
+    }
 
 
 }
