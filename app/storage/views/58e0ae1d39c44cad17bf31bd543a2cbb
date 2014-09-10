@@ -45,9 +45,8 @@
                                     <span class="text-danger" id="errorlebal"></span>
                                     <?php $i=1; $k=1; ?>
                                     <?php foreach($reference->referenceDetails as $detail): ?>
-
                                     <div class="form-group">
-                               <?php  $detail2=$detail->name ?>
+                                        <?php  $detail2=$detail->name ?>
                                         <div class="col-sm-7 ">
                                             <input type="text" class="form-control input-sm columns"  name="column<?php echo $i++; ?>" value="<?php echo $detail->name; ?>">
                                             <input type="hidden"  name="columnid<?php echo $k++; ?>" value="<?php echo $detail->id; ?>">

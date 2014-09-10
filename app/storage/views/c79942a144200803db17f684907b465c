@@ -16,14 +16,36 @@
 
         <li class="sub-menu">
             <a href="javascript:;" >
-                <i class="fa fa-book"></i>
+                <i class="fa fa-th-large"></i>
                 <span>Reference Tables</span>
             </a>
             <ul class="sub">
+                <li><a  href="<?php echo url('reference'); ?>">References</a></li>
+                <li><a  href="<?php echo url('dynamic_table'); ?>">Dynamic table</a></li>
 
-                <li><a  href="<?php echo url('reference'); ?>">Reference Management</a></li>
-                <li><a  href="<?php echo url('dynamic_table'); ?>">Dynamic Tables</a></li>
+            </ul>
+        </li>
+        <li class="sub-menu">
+            <a href="javascript:;" >
+                <i class="fa fa-th-list"></i>
+                <span>Data Tables</span>
+            </a>
+            <ul class="sub">
+                <li><a  href="<?php echo url('table_name'); ?>">Table Names</a></li>
+                <li><a  href="<?php echo url('table_data'); ?>">Table data</a></li>
 
+
+            </ul>
+        </li>
+
+        <li class="sub-menu">
+            <a href="javascript:;" >
+                <i class="fa fa-cogs"></i>
+                <span>Locations</span>
+            </a>
+            <ul class="sub">
+                <li><a  href="<?php echo url('location/'); ?>">Administrative Units</a></li>
+                <li><a  href="<?php echo url('location/levels'); ?>">Administrative Levels</a></li>
             </ul>
         </li>
 

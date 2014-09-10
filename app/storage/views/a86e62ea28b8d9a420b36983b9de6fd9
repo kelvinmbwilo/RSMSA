@@ -4,7 +4,8 @@
  * User: Isaiah
  * Date: 8/19/14
  * Time: 11:05 AM
- */ ?>
+ */
+?>
 
 
 <?php $__env->startSection('contents'); ?>
@@ -27,7 +28,7 @@
 
         <?php
                 $datatype = $columns->datatype->name;
-                if($datatype == 'String'){
+                if($datatype == 'string'){
          ?>
 
                 <div class="form-group">
@@ -41,7 +42,7 @@
         ?>
         <div class="form-group">
             <label ><?php echo $columns->columnName; ?></label>
-            <input type="number" class="form-control" name="name" id="name" placeholder="Enter name">
+            <input type="number" class="form-control" name="<?php echo $val.'_value'; ?>" id="name" placeholder="Enter name">
         </div>
         <?php
             $val++;
