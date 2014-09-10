@@ -1,0 +1,31 @@
+<?php $__env->startSection('contents'); ?>
+
+
+<fieldset><legend>Edit data type</legend>
+    <form action="<?php echo url('datatype/edit'); ?>/<?php echo $type->id; ?>" method="post">
+        <?php if($alert = Session::get('alert-success')): ?>
+        <div class="alert alert-success">
+            <?php echo $alert; ?>
+
+        </div>
+        <?php endif; ?>
+        <div class="entry">
+            <div class="row">
+                <div class="col-lg-2"><p>Name</p></div>
+                <div class="col-lg-2"> <input type="text"  name= "name" class="form-control" value="<?php echo $type->name; ?>"/> </div>
+
+            </div>
+
+            <hr>
+            <div class="sep"></div>
+
+            <button type="submit" name="submit" class="btn btn-primary">Edit</button>
+            <a class="btn btn-danger" href="<?php echo url('datatype'); ?>"> Cancel</a>
+        </div>
+        </div>
+        </div>
+        <div class="clear"></div>
+    </form>
+</fieldset>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layout.master', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
