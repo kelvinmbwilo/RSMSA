@@ -215,7 +215,7 @@
         <li class="dropdown">
             <a data-toggle="dropdown" class="dropdown-toggle" href="index.html#">
                 <img alt="" src="img/avatar1_small.jpg">
-                <span class="username">martha</span>
+                <span class="username"><?php echo Auth::user()->username; ?></span>
                 <b class="caret"></b>
             </a>
             <ul class="dropdown-menu extended logout">
