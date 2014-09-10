@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6662a4ad-95fa-4dcf-82ca-d6bee230b9f9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/views/0855c3b2917630e68ee44aac37e32003" afterPath="$PROJECT_DIR$/app/storage/views/0855c3b2917630e68ee44aac37e32003" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/views/1aa217a907624694a354830b3224343a" afterPath="$PROJECT_DIR$/app/storage/views/1aa217a907624694a354830b3224343a" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/views/3a9389501edb6c685bd0b58c7e362283" afterPath="$PROJECT_DIR$/app/storage/views/3a9389501edb6c685bd0b58c7e362283" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/views/56403002d13628a748e8c3f59c75bf7b" afterPath="$PROJECT_DIR$/app/storage/views/56403002d13628a748e8c3f59c75bf7b" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/views/6dd81b4285ad8395fb57b491e7a1a0d0" afterPath="$PROJECT_DIR$/app/storage/views/6dd81b4285ad8395fb57b491e7a1a0d0" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/views/7581591b28291478960692a6587b4ef5" afterPath="$PROJECT_DIR$/app/storage/views/7581591b28291478960692a6587b4ef5" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/views/76edf50d157f66388c15c8b43d939f6b" afterPath="$PROJECT_DIR$/app/storage/views/76edf50d157f66388c15c8b43d939f6b" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/views/935bd74ca0739791d2519fe20d199889" afterPath="$PROJECT_DIR$/app/storage/views/935bd74ca0739791d2519fe20d199889" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/datatype/delete.blade.php" afterPath="$PROJECT_DIR$/app/views/datatype/delete.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/user/delete.blade.php" afterPath="$PROJECT_DIR$/app/views/user/delete.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="RSMSA.iws" />
@@ -135,6 +126,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -249,7 +241,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -315,7 +306,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18277946" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22432025" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22734138" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -345,9 +336,9 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21827795" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
