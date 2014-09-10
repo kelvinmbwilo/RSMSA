@@ -138,7 +138,13 @@ class StakeholderController extends \BaseController {
 	public function destroy($id)
 	{
 		//
-        Stakeholder::find($id)->delete();
+        $stakeholder = Stakeholder::find($id);
+        if(count($stakeholder->branches) != 0){
+            foreach($stakeholder->branches as $branch){
+                $branch->delete();
+            }
+        }
+        $stakeholder->delete();
 
         return Redirect::back()->with('message', 'Deleted!!');
 	}

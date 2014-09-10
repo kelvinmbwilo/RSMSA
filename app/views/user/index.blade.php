@@ -7,7 +7,8 @@
 <div class="panel panel-success">
 
 
-<div class="panel-heading">list of users<a href="{{ url('user/add') }}" class="btn btn-success btn-row pull-right">Add new user</a></div>
+<div class="panel-heading">list of users<a href="{{ url('user/add') }}" class="btn btn-success btn-xs pull-right">
+        New user <i class="fa fa-plus"></i> </a></div>
     @if ($alert = Session::get('alert-success'))
     <div class="alert alert-success">
         {{ $alert }}
@@ -25,7 +26,7 @@
     <th>Email</th>
     <th>Phone Number</th>
     <th>Role</th>
-    <th>Stakeholder Branchid</th>
+    <th>Stakeholder</th>
     <th>Action</th>
 </thead>
 <tbody>
@@ -39,10 +40,10 @@
     <td>{{ $user->email }}</td>
     <td>{{ $user->phoneNumber }}</td>
     <td>{{ $user->role }}</td>
-    <td>{{ $user->stakeholderBranchId }}</td>
+    <td>{{ $user->stakeholder->stakeholder->name}} - {{ $user->stakeholder->name }}</td>
     <td class="table-condensed col-xs-pull-2">
-        <div class="btn-group" >
-            <a href="{{ url('user/edit')}}/{{$user->id}}" class="btn btn-primary" title="edit">
+        <div class="btn-group btn-group-xs" >
+            <a href="{{ url('user/edit')}}/{{$user->id}}" class="btn btn-info" title="edit">
                 <i class="fa fa-edit"></i>
             </a>
             <a data-toggle="modal" class="open-DeleteDialog btn btn-danger" data-id="{{$user->id}}" href="#deleteDialog" title="delete">
@@ -55,20 +56,7 @@
 @endforeach
 
 </tbody>
-<tfoot>
-<tr>
-    <th>First Name</th>
-    <th>Middle Name</th>
-    <th>Last Name</th>
-    <th>User Name</th>
-    <th>Email</th>
-    <th>Phone Number</th>
-    <th>Role</th>
-    <th>Stakeholder Branchid</th>
-    <th>Action</th>
 
-</tr>
-</tfoot>
 </table>
 </div>
 </div>

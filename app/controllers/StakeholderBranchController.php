@@ -47,7 +47,7 @@ class StakeholderBranchController extends \BaseController {
             'PhoneNumber' => Input::get('PhoneNumber'),
             'address' => Input::get('address'),
             'email' => Input::get('email'),
-            'locationId' => '',
+            'locationId' => Input::get('locationId'),
             'stakeholderId' => $id
         ));
 
@@ -98,6 +98,7 @@ class StakeholderBranchController extends \BaseController {
         $stakeholderBranch->PhoneNumber=Input::get('PhoneNumber');
         $stakeholderBranch->address=Input::get('address');
         $stakeholderBranch->email=Input::get('email');
+        $stakeholderBranch->locationId=Input::get('locationId');
         $stakeholderBranch->save();
 
 
@@ -119,13 +120,14 @@ class StakeholderBranchController extends \BaseController {
 	{
 		//
         //
+        $stakeholder = StakeHolderBranch::find($id)->stakeholder;
         StakeHolderBranch::find($id)->delete();
-        return Redirect::back()->with('message', 'Deleted!!');
-        //$stakeholder = $result->stakeholder;
+//        return Redirect::back()->with('message', 'Deleted!!');
+
         //echo $stakeholder;
 
 
-        //return View::make('stakeholder.specificStakeholderBranch', compact('stakeholder'));
+        return View::make('stakeholder.specificStakeholderBranch', compact('stakeholder'));
 	}
 
 

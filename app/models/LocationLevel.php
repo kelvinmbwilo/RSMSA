@@ -19,4 +19,5 @@ class LocationLevel extends Eloquent {
         return $this->belongsTo('LocationLevel', 'parentId', 'id');
     }
 
+
 }

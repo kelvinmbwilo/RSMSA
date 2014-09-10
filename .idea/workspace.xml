@@ -2,13 +2,42 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="81f3b6fd-548c-4b26-afd4-70f1f56d4b4f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/views/2fe1b0474d855dfde0f853fa98fef783" afterPath="$PROJECT_DIR$/app/storage/views/2fe1b0474d855dfde0f853fa98fef783" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/views/33232533d0203603df67c4cf935a7bf5" afterPath="$PROJECT_DIR$/app/storage/views/33232533d0203603df67c4cf935a7bf5" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/views/4f050a180240bdf399bf1e69ae621537" afterPath="$PROJECT_DIR$/app/storage/views/4f050a180240bdf399bf1e69ae621537" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/views/66f8468132644c7135d979e0921ba017" afterPath="$PROJECT_DIR$/app/storage/views/66f8468132644c7135d979e0921ba017" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/views/d77d31cdfd4940663939e398e5426f64" afterPath="$PROJECT_DIR$/app/storage/views/d77d31cdfd4940663939e398e5426f64" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/database.php" afterPath="$PROJECT_DIR$/app/config/database.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/login.blade.php" afterPath="$PROJECT_DIR$/app/views/login.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/views/60d17f86632453e61601a6a07da01582" afterPath="$PROJECT_DIR$/app/storage/views/60d17f86632453e61601a6a07da01582" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/views/636707a9769c73a7829f53fda4d919b9" afterPath="$PROJECT_DIR$/app/storage/views/636707a9769c73a7829f53fda4d919b9" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/views/754965972058460a89a04df9359712ce" afterPath="$PROJECT_DIR$/app/storage/views/754965972058460a89a04df9359712ce" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/views/83f5884bac4ffa72386592e880c39c62" afterPath="$PROJECT_DIR$/app/storage/views/83f5884bac4ffa72386592e880c39c62" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/views/94b804e026f7b1e9c795d9c56121c4b3" afterPath="$PROJECT_DIR$/app/storage/views/94b804e026f7b1e9c795d9c56121c4b3" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/LocationController.php" afterPath="$PROJECT_DIR$/app/controllers/LocationController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/LocationLevel.php" afterPath="$PROJECT_DIR$/app/models/LocationLevel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/LocationLevelController.php" afterPath="$PROJECT_DIR$/app/controllers/LocationLevelController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/StakeHolderBranch.php" afterPath="$PROJECT_DIR$/app/models/StakeHolderBranch.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/Stakeholder.php" afterPath="$PROJECT_DIR$/app/models/Stakeholder.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/StakeholderBranchController.php" afterPath="$PROJECT_DIR$/app/controllers/StakeholderBranchController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/StakeholderController.php" afterPath="$PROJECT_DIR$/app/controllers/StakeholderController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/User.php" afterPath="$PROJECT_DIR$/app/models/User.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/location/add.blade.php" afterPath="$PROJECT_DIR$/app/views/location/add.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/location/location_level/add.blade.php" afterPath="$PROJECT_DIR$/app/views/location/location_level/add.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/user/add.blade.php" afterPath="$PROJECT_DIR$/app/views/user/add.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/stakeholder/addBranchStakeholder.blade.php" afterPath="$PROJECT_DIR$/app/views/stakeholder/addBranchStakeholder.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/views/bdfa0665ff1d3e4571de522e1a5198d7" afterPath="$PROJECT_DIR$/app/storage/views/bdfa0665ff1d3e4571de522e1a5198d7" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/views/cc84d72f9565e40f8e46c37096d7c495" afterPath="$PROJECT_DIR$/app/storage/views/cc84d72f9565e40f8e46c37096d7c495" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/location/edit.blade.php" afterPath="$PROJECT_DIR$/app/views/location/edit.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/location/location_level/edit.blade.php" afterPath="$PROJECT_DIR$/app/views/location/location_level/edit.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/stakeholder/editBranchStakeholder.blade.php" afterPath="$PROJECT_DIR$/app/views/stakeholder/editBranchStakeholder.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/stakeholder/editStakeholder.blade.php" afterPath="$PROJECT_DIR$/app/views/stakeholder/editStakeholder.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/views/f101c723ff8fb6736a831e55063b2d73" afterPath="$PROJECT_DIR$/app/storage/views/f101c723ff8fb6736a831e55063b2d73" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/views/f222913c48f12cd2aaf199556e5d6041" afterPath="$PROJECT_DIR$/app/storage/views/f222913c48f12cd2aaf199556e5d6041" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/views/f646dc62e8767af1400965449aee3b55" afterPath="$PROJECT_DIR$/app/storage/views/f646dc62e8767af1400965449aee3b55" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/location/index.blade.php" afterPath="$PROJECT_DIR$/app/views/location/index.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/location/location_level/index.blade.php" afterPath="$PROJECT_DIR$/app/views/location/location_level/index.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/user/index.blade.php" afterPath="$PROJECT_DIR$/app/views/user/index.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/mail.php" afterPath="$PROJECT_DIR$/app/config/mail.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/stakeholder/specificStakeholderBranch.blade.php" afterPath="$PROJECT_DIR$/app/views/stakeholder/specificStakeholderBranch.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/stakeholder/stakeholderBranch.blade.php" afterPath="$PROJECT_DIR$/app/views/stakeholder/stakeholderBranch.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/stakeholder/stakeholders.blade.php" afterPath="$PROJECT_DIR$/app/views/stakeholder/stakeholders.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="RSMSA.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,19 +60,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="StakeholderController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/StakeholderController.php">
+      <file leaf-file-name="StakeholderBranchController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/StakeholderBranchController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="128" column="0" selection-start="2502" selection-end="2502" vertical-scroll-proportion="0.0" vertical-offset="2304" max-vertical-offset="2754">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="stakeholders.blade.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/stakeholder/stakeholders.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="60" selection-start="2159" selection-end="2159" vertical-scroll-proportion="0.0" vertical-offset="918" max-vertical-offset="2448">
+            <state line="100" column="38" selection-start="2283" selection-end="2283" vertical-scroll-proportion="-8.666667" vertical-offset="1566" max-vertical-offset="2520">
               <folding />
             </state>
           </provider>
@@ -52,74 +72,82 @@
       <file leaf-file-name="editStakeholder.blade.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/stakeholder/editStakeholder.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="13" selection-start="280" selection-end="280" vertical-scroll-proportion="-9.37037" vertical-offset="35" max-vertical-offset="630">
+            <state line="20" column="84" selection-start="542" selection-end="542" vertical-scroll-proportion="-6.7777777" vertical-offset="87" max-vertical-offset="540">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/User.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="26" column="31" selection-start="595" selection-end="606" vertical-scroll-proportion="-3.2962964" vertical-offset="325" max-vertical-offset="774">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.blade.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/user/index.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="42" column="52" selection-start="1061" selection-end="1061" vertical-scroll-proportion="-16.0" vertical-offset="324" max-vertical-offset="1764">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="add.blade.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/user/add.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="43" column="44" selection-start="2056" selection-end="2056" vertical-scroll-proportion="0.39726028" vertical-offset="600" max-vertical-offset="1080">
               <folding>
-                <element signature="e#6#88#0" expanded="true" />
+                <element signature="n#style#0;n#div#5;n#div#0;n#form#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#6;n#div#0;n#form#0;n#div#0;n#section#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routes.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/routes.php">
+      <file leaf-file-name="add.blade.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/location/add.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="0" selection-start="447" selection-end="447" vertical-scroll-proportion="-2.6666667" vertical-offset="0" max-vertical-offset="3078">
-              <folding>
-                <element signature="e#7#392#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.blade.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/login.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="78" selection-start="2231" selection-end="2231" vertical-scroll-proportion="-19.333334" vertical-offset="432" max-vertical-offset="1998">
+            <state line="27" column="32" selection-start="1208" selection-end="1232" vertical-scroll-proportion="-5.3333335" vertical-offset="342" max-vertical-offset="1350">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mail.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/config/mail.php">
+      <file leaf-file-name="StakeHolderBranch.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/StakeHolderBranch.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="93" column="28" selection-start="3351" selection-end="3351" vertical-scroll-proportion="0.88" vertical-offset="1410" max-vertical-offset="2538">
+            <state line="24" column="31" selection-start="461" selection-end="472" vertical-scroll-proportion="-8.62963" vertical-offset="199" max-vertical-offset="720">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/config/app.php">
+      <file leaf-file-name="editBranchStakeholder.blade.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/stakeholder/editBranchStakeholder.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="3600">
+            <state line="36" column="86" selection-start="1518" selection-end="1518" vertical-scroll-proportion="-9.111111" vertical-offset="312" max-vertical-offset="882">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="database.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/config/database.php">
+      <file leaf-file-name="addBranchStakeholder.blade.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/stakeholder/addBranchStakeholder.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="33" selection-start="1762" selection-end="1767" vertical-scroll-proportion="-4.0" vertical-offset="918" max-vertical-offset="2340">
+            <state line="19" column="28" selection-start="142" selection-end="490" vertical-scroll-proportion="-9.333333" vertical-offset="0" max-vertical-offset="864">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/UserController.php">
+      <file leaf-file-name="specificStakeholderBranch.blade.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/stakeholder/specificStakeholderBranch.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="10.0" vertical-offset="270" max-vertical-offset="2340">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/LoginController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="82" selection-start="1378" selection-end="1378" vertical-scroll-proportion="-6.5185184" vertical-offset="508" max-vertical-offset="2142">
+            <state line="50" column="68" selection-start="1989" selection-end="1997" vertical-scroll-proportion="-9.111111" vertical-offset="564" max-vertical-offset="1476">
               <folding />
             </state>
           </provider>
@@ -139,20 +167,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/database/migrations/2014_08_11_134607_create_stakeholderBranch_table.php" />
-        <option value="$PROJECT_DIR$/app/database/migrations/2014_08_11_124551_create_stakeholders_table.php" />
-        <option value="$PROJECT_DIR$/app/views/stakeholder/specificStakeholderBranch.php" />
-        <option value="$PROJECT_DIR$/app/models/Stakeholder.php" />
-        <option value="$PROJECT_DIR$/app/controllers/ReferenceController.php" />
-        <option value="$PROJECT_DIR$/app/controllers/stakeholderBranchController.php" />
-        <option value="$PROJECT_DIR$/app/database/migrations/2014_08_11_124742_create_data_table.php" />
-        <option value="$PROJECT_DIR$/app/views/layout/master.blade.php" />
-        <option value="$PROJECT_DIR$/app/database/migrations/2014_08_11_124742_create_integer_data_table.php" />
-        <option value="$PROJECT_DIR$/app/models/FileData.php" />
-        <option value="$PROJECT_DIR$/app/models/IntegerData.php" />
-        <option value="$PROJECT_DIR$/app/models/StringData.php" />
-        <option value="$PROJECT_DIR$/app/database/migrations/2014_08_17_112337_create_intergerdata_table.php" />
-        <option value="$PROJECT_DIR$/app/database/migrations/2014_08_17_112423_create_stringdata_table.php" />
         <option value="$PROJECT_DIR$/app/database/migrations/2014_08_17_112437_create_filedata_table.php" />
         <option value="$PROJECT_DIR$/app/database/migrations/2014_08_11_124854_create_columns_table.php" />
         <option value="$PROJECT_DIR$/app/views/reference/data_reference/add.blade.php" />
@@ -160,15 +174,10 @@
         <option value="$PROJECT_DIR$/app/models/DataTypeDetails.php" />
         <option value="$PROJECT_DIR$/app/views/dashboard.blade.php" />
         <option value="$PROJECT_DIR$/app/models/DataReference.php" />
-        <option value="$PROJECT_DIR$/app/models/StakeHolderBranch.php" />
         <option value="$PROJECT_DIR$/app/views/data/addNewData_.blade.php" />
-        <option value="$PROJECT_DIR$/app/views/stakeholder/addBranchStakeholder.blade.php" />
         <option value="$PROJECT_DIR$/app/views/stakeholder/addStakeholder.blade.php" />
         <option value="$PROJECT_DIR$/app/views/stakeholder/delete.blade.php" />
-        <option value="$PROJECT_DIR$/app/views/stakeholder/editBranchStakeholder.blade.php" />
         <option value="$PROJECT_DIR$/app/views/stakeholder/form_wizard.blade.php" />
-        <option value="$PROJECT_DIR$/app/views/stakeholder/specificStakeholderBranch.blade.php" />
-        <option value="$PROJECT_DIR$/app/views/stakeholder/stakeholderBranch.blade.php" />
         <option value="$PROJECT_DIR$/app/views/data/view.blade.php" />
         <option value="$PROJECT_DIR$/app/models/Column.php" />
         <option value="$PROJECT_DIR$/app/database/migrations/2014_08_19_121928_create_datatag_table.php" />
@@ -182,14 +191,33 @@
         <option value="$PROJECT_DIR$/app/views/data/test.blade.php" />
         <option value="$PROJECT_DIR$/app/views/layout/left_menu.blade.php" />
         <option value="$PROJECT_DIR$/app/views/layout/header.blade.php" />
-        <option value="$PROJECT_DIR$/app/controllers/StakeholderController.php" />
-        <option value="$PROJECT_DIR$/app/views/stakeholder/stakeholders.blade.php" />
-        <option value="$PROJECT_DIR$/app/views/stakeholder/editStakeholder.blade.php" />
         <option value="$PROJECT_DIR$/app/routes.php" />
         <option value="$PROJECT_DIR$/app/controllers/LoginController.php" />
         <option value="$PROJECT_DIR$/app/views/login.blade.php" />
         <option value="$PROJECT_DIR$/app/config/database.php" />
         <option value="$PROJECT_DIR$/app/config/mail.php" />
+        <option value="$PROJECT_DIR$/app/views/stakeholder/stakeholders.blade.php" />
+        <option value="$PROJECT_DIR$/app/controllers/StakeholderController.php" />
+        <option value="$PROJECT_DIR$/app/views/stakeholder/stakeholderBranch.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/location/location_level/add.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/location/location_level/index.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/location/location_level/edit.blade.php" />
+        <option value="$PROJECT_DIR$/app/models/LocationLevel.php" />
+        <option value="$PROJECT_DIR$/app/controllers/LocationLevelController.php" />
+        <option value="$PROJECT_DIR$/app/views/location/add.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/location/edit.blade.php" />
+        <option value="$PROJECT_DIR$/app/controllers/LocationController.php" />
+        <option value="$PROJECT_DIR$/app/views/location/index.blade.php" />
+        <option value="$PROJECT_DIR$/app/models/Stakeholder.php" />
+        <option value="$PROJECT_DIR$/app/views/stakeholder/specificStakeholderBranch.blade.php" />
+        <option value="$PROJECT_DIR$/app/controllers/StakeholderBranchController.php" />
+        <option value="$PROJECT_DIR$/app/views/stakeholder/addBranchStakeholder.blade.php" />
+        <option value="$PROJECT_DIR$/app/models/StakeHolderBranch.php" />
+        <option value="$PROJECT_DIR$/app/views/stakeholder/editBranchStakeholder.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/stakeholder/editStakeholder.blade.php" />
+        <option value="$PROJECT_DIR$/app/models/User.php" />
+        <option value="$PROJECT_DIR$/app/views/user/index.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/user/add.blade.php" />
       </list>
     </option>
   </component>
@@ -197,7 +225,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-1" />
     <option name="y" value="27" />
-    <option name="width" value="1368" />
+    <option name="width" value="1026" />
     <option name="height" value="742" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -226,6 +254,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -290,13 +319,96 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="users" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RSMSA" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RSMSA" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="user" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RSMSA" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RSMSA" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="location" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RSMSA" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RSMSA" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RSMSA" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RSMSA" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -363,15 +475,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="27" width="1368" height="742" extended-state="6" />
-    <editor active="false" />
+    <frame x="-1" y="27" width="1026" height="742" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37931034" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26272577" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.12846154" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22356495" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299389" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -401,9 +513,9 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21775417" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -423,81 +535,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/models/ColumnsOption.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="607" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/ReferenceController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="41" selection-start="193" selection-end="197" vertical-scroll-proportion="-3.5576923" vertical-offset="2" max-vertical-offset="2805" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_08_11_124854_create_columns_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="33" selection-start="452" selection-end="452" vertical-scroll-proportion="-6.576923" vertical-offset="152" max-vertical-offset="680" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/reference/data_reference/edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="113" column="54" selection-start="4890" selection-end="4906" vertical-scroll-proportion="-14.884615" vertical-offset="1534" max-vertical-offset="3366" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/dashboard.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="10" selection-start="85" selection-end="85" vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="612" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/ReferenceDetails.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="607" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/Reference.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="586" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/StakeHolderBranch.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="35" selection-start="298" selection-end="298" vertical-scroll-proportion="-9.807693" vertical-offset="0" max-vertical-offset="612" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/Location.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="0" selection-start="426" selection-end="426" vertical-scroll-proportion="-16.346153" vertical-offset="0" max-vertical-offset="527" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/DataReference.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="37" selection-start="296" selection-end="296" vertical-scroll-proportion="-10.461538" vertical-offset="0" max-vertical-offset="527" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/TableColumn.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="0" selection-start="639" selection-end="639" vertical-scroll-proportion="0.0" vertical-offset="20" max-vertical-offset="629" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/dynamic_table_init.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="4" selection-start="1598" selection-end="1598" vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="1173" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/bootstrap.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="150" selection-start="314" selection-end="315" vertical-scroll-proportion="-2.6153846" vertical-offset="0" max-vertical-offset="170" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/bootstrap-reset.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="373" column="36" selection-start="6382" selection-end="6384" vertical-scroll-proportion="-11.423077" vertical-offset="6044" max-vertical-offset="6596" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/table-responsive.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="5" selection-start="2034" selection-end="2034" vertical-scroll-proportion="0.0" vertical-offset="680" max-vertical-offset="1683" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/DashboardController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1581" />
@@ -526,11 +563,6 @@
     <entry file="file://$PROJECT_DIR$/app/models/DataTypeDetails.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="0" selection-start="6" selection-end="6" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="476" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/Stakeholder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="6" selection-end="217" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="442" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_08_18_114906_create_data_table.php">
@@ -568,16 +600,6 @@
         <state line="18" column="37" selection-start="447" selection-end="447" vertical-scroll-proportion="0.0" vertical-offset="61" max-vertical-offset="612" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/stakeholder/stakeholderBranch.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1071" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/stakeholder/editBranchStakeholder.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="6" selection-start="91" selection-end="91" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="782" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/DataController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="27" column="0" selection-start="422" selection-end="422" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="2414" />
@@ -591,16 +613,6 @@
     <entry file="file://$PROJECT_DIR$/app/views/data/test.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="59" column="21" selection-start="1568" selection-end="1570" vertical-scroll-proportion="0.0" vertical-offset="1003" max-vertical-offset="1309" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/stakeholder/specificStakeholderBranch.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="6" selection-start="91" selection-end="91" vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="1360" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/stakeholder/addStakeholder.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="35" selection-start="524" selection-end="524" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="493" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layout/left_menu.blade.php">
@@ -620,51 +632,21 @@
         <state line="25" column="0" selection-start="1428" selection-end="1428" vertical-scroll-proportion="-8.807693" vertical-offset="196" max-vertical-offset="4760" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/StakeholderController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="128" column="0" selection-start="2502" selection-end="2502" vertical-scroll-proportion="0.0" vertical-offset="2304" max-vertical-offset="2754">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/stakeholder/delete.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="24" column="23" selection-start="920" selection-end="920" vertical-scroll-proportion="-12.423077" vertical-offset="0" max-vertical-offset="612" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/stakeholder/addBranchStakeholder.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="104" selection-start="304" selection-end="400" vertical-scroll-proportion="-5.8846154" vertical-offset="51" max-vertical-offset="697" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/stakeholder/stakeholders.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="60" selection-start="2159" selection-end="2159" vertical-scroll-proportion="0.0" vertical-offset="918" max-vertical-offset="2448">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/stakeholder/editStakeholder.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="13" selection-start="280" selection-end="280" vertical-scroll-proportion="-9.37037" vertical-offset="35" max-vertical-offset="630">
-          <folding>
-            <element signature="e#6#88#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="447" selection-end="447" vertical-scroll-proportion="-2.6666667" vertical-offset="0" max-vertical-offset="3078">
-          <folding>
-            <element signature="e#7#392#0" expanded="false" />
-          </folding>
+        <state line="13" column="0" selection-start="447" selection-end="447" vertical-scroll-proportion="0.0" vertical-offset="234" max-vertical-offset="3240">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/UserController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="10.0" vertical-offset="270" max-vertical-offset="2340">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="2340">
           <folding />
         </state>
       </provider>
@@ -678,29 +660,202 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/database.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="33" selection-start="1762" selection-end="1767" vertical-scroll-proportion="-4.0" vertical-offset="918" max-vertical-offset="2340">
+        <state line="57" column="33" selection-start="1762" selection-end="1767" vertical-scroll-proportion="0.0" vertical-offset="918" max-vertical-offset="2340">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/LoginController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="82" selection-start="1378" selection-end="1378" vertical-scroll-proportion="-6.5185184" vertical-offset="508" max-vertical-offset="2142">
+        <state line="38" column="82" selection-start="1378" selection-end="1378" vertical-scroll-proportion="0.0" vertical-offset="508" max-vertical-offset="2142">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/login.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="78" selection-start="2231" selection-end="2231" vertical-scroll-proportion="-19.333334" vertical-offset="432" max-vertical-offset="1998">
+        <state line="53" column="78" selection-start="2231" selection-end="2231" vertical-scroll-proportion="0.0" vertical-offset="432" max-vertical-offset="1998">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/mail.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="28" selection-start="3351" selection-end="3351" vertical-scroll-proportion="0.88" vertical-offset="1410" max-vertical-offset="2538">
+        <state line="134" column="2" selection-start="4776" selection-end="4776" vertical-scroll-proportion="-9.740741" vertical-offset="2149" max-vertical-offset="2520">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/stakeholder/stakeholders.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="49" selection-start="756" selection-end="774" vertical-scroll-proportion="-7.6666665" vertical-offset="171" max-vertical-offset="2286">
+          <folding>
+            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/stakeholder/stakeholderBranch.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="37" selection-start="684" selection-end="684" vertical-scroll-proportion="-8.814815" vertical-offset="122" max-vertical-offset="1116">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/LocationLevel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="0" selection-start="440" selection-end="440" vertical-scroll-proportion="-13.333333" vertical-offset="0" max-vertical-offset="522">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/location/list.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="535">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/LocationLevelController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="99" column="5" selection-start="2048" selection-end="2048" vertical-scroll-proportion="0.4181818" vertical-offset="1575" max-vertical-offset="2286">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/location/location_level/add.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="28" selection-start="48" selection-end="350" vertical-scroll-proportion="-7.3333335" vertical-offset="0" max-vertical-offset="882">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/location/location_level/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="7" selection-start="877" selection-end="877" vertical-scroll-proportion="0.7627119" vertical-offset="0" max-vertical-offset="882">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/LocationController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="124" column="0" selection-start="2511" selection-end="2511" vertical-scroll-proportion="-10.148149" vertical-offset="1958" max-vertical-offset="2430">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/location/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="40" selection-start="239" selection-end="239" vertical-scroll-proportion="0.26694915" vertical-offset="0" max-vertical-offset="1728">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/location/location_level/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="82" column="0" selection-start="4239" selection-end="4303" vertical-scroll-proportion="-13.0" vertical-offset="1125" max-vertical-offset="1620">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Stakeholder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="31" selection-start="437" selection-end="437" vertical-scroll-proportion="-12.666667" vertical-offset="0" max-vertical-offset="522">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/stakeholder/addStakeholder.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="35" selection-start="524" selection-end="524" vertical-scroll-proportion="-6.296296" vertical-offset="46" max-vertical-offset="522">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/location/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="184" selection-start="1398" selection-end="1582" vertical-scroll-proportion="-9.666667" vertical-offset="279" max-vertical-offset="1350">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/StakeholderController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="148" column="62" selection-start="2900" selection-end="2954" vertical-scroll-proportion="-56.148148" vertical-offset="1148" max-vertical-offset="2862">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/stakeholder/specificStakeholderBranch.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="68" selection-start="1989" selection-end="1997" vertical-scroll-proportion="-9.111111" vertical-offset="564" max-vertical-offset="1476">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/StakeholderBranchController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="100" column="38" selection-start="2283" selection-end="2283" vertical-scroll-proportion="-8.666667" vertical-offset="1566" max-vertical-offset="2520">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/stakeholder/editBranchStakeholder.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="86" selection-start="1518" selection-end="1518" vertical-scroll-proportion="-9.111111" vertical-offset="312" max-vertical-offset="882">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/stakeholder/editStakeholder.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="84" selection-start="542" selection-end="542" vertical-scroll-proportion="-6.7777777" vertical-offset="87" max-vertical-offset="540">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="31" selection-start="595" selection-end="606" vertical-scroll-proportion="-3.2962964" vertical-offset="325" max-vertical-offset="774">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/StakeHolderBranch.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="31" selection-start="461" selection-end="472" vertical-scroll-proportion="-8.62963" vertical-offset="199" max-vertical-offset="720">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/user/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="52" selection-start="1061" selection-end="1061" vertical-scroll-proportion="-16.0" vertical-offset="324" max-vertical-offset="1764">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/stakeholder/addBranchStakeholder.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="28" selection-start="142" selection-end="490" vertical-scroll-proportion="-9.333333" vertical-offset="0" max-vertical-offset="864">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/location/add.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="32" selection-start="1208" selection-end="1232" vertical-scroll-proportion="-5.3333335" vertical-offset="342" max-vertical-offset="1350">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/user/add.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="44" selection-start="2056" selection-end="2056" vertical-scroll-proportion="0.39726028" vertical-offset="600" max-vertical-offset="1080">
+          <folding>
+            <element signature="n#style#0;n#div#5;n#div#0;n#form#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#6;n#div#0;n#form#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
