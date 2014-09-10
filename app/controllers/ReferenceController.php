@@ -259,7 +259,9 @@ class ReferenceController extends \BaseController {
      */
     public function createTable($id)
     {
-       $tableName1= Reference::find($id);
+
+        $tableName1= Reference::find($id);
+
 
         $tableName = $tableName1->name;
         $tableName ="rsmsa_".$tableName;
@@ -268,8 +270,9 @@ class ReferenceController extends \BaseController {
             $table->increments('id');
             $table->timestamps();
         });
-        $type="";
+               $type="";
         foreach($tableName1->referenceDetails as $column){
+
             if($column->dataType->name=="integer")
             {
                 $type="int(10)";
@@ -283,6 +286,7 @@ class ReferenceController extends \BaseController {
         }
         return View::make('reference.data_reference.index');
     }
+
     /**
      * edit the specified resource.
      *

@@ -49,7 +49,7 @@
                     <?php if(!is_null($dt)): ?>
                     <tr>
                         <td>AAC</td>
-                        
+
                         <td><?php if($dt->table): ?><?php echo $dt->table->categoryName; ?> <?php endif; ?></td>
                         <td><?php if($dt->value): ?><?php echo $dt->value; ?> <?php endif; ?></td>
                         <td><?php if($dt->location): ?><?php echo $dt->location->name; ?> <?php endif; ?></td>

@@ -49,7 +49,7 @@
                     @if(!is_null($dt))
                     <tr>
                         <td>AAC</td>
-                        
+
                         <td>@if($dt->table){{$dt->table->categoryName}} @endif</td>
                         <td>@if($dt->value){{$dt->value}} @endif</td>
                         <td>@if($dt->location){{$dt->location->name}} @endif</td>
