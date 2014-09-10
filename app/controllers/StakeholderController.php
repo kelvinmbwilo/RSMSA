@@ -140,9 +140,7 @@ class StakeholderController extends \BaseController {
 		//
         Stakeholder::find($id)->delete();
 
-        $stakeholder = Stakeholder::all();
-        $stakeholder->toarray();
-        return View::make('stakeholder.stakeholders' , compact('stakeholder'));
+        return Redirect::back()->with('message', 'Deleted!!');
 	}
 
 

@@ -25,7 +25,18 @@
 
             </ul>
         </li>
+        <li class="sub-menu">
+            <a href="javascript:;" >
+                <i class="fa fa-th-list"></i>
+                <span>Data Tables</span>
+            </a>
+            <ul class="sub">
+                <li><a  href="{{ url('table_name') }}">Table Names</a></li>
+                <li><a  href="{{ url('table_data') }}">Table data</a></li>
 
+
+            </ul>
+        </li>
 
         <li class="sub-menu">
             <a href="javascript:;" >
@@ -46,11 +57,14 @@
             <ul class="sub">
                 <li><a  href="{{ url('data/home') }}">View</a></li>
                 <li><a  href="{{ url('data/add') }}">Add</a></li>
-
-                    @foreach(TableName::all() as $tbl)
-                      <li><a   href="{{ url("data/view/{$tbl->id}")}}">{{$tbl->categoryName}}</a></li>
-                    @endforeach
-
+                <?php
+                    $table = TableName::all();
+                    foreach($table as $tbl){
+                        ?>
+                        <li><a  href='{{ url("data/view/{$tbl->id}") }}'>{{ $tbl->categoryName }}</a></li>
+                    <?php
+                    }
+                ?>
             </ul>
         </li>
         <li class="sub-menu">

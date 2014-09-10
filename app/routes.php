@@ -10,6 +10,7 @@
 | and give it the Closure to execute when that URI is requested.
 |
 */
+Route::controller('password', 'RemindersController');
 
 Route::get('/', function()
 {

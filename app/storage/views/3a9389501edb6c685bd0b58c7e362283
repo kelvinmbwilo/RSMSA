@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,6 +29,7 @@
 </head>
 
 <body class="login-body"  style="background-image:url('<?php echo asset('img/fabric.png'); ?>')">
+<?php echo Hash::make("1234"); ?>
 
 <div class="container">
 

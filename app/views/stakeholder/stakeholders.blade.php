@@ -54,11 +54,11 @@
                                         <a class="btn btn-primary" href="{{ url("stakeholder/edit/{$stakeHolder->id}") }}">
                                             <i class="fa fa-edit"></i>
                                         </a>
-                                        {{ Form::open(array('action' => array('StakeholderController@destroy', $stakeHolder->id), 'method' => 'post', 'class' => 'pull-right')) }}
+                                        <form class="pull-right" action='{{ url("stakeholder/delete/{$stakeHolder->id}") }}' method="post">
                                             <button class="btn  btn-danger" type="button" data-toggle="modal" data-target="#confirmDelete" data-title="Delete User" data-message="Are you sure you want to delete this user ?">
                                                 <i class="glyphicon glyphicon-trash"></i>
                                             </button>
-                                        {{ Form::close() }}
+                                        </form>
                                     </div>
                                 </td>
                             </tr>
