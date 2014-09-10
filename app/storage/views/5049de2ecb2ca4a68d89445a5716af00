@@ -2,7 +2,7 @@
 
 
 <fieldset><legend>Add new user</legend>
-<form action=""<?php echo url('user/add'); ?>"" method="post">
+<form action="<?php echo url('user/add'); ?>" method="post">
 
     <div class="entry">
         <div class="row">
