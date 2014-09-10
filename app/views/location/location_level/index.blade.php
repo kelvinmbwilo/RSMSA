@@ -1,21 +1,19 @@
 @extends('layout.master')
 
 @section('contents')
-<section class="wrapper">
-    <!-- page start-->
     <div class="row">
         <div class="col-lg-12">
-            <section class="panel">
+            <section class="panel panel-success">
                 <header class="panel-heading">
                     Location Levels
-                    <a class="btn btn-success pull-right" href="{{ url('location/levels/add') }}">
-                    New Location Level
+                    <a class="btn btn-success pull-right btn-xs" href="{{ url('location/levels/add') }}">
+                    New Location Level <i class="fa fa-plus"></i>
                     </a>
                 </header>
 
                 <div class="panel-body">
                     <section id="unseen">
-                        <table class="table table-bordered table-striped table-condensed">
+                        <table id="dynamic-table"  class="table table-bordered table-striped table-condensed">
                             <thead>
                             <tr>
                                 <th>#</th>
@@ -36,16 +34,17 @@
                                     @endif
                                 </td>
                                 <td class="table-condensed col-xs-pull-2" id="{{ $level->id }}">
-                                    <div class="btn-group" >
-                                        <a class="btn btn-info" href='{{ url("location/level/{$level->id}/units") }}'>
-                                            <i class="fa fa-level-down"></i>
-                                            Units
-                                        </a>
+
+                                    <div class="btn-group btn-group-xs" >
                                         <a class="btn btn-primary" title="edit location level" href='{{ url("location/levels/edit/{$level->id}") }}'>
                                         <i class="fa fa-edit"></i>
                                         </a>
                                         <a class="btn btn-danger deletelevel" title="delete location level" href='#delete'>
                                         <i class="fa fa-trash-o"></i>
+                                        </a>
+                                        <a class="btn btn-info" href='{{ url("location/level/{$level->id}/units") }}'>
+                                            <i class="fa fa-level-down"></i>
+                                            Units
                                         </a>
 
                                     </div>
@@ -81,6 +80,6 @@
 
     </div>
     <!-- page end-->
-</section>
-<!--script for this page-->
+
+<script src="{{ asset('js/dynamic_table_init.js') }}"></script>
 @stop

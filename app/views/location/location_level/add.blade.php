@@ -1,6 +1,15 @@
 @extends('layout.master')
 
 @section('contents')
+<section class="panel panel-success">
+    <header class="panel-heading">
+        Add New Location Level
+        <a class="btn btn-success btn-xs pull-right" href='{{ url("location/levels") }}'>
+            back to list <i class="fa fa-list"></i>
+        </a>
+
+    </header>
+    <div class="panel-body">
    <div class="col-sm-12">
        @if(isset($msg))
        <div class="alert alert-success fade in" role="alert">
@@ -8,7 +17,7 @@
            <strong>SUCCESS!</strong> Location Level {{ $level->name }} Added Successful.
        </div>
        @endif
-       <h3>Add New Location Level<a href="{{ url('location/levels') }}" class="btn btn-xs btn-info pull-right">Back to List</a></h3>
+<!--       <h3><a href="{{ url('location/levels') }}" class="btn btn-xs btn-info pull-right">Back to List</a></h3>-->
        <form class="form-horizontal" id="default" method="post" action="{{ url('location/levels/add') }}">
            <div class="form-group">
                <label class="col-md-2 control-label" id="DataCat">Level Name</label>
@@ -30,4 +39,6 @@
        </form>
 
    </div>
+        </div>
+    </section>
 @stop

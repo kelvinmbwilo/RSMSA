@@ -1,3 +1,11 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Isaiah
+ * Date: 8/19/14
+ * Time: 11:05 AM
+ */ ?>
+
 <!-- Modal Dialog -->
 <div class="modal fade bs-example-modal-sm" style="padding-top: 20%; padding-left: 10%" id="confirmDelete" role="dialog" aria-labelledby="confirmDeleteLabel" aria-hidden="true">
         <div class="modal-dialog modal-sm">

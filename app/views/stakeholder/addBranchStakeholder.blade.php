@@ -10,9 +10,12 @@
 
 @section('contents')
 
-<section class="panel">
+<section class="panel panel-success">
     <header class="panel-heading">
         Add New Branch for {{ $stakeholder->name }}
+        <a class="btn btn-success btn-xs pull-right" href='{{ url("stakeholder/viewbranch/{$stakeholder->id}") }}'>
+            back to list <i class="fa fa-list"></i>
+        </a>
     </header>
     <div class="panel-body">
         <form class="form" action='{{ url("stakeholderBranch/add/{$stakeholder->id}") }}' method="post">
@@ -31,6 +34,10 @@
             <div class="form-group">
                 <label >Email address</label>
                 <input type="email" class="form-control" name="email" id="email" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+                <label >Administrative Unit</label>
+                {{ Form::select('locationId',Location::orderBy('name','ASC')->get()->lists('name','id'),'',array('class'=>'form-control','required'=>'requiered')) }}
             </div>
             <button type="submit" class="btn btn-info pull-right">Submit</button>
         </form>

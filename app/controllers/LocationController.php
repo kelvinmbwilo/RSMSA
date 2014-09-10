@@ -122,7 +122,7 @@ class LocationController extends \BaseController {
 	 */
 	public function destroy($id)
 	{
-		//
+
 	}
 
 

@@ -26,5 +26,9 @@ class StakeHolderBranch extends Eloquent {
         return $this->belongsTo('Stakeholder', 'stakeholderId', 'id');
     }
 
+    public function location(){
+        return $this->belongsTo('Location', 'locationId', 'id');
+    }
+
 
 }
