@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="81f3b6fd-548c-4b26-afd4-70f1f56d4b4f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/LoginController.php" afterPath="$PROJECT_DIR$/app/controllers/LoginController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/views/2fe1b0474d855dfde0f853fa98fef783" afterPath="$PROJECT_DIR$/app/storage/views/2fe1b0474d855dfde0f853fa98fef783" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/views/4f050a180240bdf399bf1e69ae621537" afterPath="$PROJECT_DIR$/app/storage/views/4f050a180240bdf399bf1e69ae621537" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/views/66f8468132644c7135d979e0921ba017" afterPath="$PROJECT_DIR$/app/storage/views/66f8468132644c7135d979e0921ba017" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/views/d77d31cdfd4940663939e398e5426f64" afterPath="$PROJECT_DIR$/app/storage/views/d77d31cdfd4940663939e398e5426f64" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/database.php" afterPath="$PROJECT_DIR$/app/config/database.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/login.blade.php" afterPath="$PROJECT_DIR$/app/views/login.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/routes.php" afterPath="$PROJECT_DIR$/app/routes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/mail.php" afterPath="$PROJECT_DIR$/app/config/mail.php" />
     </list>
     <ignored path="RSMSA.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -70,7 +74,34 @@
       <file leaf-file-name="login.blade.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/login.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="57" selection-start="2069" selection-end="2080" vertical-scroll-proportion="-2.0" vertical-offset="864" max-vertical-offset="1998">
+            <state line="53" column="78" selection-start="2231" selection-end="2231" vertical-scroll-proportion="-19.333334" vertical-offset="432" max-vertical-offset="1998">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mail.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/config/mail.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="93" column="28" selection-start="3351" selection-end="3351" vertical-scroll-proportion="0.88" vertical-offset="1410" max-vertical-offset="2538">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config/app.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="3600">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="database.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config/database.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="57" column="33" selection-start="1762" selection-end="1767" vertical-scroll-proportion="-4.0" vertical-offset="918" max-vertical-offset="2340">
               <folding />
             </state>
           </provider>
@@ -85,19 +116,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginController.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="LoginController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/LoginController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="82" selection-start="1378" selection-end="1378" vertical-scroll-proportion="0.33976835" vertical-offset="508" max-vertical-offset="2142">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header.blade.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layout/header.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="216" column="56" selection-start="8657" selection-end="8657" vertical-scroll-proportion="0.0" vertical-offset="3888" max-vertical-offset="4320">
+            <state line="38" column="82" selection-start="1378" selection-end="1378" vertical-scroll-proportion="-6.5185184" vertical-offset="508" max-vertical-offset="2142">
               <folding />
             </state>
           </provider>
@@ -117,7 +139,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/stakeholders.blade.php" />
         <option value="$PROJECT_DIR$/app/database/migrations/2014_08_11_134607_create_stakeholderBranch_table.php" />
         <option value="$PROJECT_DIR$/app/database/migrations/2014_08_11_124551_create_stakeholders_table.php" />
         <option value="$PROJECT_DIR$/app/views/stakeholder/specificStakeholderBranch.php" />
@@ -159,15 +180,16 @@
         <option value="$PROJECT_DIR$/app/controllers/DataController.php" />
         <option value="$PROJECT_DIR$/app/views/data/addNewData.blade.php" />
         <option value="$PROJECT_DIR$/app/views/data/test.blade.php" />
-        <option value="$PROJECT_DIR$/app/config/database.php" />
         <option value="$PROJECT_DIR$/app/views/layout/left_menu.blade.php" />
         <option value="$PROJECT_DIR$/app/views/layout/header.blade.php" />
         <option value="$PROJECT_DIR$/app/controllers/StakeholderController.php" />
         <option value="$PROJECT_DIR$/app/views/stakeholder/stakeholders.blade.php" />
         <option value="$PROJECT_DIR$/app/views/stakeholder/editStakeholder.blade.php" />
         <option value="$PROJECT_DIR$/app/routes.php" />
-        <option value="$PROJECT_DIR$/app/views/login.blade.php" />
         <option value="$PROJECT_DIR$/app/controllers/LoginController.php" />
+        <option value="$PROJECT_DIR$/app/views/login.blade.php" />
+        <option value="$PROJECT_DIR$/app/config/database.php" />
+        <option value="$PROJECT_DIR$/app/config/mail.php" />
       </list>
     </option>
   </component>
@@ -268,7 +290,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -342,10 +364,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="27" width="1368" height="742" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.53805774" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37931034" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.12846154" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -401,16 +423,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_08_13_082413_create_reference_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_08_13_084140_create_dataReference_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="10" selection-start="553" selection-end="588" vertical-scroll-proportion="-17.0" vertical-offset="68" max-vertical-offset="680" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/ColumnsOption.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="607" />
@@ -581,11 +593,6 @@
         <state line="59" column="21" selection-start="1568" selection-end="1570" vertical-scroll-proportion="0.0" vertical-offset="1003" max-vertical-offset="1309" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="35" selection-start="1711" selection-end="1711" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="2210" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/stakeholder/specificStakeholderBranch.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="6" selection-start="91" selection-end="91" vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="1360" />
@@ -662,16 +669,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/login.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/config/app.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="57" selection-start="2069" selection-end="2080" vertical-scroll-proportion="-2.0" vertical-offset="864" max-vertical-offset="1998">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3600">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="33" selection-start="1762" selection-end="1767" vertical-scroll-proportion="-4.0" vertical-offset="918" max-vertical-offset="2340">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/LoginController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="82" selection-start="1378" selection-end="1378" vertical-scroll-proportion="0.33976835" vertical-offset="508" max-vertical-offset="2142">
+        <state line="38" column="82" selection-start="1378" selection-end="1378" vertical-scroll-proportion="-6.5185184" vertical-offset="508" max-vertical-offset="2142">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/login.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="78" selection-start="2231" selection-end="2231" vertical-scroll-proportion="-19.333334" vertical-offset="432" max-vertical-offset="1998">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/mail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="93" column="28" selection-start="3351" selection-end="3351" vertical-scroll-proportion="0.88" vertical-offset="1410" max-vertical-offset="2538">
           <folding />
         </state>
       </provider>
