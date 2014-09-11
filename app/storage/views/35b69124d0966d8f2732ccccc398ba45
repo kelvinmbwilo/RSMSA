@@ -5,7 +5,8 @@
 <div class="panel panel-success">
 
 
-<div class="panel-heading">list of users<a href="<?php echo url('user/add'); ?>" class="btn btn-success btn-row pull-right">Add new user</a></div>
+<div class="panel-heading">list of users<a href="<?php echo url('user/add'); ?>" class="btn btn-success btn-xs pull-right">
+        New user <i class="fa fa-plus"></i> </a></div>
     <?php if($alert = Session::get('alert-success')): ?>
     <div class="alert alert-success">
         <?php echo $alert; ?>
@@ -24,7 +25,7 @@
     <th>Email</th>
     <th>Phone Number</th>
     <th>Role</th>
-    <th>Stakeholder Branchid</th>
+    <th>Stakeholder</th>
     <th>Action</th>
 </thead>
 <tbody>
@@ -38,10 +39,10 @@
     <td><?php echo $user->email; ?></td>
     <td><?php echo $user->phoneNumber; ?></td>
     <td><?php echo $user->role; ?></td>
-    <td><?php echo $user->stakeholderBranchId; ?></td>
+    <td><?php echo $user->stakeholder->stakeholder->name; ?> - <?php echo $user->stakeholder->name; ?></td>
     <td class="table-condensed col-xs-pull-2">
-        <div class="btn-group" >
-            <a href="<?php echo url('user/edit'); ?>/<?php echo $user->id; ?>" class="btn btn-primary" title="edit">
+        <div class="btn-group btn-group-xs" >
+            <a href="<?php echo url('user/edit'); ?>/<?php echo $user->id; ?>" class="btn btn-info" title="edit">
                 <i class="fa fa-edit"></i>
             </a>
             <a data-toggle="modal" class="open-DeleteDialog btn btn-danger" data-id="<?php echo $user->id; ?>" href="#deleteDialog" title="delete">
@@ -54,20 +55,7 @@
 <?php endforeach; ?>
 
 </tbody>
-<tfoot>
-<tr>
-    <th>First Name</th>
-    <th>Middle Name</th>
-    <th>Last Name</th>
-    <th>User Name</th>
-    <th>Email</th>
-    <th>Phone Number</th>
-    <th>Role</th>
-    <th>Stakeholder Branchid</th>
-    <th>Action</th>
 
-</tr>
-</tfoot>
 </table>
 </div>
 </div>

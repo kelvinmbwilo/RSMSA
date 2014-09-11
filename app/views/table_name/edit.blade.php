@@ -6,13 +6,11 @@
 <link href="{{ asset('css/style-responsive.css') }}" rel="stylesheet" />
 <!--main content start-->
 
-    <section class="wrapper site-min-height">
-        <!-- page start-->
         <div class="row">
             <div class="col-lg-12">
-                <section class="panel">
+                <section class="panel panel-success">
                     <header class="panel-heading">
-                        Editing form for a table
+                        Editing form for a table {{$table->categoryName}}
                     </header>
                     <div class="panel-body">
                         <div class="stepy-tab">
@@ -44,19 +42,30 @@
                             <div>
                                 <h4>Edit the columns of <span id="tbName1"></span> <button class="btn-success btn btn-xs pull-right" id="addColumn">add column</button></h4>
                                 <span class="text-danger" id="errorlebal"></span>
-                                <?php $i=1; $k=1; $x=1; ?>
+                                <?php $i=1; $k=1; $x=1; $r=1; ?>
                                 @foreach($table->column as $column)
                                 <div class="form-group">
-                                    <div class="col-sm-7">
+                                    <div class="col-sm-3">
                                         <input type="text" class="form-control input-sm columns"  name="column{{$i++}}" value="{{$column->columnName}}">
                                         <input type="hidden"  name="columnid{{$k++}}" value="{{$column->id}}">
                                     </div>
-                                    <div class="col-sm-5">
+                                    <div class="col-sm-3">
                                         <select name="data{{$x++}}" class="form-control input-sm">
-                                            <option value="{{$column->typeId}}" id="option">{{$column->datatype->name}}</option>
+                                            <option value="{{$column->typeId}}" id="option">@if($column->datatype){{$column->datatype->name}}@endif</option>
                                             @foreach(DataTypeDetails::all() as $data)
                                             <option value="{{$data->id}}" id="option">{{$data->name}}</option>
                                             @endforeach
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <select name="reference{{$r++}}" class="form-control input-sm">
+                                            <option value="{{$column->referenceId}}" id="option">@if(!$column->referenced)<-- select a reference if it has one--> @endif
+                                                                                                 @if($column->referenced){{$column->referenced->name}}@endif
+                                                                                         </option>
+                                            @foreach(Reference::all() as $ref)
+                                            <option value="{{$ref->id}}" id="option">{{$ref->name}}</option>
+                                            @endforeach
+                                            <option value="0" id="option"><-- has no reference--></option>
                                         </select>
                                     </div>
                                 </div>
@@ -107,13 +116,6 @@
 
 
 
-//step wizard
-
-
-<!--script for this page-->
-
-
-
 <script>
 
 
@@ -122,15 +124,26 @@
     $('#addColumn').click(function(){
         ids++;
         var column ='<div class="form-group">';
-        column+='<div class="col-sm-7">';
+        column+='<div class="col-sm-4">';
         column+='<input type="text" class="form-control input-sm columns" placeholder="column name" name="column'+ids+'">';
         column+="</div>";
-        column+='<div class="col-sm-5">';
+        column+='<div class="col-sm-3">';
         column+='<select name="data'+ids+'" class="form-control input-sm">';
         column+="@foreach(DataTypeDetails::all() as $data)";
         column+='<option value="{{$data->id}}" >{{$data->name}}</option>';
         column+="@endforeach";
         column+="</select>";
+        column+="</div>";
+        column+='<div class="col-sm-3">';
+         column+='<select name="reference'+$ids+'" class="form-control input-sm">';
+         column+='<option value="{{$column->referenceId}}" id="option">@if(!$column->referenced)<-- select a reference if it has one--> @endif';
+         column+="@if($column->referenced){{$column->referenced->name}}@endif";
+         column+="</option>";
+         column+="@foreach(Reference::all() as $ref)";
+         column+='<option value="{{$ref->id}}" id="option">{{$ref->name}}</option>';
+         column+="@endforeach";
+         column+='<option value="0" id="option"><-- has no reference--></option>';
+         column+="</select>";
         column+="</div>";
         column+="</div>";
 

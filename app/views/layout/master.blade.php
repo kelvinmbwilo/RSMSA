@@ -208,14 +208,16 @@
     </ul>
 </div>
 <!-- Right Slidebar end -->
+<div >
 
+</div>
 <!--footer start-->
 <footer class="site-footer">
     <div class="text-center">
         {{ date('Y') }} &copy; Coict.
-        <a href="index.html#" class="go-top">
-            <i class="fa fa-angle-up"></i>
-        </a>
+<!--        <a href="index.html#" class="">-->
+<!--            <i class="fa fa-angle-up"></i>-->
+<!--        </a>-->
     </div>
 </footer>
 <!--footer end-->
