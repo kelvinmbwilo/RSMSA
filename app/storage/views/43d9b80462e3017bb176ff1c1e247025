@@ -10,15 +10,14 @@
 <?php $__env->startSection('contents'); ?>
 <?php echo $__env->make('stakeholder.delete', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
 <!--main content start-->
-<section class="wrapper" xmlns="http://www.w3.org/1999/html">
     <!-- page start-->
     <div class="row">
         <div class="col-lg-12">
-            <section class="panel">
+            <section class="panel panel-success">
                 <header class="panel-heading">
                     Stakeholders
-                    <button data-toggle="modal" data-target="#myModal" class="btn btn-success pull-right" }}>
-                    New Stakeholder
+                    <button data-toggle="modal" data-target="#myModal" class="btn btn-success btn-xs pull-right" }}>
+                    New Stakeholder <i class="fa fa-plus"></i>
                     </button>
 
                 </header>
@@ -28,38 +27,37 @@
                         <table id="dynamic-table" class="table table-bordered table-striped table-condensed">
                             <thead>
                             <tr>
-                                <th>Code</th>
+                                <th>#</th>
                                 <th>Stakeholder Name</th>
                                 <th class="numeric">Created</th>
                                 <th class="numeric">Updated</th>
-                                <th>Branches</th>
                                 <th>Action</th>
                             </tr>
                             </thead>
                             <tbody>
+                            <?php $i =1; ?>
                             <?php foreach($stakeholder as $stakeHolder): ?>
                             <tr>
-                                <td>AAC</td>
+                                <td><?php echo $i++; ?></td>
                                 <td><?php echo $stakeHolder->name; ?></td>
                                 <td class="numeric"><?php echo $stakeHolder->created_at; ?></td>
                                 <td class="numeric"><?php echo $stakeHolder->updated_at; ?></td>
                                 <td>
-                                    <a class="btn btn-info" href='<?php echo url("stakeholder/viewbranch/{$stakeHolder->id}"); ?>'>
-                                        <i class="fa fa-level-down"></i>
-                                        Branches
-                                    </a>
-                                </td>
-                                <td class="table-condensed col-xs-pull-2">
+
                                     <div class="btn-group" >
-                                        <a class="btn btn-primary" href="<?php echo url("stakeholder/edit/{$stakeHolder->id}"); ?>">
+                                        <a class="btn btn-info btn-xs" href="<?php echo url("stakeholder/edit/{$stakeHolder->id}"); ?>">
                                             <i class="fa fa-edit"></i>
                                         </a>
                                         <form class="pull-right" action='<?php echo url("stakeholder/delete/{$stakeHolder->id}"); ?>' method="post">
-                                            <button class="btn  btn-danger" type="button" data-toggle="modal" data-target="#confirmDelete" data-title="Delete User" data-message="Are you sure you want to delete this user ?">
+                                            <button class="btn  btn-danger  btn-xs" type="button" data-toggle="modal" data-target="#confirmDelete" data-title="Delete User" data-message="Are you sure you want to delete this user ?">
                                                 <i class="glyphicon glyphicon-trash"></i>
                                             </button>
                                         </form>
                                     </div>
+                                    <a class="btn btn-warning btn-xs" href='<?php echo url("stakeholder/viewbranch/{$stakeHolder->id}"); ?>'>
+                                        <i class="fa fa-level-down"></i>
+                                        Branches
+                                    </a>
                                 </td>
                             </tr>
                             <?php endforeach; ?>
@@ -71,8 +69,6 @@
         </div>
 
     </div>
-    <!-- page end-->
-</section>
 
 <div class="modal fade" id="myModal" style="padding-top: 10%" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">

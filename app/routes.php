@@ -148,6 +148,7 @@ Route::get('user/delete/{id}', array('uses'=>'UserController@destroy')); //add u
 Route::get('user/edit/{id}', array('uses'=>'UserController@update')); //edit users
 Route::post('user/edit/{id}', array('uses'=>'UserController@edit')); //process edited users
 Route::get('userindex', array('uses'=>'UserController@index'));//displaying messages
+Route::post('user/listStakeholderBranch/{id}', array('uses' => 'UserController@listStakeholderBranch')); //return a list of stakeholderbranch of same level
 
 
 

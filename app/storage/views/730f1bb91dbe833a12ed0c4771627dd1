@@ -1,4 +1,13 @@
 <?php $__env->startSection('contents'); ?>
+<section class="panel panel-success">
+    <header class="panel-heading">
+        Add New Location
+        <a class="btn btn-success btn-xs pull-right" href='<?php echo url("location"); ?>'>
+            back to list <i class="fa fa-list"></i>
+        </a>
+
+    </header>
+    <div class="panel-body">
 <div class="col-sm-12">
     <?php if(isset($msg)): ?>
     <div class="alert alert-success fade in" role="alert">
@@ -6,7 +15,7 @@
         <strong>SUCCESS!</strong> Location <?php echo $location->name; ?> Added Successful.
     </div>
     <?php endif; ?>
-    <h3>Add New Location<a href="<?php echo url('location'); ?>" class="btn btn-xs btn-info pull-right">Back to List</a></h3>
+<!--    <h3>Add New Location<a href="<?php echo url('location'); ?>" class="btn btn-xs btn-info pull-right">Back to List</a></h3>-->
     <form class="form-horizontal" id="default" method="post" action="<?php echo url('location/add'); ?>">
         <div class="form-group">
             <label class="col-md-2 control-label" id="DataCat">Level Name</label>
@@ -56,5 +65,7 @@
     })
 </script>
 </div>
+        </div>
+    </section>
 <?php $__env->stopSection(); ?>
 <?php echo $__env->make('layout.master', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
