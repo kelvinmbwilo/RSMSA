@@ -27,14 +27,17 @@
                     </tr>
                     </thead>
                     <tbody>
+                    <?php $i=1; ?>
                     @foreach(TableName::all() as $tbName)
                     <tr>
-                        <td>{{ $tbName->id }}</td>
+                        <td>{{ $i++ }}</td>
                         <td>{{ $tbName->categoryName }}</td>
-                        <td class="btn-group">
-                            <a class="btn btn-success btn-xs"  href="{{ url("table_name/edit/{$tbName->id}")}}"><i class="fa fa-edit"></i></a>
+                        <td >
+                            <div class="btn-group">
+                            <a class="btn btn-info btn-xs"  href="{{ url("table_name/edit/{$tbName->id}")}}"><i class="fa fa-edit"></i></a>
                             <a class="btn btn-danger btn-xs" href="{{ url("table_name/delete/{$tbName->id}")}}"> <i class="fa fa-trash-o"></i></a>
-                            <a class=" btn btn-info btn-xs"  href="{{ url("table_name/view_column/{$tbName->id}")}}">viewColumn<i class="fa fa-plus"></i></a>
+                            <a class=" btn btn-warning btn-xs"  href="{{ url("table_name/view_column/{$tbName->id}")}}">viewColumn<i class="fa fa-plus"></i></a>
+                            </div>
 
                         </td>
                         @endforeach

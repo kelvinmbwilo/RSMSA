@@ -2,34 +2,22 @@
 
 @section('contents')
 <link href="{{ asset('css/tooltipster.css') }}" rel="stylesheet" />
-<a class="btn btn-default pull-left btn-sm"  href="{{ url("table_name/back")}}" ><i class="fa fa-arrow-left"></i>Back
-</a>
-<section class="wrapper site-min-height">
-    <!-- page start-->
-     <section class="panel">
-        <header class="panel-heading">
 
-            <div class="btn-group ">
-                <button class="btn dropdown-toggle" data-toggle="dropdown">Tools <i class="fa fa-angle-down"></i>
-                </button>
-                <ul class="dropdown-menu pull-right ">
-                    <li><a href="editable_table.html#">Print</a></li>
-                    <li><a href="editable_table.html#">Save as PDF</a></li>
-                    <li><a href="editable_table.html#">Export to Excel</a></li>
-                </ul>
-            </div>
+     <section class="panel panel-success">
+        <header class="panel-heading">
+            Viewing {{$table->categoryName}} column's
+            <a class="btn btn-key pull-right btn-xs"  href="{{ url("table_name/back")}}" >Back to list <i class="fa fa-list"></i>
+            </a>
+            <a  class="btn btn-success btn-xs pull-right" href="{{ url("table_name/add_column/{$table->id}")}}">
+            New Column <i class="fa fa-plus"></i>
+            </a>
 
         </header>
         <div class="panel-body">
             <div class="adv-table dynamic-table ">
-                <div class="clearfix" >
-                    <div class="btn-group pull-right" >
-                        <a id="editable-sample_new" class="btn btn-success" href="{{ url("table_name/add_column/{$table->id}")}}">
-                            Add NewColumn <i class="fa fa-plus"></i>
-                        </a>
-                    </div>
 
-                </div>
+
+
                 <div class="space15"></div>
                 <table class="table table-striped table-hover table-bordered" id="dynamic-table">
                     <thead>
@@ -40,20 +28,22 @@
                     </tr>
                     </thead>
                     <tbody>
-
+                    <?php $i=1; ?>
                     @foreach($table->column as $coll)
                     <tr>
-                        <td>  </td>
+                        <td>{{ $i++ }}  </td>
                         <td>{{$coll->columnName}}</td>
 <!--                        <td> @foreach($coll->options as $op)-->
 <!--                            {{$op->optionName  }}-->
 <!--                            @endforeach-->
 <!--                        </td>-->
-                        <td class="btn-group">
-                            <a class="btn btn-success btn-sm"  href="{{ url("table_name/editColumn/{$coll->id}")}}"><i class="fa fa-edit"></i></a>
-                            <a class="btn btn-danger btn-sm"  href="{{ url("table_name/deleteColumn/{$coll->id}")}}"><i class="fa fa-trash-o"></i></a>
-                            <a class="btn btn-info btn-sm"  href="{{ url("table_name/add_optionColumn/{$coll->id}")}}"><i class="fa fa-plus"> addOption</i></a>
-                             <a class="viewColumn btn btn-warning btn-sm"  id="{{$coll->id}}">viewOptions<i class="fa fa-arrow-right"></i></a>
+                        <td >
+                            <div class="btn-group">
+                            <a class="btn btn-info btn-xs"  href="{{ url("table_name/editColumn/{$coll->id}")}}"><i class="fa fa-edit"></i></a>
+                            <a class="btn btn-danger btn-xs"  href="{{ url("table_name/deleteColumn/{$coll->id}")}}"><i class="fa fa-trash-o"></i></a>
+                            <a class="btn btn-success btn-xs"  href="{{ url("table_name/add_optionColumn/{$coll->id}")}}"><i class="fa fa-plus"> addOption</i></a>
+                             <a class="viewColumn btn btn-warning btn-xs"  id="{{$coll->id}}">viewOptions<i class="fa fa-arrow-right"></i></a>
+                            </div>
                         </td>
                         @endforeach
                     </tr>

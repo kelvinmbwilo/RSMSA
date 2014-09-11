@@ -29,7 +29,7 @@ class Column extends Eloquent {
         return $this->belongsTo('DataTypeDetails', 'typeId', 'id');
     }
     public function referenced(){
-        return $this->belongsTo('Reference', 'columnId', 'id');
+        return $this->belongsTo('Reference', 'referenceId', 'id');
     }
 
 }

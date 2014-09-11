@@ -126,6 +126,7 @@ class TableController extends \BaseController {
         Column::create(array(
         'tableId' => $id,
         'columnName' => Input::get('column1'),
+        'typeId' => Input::get('data'),
         'referenceId'=> Input::get('reference')
     ));
         for($i =0 ;$i < Input::get('col_count'); $i++ ){
@@ -158,7 +159,7 @@ class TableController extends \BaseController {
                     'columnId' => $id,
                    'optionName' => Input::get('option'.$j)
                 ));
-               echo "am in";
+
             }
         }
        $column=Column::find($id);
@@ -206,6 +207,13 @@ class TableController extends \BaseController {
 
         return View::make('table_name.edit',compact("table"));
     }
+
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param $id
+     * @return mixed
+     */
     public function editColumn($id)
     {
         $coll =Column::find($id);
@@ -237,7 +245,7 @@ class TableController extends \BaseController {
                     $colDetails= Column::find(Input::get('columnid'.$j));
                     $colDetails->columnName=Input::get('column'.$j);
                     $colDetails->typeId=Input::get('data'.$j);
-                    $colDetails->referenceId=Input::get('name'.$j);
+                    $colDetails->referenceId=Input::get('reference'.$j);
                     $colDetails->save();
                 }
 
@@ -248,7 +256,7 @@ class TableController extends \BaseController {
                         'tableId' => $table->id,
                         'columnName' => Input::get('column'.$j),
                         'typeId' => Input::get('data'.$j),
-                        'referenceId'=>Input::get('name'.$j)
+                        'referenceId'=>Input::get('reference'.$j)
                     ));
                 }
 
@@ -317,8 +325,10 @@ class TableController extends \BaseController {
         $tableObj= TableName::find($id);
 
         foreach($tableObj->column as $detail){
+            if($detail->options){
             foreach($detail->options as $option){
                 $option->delete;
+            }
             }
             $detail->delete();
         }
@@ -340,11 +350,14 @@ class TableController extends \BaseController {
         $column= Column::find($id);
         $table=$column->tableId;
         $table=TableName::find($table);
-        foreach($columnObj->options as $detail){
 
-            $detail->delete();
-        }
+                if($columnObj->options){
+                    foreach($columnObj->options as $option){
+                        $option->delete;
+                    }
+                }
         $columnObj->delete();
+
 
 
         return View::make('table_name.viewColumn', compact("table"));

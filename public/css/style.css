@@ -27,11 +27,11 @@ a, a:hover, a:focus {
 }
 ::selection {
 
-    background: #FF6C60;
+    background: #E65AAE;
     color: #fff;
 }
 ::-moz-selection {
-    background: #FF6C60;
+    background: #E99BCA;
     color: #fff;
 }
 
@@ -168,7 +168,7 @@ a, a:hover, a:focus {
     width: 210px;
     height: 100%;
     position: fixed;
-    background: #2a3542;
+    background: #258525;
 }
 
 #sidebar ul li {
@@ -226,7 +226,7 @@ ul.sidebar-menu {
 }
 
 ul.sidebar-menu li ul.sub li{
-    background: #35404D;
+    background: #099009;
     margin-bottom: 0;
     margin-left: 0;
     margin-right: 0;
@@ -247,7 +247,7 @@ ul.sidebar-menu li ul.sub li a {
     -o-transition: all 0.3s ease;
     -ms-transition: all 0.3s ease;
     transition: all 0.3s ease;
-    color: #aeb2b7;
+    color: #CBEEC9;
 }
 
 ul.sidebar-menu li ul.sub li a:hover, ul.sidebar-menu li ul.sub li.active a {
@@ -276,7 +276,7 @@ ul.sidebar-menu li a span{
 }
 
 ul.sidebar-menu li a{
-    color: #aeb2b7;
+    color: #D6D9DD;
     text-decoration: none;
     display: block;
     padding: 15px 0 15px 10px;
@@ -290,7 +290,7 @@ ul.sidebar-menu li a{
 }
 
 ul.sidebar-menu li a.active, ul.sidebar-menu li a:hover, ul.sidebar-menu li a:focus {
-    background: #35404d;
+    background: #099009;
     color: #fff;
     display: block;
     border-radius: 4px;
@@ -593,7 +593,7 @@ ul.top-menu > li > a:hover, ul.top-menu > li > a:focus {
 
 .top-nav .username {
     font-size: 13px;
-    color: #555555;
+    color: #099009;
 }
 
 .top-nav ul.top-menu > li > a {
@@ -3700,7 +3700,7 @@ table.sliders tr td {
 .stepy-titles li.current-step div {
     color: #fff;
     cursor: auto;
-    background: #A9D86E;
+    background: #78E77C;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     width: 100px;
@@ -4725,8 +4725,8 @@ tr.odd.gradeX td.sorting_1, tr.even.gradeX td.sorting_1, table.display tr.even.g
 /*footer*/
 
 .site-footer {
-    background: #5b6e84;
-    color: #fff;
+    background: #D6F5D0;
+    color: #2E880A;
     padding: 10px 0;
 }
 

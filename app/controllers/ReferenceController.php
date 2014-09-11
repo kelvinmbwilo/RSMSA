@@ -145,7 +145,7 @@ class ReferenceController extends \BaseController {
         $oldTable=Reference::find($id);
         $reference->name=Input::get('referenceName');
         if($oldTable->name!=Input::get('referenceName'))
-        DB::statement('RENAME TABLE '.$oldTable->name.' TO '.$reference->name);
+        DB::statement('RENAME TABLE rsmsa_'.$oldTable->name.' TO rsmsa_'.$reference->name);
         $reference->save();
 
         $detailCount=count($reference->referenceDetails);
