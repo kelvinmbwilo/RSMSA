@@ -40,7 +40,7 @@ class DatatypeController extends \BaseController {
         $validator = Validator::make(Input::all(), $rules);
 
         if ($validator->fails()) {
-            return Redirect::to('create')
+            return Redirect::to('datatype/add')
                 ->withErrors($validator);
         }else{
             $datatype = DataTypeDetails::create(array(

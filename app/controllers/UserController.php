@@ -32,22 +32,50 @@ class UserController extends \BaseController {
 	 */
 	public function store()
 	{
-        $user = User::create(array(
+        $user=array(
 
             'firstName' => Input::get('firstname'),
             'middleName' => Input::get('middlename'),
             'lastName' => Input::get('lastname'),
             'username' => Input::get('username'),
-            'password' =>Hash::make(Input::get('password')),
+            'password' =>Input::get('password'),
+            'password_confirm'=>Input::get('password_confirm'),
             'email' => Input::get('email'),
             'phoneNumber' => Input::get('phonenumber'),
             'role' => Input::get('role'),
-            'stakeholderBranchId' => Input::get('branchid')
-
-
-        ));
-        return Redirect::to("userindex")->With("alert-success","New user added successful!");
-
+            'stakeholder' => Input::get('stakeholder'),
+            'stakeholderBranchId' => Input::get('stakeholderbranch')
+        );
+        // create the validation rules ------------------------
+        $rules = array(
+            'firstName'        => 'required', 						   // just a normal required validation
+            'lastName'         => 'required', 						   // just a normal required validation
+            'username'         => 'required', 						   // just a normal required validation
+            'email'            => 'required|email|unique:rsmsa_users', 	// required and must be unique
+            'password'         => 'required',                           // just a normal required validation
+            'password_confirm' => 'required|same:password' 			    // required and has to match the password field
+        );
+        // validate against the inputs from our form
+        $validator = Validator::make($user,$rules);
+        // check if the validator failed -----------------------
+        if ($validator->fails()) {
+            // redirect our user back to the form with the errors from the validator
+            return Redirect::to('user/add')
+                ->withErrors($validator);
+        }else{
+            $user = User::create(array(
+                'firstName' => Input::get('firstname'),
+                'middleName' => Input::get('middlename'),
+                'lastName' => Input::get('lastname'),
+                'username' => Input::get('username'),
+                'password' =>Hash::make(Input::get('password')),
+                'email' => Input::get('email'),
+                'phoneNumber' => Input::get('phonenumber'),
+                'role' => Input::get('role'),
+                'stakeholderBranchId' => Input::get('stakeholder')
+            ));
+            return Redirect::to("userindex")->With("alert-success","New user added successful!");
+        }
 
 	}
 

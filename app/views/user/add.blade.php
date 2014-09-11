@@ -13,6 +13,10 @@
 <form action="{{url('user/add')}}" method="post">
 
     <div class="entry">
+        @foreach($errors->all() as $error)
+        <div class="alert alert-danger">{{ $error }}</div>
+        @endforeach
+
         <div class="form-group">
             <div class="col-md-6"> First Name <br> <input type="text"  name= "firstname" class="form-control"/> </div>
             <div class="col-md-6">Middle Name <br> <input type="text"  name= "middlename" class="form-control"/></div>
@@ -27,7 +31,7 @@
 
         <div class="form-group">
             <div class="col-md-6">Password <br> <input type="password"  name= "password" class="form-control"/> </div>
-            <div class="col-md-6">Comfirm Password <br> <input type="password"  name= "password1" class="form-control"/> </div>
+            <div class="col-md-6">Confirm Password <br> <input type="password"  id="password_confirm" name= "password_confirm" class="form-control"/> </div>
 
         </div>
         <div class="form-group">
@@ -36,9 +40,12 @@
 
         </div>
         <div class="form-group">
-            <div class="col-md-6">Role<br>{{ Form::select('role',array("admin"=>"admin","report"=>"report","data"=>"data"),'',array('class'=>'form-control','required'=>'requiered')) }}</div>
-            <div class="col-md-6">Stakeholder<br>{{ Form::select('parent_level',StakeHolderBranch::orderBy('id','ASC')->get()->lists('name','id'),'',array('class'=>'form-control','required'=>'requiered')) }}</div>
-
+            <div class="col-md-6">Stakeholder<br>{{ Form::select('stakeholder',Stakeholder::orderBy('id','ASC')->get()->lists('name','id'),'',array('class'=>'form-control','required'=>'required')) }}</div>
+            <div class="col-md-6">Stakeholder Branch<br>{{ Form::select('stakeholderBranch',array('0'=>'No Branch')+StakeHolderBranch::orderBy('id','ASC')->get()->lists('name','id'),'',array('class'=>'form-control','required'=>'required')) }}</div>
+        </div><hr><br>
+        <div class="form-group">
+            <div class="col-md-6">Role<br>{{ Form::select('role',array("admin"=>"admin","report"=>"report","data"=>"data"),'',array('class'=>'form-control','required'=>'required')) }}</div>
+            <div class="col-md-6"><br></div>
         </div>
         <hr>
         <div class="sep" style="height: 10px"></div>
@@ -51,5 +58,6 @@
     </div>
     <div class="clear"></div>
 </form>
-        </div></section>
+    </section>
+
 @stop

@@ -40,7 +40,7 @@
     <td>{{ $user->email }}</td>
     <td>{{ $user->phoneNumber }}</td>
     <td>{{ $user->role }}</td>
-    <td>{{ $user->stakeholder->stakeholder->name}} - {{ $user->stakeholder->name }}</td>
+    <td>@if($user->stakeholder){{ $user->stakeholder->stakeholder->name}} - {{ $user->stakeholder->name }}@endif</td>
     <td class="table-condensed col-xs-pull-2">
         <div class="btn-group btn-group-xs" >
             <a href="{{ url('user/edit')}}/{{$user->id}}" class="btn btn-info" title="edit">

@@ -29,7 +29,7 @@
 </head>
 
 <body class="login-body"  style="background-image:url('{{asset('img/fabric.png')}}')">
-{{Hash::make("1234")}}
+
 <div class="container">
 
     <form class="form-signin" action="{{ url('login') }}"  method="post">
@@ -86,9 +86,9 @@
     </form>
 
 </div>
-
-
-
+{{Hash::make('saida')}}
+</body>
+</html>
 <!-- js placed at the end of the document so the pages load faster -->
 
 
@@ -97,9 +97,3 @@
 
 <!--common script for all pages-->
 <script src="{{ asset('js/common-scripts.js') }}"></script>
-
-
-
-
-</body>
-</html>
