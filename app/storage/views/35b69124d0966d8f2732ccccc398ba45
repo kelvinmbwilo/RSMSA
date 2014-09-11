@@ -35,7 +35,7 @@
     <td><?php echo $user->firstName; ?></td>
     <td><?php echo $user->middleName; ?></td>
     <td><?php echo $user->lastName; ?></td>
-    <td><?php echo $user->username; ?></td>
+    <td><?php if($user): ?><?php echo $user->username; ?><?php endif; ?></td>
     <td><?php echo $user->email; ?></td>
     <td><?php echo $user->phoneNumber; ?></td>
     <td><?php echo $user->role; ?></td>
