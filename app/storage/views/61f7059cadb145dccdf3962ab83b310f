@@ -30,9 +30,12 @@
 
             </div>
             <div class="form-group">
-                <div class="col-md-6">Role<br><?php echo Form::select('role',array("admin"=>"admin","report"=>"report","data"=>"data"),'',array('class'=>'form-control','required'=>'requiered')); ?></div>
-                <div class="col-md-6">Stakeholder<br><?php echo Form::select('parent_level',StakeHolderBranch::orderBy('id','ASC')->get()->lists('name','id'),'',array('class'=>'form-control','required'=>'required')); ?></div>
-
+                <div class="col-md-6">Stakeholder<br><?php echo Form::select('stakeholder',Stakeholder::orderBy('id','ASC')->get()->lists('name','id'),'',array('class'=>'form-control','required'=>'required')); ?></div>
+                <div class="col-md-6">Stakeholder Branch<br><?php echo Form::select('stakeholderBranch',array('0'=>'No Branch')+StakeHolderBranch::orderBy('id','ASC')->get()->lists('name','id'),'',array('class'=>'form-control','required'=>'required')); ?></div>
+            </div><hr><br>
+            <div class="form-group">
+                <div class="col-md-6">Role<br><?php echo Form::select('role',array("admin"=>"admin","report"=>"report","data"=>"data"),'',array('class'=>'form-control','required'=>'required')); ?></div>
+                <div class="col-md-6"><br></div>
             </div>
             <div class="sep" style="height: 10px"></div>
             <div class="form-group" style="margin-top: 10px;" >
@@ -43,6 +46,16 @@
         </div>
         <div class="clear"></div>
     </form>
+    <script>
+        $(document).ready(function(){
+            $('select[name=stakeholder]').change(function(){
+
+                $.post('<?php echo url("user/listStakeholderBranch") ?>/'+$(this).val(),function(data){
+                    $('select[name=stakeholderBranch]').html(data)
+                });
+            })
+        })
+    </script>
     </div>
     </section>
 <?php $__env->stopSection(); ?>

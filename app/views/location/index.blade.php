@@ -31,7 +31,7 @@
                             <tr>
                                 <td>{{ ++$j }}</td>
                                 <td>{{ $level->name }}</td>
-                                <td>{{ $level->getlevel->name }}</td>
+                                <td>@if($level->getlevel){{ $level->getlevel->name }}@endif</td>
                                 <td>@if($level->parentId != 0){{Location::find($level->parentId)->name }}
                                     @else
                                     No Parent
