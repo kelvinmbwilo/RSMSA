@@ -43,17 +43,17 @@
                                 <div>
                                     <h4>Enter the characteristics of <span id="refName"></span> <button class="btn-success btn btn-xs pull-right" id="addColumn">add column</button></h4>
                                     <span class="text-danger" id="errorlebal"></span>
-                                    <?php $i=1; $k=1; ?>
+                                    <?php $i=1; $k=1; $r=1; $n=1;?>
                                     <?php foreach($reference->referenceDetails as $detail): ?>
                                     <div class="form-group">
                                         <?php  $detail2=$detail->name ?>
                                         <div class="col-sm-7 ">
                                             <input type="text" class="form-control input-sm columns"  name="column<?php echo $i++; ?>" value="<?php echo $detail->name; ?>">
                                             <input type="hidden"  name="columnid<?php echo $k++; ?>" value="<?php echo $detail->id; ?>">
-                                            <input type="hidden"  name="columnName<?php echo $k++; ?>" value="<?php echo $detail2; ?>">
+                                            <input type="hidden"  name="columnName<?php echo $r++; ?>" value="<?php echo $detail2; ?>">
                                         </div>
                                         <div class="col-sm-5">
-                                            <select name="data1" class="form-control input-sm">
+                                            <select name="data<?php echo $n++; ?>" class="form-control input-sm">
                                                 <option value="<?php echo $detail->dataTypeId; ?>" id="option"><?php echo $detail->dataType->name; ?></option>
                                                 <?php foreach(DataTypeDetails::all() as $data): ?>
                                                 <option value="<?php echo $data->id; ?>" id="option"><?php echo $data->name; ?></option>
