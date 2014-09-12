@@ -2,10 +2,10 @@
 
 @section('contents')
 
-<section class="panel panel-success">
-    <header class="panel-heading">
+<section class="panel panel-success" xmlns="http://www.w3.org/1999/html">
+    <header class="panel-heading ">
         Add New User
-        <a class="btn btn-success btn-xs pull-right" href='{{ url("user") }}'>
+        <a class="btn btn-success btn-xs pull-right " href='{{ url("user") }}'>
             back to list <i class="fa fa-list"></i>
         </a>
     </header>
@@ -55,9 +55,20 @@
         </div>
     </div>
     </div>
-    </div>
-    <div class="clear"></div>
+<!--     <div class="clear"></div>-->
 </form>
+
+
+    <script>
+        $(document).ready(function(){
+            $('select[name=stakeholder]').change(function(){
+
+                $.post('<?php echo url("user/listStakeholderBranch") ?>/'+$(this).val(),function(data){
+                    $('select[name=stakeholderBranch]').html(data)
+                });
+            })
+        })
+    </script>
     </section>
 
 @stop

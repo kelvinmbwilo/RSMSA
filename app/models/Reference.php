@@ -27,6 +27,10 @@ class Reference extends Eloquent {
 
         return $this->hasMany('Column', 'referenceId', 'id');
     }
+    public function Reference()
+    {
+        return $this->belongsTo('Data', 'hasReference', 'id');
+    }
 
 
 

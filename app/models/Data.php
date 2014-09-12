@@ -12,26 +12,26 @@ protected $table = 'rsmsa_data';
 
 protected  $guarded = array('$id');
 
-    public function table()
+    public function data()
     {
-        return $this->belongsTo('TableName', 'tableColumnId', 'id');
+        return $this->belongsTo('Data', 'dataId', 'id');
     }
 
-    public function column(){
-        return $this->belongsTo('Column', 'columnId', 'id');
+    public function referenceData(){
+        return $this->hasMany('Reference', 'referenceId', 'id');
     }
 
-    public function location()
+    public function dataReference()
     {
-        return $this->belongsTo('Location', 'locationId', 'id');
+        return $this->hasMany('DataReference', 'dataId', 'id');
     }
-    public function StakeHolderBranch()
+    public function referenceMapping()
     {
-        return $this->belongsTo('StakeHolderBranch', 'stakeHolderId', 'id');
+        return $this->hasMany('DataReferenceMapping', 'dataId', 'id');
     }
-
-    public function tag(){
-        return $this->belongsTo('DataTag', 'datTag', 'datatagId');
+    public function hasReference()
+    {
+        return $this->belongsTo('Reference', 'hasReference', 'id');
     }
 
 }

@@ -16,25 +16,28 @@
 
         <div class="entry">
             <div class="form-group">
-                <div class="col-md-6"> First Name <br> <input type="text"  name= "firstname" class="form-control"  value="{{$user->firstName}}"/> </div>
+                <div class="col-md-6"> First Name <br> <input type="text"  name= "firstname" class="form-control" required="required" value="{{$user->firstName}}"/> </div>
                 <div class="col-md-6">Middle Name <br> <input type="text"  name= "middlename" class="form-control" value="{{$user->middleName}}"/></div>
 
             </div>
             <div class="form-group">
 
-                <div class="col-md-6">Last Name <br> <input type="text"  name= "lastname" class="form-control" value="{{$user->lastName}}"/> </div>
-                <div class="col-md-6">User Name <br> <input type="text"  name= "username" class="form-control" value="{{$user->username}}"/></div>
+                <div class="col-md-6">Last Name <br> <input type="text"  name= "lastname" class="form-control" required="required"value="{{$user->lastName}}"/> </div>
+                <div class="col-md-6">User Name <br> <input type="text"  name= "username" class="form-control" required="required"value="{{$user->username}}"/></div>
 
             </div>
             <div class="form-group">
-                <div class="col-md-6">Email<br><input type="text"  name= "email" class="form-control" value="{{$user->email}}"/></div>
-                <div class="col-md-6">Phone Number<br> <input type="text"  name= "phonenumber" class="form-control" value="{{$user->phoneNumber}}"/></div>
+                <div class="col-md-6">Email<br><input type="text"  name= "email" class="form-control" required="required"value="{{$user->email}}"/></div>
+                <div class="col-md-6">Phone Number<br> <input type="text"  name= "phonenumber" class="form-control" required="required"value="{{$user->phoneNumber}}"/></div>
 
             </div>
             <div class="form-group">
-                <div class="col-md-6">Role<br>{{ Form::select('role',array("admin"=>"admin","report"=>"report","data"=>"data"),'',array('class'=>'form-control','required'=>'requiered')) }}</div>
-                <div class="col-md-6">Stakeholder<br>{{ Form::select('parent_level',StakeHolderBranch::orderBy('id','ASC')->get()->lists('name','id'),'',array('class'=>'form-control','required'=>'required')) }}</div>
-
+                <div class="col-md-6">Stakeholder<br>{{ Form::select('stakeholder',Stakeholder::orderBy('id','ASC')->get()->lists('name','id'),'',array('class'=>'form-control','required'=>'required')) }}</div>
+                <div class="col-md-6">Stakeholder Branch<br>{{ Form::select('stakeholderBranch',array('0'=>'No Branch')+StakeHolderBranch::orderBy('id','ASC')->get()->lists('name','id'),'',array('class'=>'form-control','required'=>'required')) }}</div>
+            </div><hr><br>
+            <div class="form-group">
+                <div class="col-md-6">Role<br>{{ Form::select('role',array("admin"=>"admin","report"=>"report","data"=>"data"),'',array('class'=>'form-control','required'=>'required')) }}</div>
+                <div class="col-md-6"><br></div>
             </div>
             <div class="sep" style="height: 10px"></div>
             <div class="form-group" style="margin-top: 10px;" >
@@ -45,6 +48,16 @@
         </div>
         <div class="clear"></div>
     </form>
+    <script>
+        $(document).ready(function(){
+            $('select[name=stakeholder]').change(function(){
+
+                $.post('<?php echo url("user/listStakeholderBranch") ?>/'+$(this).val(),function(data){
+                    $('select[name=stakeholderBranch]').html(data)
+                });
+            })
+        })
+    </script>
     </div>
     </section>
 @stop

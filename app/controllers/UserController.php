@@ -106,11 +106,10 @@ class UserController extends \BaseController {
         $user->middleName=Input::get('middlename');
         $user->lastName=Input::get('lastname');
         $user->username=Input::get('username');
-        $user->password=Hash::make(Input::get('password'));
         $user->email=Input::get('email');
         $user->phoneNumber=Input::get('phonenumber');
         $user->role=Input::get('role');
-        $user->stakeholderBranchId=Input::get('branchid');
+        $user->stakeholderBranchId=Input::get('stakeholder');
         $user->save();
 
         return Redirect::to("userindex")->With("alert-success","User edited successful!");
@@ -148,5 +147,26 @@ class UserController extends \BaseController {
 
 	}
 
+
+
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  int  $id
+     * @return Response
+     */
+
+    public function listStakeholderBranch($id)
+    {
+        $options = '';
+        if($id == 0){
+            $options .="<option value='0'>No Branch</option>";
+        }else{
+            foreach(Stakeholder::find($id)->branches as $branches){
+                $options .="<option value='{$branches->id}'>{$branches->name}</option>";
+            }
+        }
+        return $options;
+    }
 
 }
