@@ -37,7 +37,7 @@ class ReferenceController extends \BaseController {
 
         $reference= Reference::find($id);
         $tableName = $reference->name;
-        $tableName ="rsmsa_".$tableName;
+        $tableName ="rsmsa_dynamic_".$tableName;
 
 
 
@@ -143,12 +143,15 @@ class ReferenceController extends \BaseController {
 	{
         $reference=Reference::find($id);
         $oldTable=Reference::find($id);
-        $reference->name=Input::get('referenceName');
-        if($oldTable->name!=Input::get('referenceName'))
-        DB::statement('RENAME TABLE rsmsa_'.$oldTable->name.' TO rsmsa_'.$reference->name);
-        $reference->save();
+        $name=Input::get('referenceName');
+        if($oldTable->name!=Input::get('referenceName')){
+        DB::statement('RENAME TABLE rsmsa_dynamic_'.$oldTable->name.' TO rsmsa_dynamic_'.$name);
+        $reference->name=$name;
+            $reference->save();
+        }
 
-        $detailCount=count($reference->referenceDetails);
+
+       $detailCount=count($reference->referenceDetails);
         for($i =0 ;$i < Input::get('col_count'); $i++ ){
             $j = $i+1;
 
@@ -156,50 +159,57 @@ class ReferenceController extends \BaseController {
             {
                 if(Input::get('column'.$j)== ''){
                     $referenceDetails=ReferenceDetails::find(Input::get('columnid'.$j));
-                    DB::statement( 'ALTER TABLE rsmsa_'.$reference->name.' DROP '.$referenceDetails->name );
+                    DB::statement( 'ALTER TABLE rsmsa_dynamic_'.$name.' DROP '.$referenceDetails->name );
                     $referenceDetails->delete();
-                }else{
-                    $referenceDetails=ReferenceDetails::find(Input::get('columnid'.$j));
+               }else{
+                     $referenceDetails=ReferenceDetails::find(Input::get('columnid'.$j));
+                     $dataType=DataTypeDetails::find(Input::get('data'.$j));
+                     $OldColumn1=Input::get('columnName'.$j);
 
-                   $dataType=DataTypeDetails::find(Input::get('data'.$j));
-                    $OldColumn1=Input::get('columnName'.$j);
-                    echo "jjj".$OldColumn1."ttt";
-                    echo  "1".$referenceDetails."k";
-//                   if($dataType->name== "integer"){
-//                       $type="int(11)";
-//                        $referenceDetails->name=Input::get('column'.$j);
-//                        if($OldColumn1!=$referenceDetails->name)
-//                           DB::statement( 'ALTER TABLE rsmsa_'.$reference->name.' change '.$OldColumn1.' '.$referenceDetails->name.'  '.$type );
-//                        $referenceDetails->save();
-//                    }
-//                    if($dataType->name == "string"){
-//                        $type="varchar(255)";
-//                        $referenceDetails->name=Input::get('column'.$j);
-//                        if($OldColumn1!=$referenceDetails->name)
-//                            DB::statement( 'ALTER TABLE rsmsa_'.$reference->name.' change '.$OldColumn1.' '.$referenceDetails->name.'  '.$type );
-//                        $referenceDetails->save();
-//                    }
+                   if($dataType->name == "integer"){
+                        $type="int(11)";
+                        $referenceDetails->name=Input::get('column'.$j);
+                        $referenceDetails->dataTypeId=Input::get('data'.$j);
+                        if($OldColumn1!=$referenceDetails->name){
+                           DB::statement( 'ALTER TABLE rsmsa_dynamic_'.$reference->name.' change '.$OldColumn1.' '.$referenceDetails->name.'  '.$type );
+                        }else{
+                            DB::statement( 'ALTER TABLE rsmsa_dynamic_'.$reference->name.' change '.$referenceDetails->name.' '.$referenceDetails->name.'  '.$type );
+                        }
+                       $referenceDetails->save();
+                    }
+                    if($dataType->name == "string"){
+                        $type="varchar(255)";
+                        $referenceDetails->name=Input::get('column'.$j);
+                        $referenceDetails->dataTypeId=Input::get('data'.$j);
+                        if($OldColumn1!=$referenceDetails->name){
+                            DB::statement( 'ALTER TABLE rsmsa_dynamic_'.$reference->name.' change '.$OldColumn1.' '.$referenceDetails->name.'  '.$type );
+                        }else{
+                            DB::statement( 'ALTER TABLE rsmsa_dynamic_'.$reference->name.' change '.$referenceDetails->name.' '.$referenceDetails->name.'  '.$type );
+                        }
+
+                        $referenceDetails->save();
+                    }
 
               }
 
             }else{
                 if(Input::get('column'.$j)!= ''){
-                    ReferenceDetails::create(array(
+                    $col=ReferenceDetails::create(array(
                         'referenceId' => $reference->id,
                         'name' => Input::get('column'.$j),
                         'dataTypeId'=>Input::get('data'.$j)
                     ));
                     $dataType=DataTypeDetails::find(Input::get('data'.$j));
-                    $col=ReferenceDetails::find(Input::get('columnid'.$j));
+
                     if($dataType->name=="integer")
                     {
                         $type="int(10)";
-                        DB::statement( 'ALTER TABLE '. $reference->name.' ADD '.$col->name.'  '.$type );
+                        DB::statement( 'ALTER TABLE rsmsa_dynamic_'. $reference->name.' ADD '.$col->name.'  '.$type );
                     }
                     if($dataType->name=="string")
                     {
                         $type="varchar(100)";
-                        DB::statement( 'ALTER TABLE '. $reference->name.' ADD '.$col->name.'  '.$type );
+                        DB::statement( 'ALTER TABLE rsmsa_dynamic_'. $reference->name.' ADD '.$col->name.'  '.$type );
                     }
                 }
 
@@ -209,6 +219,7 @@ class ReferenceController extends \BaseController {
 
 
         }
+
 
         return View::make('reference.data_reference.index');
     }
@@ -238,11 +249,11 @@ class ReferenceController extends \BaseController {
 
         foreach($referenceObj->referenceDetails as $detail){
 
-            DB::statement( 'ALTER TABLE rsmsa_'.$referenceObj->name.' drop '.$detail->name);
+            DB::statement( 'ALTER TABLE rsmsa_dynamic_'.$referenceObj->name.' drop '.$detail->name);
             $detail->delete();
 
         }
-        Schema::drop("rsmsa_".$referenceObj->name);
+        Schema::drop("rsmsa_dynamic_".$referenceObj->name);
         $referenceObj->delete();
 
         return View::make('reference.data_reference.index');
@@ -264,7 +275,7 @@ class ReferenceController extends \BaseController {
 
 
         $tableName = $tableName1->name;
-        $tableName ="rsmsa_".$tableName;
+        $tableName ="rsmsa_dynamic_".$tableName;
         Schema::create($tableName, function($table)
         {
             $table->increments('id');
@@ -273,7 +284,7 @@ class ReferenceController extends \BaseController {
                $type="";
         foreach($tableName1->referenceDetails as $column){
 
-            if($column->dataType->name=="integer")
+            if($column->datatype->name=="integer")
             {
                 $type="int(10)";
                 DB::statement( 'ALTER TABLE '.$tableName.' ADD '.$column->name.'  '.$type );

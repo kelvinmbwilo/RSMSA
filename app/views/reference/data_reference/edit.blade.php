@@ -45,17 +45,17 @@
                                 <div>
                                     <h4>Enter the characteristics of <span id="refName"></span> <button class="btn-success btn btn-xs pull-right" id="addColumn">add column</button></h4>
                                     <span class="text-danger" id="errorlebal"></span>
-                                    <?php $i=1; $k=1; ?>
+                                    <?php $i=1; $k=1; $r=1; $n=1;?>
                                     @foreach($reference->referenceDetails as $detail)
                                     <div class="form-group">
                                         <?php  $detail2=$detail->name ?>
                                         <div class="col-sm-7 ">
                                             <input type="text" class="form-control input-sm columns"  name="column{{$i++}}" value="{{$detail->name}}">
                                             <input type="hidden"  name="columnid{{$k++}}" value="{{$detail->id}}">
-                                            <input type="hidden"  name="columnName{{$k++}}" value="{{$detail2}}">
+                                            <input type="hidden"  name="columnName{{$r++}}" value="{{$detail2}}">
                                         </div>
                                         <div class="col-sm-5">
-                                            <select name="data1" class="form-control input-sm">
+                                            <select name="data{{$n++}}" class="form-control input-sm">
                                                 <option value="{{$detail->dataTypeId}}" id="option">{{$detail->dataType->name}}</option>
                                                 @foreach(DataTypeDetails::all() as $data)
                                                 <option value="{{$data->id}}" id="option">{{$data->name}}</option>

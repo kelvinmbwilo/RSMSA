@@ -36,7 +36,7 @@
     <td>{{ $user->firstName }}</td>
     <td>{{ $user->middleName }}</td>
     <td>{{ $user->lastName}}</td>
-    <td>{{ $user->username }}</td>
+    <td>@if($user){{ $user->username }}@endif</td>
     <td>{{ $user->email }}</td>
     <td>{{ $user->phoneNumber }}</td>
     <td>{{ $user->role }}</td>
