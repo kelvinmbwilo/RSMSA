@@ -45,20 +45,11 @@
                 <span>Table Management</span>
             </a>
             <ul class="sub">
-                <li><a  href="javascript:;">Form Management</a></li>
-                <li class="sub-menu">
-                    <a  href="boxed_page.html">Data Management</a>
-                    <ul class="sub">
+                <li><a  href="{{ url('category') }}">Form Management</a></li>
+                <li><a  href="{{ url('category') }}">Data Management</a></li>
+                <li><a  href="{{ url('option') }}">Option Management</a></li>
+                <li><a  href="{{ url('category') }}">Category Management</a></li>
 
-                        <li class="sub-menu">
-                            <a  href="javascript:;">Options</a>
-                            <ul class="sub">
-                                <li><a  href="javascript:;">Categories</a></li>
-
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
             </ul>
         </li>
         <!--multi level menu end-->
@@ -97,6 +88,7 @@
                 <span>User</span>
             </a>
         </li>
+
 
 <!--        datatype details-->
         <li>
