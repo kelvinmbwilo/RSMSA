@@ -173,3 +173,26 @@ Route::get('datatype/delete/{id}', array('uses'=>'DatatypeController@destroy'));
 Route::get('datatype/edit/{id}', array('uses'=>'DatatypeController@update')); //edit specific datatype
 Route::post('datatype/edit/{id}', array('uses'=>'DatatypeController@edit')); //process edited datatype
 Route::get('index', array('uses'=>'DatatypeController@index'));//displaying messages
+
+
+
+/***************************************************************/
+//***************** Category ***************************/
+/***************************************************************/
+Route::get('category', array('uses' => 'CategoryController@index')); //display a list of locations
+Route::get('category/add', array('uses' => 'CategoryController@create')); //display a form to create new location level
+Route::post('category/add', array('uses' => 'CategoryController@store')); //process a form to create new location level
+Route::get('category/edit/{id}', array('uses' => 'CategoryController@edit')); //display a form to update a level of location
+Route::post('category/edit/{id}', array('uses' => 'CategoryController@update')); //process a form to update a level of location
+Route::post('category/delete/{id}', array('uses' => 'CategoryController@destroy')); //delete a level of location
+
+
+/***************************************************************/
+//***************** Options ***************************/
+/***************************************************************/
+Route::get('option', array('uses' => 'OptionsController@index')); //display a list of locations
+Route::get('option/add', array('uses' => 'OptionsController@create')); //display a form to create new location level
+Route::post('option/add', array('uses' => 'OptionsController@store')); //process a form to create new location level
+Route::get('option/edit/{id}', array('uses' => 'OptionsController@edit')); //display a form to update a level of location
+Route::post('option/edit/{id}', array('uses' => 'OptionsController@update')); //process a form to update a level of location
+Route::post('option/delete/{id}', array('uses' => 'OptionsController@destroy')); //delete a level of location
