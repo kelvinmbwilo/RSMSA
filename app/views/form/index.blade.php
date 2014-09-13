@@ -1,11 +1,13 @@
-<?php $__env->startSection('contents'); ?>
+@extends('layout.master')
+
+@section('contents')
     <div class="row">
         <div class="col-lg-12">
             <section class="panel panel-success">
                 <header class="panel-heading">
-                    Administrative Units
-                    <a class="btn btn-success pull-right btn-xs" href="<?php echo url('location/add'); ?>">
-                        New Location <i class="fa fa-plus"></i>
+                    Form
+                    <a class="btn btn-success pull-right btn-xs" href="{{ url('form/add') }}">
+                    New Form <i class="fa fa-plus"></i>
                     </a>
                 </header>
 
@@ -16,47 +18,31 @@
                             <tr>
                                 <th>#</th>
                                 <th>Name</th>
-                                <th>Level</th>
-                                <th>parent</th>
-                                <th>latitude</th>
-                                <th>longitude</th>
                                 <th>Action</th>
                             </tr>
                             </thead>
                             <tbody>
                             <?php $j = 0 ?>
-                            <?php foreach($location as $level): ?>
+                            @foreach($form as $f)
                             <tr>
-                                <td><?php echo ++$j; ?></td>
-                                <td><?php echo $level->name; ?></td>
-                                <td><?php if($level->getlevel): ?><?php echo $level->getlevel->name; ?><?php endif; ?></td>
-                                <td><?php if($level->parentId != 0): ?><?php echo Location::find($level->parentId)->name; ?>
+                                <td>{{ ++$j }}</td>
+                                <td>{{$f->name}}</td>
 
-                                    <?php else: ?>
-                                    No Parent
-                                    <?php endif; ?>
-                                </td>
-                                <td><?php echo $level->latitude; ?></td>
-                                <td><?php echo $level->longitude; ?></td>
+                                <td class="table-condensed col-xs-pull-2" id="{{ $level->id }}">
 
-                                <td class="table-condensed col-xs-pull-2" id="<?php echo $level->id; ?>">
                                     <div class="btn-group btn-group-xs" >
-
-                                        <a class="btn btn-primary" title="edit location level" href='<?php echo url("location/edit/{$level->id}"); ?>'>
-                                            <i class="fa fa-edit"></i>
+                                        <a class="btn btn-primary" title="edit location level" href='{{ url("form/{$f->id}") }}'>
+                                        <i class="fa fa-edit"></i>
                                         </a>
                                         <a class="btn btn-danger deletelevel" title="delete location level" href='#delete'>
-                                            <i class="fa fa-trash-o"></i>
+                                        <i class="fa fa-trash-o"></i>
                                         </a>
-                                        <a class="btn btn-info" href='<?php echo url("location/child/{$level->id}"); ?>'>
-                                            <i class="fa fa-level-down"></i>
-                                            Units
-                                        </a>
+
 
                                     </div>
                                 </td>
                             </tr>
-                            <?php endforeach; ?>
+                            @endforeach
                             </tbody>
                         </table>
                     </section>
@@ -75,7 +61,7 @@
                         });
                         $("#yes").click(function(){
                             $(this).parent().html("<br><i class='fa fa-spinner fa-spin'></i>deleting...");
-                            $.post("<?php echo url('location/levels/delete') ?>/"+id1,function(data){
+                            $.post("<?php echo url('form/delete') ?>/"+id1,function(data){
                                 btn.hide("slow").next("hr").hide("slow");
                             });
                         });
@@ -85,7 +71,7 @@
         </div>
 
     </div>
-<!--script for this page-->
-<script src="<?php echo asset('js/dynamic_table_init.js'); ?>"></script>
-<?php $__env->stopSection(); ?>
-<?php echo $__env->make('layout.master', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+    <!-- page end-->
+
+<script src="{{ asset('js/dynamic_table_init.js') }}"></script>
+@stop

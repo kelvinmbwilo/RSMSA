@@ -12,9 +12,9 @@ protected $table = 'rsmsa_data';
 
 protected  $guarded = array('$id');
 
-    public function data()
+    public function options()
     {
-        return $this->belongsTo('Data', 'dataId', 'id');
+        return $this->belongsTo('DataOptions', 'dataId', 'id');
     }
 
     public function referenceData(){
