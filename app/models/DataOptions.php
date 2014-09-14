@@ -17,9 +17,9 @@ class DataOptions extends Eloquent {
         return $this->belongsTo('Options', 'optionsId', 'id');
     }
 
-    public function category()
+    public function data()
     {
-        return $this->belongsTo('Categories', 'categoryId', 'id');
+        return $this->belongsTo('Data', 'dataId', 'id');
     }
 
 

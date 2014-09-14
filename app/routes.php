@@ -198,6 +198,33 @@ Route::post('option/edit/{id}', array('uses' => 'OptionsController@update')); //
 Route::post('option/delete/{id}', array('uses' => 'OptionsController@destroy')); //delete a level of location
 
 
+
+/***************************************************************/
+//*****************Data_table  ***************************/
+/***************************************************************/
+Route::get('dataTable', array('uses' => 'DataTableController@index')); //display a list of data tables
+Route::get('reference_mapping/{id}', array('uses' => 'DataTableController@mapping')); //display a list of data tables
+Route::post('reference_mapping/{id}', array('uses' => 'DataTableController@Store_mapping')); //display a list of data tables
+Route::get('data_table/add', array('uses' => 'DataTableController@create')); //display a form to create new data table
+Route::post('data_table/add', array('uses' => 'DataTableController@store')); //process a form to create new data table
+Route::get('data_table/edit/{id}', array('uses' => 'vController@edit')); //display a form to update a data table
+Route::post('data_table/edit/{id}', array('uses' => 'DataTableController@update')); //process a form to update a data table
+Route::post('data_table/delete/{id}', array('uses' => 'DataTableController@destroy')); //delete a data table
+
+
+
+/***************************************************************/
+//***************** form ****************************************/
+/***************************************************************/
+Route::get('form_data', array('uses' => 'FormController@index')); //display a list of form
+Route::get('form/add', array('uses' => 'FormController@create')); //display a form to create new form
+Route::post('form/add', array('uses' => 'FormController@store')); //process a form to create new form
+Route::get('form/edit/{id}', array('uses' => 'FormController@edit')); //display a form to update a form
+Route::post('form/edit/{id}', array('uses' => 'FormController@update')); //process a form to update a form
+Route::post('form/delete/{id}', array('uses' => 'FormController@destroy')); //delete a form
+
+
+
 /***************************************************************/
 //***************** Form ***************************/
 /***************************************************************/
