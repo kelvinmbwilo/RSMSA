@@ -196,3 +196,14 @@ Route::post('option/add', array('uses' => 'OptionsController@store')); //process
 Route::get('option/edit/{id}', array('uses' => 'OptionsController@edit')); //display a form to update a level of location
 Route::post('option/edit/{id}', array('uses' => 'OptionsController@update')); //process a form to update a level of location
 Route::post('option/delete/{id}', array('uses' => 'OptionsController@destroy')); //delete a level of location
+
+
+/***************************************************************/
+//***************** Form ***************************/
+/***************************************************************/
+Route::get('form', array('uses' => 'FormController@index')); //display a list of locations
+Route::get('form/add', array('uses' => 'FormController@create')); //display a form to create new location level
+Route::post('form/add', array('uses' => 'FormController@store')); //process a form to create new location level
+Route::get('form/edit/{id}', array('uses' => 'FormController@edit')); //display a form to update a level of location
+Route::post('form/edit/{id}', array('uses' => 'FormController@update')); //process a form to update a level of location
+Route::post('form/delete/{id}', array('uses' => 'FormController@destroy')); //delete a level of location

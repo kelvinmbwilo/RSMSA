@@ -3,8 +3,8 @@
 @section('contents')
 <section class="panel panel-success">
     <header class="panel-heading">
-        Add New Option
-        <a class="btn btn-success btn-xs pull-right" href='{{ url("option") }}'>
+        Add New Form
+        <a class="btn btn-success btn-xs pull-right" href='{{ url("form") }}'>
             back to list <i class="fa fa-list"></i>
         </a>
 
@@ -14,21 +14,15 @@
        @if(isset($msg))
        <div class="alert alert-success fade in" role="alert">
            <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">x</span><span class="sr-only">Close</span></button>
-           <strong>SUCCESS!</strong>Option {{ $opt->name }} Added Successful.
+           <strong>SUCCESS!</strong>Form {{ $fom->name }} Added Successful.
        </div>
        @endif
 <!--       <h3><a href="{{ url('location/levels') }}" class="btn btn-xs btn-info pull-right">Back to List</a></h3>-->
-       <form class="form-horizontal" id="default" method="post" action="{{ url('option/add') }}">
+       <form class="form-horizontal" id="default" method="post" action="{{ url('form/add') }}">
            <div class="form-group">
-               <label class="col-md-2 control-label" id="DataCat">option Name</label>
+               <label class="col-md-2 control-label" id="DataCat">Form Name</label>
                <div class="col-md-6">
-                   <input type="text" class="form-control" placeholder="Option Name" name="option_name">
-               </div>
-           </div>
-           <div class="form-group">
-               <label class="col-md-2 control-label" id="DataCat"> Category option(s)</label>
-               <div class="col-md-6">
-                   {{ Form::select('category_option[]',array('0'=>'No Option')+Categories::orderBy('id','ASC')->get()->lists('name','id'),'',array('url'=>'posts','class'=>'form-control','required'=>'requiered', 'multiple'=>'multiple')) }}
+                   <input type="text" class="form-control" placeholder="Form Name" name="form_name">
                </div>
            </div>
            <div class="form-group">

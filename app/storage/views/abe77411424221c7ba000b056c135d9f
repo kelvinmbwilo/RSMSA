@@ -1,12 +1,10 @@
-@extends('layout.master')
-
-@section('contents')
+<?php $__env->startSection('contents'); ?>
     <div class="row">
         <div class="col-lg-12">
             <section class="panel panel-success">
                 <header class="panel-heading">
                     Options
-                    <a class="btn btn-success pull-right btn-xs" href="{{ url('option/add') }}">
+                    <a class="btn btn-success pull-right btn-xs" href="<?php echo url('option/add'); ?>">
                     New Options<i class="fa fa-plus"></i>
                     </a>
                 </header>
@@ -23,20 +21,20 @@
                             </thead>
                             <tbody>
                             <?php $j = 0 ?>
-                            @foreach($option as $opt)
+                            <?php foreach($option as $opt): ?>
                             <tr>
-                                <td>{{ ++$j }}</td>
-                                <td>{{$opt->name}}</td>
-                                <td class="table-condensed col-xs-pull-2" id="{{ $opt->id }}">
+                                <td><?php echo ++$j; ?></td>
+                                <td><?php echo $opt->name; ?></td>
+                                <td class="table-condensed col-xs-pull-2" id="<?php echo $opt->id; ?>">
 
                                     <div class="btn-group btn-group-xs" >
-                                        <a class="btn btn-primary" title="edit option" href='{{ url("option/edit/{$opt->id}") }}'>
+                                        <a class="btn btn-primary" title="edit option" href='<?php echo url("option/edit/{$opt->id}"); ?>'>
                                         <i class="fa fa-edit"></i>
                                         </a>
                                         <a class="btn btn-danger deletelevel" title="delete option" href='#delete'>
                                         <i class="fa fa-trash-o"></i>
                                         </a>
-<!--                                        <a class="btn btn-info" href='{{ url("location/level/{$opt->id}/units") }}'>-->
+<!--                                        <a class="btn btn-info" href='<?php echo url("location/level/{$opt->id}/units"); ?>'>-->
 <!--                                            <i class="fa fa-level-down"></i>-->
 <!--                                            category-->
 <!--                                        </a>-->
@@ -44,7 +42,7 @@
                                     </div>
                                 </td>
                             </tr>
-                            @endforeach
+                            <?php endforeach; ?>
                             </tbody>
                         </table>
                     </section>
@@ -75,5 +73,6 @@
     </div>
     <!-- page end-->
 
-<script src="{{ asset('js/dynamic_table_init.js') }}"></script>
-@stop
+<script src="<?php echo asset('js/dynamic_table_init.js'); ?>"></script>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layout.master', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

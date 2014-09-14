@@ -1,6 +1,6 @@
 <?php
 
-class OptionsController extends \BaseController {
+class FormController extends \BaseController {
 
     /**
      * Display a listing of the resource.
@@ -9,8 +9,8 @@ class OptionsController extends \BaseController {
      */
     public function index()
     {
-        $option = Options::all();
-        return View::make('options.index',compact('option'));
+        $form=Formm::all();
+        return View::make('form.index',compact('form'));
     }
 
 
@@ -21,7 +21,7 @@ class OptionsController extends \BaseController {
      */
     public function create()
     {
-        return View::make('options.add');
+        return View::make('form.add');
     }
 
 
@@ -30,16 +30,16 @@ class OptionsController extends \BaseController {
      *
      * @return Response
      */
-    public function store(){
-//   print_r((Input::get('category_option')))
-        $opt = Options::create(array(
-            'name' => Input::get('option_name')
+    public function store()
+    {
+        $fom = Formm::create(array(
+            'name' => Input::get('form_name')
 
         ));
-        $msg = "Option Added Successful";
-        return View::make('options.add',compact('msg','opt'));
-
+        $msg = "Form Added Successful";
+        return View::make('form.add',compact('msg','fom'));
     }
+
 
 
     /**
@@ -62,8 +62,8 @@ class OptionsController extends \BaseController {
      */
     public function edit($id)
     {
-        $opt = Options::find($id);
-        return View::make('options.edit',compact('opt'));
+        $fom = Formm::find($id);
+        return View::make('form.edit',compact('fom'));
     }
 
 
@@ -75,12 +75,11 @@ class OptionsController extends \BaseController {
      */
     public function update($id)
     {
-        $opt = Options::find($id);
-        $opt->name = Input::get('option_name');
-        $opt->categoryId = Input::get('category_option');
-        $opt->save();
-        $msg = "Option Updated Successful";
-        return View::make('options.edit',compact('msg','opt'));
+        $fom = Formm::find($id);
+        $fom->name = Input::get('form_name');
+        $fom->save();
+        $msg = "Form Updated Successful";
+        return View::make('form.edit',compact('msg','fom'));
     }
 
 
@@ -92,10 +91,13 @@ class OptionsController extends \BaseController {
      */
     public function destroy($id)
     {
-
-        $opt = Options::find($id);
-        $opt->delete();
+        $fom = Formm::find($id);
+        $fom->delete();
     }
+
+
+
+
 
 
 }

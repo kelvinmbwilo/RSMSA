@@ -5,9 +5,9 @@
         <div class="col-lg-12">
             <section class="panel panel-success">
                 <header class="panel-heading">
-                    Options
-                    <a class="btn btn-success pull-right btn-xs" href="{{ url('option/add') }}">
-                    New Options<i class="fa fa-plus"></i>
+                    Forms
+                    <a class="btn btn-success pull-right btn-xs" href="{{ url('form/add') }}">
+                    New Form<i class="fa fa-plus"></i>
                     </a>
                 </header>
 
@@ -23,22 +23,22 @@
                             </thead>
                             <tbody>
                             <?php $j = 0 ?>
-                            @foreach($option as $opt)
+                            @foreach($form as $fom)
                             <tr>
                                 <td>{{ ++$j }}</td>
-                                <td>{{$opt->name}}</td>
-                                <td class="table-condensed col-xs-pull-2" id="{{ $opt->id }}">
+                                <td>{{$fom->name}}</td>
+                                <td class="table-condensed col-xs-pull-2" id="{{ $fom->id }}">
 
                                     <div class="btn-group btn-group-xs" >
-                                        <a class="btn btn-primary" title="edit option" href='{{ url("option/edit/{$opt->id}") }}'>
+                                        <a class="btn btn-primary" title="edit option" href='{{ url("form/edit/{$fom->id}") }}'>
                                         <i class="fa fa-edit"></i>
                                         </a>
                                         <a class="btn btn-danger deletelevel" title="delete option" href='#delete'>
                                         <i class="fa fa-trash-o"></i>
                                         </a>
-<!--                                        <a class="btn btn-info" href='{{ url("location/level/{$opt->id}/units") }}'>-->
+<!--                                        <a class="btn btn-info" href='{{ url("form/{$fom->id}") }}'>-->
 <!--                                            <i class="fa fa-level-down"></i>-->
-<!--                                            category-->
+<!--                                            form-->
 <!--                                        </a>-->
 
                                     </div>
@@ -63,7 +63,7 @@
                         });
                         $("#yes").click(function(){
                             $(this).parent().html("<br><i class='fa fa-spinner fa-spin'></i>deleting...");
-                            $.post("<?php echo url('option/delete') ?>/"+id1,function(data){
+                            $.post("<?php echo url('form/delete') ?>/"+id1,function(data){
                                 btn.hide("slow").next("hr").hide("slow");
                             });
                         });
