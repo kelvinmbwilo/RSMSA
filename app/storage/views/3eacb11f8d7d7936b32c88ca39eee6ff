@@ -1,0 +1,48 @@
+<?php $__env->startSection('contents'); ?>
+<section class="panel panel-success">
+    <header class="panel-heading">
+        Update data <?php echo $mapping->data->name; ?> mapping
+        <a class="btn btn-success btn-xs pull-right" href='<?php echo url("mapping"); ?>'>
+            back to list <i class="fa fa-list"></i>
+        </a>
+
+    </header>
+    <div class="panel-body">
+<div class="col-sm-12">
+    <?php if(isset($msg)): ?>
+    <div class="alert alert-success fade in" role="alert">
+        <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">x</span><span class="sr-only">Close</span></button>
+        <strong>SUCCESS!</strong> Data  mapping of<?php echo $mapping->data->name; ?> Updated Successful.
+    </div>
+    <?php endif; ?>
+<!--    <h3>Update Location Level Information<a href="<?php echo url('location/levels'); ?>" class="btn btn-xs btn-info pull-right">Back to List</a></h3>-->
+    <form class="form-horizontal" id="default" method="post" action='<?php echo url("mapping/edit/{$mapping->id}"); ?>'>
+
+        <?php $i=1; $j=1; ?>
+
+        <div class="form-group>
+                            <label class="col-sm-2 control-label" id="DataCat"><?php echo $mapping->options->name; ?></label>
+
+
+        <input type="hidden" class="form-control" value="<?php echo $mapping->options->id; ?>" name="option_name">
+        <input type="hidden" class="form-control" value="<?php echo $mapping->data->id; ?>" name="data_name">
+        <select name="reference_name" class="form-control">
+            <option value="<?php echo $mapping->referenceData->id; ?>" id="option"><?php echo $mapping->referenceData->name; ?></option>
+            <?php foreach($referenceDetails as $ref): ?>
+            <option value="<?php echo $ref->id; ?>" id="option"><?php echo $ref->name; ?></option>
+            <?php endforeach; ?>
+        </select>
+
+
+        <div class="form-group">
+            <div class="col-md-6 text-center">
+                <input type="submit" value="Update" class="btn btn-info">
+            </div>
+        </div>
+    </form>
+
+</div>
+    </div>
+</section>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layout.master', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
