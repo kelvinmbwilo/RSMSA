@@ -61,11 +61,25 @@ class FormController extends \BaseController {
      * @return Response
      */
     public function showDetails()
-    {
-        $formData = FormData::where("dataId",Input::get('select'))->first();
-        $dataOpt =DataOptions::where("dataId",$formData->dataId)->first();
-        $optCat =CategoryOptions::where("optionsId",$dataOpt->optionsId)->first();
-        return View::make('form.formDetails',compact('fom','$dataOpt','optCat'));
+    {   $formD=Formm::find(Input::get('select'));
+        $formData = FormData::where("formId",Input::get('select'))->get();
+
+        return View::make('form.formDetails',compact('formData','formD'));
+//        $dataOpt =DataOptions::where("dataId",$formData->dataId)->first();
+//        $optCat =CategoryOptions::where("optionsId",$dataOpt->optionsId)->first();
+
+   //     print_r($formData);
+//        echo "xxxxxxxxxxxxxxxxxxxx";
+//        print_r($dataOpt);
+//        echo "xxxxxxxxxxxxxxxxxxxx";
+//        print_r($optCat);
+//        if($optCat){
+//            return View::make('form.formDetails',compact('formData','dataOpt','optCat'));
+//        }
+//        else{
+//            return View::make('form.formDetails',compact('formData','dataOpt'));
+//        }
+   //
     }
 
 
