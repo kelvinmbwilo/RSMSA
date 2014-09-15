@@ -41,7 +41,7 @@
                                 <td class="table-condensed col-xs-pull-2" id="@if($map){{ $map->id }}@endif">
 
                                     <div class="btn-group btn-group-xs" >
-                                        <a class="btn btn-primary" title="edit location level" href='{{ url("mapping/{$map->id}") }}'>
+                                        <a class="btn btn-primary" title="edit location level" href='{{ url("mapping/edit/{$map->id}") }}'>
                                         <i class="fa fa-edit"></i>
                                         </a>
                                         <a class="btn btn-danger deletelevel" title="delete location level" href='#delete'>

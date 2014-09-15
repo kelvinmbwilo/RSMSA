@@ -23,12 +23,13 @@
         <?php $i=1; $j=1; ?>
 
         <div class="form-group>
-                            <label class="col-sm-2 control-label" id="DataCat">{{ $map->referenceData->name }}</label>
+                            <label class="col-sm-2 control-label" id="DataCat">{{ $mapping->options->name }}</label>
 
 
-        <input type="hidden" class="form-control" value="{{$opt->id}}" name="option_name">
+        <input type="hidden" class="form-control" value="{{$mapping->options->id}}" name="option_name">
+        <input type="hidden" class="form-control" value="{{$mapping->data->id}}" name="data_name">
         <select name="reference_name" class="form-control">
-            <option value="{{$map->referenceData->id}}" id="option">$map->referenceData->name</option>
+            <option value="{{$mapping->referenceData->id}}" id="option">{{$mapping->referenceData->name}}</option>
             @foreach($referenceDetails as $ref)
             <option value="{{$ref->id}}" id="option">{{$ref->name}}</option>
             @endforeach

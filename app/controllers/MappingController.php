@@ -73,8 +73,8 @@ class MappingController extends \BaseController {
     {
         $referenceDetails = ReferenceDetails::all();
         $mapping = DataReferenceMapping::find($id);
-        $mapping->dataId = Input::get('location_name');
-        $mapping->optionId = Input::get('option_name');
+
+        $mapping->optionsId = Input::get('option_name');
         $mapping->referenceId = Input::get('reference_name');
         $mapping->save();
         $msg = "Data Reference Mapping Updated Successful";
