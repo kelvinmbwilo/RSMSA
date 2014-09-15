@@ -16,6 +16,7 @@
     <!-- Bootstrap core CSS -->
     <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
     <link href="{{ asset('css/bootstrap-reset.css') }}" rel="stylesheet">
+    <link href="{{ asset('multiselect/css/multi-select.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/advanced-datatable/media/css/demo_page.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/advanced-datatable/media/css/demo_table.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/data-tables/DT_bootstrap.css') }}" rel="stylesheet">
@@ -229,8 +230,9 @@
 <script type="text/javascript" src="{{ asset('assets/data-tables/DT_bootstrap.js') }}"></script>
 <script class="include" type="text/javascript" src="{{ asset('js/jquery.dcjqaccordion.2.7.js') }}"></script>
 <script src="{{ asset('js/jquery.scrollTo.min.js') }}"></script>
-<script src="{{ asset('js/jquery.nicescroll.js" type="text/javascript') }}"></script>
-<script src="{{ asset('js/jquery.sparkline.js" type="text/javascript') }}"></script>
+<script src="{{ asset('js/jquery.nicescroll.js') }}" type="text/javascript"></script>
+<script src="{{ asset('js/jquery.sparkline.js') }}" type="text/javascript"></script>
+<script src="{{ asset('multiselect/js/jquery.multi-select.js') }}" type="text/javascript"></script>
 <script src="{{ asset('assets/jquery-easy-pie-chart/jquery.easy-pie-chart.js') }}"></script>
 <script src="{{ asset('js/owl.carousel.js') }}" ></script>
 <script src="{{ asset('js/jquery.customSelect.min.js') }}" ></script>
