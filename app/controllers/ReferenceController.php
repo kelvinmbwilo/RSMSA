@@ -80,7 +80,6 @@ class ReferenceController extends \BaseController {
 	{
 
 
-
         $reference = Reference::create(array(
             'name' => Input::get('referenceName')
 
@@ -88,7 +87,7 @@ class ReferenceController extends \BaseController {
         for($i =0 ;$i < Input::get('col_count'); $i++ ){
             $j = $i+1;
             if(Input::get('column'.$j)!= ''){
-                DataReference::create(array(
+                ReferenceDetails::create(array(
                     'referenceId' => $reference->id,
                     'name' => Input::get('column'.$j),
                     'dataTypeId'=>Input::get('data'.$j),
