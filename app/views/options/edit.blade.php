@@ -26,6 +26,12 @@
             </div>
         </div>
         <div class="form-group">
+            <label class="col-md-2 control-label" id="DataCat">Data Type</label>
+            <div class="col-md-6">
+                {{ Form::select('data_type',DataTypeDetails::orderBy('id','ASC')->get()->lists('name','id'),$opt->datatypeId,array('class'=>'form-control','required'=>'requiered')) }}
+            </div>
+        </div>
+        <div class="form-group">
             <label class="col-md-2 control-label" id="DataCat"> Category Option</label>
             <div class="col-md-6">
                 <?php

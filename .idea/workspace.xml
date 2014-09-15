@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6662a4ad-95fa-4dcf-82ca-d6bee230b9f9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/views/2fe1b0474d855dfde0f853fa98fef783" afterPath="$PROJECT_DIR$/app/storage/views/2fe1b0474d855dfde0f853fa98fef783" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/CategoryController.php" afterPath="$PROJECT_DIR$/app/controllers/CategoryController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/OptionsController.php" afterPath="$PROJECT_DIR$/app/controllers/OptionsController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/options/add.blade.php" afterPath="$PROJECT_DIR$/app/views/options/add.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/views/ae03e6946442dabc33433ed7b59dbcbb" afterPath="$PROJECT_DIR$/app/storage/views/ae03e6946442dabc33433ed7b59dbcbb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/options/edit.blade.php" afterPath="$PROJECT_DIR$/app/views/options/edit.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layout/master.blade.php" afterPath="$PROJECT_DIR$/app/views/layout/master.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="RSMSA.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -45,7 +39,7 @@
       <file leaf-file-name="add.blade.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/options/add.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="259" selection-start="1622" selection-end="1646" vertical-scroll-proportion="-11.296296" vertical-offset="235" max-vertical-offset="972">
+            <state line="30" column="144" selection-start="1521" selection-end="1521" vertical-scroll-proportion="-9.296296" vertical-offset="289" max-vertical-offset="1080">
               <folding />
             </state>
           </provider>
@@ -54,7 +48,7 @@
       <file leaf-file-name="edit.blade.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/options/edit.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="72" selection-start="1631" selection-end="1631" vertical-scroll-proportion="0.46625766" vertical-offset="366" max-vertical-offset="1080">
+            <state line="30" column="155" selection-start="1572" selection-end="1572" vertical-scroll-proportion="0.35582823" vertical-offset="366" max-vertical-offset="1188">
               <folding />
             </state>
           </provider>
@@ -181,9 +175,9 @@
         <option value="$PROJECT_DIR$/public/css/style.css" />
         <option value="$PROJECT_DIR$/app/controllers/CategoryController.php" />
         <option value="$PROJECT_DIR$/app/views/layout/master.blade.php" />
-        <option value="$PROJECT_DIR$/app/views/options/add.blade.php" />
         <option value="$PROJECT_DIR$/public/multiselect/css/multi-select.css" />
         <option value="$PROJECT_DIR$/app/controllers/OptionsController.php" />
+        <option value="$PROJECT_DIR$/app/views/options/add.blade.php" />
         <option value="$PROJECT_DIR$/app/views/options/edit.blade.php" />
       </list>
     </option>
@@ -518,11 +512,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_09_12_081525_create_categories_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="9" selection-start="335" selection-end="335" vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="680" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/category/add.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="24" column="106" selection-start="1177" selection-end="1190" vertical-scroll-proportion="0.0" vertical-offset="116" max-vertical-offset="748" />
@@ -797,13 +786,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/options/add.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="259" selection-start="1622" selection-end="1646" vertical-scroll-proportion="-11.296296" vertical-offset="235" max-vertical-offset="972">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/Options.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="35" selection-start="231" selection-end="246" vertical-scroll-proportion="-3.3333333" vertical-offset="162" max-vertical-offset="756">
@@ -818,9 +800,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/DataTypeDetails.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="21" selection-start="13" selection-end="28" vertical-scroll-proportion="0.07515658" vertical-offset="0" max-vertical-offset="504">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/options/add.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="144" selection-start="1521" selection-end="1521" vertical-scroll-proportion="-9.296296" vertical-offset="289" max-vertical-offset="1080">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/options/edit.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="72" selection-start="1631" selection-end="1631" vertical-scroll-proportion="0.46625766" vertical-offset="366" max-vertical-offset="1080">
+        <state line="30" column="155" selection-start="1572" selection-end="1572" vertical-scroll-proportion="0.35582823" vertical-offset="366" max-vertical-offset="1188">
           <folding />
         </state>
       </provider>
