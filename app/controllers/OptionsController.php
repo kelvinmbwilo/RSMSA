@@ -33,21 +33,21 @@ class OptionsController extends \BaseController {
     public function store(){
 
         $opt = Options::create(array(
-            'name' => Input::get('option_name')
+            'name' => Input::get('option_name'),
+            'datatypeId' => Input::get('data_type')
         ));
+
         foreach(Input::get('category_option') as $category){
             if($category != 0){
                 CategoryOptions::create(array(
                     "optionsId"  => $opt->id,
                     "categoryId" => $category,
                 ));
-            }
-
-        }
+            }}
         $msg = "Option Added Successful";
         return View::make('options.add',compact('msg','opt'));
 
-    }
+             }
 
 
     /**
@@ -85,6 +85,7 @@ class OptionsController extends \BaseController {
     {
         $opt = Options::find($id);
         $opt->name = Input::get('option_name');
+        $opt->datatypeId = Input::get('data_type');
         $opt->save();
         foreach($opt->categoryOptions as $cats){
             $cats->delete();

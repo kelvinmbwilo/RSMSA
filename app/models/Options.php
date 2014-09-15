@@ -30,6 +30,10 @@ class Options extends Eloquent {
     {
         return $this->belongsTo('Categories', 'hasCategories', 'id');
     }
+    public function dataOpt()
+    {
+        return $this->belongsTo('DataTypeDetails', 'datatypeId', 'id');
+    }
 
 
 }

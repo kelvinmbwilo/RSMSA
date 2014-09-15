@@ -30,16 +30,24 @@ class FormController extends \BaseController {
      *
      * @return Response
      */
-    public function store()
-    {
+    public function store(){
+
         $fom = Formm::create(array(
             'name' => Input::get('form_name')
-
         ));
-        $msg = "Form Added Successful";
-        return View::make('form.add',compact('msg','fom'));
-    }
 
+        foreach(Input::get('form_data') as $dat){
+            if($dat != 0){
+                FormData::create(array(
+                    "formId"  => $fom->id,
+                    "dataId" => $dat,
+                ));
+            }
+
+            $msg = "Form Added Successful";
+            return View::make('form.add',compact('msg','fom'));
+
+        }}
 
 
     /**
@@ -78,6 +86,17 @@ class FormController extends \BaseController {
         $fom = Formm::find($id);
         $fom->name = Input::get('form_name');
         $fom->save();
+
+        foreach($fom->forms as $cats){
+            $cats->delete();}
+
+        foreach(Input::get('form_data') as $dataform){
+            if($dataform != 0){
+                FormData::create(array(
+                    "formId"  => $fom->id,
+                    "dataId" => $dataform,
+                ));
+            }}
         $msg = "Form Updated Successful";
         return View::make('form.edit',compact('msg','fom'));
     }
@@ -92,6 +111,8 @@ class FormController extends \BaseController {
     public function destroy($id)
     {
         $fom = Formm::find($id);
+        foreach($fom->forms as $cats){
+            $cats->delete();}
         $fom->delete();
     }
 
