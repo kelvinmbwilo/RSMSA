@@ -26,9 +26,20 @@
                </div>
            </div>
            <div class="form-group">
+               <label class="col-md-2 control-label" id="DataCat">Data Type</label>
+               <div class="col-md-6">
+                   {{ Form::select('data_type',DataTypeDetails::orderBy('id','ASC')->get()->lists('name','id'),'',array('class'=>'form-control','required'=>'requiered')) }}
+               </div>
+           </div>
+           <div class="form-group">
                <label class="col-md-2 control-label" id="DataCat"> Category option(s)</label>
                <div class="col-md-6">
-                   {{ Form::select('category_option[]',array('0'=>'No Option')+Categories::orderBy('id','ASC')->get()->lists('name','id'),'',array('url'=>'posts','class'=>'form-control','required'=>'requiered', 'multiple'=>'multiple')) }}
+                   {{ Form::select('category_option[]',array('0'=>'No Option')+Categories::orderBy('id','ASC')->get()->lists('name','id'),array('0'),array('url'=>'posts',"id"=>"my-select",'class'=>'form-control','required'=>'requiered', 'multiple'=>'multiple')) }}
+               <script>
+                   $(document).ready(function(){
+                       $('#my-select').multiSelect();
+                   })
+               </script>
                </div>
            </div>
            <div class="form-group">

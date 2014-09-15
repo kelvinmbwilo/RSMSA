@@ -33,7 +33,7 @@
                                         <a class="btn btn-primary" title="edit data table" href='{{ url("data_table/edit/{$data->id}") }}'>
                                         <i class="fa fa-edit"></i>
                                         </a>
-                                        <a class="btn btn-danger deletelevel" title="delete location level" href='#delete'>
+                                        <a class="btn btn-danger deletelevel" title="delete data table" href='#delete'>
                                         <i class="fa fa-trash-o"></i>
                                         </a>
 

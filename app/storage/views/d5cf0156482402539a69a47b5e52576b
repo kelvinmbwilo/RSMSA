@@ -1,0 +1,28 @@
+<?php $__env->startSection('contents'); ?>
+
+<section class="panel panel-success">
+    <header class="panel-heading">
+        Mapping data <?php echo $dataRef->data->name; ?> with <?php echo $dataRef->referenceData->name; ?> Reference
+    </header>
+
+    <div class="panel-body">
+        <?php if(isset($msg)): ?>
+        <div class="alert alert-success fade in" role="alert">
+            <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">x</span><span class="sr-only">Close</span></button>
+            <strong>SUCCESS!</strong> Data Reference Mapping Was Successful.
+
+
+        </div>
+        <?php endif; ?>
+
+        <form class="form-horizontal" id="default" method="post" action="<?php echo url("reference_mapping/{$tableId}"); ?>">
+
+
+        </form>
+
+   </div>
+</section>
+
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layout.master', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

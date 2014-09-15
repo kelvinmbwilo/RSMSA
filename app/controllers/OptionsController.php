@@ -31,13 +31,21 @@ class OptionsController extends \BaseController {
      * @return Response
      */
     public function store(){
-print_r((Input::get('category_option')));
-//        $opt = Options::create(array(
-//            'name' => Input::get('option_name')
-//
-//        ));
-//        $msg = "Option Added Successful";
-//        return View::make('options.add',compact('msg','opt'));
+
+        $opt = Options::create(array(
+            'name' => Input::get('option_name')
+        ));
+        foreach(Input::get('category_option') as $category){
+            if($category != 0){
+                CategoryOptions::create(array(
+                    "optionsId"  => $opt->id,
+                    "categoryId" => $category,
+                ));
+            }
+
+        }
+        $msg = "Option Added Successful";
+        return View::make('options.add',compact('msg','opt'));
 
     }
 
@@ -77,8 +85,18 @@ print_r((Input::get('category_option')));
     {
         $opt = Options::find($id);
         $opt->name = Input::get('option_name');
-        $opt->categoryId = Input::get('category_option');
         $opt->save();
+        foreach($opt->categoryOptions as $cats){
+            $cats->delete();
+        }
+        foreach(Input::get('category_option') as $category){
+            if($category != 0){
+                CategoryOptions::create(array(
+                    "optionsId"  => $opt->id,
+                    "categoryId" => $category,
+                ));
+            }
+        }
         $msg = "Option Updated Successful";
         return View::make('options.edit',compact('msg','opt'));
     }
@@ -94,6 +112,9 @@ print_r((Input::get('category_option')));
     {
 
         $opt = Options::find($id);
+        foreach($opt->categoryOptions as $cats){
+            $cats->delete();
+        }
         $opt->delete();
     }
 
