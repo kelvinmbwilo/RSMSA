@@ -33,7 +33,7 @@
 <div class="container">
 
     <form class="form-signin" action="{{ url('login') }}"  method="post">
-        <h2 class="form-signin-heading">sign in now</h2>
+        <h2 class="form-signin-heading">RSMSA - sign in now</h2>
 
         @foreach($errors->all() as $error)
         <div class="alert alert-danger">{{ $error }}</div>
@@ -46,16 +46,24 @@
         @endif
 
         <div class="login-wrap">
-            <input type="text" class="form-control" placeholder="User ID" autofocus name="username">
-            <input type="password" class="form-control" placeholder="Password" name="password">
-            <label class="checkbox">
-                <input type="checkbox" value="remember-me" name="remember"> Remember me
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="{{ asset('login.jpg') }}" style="height: 200px;width:320px"/>
+                </div>
+                <div class="col-md-6">
+                    <input type="text" class="form-control" placeholder="User ID" autofocus name="username">
+                    <input type="password" class="form-control" placeholder="Password" name="password">
+                    <label class="checkbox">
+                        <input type="checkbox" value="remember-me" name="remember"> Remember me
                 <span class="pull-right">
                     <a data-toggle="modal" href="{{ url('password/remind/') }}"> Forgot Password?</a>
 
                 </span>
-            </label>
-            <button class="btn btn-lg btn-login btn-block"  name="submit" type="submit">Sign in</button>
+                    </label>
+                    <button class="btn btn-lg btn-login btn-block"  name="submit" type="submit">Sign in</button>
+
+                </div>
+            </div>
 
 
 
@@ -86,7 +94,7 @@
     </form>
 
 </div>
-{{Hash::make('saida')}}
+<!--{{Hash::make('saida')}}-->
 </body>
 </html>
 <!-- js placed at the end of the document so the pages load faster -->
