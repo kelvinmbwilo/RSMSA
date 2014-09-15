@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6662a4ad-95fa-4dcf-82ca-d6bee230b9f9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/options/add.blade.php" afterPath="$PROJECT_DIR$/app/views/options/add.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/views/ae03e6946442dabc33433ed7b59dbcbb" afterPath="$PROJECT_DIR$/app/storage/views/ae03e6946442dabc33433ed7b59dbcbb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/options/edit.blade.php" afterPath="$PROJECT_DIR$/app/views/options/edit.blade.php" />
-    </list>
+    <list default="true" id="6662a4ad-95fa-4dcf-82ca-d6bee230b9f9" name="Default" comment="" />
     <ignored path="RSMSA.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -48,7 +44,7 @@
       <file leaf-file-name="edit.blade.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/options/edit.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="155" selection-start="1572" selection-end="1572" vertical-scroll-proportion="0.35582823" vertical-offset="366" max-vertical-offset="1188">
+            <state line="30" column="155" selection-start="1572" selection-end="1572" vertical-scroll-proportion="0.46625766" vertical-offset="312" max-vertical-offset="1188">
               <folding />
             </state>
           </provider>
@@ -816,7 +812,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/options/edit.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="155" selection-start="1572" selection-end="1572" vertical-scroll-proportion="0.35582823" vertical-offset="366" max-vertical-offset="1188">
+        <state line="30" column="155" selection-start="1572" selection-end="1572" vertical-scroll-proportion="0.46625766" vertical-offset="312" max-vertical-offset="1188">
           <folding />
         </state>
       </provider>
