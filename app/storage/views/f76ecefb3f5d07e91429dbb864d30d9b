@@ -3,35 +3,46 @@
         <div class="col-lg-12">
             <section class="panel panel-success">
                 <header class="panel-heading">
-                   Data Tables
-                    <a class="btn btn-success pull-right btn-xs" href="<?php echo url('data_table/add'); ?>">
-                    New Data Table <i class="fa fa-plus"></i>
-                    </a>
+                   Data Reference Mapping
+
                 </header>
 
                 <div class="panel-body">
-                    <section ">
+                    <?php if(isset($msg)): ?>
+                    <div class="alert alert-success fade in" role="alert">
+                        <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">x</span><span class="sr-only">Close</span></button>
+                        <strong>SUCCESS!</strong> Data Reference Mapping Was Successful.
+
+
+                    </div>
+                    <?php endif; ?>
+                    <section id="unseen">
                         <table id="dynamic-table"  class="table table-bordered table-striped table-condensed">
                             <thead>
                             <tr>
                                 <th>#</th>
-                                <th>Name</th>
+                                <th>Data Name</th>
+                                <th>Option Name</th>
+                                <th>Reference Details</th>
                                 <th>Action</th>
                             </tr>
                             </thead>
                             <tbody>
                             <?php $j = 0 ?>
-                            <?php foreach($data as $data): ?>
+                            <?php foreach($mapping as $map): ?>
                             <tr>
                                 <td><?php echo ++$j; ?></td>
-                                <td><?php echo $data->name; ?></td>
-                                <td class="table-condensed col-xs-pull-2" id="<?php echo $data->id; ?>">
+                                <td><?php if($map->data): ?><?php echo $map->data->name; ?><?php endif; ?></td>
+                                <td><?php if($map->options): ?><?php echo $map->options->name; ?><?php endif; ?></td>
+                                <td><?php if($map->referenceData): ?><?php echo $map->referenceData->name; ?><?php endif; ?></td>
+
+                                <td class="table-condensed col-xs-pull-2" id="<?php if($map): ?><?php echo $map->id; ?><?php endif; ?>">
 
                                     <div class="btn-group btn-group-xs" >
-                                        <a class="btn btn-primary" title="edit data table" href='<?php echo url("data_table/edit/{$data->id}"); ?>'>
+                                        <a class="btn btn-primary" title="edit location level" href='<?php echo url("mapping/{$map->id}"); ?>'>
                                         <i class="fa fa-edit"></i>
                                         </a>
-                                        <a class="btn btn-danger deletelevel" title="delete data table" href='#delete'>
+                                        <a class="btn btn-danger deletelevel" title="delete location level" href='#delete'>
                                         <i class="fa fa-trash-o"></i>
                                         </a>
 
@@ -58,7 +69,7 @@
                         });
                         $("#yes").click(function(){
                             $(this).parent().html("<br><i class='fa fa-spinner fa-spin'></i>deleting...");
-                            $.post("<?php echo url('data_table/delete') ?>/"+id1,function(data){
+                            $.post("<?php echo url('mapping/delete') ?>/"+id1,function(data){
                                 btn.hide("slow").next("hr").hide("slow");
                             });
                         });

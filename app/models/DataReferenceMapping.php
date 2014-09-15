@@ -22,7 +22,7 @@ class DataReferenceMapping extends Eloquent {
     }
 
     public function referenceData(){
-        return $this->belongsTo('Reference', 'referenceId', 'id');
+        return $this->belongsTo('ReferenceDetails', 'referenceId', 'id');
     }
 
 }

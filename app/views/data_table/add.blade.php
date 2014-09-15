@@ -15,9 +15,11 @@
        <div class="alert alert-success fade in" role="alert">
            <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">x</span><span class="sr-only">Close</span></button>
            <strong>SUCCESS!</strong> Data Table {{ $data->name }} Added Successful.
+           <br>
+           <br>
          @if($data->hasReference =="true")
            <a class="btn btn-success btn-xs " href='{{ url("reference_mapping/{$ref->id}") }}'>
-               reference mapping <i class="fa fa-list"></i>
+               reference mapping <i class="fa fa-sitemap"></i>
            </a>
          @endif
 

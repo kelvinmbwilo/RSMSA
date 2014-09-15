@@ -9,7 +9,7 @@ class FormController extends \BaseController {
      */
     public function index()
     {
-        $form = Form::all();
+        $form = FormD::all();
         return View::make('form.index',compact('form'));
     }
 
@@ -32,7 +32,7 @@ class FormController extends \BaseController {
      */
     public function store()
     {
-        $form = Form::create(array(
+        $form = FormD::create(array(
             'name' => Input::get('form_name'),
 
         ));

@@ -120,30 +120,12 @@ class DataTableController extends \BaseController {
         $data = Data::find($id);
         $data_options = DataOptions::where("dataId",$data->id)->get();
         if( $data_options){
-            foreach( $data_options->options as $options){
-                $this->deleteCategory($options->id);
-                $data_options->options->delete();
-            }
-
-        }
+              $data_options->delete();
+          }
         $data->delete();
     }
 
-    /**
-     * Delete a specific category
-     *
-     * @param   $opt
-     * @return Response
-     */
-    public function deleteCategory($opt){
-        $opt = Categories::where("optionsId",$opt->id)->get();
-        if($opt){
-            foreach($opt as $childlevel){
-                $this->deletelocation($childlevel);
-            }
-        }
-        $opt->delete();
-    }
+
 
     /**
      * mapping of reference and the data resource.
@@ -154,7 +136,9 @@ class DataTableController extends \BaseController {
     public function mapping($id)
     {   $dataArray= array();
         $dataRef = DataReference::find($id);
+
         $data= $dataRef->data;
+        $tableId=$data->id;
         $opt= DataOptions::where("dataId",$data->id)->get();
 
         $i=0;
@@ -165,10 +149,14 @@ class DataTableController extends \BaseController {
         $reference= $dataRef->referenceData;
         $reference= ReferenceDetails::where("referenceId",$reference->id)->get();
 //        print_r($dataArray);
-//        echo "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
-//        print_r($reference);
+//       echo "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
+////        print_r($reference);
+//
+//        echo $dataArray[0];
 
-       return View::make('data_table.mapping',compact('reference','dataArray','dataRef'));
+
+
+       return View::make('data_table.mapping',compact('reference','dataArray','dataRef','tableId'));
     }
 
 
@@ -178,19 +166,28 @@ class DataTableController extends \BaseController {
      */
     public function store_mapping($id)
     {  $i=0;
-       $count='';
-        if($i<=$count)
+
+        $dataID=$id;
+        $option=DataOptions::where("dataId",$dataID)->get();
+        $reference=DataReference::where("dataId",$dataID)->get();
+        $referenceDetails = ReferenceDetails::all();
+
+       $count=count($option);
+
+        while($i<$count)
            {  $i=$i+1;
-            $data_ref_mapping = DataReferenceMapping::create(array(
-                'dataId' => $id,
+            DataReferenceMapping::create(array(
+                'dataId' => $dataID,
                 'optionsId' => Input::get('option_name'.$i),
                 'referenceId' => Input::get('reference'.$i)
             ));
+               $mapping=DataReferenceMapping::orderBy("id","DESC")->get();
+
            }
 
-
         $msg = "Data Reference Mapping Added Successful";
-        return View::make('data_table.mapping',compact('msg','data_ref_mapping'));
+
+        return View::make('mapping.index',compact('msg','mapping','reference','referenceDetails'));
     }
 
 

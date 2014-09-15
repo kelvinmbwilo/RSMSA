@@ -47,6 +47,7 @@
             <ul class="sub">
                 <li><a  href="<?php echo url('form_data'); ?>">Form Management</a></li>
                 <li><a  href="<?php echo url('dataTable'); ?>">Data Management</a></li>
+                <li><a  href="<?php echo url('mapping'); ?>">Data MApping Management</a></li>
                 <li><a  href="<?php echo url('option'); ?>">Option Management</a></li>
                 <li><a  href="<?php echo url('category'); ?>">Category Management</a></li>
 

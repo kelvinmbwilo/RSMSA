@@ -13,7 +13,7 @@
        <div class="alert alert-success fade in" role="alert">
            <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">x</span><span class="sr-only">Close</span></button>
            <strong>SUCCESS!</strong> Data Table <?php echo $data->name; ?> Added Successful.
-         <?php if($data->hasReference =="true"): ?>{
+         <?php if($data->hasReference =="true"): ?>
            <a class="btn btn-success btn-xs " href='<?php echo url("reference_mapping/{$ref->id}"); ?>'>
                reference mapping <i class="fa fa-list"></i>
            </a>

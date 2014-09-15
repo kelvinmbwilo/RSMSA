@@ -223,3 +223,12 @@ Route::get('form/edit/{id}', array('uses' => 'FormController@edit')); //display 
 Route::post('form/edit/{id}', array('uses' => 'FormController@update')); //process a form to update a form
 Route::post('form/delete/{id}', array('uses' => 'FormController@destroy')); //delete a form
 
+
+
+/***************************************************************/
+//***************** data reference mapping ****************************************/
+/***************************************************************/
+Route::get('mapping', array('uses' => 'MappingController@index')); //display a list of data reference mapping
+Route::get('mapping/edit/{id}', array('uses' => 'MappingController@edit')); //display a form to update a data reference mapping
+Route::post('mapping/edit/{id}', array('uses' => 'MappingController@update')); //process a form to update a data reference mapping
+Route::post('mapping/delete/{id}', array('uses' => 'MappingController@destroy')); //delete a data reference mapping
