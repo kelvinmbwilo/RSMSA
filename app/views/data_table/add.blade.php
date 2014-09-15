@@ -18,9 +18,9 @@
            <br>
            <br>
          @if($data->hasReference =="true")
-           <a class="btn btn-success btn-xs " href='{{ url("reference_mapping/{$ref->id}") }}'>
-               reference mapping <i class="fa fa-sitemap"></i>
-           </a>
+        {{ Redirect::to("reference_mapping/{$ref->id}"); }}
+
+
          @endif
 
        </div>

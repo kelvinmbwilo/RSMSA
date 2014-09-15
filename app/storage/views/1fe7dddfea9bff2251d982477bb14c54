@@ -16,9 +16,10 @@
            <br>
            <br>
          <?php if($data->hasReference =="true"): ?>
-           <a class="btn btn-success btn-xs " href='<?php echo url("reference_mapping/{$ref->id}"); ?>'>
-               reference mapping <i class="fa fa-sitemap"></i>
-           </a>
+        <?php echo Redirect::to("reference_mapping/{$ref->id}");; ?>
+
+
+
          <?php endif; ?>
 
        </div>
