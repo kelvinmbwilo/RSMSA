@@ -78,12 +78,13 @@ class ReferenceController extends \BaseController {
 	 */
 	public function store()
 	{
-
+//        echo Input::get('referenceName'); exit;
 
         $reference = Reference::create(array(
             'name' => Input::get('referenceName')
-
         ));
+        $reference->name = Input::get('referenceName');
+        $reference->save();
         for($i =0 ;$i < Input::get('col_count'); $i++ ){
             $j = $i+1;
             if(Input::get('column'.$j)!= ''){
@@ -93,7 +94,6 @@ class ReferenceController extends \BaseController {
                     'dataTypeId'=>Input::get('data'.$j),
 
                 ));
-
             }
         }
 
