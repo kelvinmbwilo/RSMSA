@@ -207,7 +207,7 @@ Route::get('reference_mapping/{id}', array('uses' => 'DataTableController@mappin
 Route::post('reference_mapping/{id}', array('uses' => 'DataTableController@Store_mapping')); //display a list of data tables
 Route::get('data_table/add', array('uses' => 'DataTableController@create')); //display a form to create new data table
 Route::post('data_table/add', array('uses' => 'DataTableController@store')); //process a form to create new data table
-Route::get('data_table/edit/{id}', array('uses' => 'vController@edit')); //display a form to update a data table
+Route::get('data_table/edit/{id}', array('uses' => 'DataTableController@edit')); //display a form to update a data table
 Route::post('data_table/edit/{id}', array('uses' => 'DataTableController@update')); //process a form to update a data table
 Route::post('data_table/delete/{id}', array('uses' => 'DataTableController@destroy')); //delete a data table
 

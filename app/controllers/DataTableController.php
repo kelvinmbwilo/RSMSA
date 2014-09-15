@@ -82,8 +82,10 @@ class DataTableController extends \BaseController {
      */
     public function edit($id)
     {
-        $data = LocationLevel::find($id);
-        return View::make('data_table.edit',compact('data'));
+        $dataRef = DataReference::where("dataId",$id)->get();
+
+
+        return View::make('data_table.edit',compact('dataRef'));
     }
 
 
