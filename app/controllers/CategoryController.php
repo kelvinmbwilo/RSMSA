@@ -78,7 +78,7 @@ class CategoryController extends \BaseController {
         $cat->name = Input::get('category_name');
         $cat->save();
         $msg = "Category Updated Successful";
-        return View::make('Category.edit',compact('msg','cat'));
+        return View::make('category.edit',compact('msg','cat'));
     }
 
 

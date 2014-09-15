@@ -26,10 +26,27 @@
             </div>
         </div>
         <div class="form-group">
+            <label class="col-md-2 control-label" id="DataCat">Data Type</label>
+            <div class="col-md-6">
+                {{ Form::select('data_type',DataTypeDetails::orderBy('id','ASC')->get()->lists('name','id'),$opt->datatypeId,array('class'=>'form-control','required'=>'requiered')) }}
+            </div>
+        </div>
+        <div class="form-group">
             <label class="col-md-2 control-label" id="DataCat"> Category Option</label>
             <div class="col-md-6">
-                {{ Form::select('category_option',array('0'=>'No Option')+Categories::orderBy('id','ASC')->get()->lists('name','id'),$opt->categoryId,array('class'=>'form-control','required'=>'requiered')) }}
+                <?php
+                $arr = array("0");
+                if(count($opt->categoryOptions()->lists('categoryId')) != 0){
+                    $arr = $opt->categoryOptions()->lists('categoryId');
+                }
+                ?>
+                {{ Form::select('category_option[]',array('0'=>'No Option')+Categories::orderBy('id','ASC')->get()->lists('name','id'),$arr,array('class'=>'form-control',"id"=>"my-select",'required'=>'requiered', 'multiple'=>'multiple')) }}
             </div>
+            <script>
+                $(document).ready(function(){
+                    $('#my-select').multiSelect();
+                })
+            </script>
         </div>
         <div class="form-group">
             <div class="col-md-6 text-center">
