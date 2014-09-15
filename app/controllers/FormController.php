@@ -45,12 +45,27 @@ class FormController extends \BaseController {
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     *
      * @return Response
      */
-    public function show($id)
+    public function show()
     {
-        //
+        $fom = Formm::all();
+        return View::make('form.createForm',compact('fom'));
+    }
+
+    /**
+     * Display the specified resource.
+     *
+     *
+     * @return Response
+     */
+    public function showDetails()
+    {
+        $formData = FormData::where("dataId",Input::get('select'))->first();
+        $dataOpt =DataOptions::where("dataId",$formData->dataId)->first();
+        $optCat =CategoryOptions::where("optionsId",$dataOpt->optionsId)->first();
+        return View::make('form.formDetails',compact('fom','$dataOpt','optCat'));
     }
 
 

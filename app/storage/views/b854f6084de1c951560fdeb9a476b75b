@@ -1,7 +1,7 @@
 <?php $__env->startSection('contents'); ?>
 <section class="panel panel-success">
     <header class="panel-heading">
-        Update <?php echo $dataRef->data; ?> Information
+        Update <?php echo $data->name; ?> Information
         <a class="btn btn-success btn-xs pull-right" href='<?php echo url("data_table"); ?>'>
             back to list <i class="fa fa-list"></i>
         </a>
@@ -12,29 +12,41 @@
     <?php if(isset($msg)): ?>
     <div class="alert alert-success fade in" role="alert">
         <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">x</span><span class="sr-only">Close</span></button>
-        <strong>SUCCESS!</strong> Data Reference <?php echo $data->data->name; ?> Updated Successful.
+        <strong>SUCCESS!</strong> Data  <?php echo $data->name; ?> Updated Successful.
     </div>
     <?php endif; ?>
-<!--    <h3>Update Location Level Information<a href="<?php echo url('location/levels'); ?>" class="btn btn-xs btn-info pull-right">Back to List</a></h3>-->
-<!--    <form class="form-horizontal" id="default" method="post" action='<?php echo url("location/levels/edit/{$level->id}"); ?>'>-->
-<!--        <div class="form-group">-->
-<!--            <label class="col-md-2 control-label" id="DataCat">Level Name</label>-->
-<!--            <div class="col-md-6">-->
-<!--                <input type="text" value="<?php echo $level->name; ?>" class="form-control" placeholder="Location level Name" name="location_name">-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        <div class="form-group">-->
-<!--            <label class="col-md-2 control-label" id="DataCat"> Parent Level</label>-->
-<!--            <div class="col-md-6">-->
-<!--                <?php echo Form::select('parent_level',array('0'=>'No Parent')+LocationLevel::orderBy('id','ASC')->get()->lists('name','id'),$level->parentId,array('class'=>'form-control','required'=>'requiered')); ?>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        <div class="form-group">-->
-<!--            <div class="col-md-6 text-center">-->
-<!--                <input type="submit" value="Update" class="btn btn-info">-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </form>-->
+    <form class="form-horizontal" id="default" method="post" action="<?php echo url('data_table/add'); ?>">
+        <div class="form-group">
+            <label class="col-md-2 control-label" id="DataCat">Data Name</label>
+            <div class="col-md-6">
+                <input type="text" class="form-control" placeholder="Data Name" name="data_name" required="required" value="<?php echo $data->name; ?>">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-2 control-label" id="DataCat">Options</label>
+            <div class="col-md-6">
+                <?php echo Form::select('option[]',Options::orderBy('id','ASC')->get()->lists('name','id'),$data->options()->lists('optionsId'),array('class'=>'my-select form-control','required'=>'requiered', 'multiple'=>'multiple')); ?>
+
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-2 control-label" id="DataCat"> reference</label>
+            <div class="col-md-6">
+                <?php echo Form::select('reference',array('0'=>'No reference')+Reference::orderBy('id','ASC')->get()->lists('name','id'),$dataRef->referenceData->id,array('class'=>'form-control')); ?>
+
+            </div>
+        </div>
+        <script>
+            $(document).ready(function(){
+                $('.my-select').multiSelect();
+            })
+        </script>
+        <div class="form-group">
+            <div class="col-md-6 text-center">
+                <input type="submit" value="Add" class="btn btn-info">
+            </div>
+        </div>
+    </form>
 
 </div>
     </div>

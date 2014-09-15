@@ -17,10 +17,10 @@
 
 
                       <div class="form-group">
-                            <label class="col-sm-2 control-label" id="DataCat"><?php echo $opt[$k]->name; ?></label>
+                            <label class="col-sm-2 control-label" id="DataCat"><?php echo $opt->name; ?></label>
 
 
-                           <input type="hidden" class="form-control" value="<?php echo $opt[$k]->id; ?>" name="option_name<?php echo $i++; ?>">
+                           <input type="hidden" class="form-control" value="<?php echo $opt->id; ?>" name="option_name<?php echo $i++; ?>">
                            <select name="reference<?php echo $j++; ?>" class="form-control">
                                 <option value="0" id="option">No mapping</option>
                                 <?php foreach($reference as $ref): ?>
@@ -28,8 +28,9 @@
                                 <?php endforeach; ?>
                             </select>
                           <?php  $k++; ?>
-                            <?php endforeach; ?>
+
                           </div>
+                <?php endforeach; ?>
                          <div class="form-group">
 
                                 <input type="submit" value="done" class="btn btn-info">
