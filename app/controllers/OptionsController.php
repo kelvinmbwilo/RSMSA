@@ -31,13 +31,13 @@ class OptionsController extends \BaseController {
      * @return Response
      */
     public function store(){
-//   print_r((Input::get('category_option')))
-        $opt = Options::create(array(
-            'name' => Input::get('option_name')
-
-        ));
-        $msg = "Option Added Successful";
-        return View::make('options.add',compact('msg','opt'));
+print_r((Input::get('category_option')));
+//        $opt = Options::create(array(
+//            'name' => Input::get('option_name')
+//
+//        ));
+//        $msg = "Option Added Successful";
+//        return View::make('options.add',compact('msg','opt'));
 
     }
 
