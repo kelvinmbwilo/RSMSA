@@ -30,15 +30,15 @@ class OptionsController extends \BaseController {
      *
      * @return Response
      */
-    public function store()
-    {  print_r((Input::get('category_option[]')));
-//        $opt = CategoryOptions::create(array(
-//            'name' => Input::get('option_name'),
-//            'categoryId' => Input::get('category_option')
-//        ));
-//        $msg = "Option Added Successful";
-//        print_r(Input::get('category_option'));
-//        return View::make('options.add',compact('msg','opt'));
+    public function store(){
+//print_r((Input::get('category_option')));
+        $opt = Options::create(array(
+            'name' => Input::get('option_name')
+
+        ));
+        $msg = "Option Added Successful";
+        return View::make('options.add',compact('msg','opt'));
+
     }
 
 
@@ -63,7 +63,7 @@ class OptionsController extends \BaseController {
     public function edit($id)
     {
         $opt = Options::find($id);
-        return View::make('location.location_level.edit',compact('opt'));
+        return View::make('options.edit',compact('opt'));
     }
 
 
@@ -92,30 +92,9 @@ class OptionsController extends \BaseController {
      */
     public function destroy($id)
     {
-        $level =Options::find($id);
-        $child = Options::where("categoryId",$level->id)->get();
-        if($child){
-            foreach($child as $childlevel){
-                $this->deletelocation($childlevel);
-            }
-        }
-        $level->delete();
-    }
 
-    /**
-     * Delete a specific Location.
-     *
-     * @param  Locationlevel  $location
-     * @return Response
-     */
-    public function deletelocation($location){
-        $child = LocationLevel::where("parentId",$location->id)->get();
-        if($child){
-            foreach($child as $childlevel){
-                $this->deletelocation($childlevel);
-            }
-        }
-        $location->delete();
+        $opt = Options::find($id);
+        $opt->delete();
     }
 
 

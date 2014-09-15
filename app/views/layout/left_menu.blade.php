@@ -45,9 +45,9 @@
                 <span>Table Management</span>
             </a>
             <ul class="sub">
-                <li><a  href="{{ url('form_data') }}">Form Management</a></li>
+                <li><a  href="{{ url('form') }}">Form Management</a></li>
                 <li><a  href="{{ url('dataTable') }}">Data Management</a></li>
-                <li><a  href="{{ url('mapping') }}">Data MApping Management</a></li>
+                <li><a  href="{{ url('mapping') }}">Data Mapping Management</a></li>
                 <li><a  href="{{ url('option') }}">Option Management</a></li>
                 <li><a  href="{{ url('category') }}">Category Management</a></li>
 

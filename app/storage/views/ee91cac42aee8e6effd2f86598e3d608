@@ -3,9 +3,9 @@
         <div class="col-lg-12">
             <section class="panel panel-success">
                 <header class="panel-heading">
-                    Form
+                    Forms
                     <a class="btn btn-success pull-right btn-xs" href="<?php echo url('form/add'); ?>">
-                    New Form <i class="fa fa-plus"></i>
+                    New Form<i class="fa fa-plus"></i>
                     </a>
                 </header>
 
@@ -21,21 +21,23 @@
                             </thead>
                             <tbody>
                             <?php $j = 0 ?>
-                            <?php foreach($form as $f): ?>
+                            <?php foreach($form as $fom): ?>
                             <tr>
                                 <td><?php echo ++$j; ?></td>
-                                <td><?php echo $f->name; ?></td>
-
-                                <td class="table-condensed col-xs-pull-2" id="<?php echo $level->id; ?>">
+                                <td><?php echo $fom->name; ?></td>
+                                <td class="table-condensed col-xs-pull-2" id="<?php echo $fom->id; ?>">
 
                                     <div class="btn-group btn-group-xs" >
-                                        <a class="btn btn-primary" title="edit location level" href='<?php echo url("form/{$f->id}"); ?>'>
+                                        <a class="btn btn-primary" title="edit option" href='<?php echo url("form/edit/{$fom->id}"); ?>'>
                                         <i class="fa fa-edit"></i>
                                         </a>
-                                        <a class="btn btn-danger deletelevel" title="delete location level" href='#delete'>
+                                        <a class="btn btn-danger deletelevel" title="delete option" href='#delete'>
                                         <i class="fa fa-trash-o"></i>
                                         </a>
-
+<!--                                        <a class="btn btn-info" href='<?php echo url("form/{$fom->id}"); ?>'>-->
+<!--                                            <i class="fa fa-level-down"></i>-->
+<!--                                            form-->
+<!--                                        </a>-->
 
                                     </div>
                                 </td>

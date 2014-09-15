@@ -1,6 +1,6 @@
 <?php
 
-class FormD extends Eloquent {
+class Formm extends Eloquent {
 
     /**
      * The database table used by the model.
@@ -15,6 +15,7 @@ class FormD extends Eloquent {
     public function forms(){
         return $this->hasMany('FormData', 'formId', 'id');
     }
+
 
 }
 

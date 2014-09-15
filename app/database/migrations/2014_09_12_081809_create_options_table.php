@@ -16,7 +16,7 @@ class CreateOptionsTable extends Migration {
         Schema::create('rsmsa_options', function(Blueprint $table)
         {
             $table->increments('id');
-            $table->integer('name');
+            $table->string('name');
             $table->integer('datatypeId');
             $table->string('hasCategories');
             $table->timestamps();

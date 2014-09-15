@@ -5,9 +5,9 @@
         <div class="col-lg-12">
             <section class="panel panel-success">
                 <header class="panel-heading">
-                    Form
+                    Forms
                     <a class="btn btn-success pull-right btn-xs" href="{{ url('form/add') }}">
-                    New Form <i class="fa fa-plus"></i>
+                    New Form<i class="fa fa-plus"></i>
                     </a>
                 </header>
 
@@ -23,21 +23,23 @@
                             </thead>
                             <tbody>
                             <?php $j = 0 ?>
-                            @foreach($form as $f)
+                            @foreach($form as $fom)
                             <tr>
                                 <td>{{ ++$j }}</td>
-                                <td>{{$f->name}}</td>
-
-                                <td class="table-condensed col-xs-pull-2" id="{{ $level->id }}">
+                                <td>{{$fom->name}}</td>
+                                <td class="table-condensed col-xs-pull-2" id="{{ $fom->id }}">
 
                                     <div class="btn-group btn-group-xs" >
-                                        <a class="btn btn-primary" title="edit location level" href='{{ url("form/{$f->id}") }}'>
+                                        <a class="btn btn-primary" title="edit option" href='{{ url("form/edit/{$fom->id}") }}'>
                                         <i class="fa fa-edit"></i>
                                         </a>
-                                        <a class="btn btn-danger deletelevel" title="delete location level" href='#delete'>
+                                        <a class="btn btn-danger deletelevel" title="delete option" href='#delete'>
                                         <i class="fa fa-trash-o"></i>
                                         </a>
-
+<!--                                        <a class="btn btn-info" href='{{ url("form/{$fom->id}") }}'>-->
+<!--                                            <i class="fa fa-level-down"></i>-->
+<!--                                            form-->
+<!--                                        </a>-->
 
                                     </div>
                                 </td>

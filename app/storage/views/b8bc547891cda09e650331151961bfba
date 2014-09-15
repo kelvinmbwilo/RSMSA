@@ -34,10 +34,10 @@
                                         <a class="btn btn-danger deletelevel" title="delete option" href='#delete'>
                                         <i class="fa fa-trash-o"></i>
                                         </a>
-                                        <a class="btn btn-info" href='<?php echo url("location/level/{$opt->id}/units"); ?>'>
-                                            <i class="fa fa-level-down"></i>
-                                            category
-                                        </a>
+<!--                                        <a class="btn btn-info" href='<?php echo url("location/level/{$opt->id}/units"); ?>'>-->
+<!--                                            <i class="fa fa-level-down"></i>-->
+<!--                                            category-->
+<!--                                        </a>-->
 
                                     </div>
                                 </td>

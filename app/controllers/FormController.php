@@ -9,7 +9,7 @@ class FormController extends \BaseController {
      */
     public function index()
     {
-        $form = FormD::all();
+        $form=Formm::all();
         return View::make('form.index',compact('form'));
     }
 
@@ -32,17 +32,14 @@ class FormController extends \BaseController {
      */
     public function store()
     {
-        $form = FormD::create(array(
-            'name' => Input::get('form_name'),
+        $fom = Formm::create(array(
+            'name' => Input::get('form_name')
 
         ));
-        FormData::create(array(
-            'formId' =>$form->id,
-            'dataId' => Input::get('data')
-        ));
         $msg = "Form Added Successful";
-        return View::make('form.add',compact('msg','form'));
+        return View::make('form.add',compact('msg','fom'));
     }
+
 
 
     /**
@@ -65,8 +62,8 @@ class FormController extends \BaseController {
      */
     public function edit($id)
     {
-        $level = LocationLevel::find($id);
-        return View::make('location.location_level.edit',compact('level'));
+        $fom = Formm::find($id);
+        return View::make('form.edit',compact('fom'));
     }
 
 
@@ -78,12 +75,11 @@ class FormController extends \BaseController {
      */
     public function update($id)
     {
-        $level = LocationLevel::find($id);
-        $level->name = Input::get('location_name');
-        $level->parentId = Input::get('parent_level');
-        $level->save();
-        $msg = "Location Level Updated Successful";
-        return View::make('location.location_level.edit',compact('msg','level'));
+        $fom = Formm::find($id);
+        $fom->name = Input::get('form_name');
+        $fom->save();
+        $msg = "Form Updated Successful";
+        return View::make('form.edit',compact('msg','fom'));
     }
 
 
@@ -95,31 +91,13 @@ class FormController extends \BaseController {
      */
     public function destroy($id)
     {
-        $level = LocationLevel::find($id);
-        $child = LocationLevel::where("parentId",$level->id)->get();
-        if($child){
-            foreach($child as $childlevel){
-                $this->deletelocation($childlevel);
-            }
-        }
-        $level->delete();
+        $fom = Formm::find($id);
+        $fom->delete();
     }
 
-    /**
-     * Delete a specific Location.
-     *
-     * @param  Locationlevel  $location
-     * @return Response
-     */
-    public function deletelocation($location){
-        $child = LocationLevel::where("parentId",$location->id)->get();
-        if($child){
-            foreach($child as $childlevel){
-                $this->deletelocation($childlevel);
-            }
-        }
-        $location->delete();
-    }
+
+
+
 
 
 }
