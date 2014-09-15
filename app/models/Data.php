@@ -14,7 +14,7 @@ protected  $guarded = array('$id');
 
     public function options()
     {
-        return $this->belongsTo('DataOptions', 'dataId', 'id');
+        return $this->hasMany('DataOptions', 'dataId', 'id');
     }
 
     public function referenceData(){
