@@ -12,6 +12,12 @@
                 </header>
 
                 <div class="panel-body">
+                    @if(isset($msg))
+                    <div class="alert alert-success fade in" role="alert">
+                        <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">x</span><span class="sr-only">Close</span></button>
+                        <strong>SUCCESS!</strong> Data  {{ $data->name }} Updated Successful.
+                    </div>
+                    @endif
                     <section ">
                         <table id="dynamic-table"  class="table table-bordered table-striped table-condensed">
                             <thead>

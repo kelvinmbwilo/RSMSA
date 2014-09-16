@@ -111,17 +111,31 @@ class DataTableController extends \BaseController {
      */
     public function update($id)
     {   $data=Data::find($id);
+        $dataRef=DataReference::where("dataId",$data->id)->first();
+        $dataRef->referenceId=Input::get('reference');
+        $dataRef->save();
+
         $data_option = DataOptions::where("dataId",$data->id)->get();
 
         $data->name = Input::get('data_name');
+        $data->save();
            if($data_option->optons){
-        foreach($data_option->optonsd as $option){
+               foreach($data_option as $option){
+                   $option->delete();
+               }
 
-        }
+
+            foreach(Input::get('option') as $option){
+                DataOptions::create(array(
+                    'dataId' => $data->id,
+                    'optionsId' => $option
+                ));
+            }
     }
         $data_option->save();
+        $data=Data::all();
         $msg = "Data Table Updated Successful";
-        return View::make('data_table.edit',compact('msg','data'));
+        return View::make('data_table.index',compact('msg','data'));
     }
 
 

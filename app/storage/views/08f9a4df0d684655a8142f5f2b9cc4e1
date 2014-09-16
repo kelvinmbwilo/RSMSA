@@ -1,0 +1,24 @@
+<?php $__env->startSection('contents'); ?>
+
+<section class="panel panel-success">
+    <header class="panel-heading">
+        Enter Details for the Form <b><?php echo $formD->name; ?></b>
+    </header>
+
+    <div class="panel-body">
+        <form class="form" action='<?php echo url("form_processing"); ?>' method="post">
+            <input type="hidden" value="<?php echo $formD->id; ?>"  name="formId">
+            <?php $m=0;?>
+            <?php $f=1;?>
+            <?php foreach($formData as $formDetails): ?>
+                <input type="hidden" value="<?php echo $formDetails->id; ?>"  name="<?php echo $f++; ?>_formData">
+
+                <br>
+                <fieldset><legend><?php echo Data::find($formDetails->dataId)->name; ?></legend>
+                    <?php $p=1; ?>
+                    <?php foreach(DataOptions::where("dataId",$formDetails->dataId)->get() as $option): ?>
+                        <input type="hidden" value="<?php echo $option->id; ?>"  name="<?php echo $p++; ?>_dataOption">
+                    <?php $optionDetails= Options::find($option->optionsId);
+                         $op=1; ?>
+
+<?php echo $__env->make('layout.master', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

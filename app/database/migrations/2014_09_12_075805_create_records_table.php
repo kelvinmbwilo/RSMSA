@@ -16,8 +16,9 @@ class CreateRecordsTable extends Migration {
         Schema::create('rsmsa_records', function(Blueprint $table)
         {
             $table->increments('id');
-            $table->integer('tableColumnId');
-            $table->integer('columnId');
+            $table->integer('formDataId');
+            $table->integer('dataOptionId');
+            $table->integer('categoryOptionId');
             $table->string('value');
             $table->integer('datTag');
             $table->integer('locationId');
