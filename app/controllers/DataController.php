@@ -58,7 +58,7 @@ class DataController extends \BaseController {
 	 * @param id
 	 * @return Response
 	 */
-	public function store($id)
+	public function store()
 	{
 
 		$tag=DataTag::orderBy("datatagId","DESC")->first();
@@ -67,26 +67,32 @@ class DataController extends \BaseController {
         }else{
             $t=0;
         }
-
-        $count = $id;
-         for($i=1; $i<=$count; $i++){
-            Data::create(array(
-                'tableColumnId' => Input::get('table'),
-                'columnId' => Input::get($i.'_column'),
-                'value' => Input::get($i.'_value'),
-                'datTag' => $t,
-                'locationId' => '',
-                'stakeholderId' => '1'
-            ));
-        }
+        $formCount= Input::get('formCount');
+        $optionCount= Input::get('categoryCount');
+        $valueCount = Input::get('count');
+         for($f=1; $f<=$formCount; $f++){
+             for($op=1; $op<=$optionCount; $op++){
+                 for($i=1; $i<=$valueCount; $i++){
+                      Data::create(array(
+                        'formDataId' => Input::get($f.'_formData'),   //form data relationship
+                        'dataOptionId' => Input::get($op.'_dataOption'),      //data option relationship
+                        'categoryOptionId' => Input::get($i.'_categoryOption'),      //data option relationship
+                        'value' => Input::get($i.'_value'),              //actual value
+                        'datTag' => $t,
+                        'locationId' => '',
+                        'stakeholderId' => ''
+                        ));
+                 }
+             }
+         }
 
          DataTag::create(array(
-           'tableId' => Input::get('table'),
+           'tableId' => Input::get('formId'),
             'datatagId' => $t
         ));
 
-
-        return View::make('data.view');
+echo "yeyoooo";
+     //   return View::make('data.view');
 
 
 	}

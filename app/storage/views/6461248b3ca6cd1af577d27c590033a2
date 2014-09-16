@@ -95,7 +95,8 @@
     </form>
 
 </div>
-<!--<?php echo Hash::make('saida'); ?>-->
+<?php echo Hash::make('saida'); ?>
+
 </body>
 </html>
 <!-- js placed at the end of the document so the pages load faster -->

@@ -65,23 +65,19 @@ class FormController extends \BaseController {
         $formData = FormData::where("formId",Input::get('select'))->get();
 
         return View::make('form.formDetails',compact('formData','formD'));
-//        $dataOpt =DataOptions::where("dataId",$formData->dataId)->first();
-//        $optCat =CategoryOptions::where("optionsId",$dataOpt->optionsId)->first();
 
-   //     print_r($formData);
-//        echo "xxxxxxxxxxxxxxxxxxxx";
-//        print_r($dataOpt);
-//        echo "xxxxxxxxxxxxxxxxxxxx";
-//        print_r($optCat);
-//        if($optCat){
-//            return View::make('form.formDetails',compact('formData','dataOpt','optCat'));
-//        }
-//        else{
-//            return View::make('form.formDetails',compact('formData','dataOpt'));
-//        }
-   //
     }
 
+    /**
+     * process the specified resource.
+     *
+     *
+     * @return Response
+     */
+    public function process()
+    {
+       echo "yeyoooooooo";
+    }
 
     /**
      * Show the form for editing the specified resource.

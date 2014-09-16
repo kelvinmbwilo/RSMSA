@@ -13,7 +13,7 @@
                 <label class="col-lg-2 control-label">Select Form</label>
                 <div class="col-lg-10">
 
-                    <select name="select" class="form-control">
+                    <select name="select" class="form-control" required="required">
                         <option>-- select one --</option>
                         @foreach($fom as $formDetails)
                         <option value="{{ $formDetails->id }}">{{$formDetails->name}}</option>

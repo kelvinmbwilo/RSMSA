@@ -1,51 +1,24 @@
 <?php $__env->startSection('contents'); ?>
+
 <section class="panel panel-success">
     <header class="panel-heading">
-     Enter Details for the Form <b><?php echo $formD->name; ?></b>
+        Enter Details for the Form <b><?php echo $formD->name; ?></b>
     </header>
-<?php foreach($formData as $formDetails): ?>
-    <?php $dataOption=DataOptions::where("dataId",$formDetails->dataId)->get();
-         $table=Data::find($formDetails->dataId);
-    ?>
-    <br>
-    <fieldset><legend><?php echo $table->name; ?></legend>
-    <?php foreach($dataOption as $option): ?>
 
-    <?php
-     $optionDetails=Options::find($option->optionsId);
+    <div class="panel-body">
+        <form class="form" action='<?php echo url("form_processing"); ?>' method="post">
+            <input type="hidden" value="<?php echo $formD->id; ?>"  name="formId">
+            <?php $m=0;?>
+            <?php $f=1;?>
+            <?php foreach($formData as $formDetails): ?>
+                <input type="hidden" value="<?php echo $formDetails->id; ?>"  name="<?php echo $f++; ?>_formData">
 
-    $i=0;
-    ?>
+                <br>
+                <fieldset><legend><?php echo Data::find($formDetails->dataId)->name; ?></legend>
+                    <?php $p=1; ?>
+                    <?php foreach(DataOptions::where("dataId",$formDetails->dataId)->get() as $option): ?>
+                        <input type="hidden" value="<?php echo $option->id; ?>"  name="<?php echo $p++; ?>_dataOption">
+                    <?php $optionDetails= Options::find($option->optionsId);
+                         $op=1; ?>
 
-    <?php if($optionDetails->hasCategories =="false"): ?>
-    <div class="form-group">
-        <label class="col-sm-2 control-label" id="DataCat"><?php echo $optionDetails->name; ?></label>
-        <input type="text" class="form-control col-sm-4" placeholder="Enter <?php echo $optionDetails->name; ?>" name="option_name<?php echo $i++; ?>">
-    </div>
-    <?php endif; ?>
-    <?php if($optionDetails->hasCategories =="true"): ?>
-        <?php
-        $categories=CategoryOptions::where("optionsId",$optionDetails->id)->get();
-        $category=CategoryOptions::where("optionsId",$optionDetails->id)->first();
-        $opt=Options::find($category->optionsId);
-        $i=0;
-        ?>
-        <label><?php echo $opt->name; ?>:</label>
-        <?php foreach($categories as $cat): ?>
-        <?php
-        $category=Categories::find($cat->categoryId);
-
-        $i=0;
-        ?>
-        <input type="radio"  value="<?php echo $cat->name; ?>" name="category_name<?php echo $i++; ?>"><?php echo $category->name; ?>
-
-        <?php endforeach; ?>
-    <?php endif; ?>
-    <?php endforeach; ?>
-
-    </fieldset>
-<?php endforeach; ?>
-
-</section>
-<?php $__env->stopSection(); ?>
 <?php echo $__env->make('layout.master', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
