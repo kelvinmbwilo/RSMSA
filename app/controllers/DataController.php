@@ -24,9 +24,14 @@ class DataController extends \BaseController {
      */
     public function viewtable($id){
 
-        $table = TableName::find($id);
+        $form_name = Formm::find($id);
+        $dataTag = DataTag::where("tableId",$form_name->id)->get();
+        $form_details = Records::where("formDataId",$form_name->id)->get();
+        $form_head =FormData::where("formId",$form_name->id)->get();
 
-        return View::make('data.specific_table', compact('table'));
+
+
+      return View::make('data.specific_table', compact('form_name','form_details','dataTag','form_head'));
 
     }
 
@@ -72,6 +77,7 @@ class DataController extends \BaseController {
         $formData = $form->formData;
         foreach($formData as $formDatas){
             foreach($formDatas->dataForm->options as $options){
+                echo "am in";
                 Records::create(array(
                     'formDataId' => Input::get('formId'),   //form id
                     'dataOptionId' => $formDatas->dataForm->id,      //data id
@@ -84,12 +90,16 @@ class DataController extends \BaseController {
             }
         }
 
-         DataTag::create(array(
-           'tableId' => Input::get('formId'),
+         $tag=DataTag::create(array(
+           'tableId' =>Input::get('formId'),
             'datatagId' => $t
         ));
+        $tag->tableId=Input::get('formId');
+        $tag->datatagId= $t;
+        $tag->save();
 
-     //   return View::make('data.view');
+        $form=Formm::all();
+        return View::make('form.index',compact('form'));
 
 
 	}

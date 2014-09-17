@@ -8,68 +8,49 @@
 @extends('layout.master')
 @section('contents')
 
-<header class="panel-heading">
-    <a class="btn btn-success pull-right" href={{ url('data/add') }}>
-    <i class="fa fa-adn">
-        New
-    </i>
-    </a>
-</header>
+
 
 <section class="wrapper">
-    <?php
-    $id = $table->id;
-    $count = 0;
-    $columns = $table->column;
-    $tags = $table->tag;
-    $myData = $table->data;
-    $myData->toarray();
-    ?>
+
     <div class="row">
-        <!-- Data Table Start -->
+
         <div class="col-lg-12">
-            <header class="panel-heading">
-                {{ $table->categoryName }} Data
+            <header class="panel-heading ">
+               {{ $form_name->name }} Form
             </header>
             <section id="unseen">
-                <?php
-                    $count = 0;
-                    foreach ($columns as $colm) {
-                        $count++;
-                    }
-                ?>
+
                 <table class="table table-bordered table-striped table-condensed " id="dynamic-table">
                     <thead>
                     <tr>
-                        <th>code</th>
-                        @foreach($columns as $col)
-                        <th>{{ $col->columnName }}</th>
+                        <th>#</th>
+                        @foreach($form_head as $formData)
+                        @if($formData)
+
+                          @foreach($formData->dataForm->options as $dataDetails)
+                          <th>{{$dataDetails->data->name}}-{{$dataDetails->options->name}}</th>
+
+                          @endforeach
+                        @endif
                         @endforeach
-                        <th>Action</th>
+
                     </tr>
                     </thead>
                     <tbody>
-                    <?php foreach($tags as $tag){
-                        $currentTag = $tag->datatagId;
-                        $data = $tag->data;
-                        ?>
+                    <?php $i=1;?>
+                    @foreach($dataTag as $tag)
                     <tr>
-                           <td>AAC</td>
-                        <?php
-                        foreach($columns as $col){
-                            $temp = $col->id;
-                                 foreach($data as $dat){
-                                     if($dat->column->id == $temp){ ?>
-                                               <td>{{ $dat->value }}</td>
-                                      <?php }
-                                 }
-                        }
-                       ?>
-                           <td><a href="#">Report</a></td>
+                        <td>{{$i++}}</td>
+                        @foreach($form_details as $col)
+                        @if($col->datTag == $tag->datatagId)
+                        <td>{{ $col->value }}</td>
+                        @endif
+                        @endforeach
                     </tr>
-                    <?php } ?>
+                    @endforeach
                     </tbody>
                 </table>
+
             </section>
         </div>
     </div>
