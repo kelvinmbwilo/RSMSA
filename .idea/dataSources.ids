@@ -1502,6 +1502,14 @@
       <column name="updated_at" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="JzAwMDAtMDAtMDAgMDA6MDA6MDAn"/>
       <primary-key name="PRIMARY" columns="id"/>
     </table>
+    <table name="rsmsa_dynamic_offense" schema="" catalog="rsmsa" type="TABLE">
+      <column name="id" sqlType="INT UNSIGNED" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="created_at" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="JzAwMDAtMDAtMDAgMDA6MDA6MDAn"/>
+      <column name="updated_at" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="JzAwMDAtMDAtMDAgMDA6MDA6MDAn"/>
+      <column name="column1" sqlType="VARCHAR" length="100" precision="0" nullable="true" jdbcType="12"/>
+      <column name="column2" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
     <table name="rsmsa_form" schema="" catalog="rsmsa" type="TABLE">
       <column name="id" sqlType="INT UNSIGNED" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
       <column name="name" sqlType="VARCHAR" length="255" precision="0" nullable="false" jdbcType="12"/>
@@ -1548,8 +1556,9 @@
     </table>
     <table name="rsmsa_records" schema="" catalog="rsmsa" type="TABLE">
       <column name="id" sqlType="INT UNSIGNED" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
-      <column name="tableColumnId" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
-      <column name="columnId" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
+      <column name="formDataId" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
+      <column name="dataOptionId" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
+      <column name="categoryOptionId" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
       <column name="value" sqlType="VARCHAR" length="255" precision="0" nullable="false" jdbcType="12"/>
       <column name="datTag" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
       <column name="locationId" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>

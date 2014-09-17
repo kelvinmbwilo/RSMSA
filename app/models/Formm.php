@@ -12,7 +12,7 @@ class Formm extends Eloquent {
 
     protected  $guarded = array('$id');
 
-    public function forms(){
+    public function formData(){
         return $this->hasMany('FormData', 'formId', 'id');
     }
 

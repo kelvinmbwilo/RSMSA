@@ -53,14 +53,38 @@ class FormController extends \BaseController {
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     *
      * @return Response
      */
-    public function show($id)
+    public function show()
     {
-        //
+        $fom = Formm::all();
+        return View::make('form.createForm',compact('fom'));
     }
 
+    /**
+     * Display the specified resource.
+     *
+     *
+     * @return Response
+     */
+    public function showDetails()
+    {
+        $formD=Formm::find(Input::get('select'));
+        $formData = FormData::where("formId",Input::get('select'))->get();
+        return View::make('form.formDetails',compact('formData','formD'));
+    }
+
+    /**
+     * process the specified resource.
+     *
+     *
+     * @return Response
+     */
+    public function process()
+    {
+       echo "yeyoooooooo";
+    }
 
     /**
      * Show the form for editing the specified resource.

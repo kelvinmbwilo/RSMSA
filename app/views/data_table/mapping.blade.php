@@ -18,10 +18,10 @@
 
 
                       <div class="form-group">
-                            <label class="col-sm-2 control-label" id="DataCat">{{ $opt[$k]->name }}</label>
+                            <label class="col-sm-2 control-label" id="DataCat">{{ $opt->name }}</label>
 
 
-                           <input type="hidden" class="form-control" value="{{$opt[$k]->id}}" name="option_name{{$i++}}">
+                           <input type="hidden" class="form-control" value="{{$opt->id}}" name="option_name{{$i++}}">
                            <select name="reference{{$j++}}" class="form-control">
                                 <option value="0" id="option">No mapping</option>
                                 @foreach($reference as $ref)
@@ -29,8 +29,9 @@
                                 @endforeach
                             </select>
                           <?php  $k++; ?>
-                            @endforeach
+
                           </div>
+                @endforeach
                          <div class="form-group">
 
                                 <input type="submit" value="done" class="btn btn-info">

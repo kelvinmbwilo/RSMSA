@@ -32,27 +32,41 @@ class DataTableController extends \BaseController {
      */
     public function store()
     {
-        if(Input::get('reference')== 0){
-        $data = Data::create(array(
-            'name' => Input::get('data_name'),
-            'hasReference' => "false"
-        ));
+        if(Input::get('reference') == 0){
+            $data = Data::create(array(
+                'name' => Input::get('data_name'),
+                'hasReference' => "false"
+            ));
+            foreach(Input::get('option') as $option){
+                DataOptions::create(array(
+                    'dataId' => $data->id,
+                    'optionsId' => $option
+                ));
+            }
         }else{
             $data = Data::create(array(
                 'name' => Input::get('data_name'),
                 'hasReference' => "true"
             ));
 
+            foreach(Input::get('option') as $option){
+                DataOptions::create(array(
+                    'dataId' => $data->id,
+                    'optionsId' => $option
+                ));
+            }
+
+            /////////////////////////////////////////////
+            ////////reference mapping here /////////////
+            /**
+             * @TODO create reference maping
+             */
             $ref = DataReference::create(array(
                 'dataId' => $data->id,
                 'referenceId' => Input::get('reference')
             ));
-
         }
-        DataOptions::create(array(
-            'dataId' => $data->id,
-            'optionsId' => Input::get('parent_level')
-        ));
+
 
         $msg = "Data Table Added Successful please do the mapping";
         return View::make('data_table.add',compact('msg','data','ref'));
@@ -82,10 +96,10 @@ class DataTableController extends \BaseController {
      */
     public function edit($id)
     {
-        $dataRef = DataReference::where("dataId",$id)->get();
+        $dataRef = DataReference::where("dataId",$id)->first();
+          $data = Data::find($id);
 
-
-        return View::make('data_table.edit',compact('dataRef'));
+        return View::make('data_table.edit',compact('dataRef','data'));
     }
 
 
@@ -97,17 +111,31 @@ class DataTableController extends \BaseController {
      */
     public function update($id)
     {   $data=Data::find($id);
+        $dataRef=DataReference::where("dataId",$data->id)->first();
+        $dataRef->referenceId=Input::get('reference');
+        $dataRef->save();
+
         $data_option = DataOptions::where("dataId",$data->id)->get();
 
         $data->name = Input::get('data_name');
+        $data->save();
            if($data_option->optons){
-        foreach($data_option->optonsd as $option){
+               foreach($data_option as $option){
+                   $option->delete();
+               }
 
-        }
+
+            foreach(Input::get('option') as $option){
+                DataOptions::create(array(
+                    'dataId' => $data->id,
+                    'optionsId' => $option
+                ));
+            }
     }
         $data_option->save();
+        $data=Data::all();
         $msg = "Data Table Updated Successful";
-        return View::make('data_table.edit',compact('msg','data'));
+        return View::make('data_table.index',compact('msg','data'));
     }
 
 
@@ -121,8 +149,10 @@ class DataTableController extends \BaseController {
     {
         $data = Data::find($id);
         $data_options = DataOptions::where("dataId",$data->id)->get();
-        if( $data_options){
-              $data_options->delete();
+        if($data_options){
+            foreach($data_options as $option){
+                $option->delete();
+            }
           }
         $data->delete();
     }
@@ -145,7 +175,7 @@ class DataTableController extends \BaseController {
 
         $i=0;
             foreach($opt as $data){
-            $dataArray[$i]= Options::where("id",$data->optionsId)->get();
+            $dataArray[$i]= Options::where("id",$data->optionsId)->first();
             $i=$i+1;
        }
         $reference= $dataRef->referenceData;
