@@ -24,8 +24,14 @@
                     <thead>
                     <tr>
                         <th>#</th>
-                        <?php foreach($form_head as $col): ?>
-                        <th><?php if($col->data): ?><?php echo $col->data->name; ?>_<?php echo $col->option->name; ?><?php endif; ?></th>
+                        <?php foreach($form_head as $formData): ?>
+                        <?php if($formData): ?>
+
+                          <?php foreach($formData->dataForm->options as $dataDetails): ?>
+                          <th><?php echo $dataDetails->data->name; ?>-<?php echo $dataDetails->options->name; ?></th>
+
+                          <?php endforeach; ?>
+                        <?php endif; ?>
                         <?php endforeach; ?>
 
                     </tr>
@@ -34,10 +40,10 @@
                     <?php $i=1;?>
                     <?php foreach($dataTag as $tag): ?>
                     <tr>
-                        <th><?php echo $i++; ?></th>
+                        <td><?php echo $i++; ?></td>
                         <?php foreach($form_details as $col): ?>
                         <?php if($col->datTag == $tag->datatagId): ?>
-                        <th><?php echo $col->value; ?></th>
+                        <td><?php echo $col->value; ?></td>
                         <?php endif; ?>
                         <?php endforeach; ?>
                     </tr>
