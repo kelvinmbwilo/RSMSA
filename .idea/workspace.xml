@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6662a4ad-95fa-4dcf-82ca-d6bee230b9f9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/views/1e17829b040e7497aa362283d13e17e3" afterPath="$PROJECT_DIR$/app/storage/views/1e17829b040e7497aa362283d13e17e3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/views/266487a15720fa7591f36ecc6d52d050" afterPath="$PROJECT_DIR$/app/storage/views/266487a15720fa7591f36ecc6d52d050" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/views/831c7b32157abd01ccc174b3746eea33" afterPath="$PROJECT_DIR$/app/storage/views/831c7b32157abd01ccc174b3746eea33" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/FormController.php" afterPath="$PROJECT_DIR$/app/controllers/FormController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/form/add.blade.php" afterPath="$PROJECT_DIR$/app/views/form/add.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/views/c79942a144200803db17f684907b465c" afterPath="$PROJECT_DIR$/app/storage/views/c79942a144200803db17f684907b465c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/database.php" afterPath="$PROJECT_DIR$/app/config/database.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/form/edit.blade.php" afterPath="$PROJECT_DIR$/app/views/form/edit.blade.php" />
-    </list>
+    <list default="true" id="6662a4ad-95fa-4dcf-82ca-d6bee230b9f9" name="Default" comment="" />
     <ignored path="RSMSA.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,46 +23,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="OptionsController.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="OptionsController.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/OptionsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="100" column="14" selection-start="2304" selection-end="2304" vertical-scroll-proportion="-1.8846154" vertical-offset="1651" max-vertical-offset="2499">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FormController.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/controllers/FormController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="137" column="30" selection-start="2929" selection-end="2929" vertical-scroll-proportion="0.47166362" vertical-offset="2071" max-vertical-offset="2618">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="edit.blade.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/form/edit.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="47" selection-start="1668" selection-end="1676" vertical-scroll-proportion="-4.8076925" vertical-offset="419" max-vertical-offset="1020">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FormData.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/FormData.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="5" selection-start="409" selection-end="409" vertical-scroll-proportion="-13.730769" vertical-offset="0" max-vertical-offset="527">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="edit.blade.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/options/edit.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="77" selection-start="1925" selection-end="1925" vertical-scroll-proportion="-24.846153" vertical-offset="0" max-vertical-offset="1122">
+            <state line="100" column="14" selection-start="2304" selection-end="2304" vertical-scroll-proportion="0.15705128" vertical-offset="1651" max-vertical-offset="2499">
               <folding />
             </state>
           </provider>
@@ -295,7 +250,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39232054" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39232054" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18277946" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -600,28 +555,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/FormData.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="5" selection-start="409" selection-end="409" vertical-scroll-proportion="-13.730769" vertical-offset="0" max-vertical-offset="527">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/OptionsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="100" column="14" selection-start="2304" selection-end="2304" vertical-scroll-proportion="-1.8846154" vertical-offset="1651" max-vertical-offset="2499">
+        <state line="21" column="5" selection-start="409" selection-end="409" vertical-scroll-proportion="0.724359" vertical-offset="131" max-vertical-offset="527">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/form/edit.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="47" selection-start="1668" selection-end="1676" vertical-scroll-proportion="-4.8076925" vertical-offset="419" max-vertical-offset="1020">
+        <state line="32" column="47" selection-start="1668" selection-end="1676" vertical-scroll-proportion="-0.06354515" vertical-offset="563" max-vertical-offset="1020">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/FormController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="137" column="30" selection-start="2929" selection-end="2929" vertical-scroll-proportion="0.47166362" vertical-offset="2071" max-vertical-offset="2618">
+        <state line="137" column="30" selection-start="2929" selection-end="2929" vertical-scroll-proportion="0.8269231" vertical-offset="2071" max-vertical-offset="2618">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/OptionsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="100" column="14" selection-start="2304" selection-end="2304" vertical-scroll-proportion="0.15705128" vertical-offset="1651" max-vertical-offset="2499">
           <folding />
         </state>
       </provider>
