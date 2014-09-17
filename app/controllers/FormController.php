@@ -42,12 +42,12 @@ class FormController extends \BaseController {
                     "formId"  => $fom->id,
                     "dataId" => $dat,
                 ));
-            }
+            }}
 
             $msg = "Form Added Successful";
             return View::make('form.add',compact('msg','fom'));
 
-        }}
+        }
 
 
     /**
