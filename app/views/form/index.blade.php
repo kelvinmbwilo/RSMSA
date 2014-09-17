@@ -36,10 +36,10 @@
                                         <a class="btn btn-danger deletelevel" title="delete option" href='#delete'>
                                         <i class="fa fa-trash-o"></i>
                                         </a>
-<!--                                        <a class="btn btn-info" href='{{ url("form/{$fom->id}") }}'>-->
-<!--                                            <i class="fa fa-level-down"></i>-->
-<!--                                            form-->
-<!--                                        </a>-->
+                                        <a class="btn btn-info" title="view form" href='{{ url("form_viewing/{$fom->id}") }}'>View data
+                                            <i class="fa fa-level-down"></i>
+                                        </a>
+
 
                                     </div>
                                 </td>

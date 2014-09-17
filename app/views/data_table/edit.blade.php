@@ -4,7 +4,7 @@
 <section class="panel panel-success">
     <header class="panel-heading">
         Update {{ $data->name }} Information
-        <a class="btn btn-success btn-xs pull-right" href='{{ url("data_table") }}'>
+        <a class="btn btn-success btn-xs pull-right" href='{{ url("dataTable") }}'>
             back to list <i class="fa fa-list"></i>
         </a>
 
