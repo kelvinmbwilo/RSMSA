@@ -1,0 +1,48 @@
+<?php $__env->startSection('contents'); ?>
+
+<section class="panel panel-success">
+    <header class="panel-heading">
+        Enter Details for the Form <b><?php echo $formD->name; ?></b>
+    </header>
+
+    <div class="panel-body">
+        <div class="col-md-8 col-md-offset-2">
+        <form class="form" action='<?php echo url("form_processing"); ?>' method="post">
+            <input type="hidden" value="<?php echo $formD->id; ?>"  name="formId">
+            <?php $m=0;?>
+            <?php $f=1;?>
+            <?php foreach($formData as $formDetails): ?>
+                <input type="hidden" value="<?php echo $formDetails->id; ?>"  name="<?php echo $f++; ?>_formData">
+
+                <br>
+                <fieldset><legend><?php echo $formDetails->dataForm->name; ?></legend>
+                   <?php foreach($formDetails->dataForm->options as $option): ?>
+
+                    <div class="form-group">
+                        <label for="option<?php echo $option->options->id; ?>"><?php echo $option->options->name; ?></label>
+                        <?php if(count($option->options->categoryOptions) !== 0): ?>
+                          <select class="form-control" name="<?php echo $option->data->id; ?>_option_<?php echo $option->options->id; ?>">
+                              <?php foreach($option->options->categoryOptions as $category): ?>
+                               <option value="<?php echo $category->category->id; ?>" ><?php echo $category->category->name; ?></option>
+                              <?php endforeach; ?>
+                          </select>
+                        <?php else: ?>
+                        <input type="text" name="<?php echo $option->data->id; ?>_option_<?php echo $option->options->id; ?>" class="form-control" id="exampleInputEmail1" placeholder="<?php echo $option->options->name; ?>">
+                        <?php endif; ?>
+                    </div>
+                   <?php endforeach; ?>
+                </fieldset>
+            <?php endforeach; ?>
+
+        <?php echo Form::submit('Submit', array('class' => 'btn pull-right btn-info')); ?>
+
+        </form>
+        </div>
+    </div>
+</section>
+</div>
+</section>
+
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layout.master', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

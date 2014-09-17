@@ -28,11 +28,11 @@
                     <div class="col-md-6">
                         <?php
                         $arr = array("0");
-                        if(count($fom->forms()->lists('formId')) != 0){
-                            $arr = $fom->forms()->lists('formId');
+                        if(count($fom->formData()->lists('formId')) != 0){
+                            $arr = $fom->formData()->lists('formId');
                         }
                         ?>
-                        <?php echo Form::select('form_data[]',array('0'=>'No Option')+Data::orderBy('id','ASC')->get()->lists('name','id'),'',array('url'=>'posts','class'=>'form-control','required'=>'requiered', 'multiple'=>'multiple')); ?>
+                        <?php echo Form::select('form_data[]',array('0'=>'No Option')+Data::orderBy('id','ASC')->get()->lists('name','id'),'',array('url'=>'posts',"id"=>"my-select",'class'=>'form-control','required'=>'requiered', 'multiple'=>'multiple')); ?>
 
                     </div>
                     <script>
