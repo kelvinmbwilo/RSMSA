@@ -31,23 +31,32 @@ class OptionsController extends \BaseController {
      * @return Response
      */
     public function store(){
-
+        if(Input::get('category_option')== 0){
         $opt = Options::create(array(
-            'name' => Input::get('option_name')
+            'name' => Input::get('option_name'),
+            'datatypeId' => Input::get('data_type'),
+            'hasCategories'=>"false"
         ));
+        }
+        else{
+            $opt = Options::create(array(
+                'name' => Input::get('option_name'),
+                'datatypeId' => Input::get('data_type'),
+                'hasCategories'=>"true"
+        ));
+        }
+
         foreach(Input::get('category_option') as $category){
             if($category != 0){
                 CategoryOptions::create(array(
                     "optionsId"  => $opt->id,
                     "categoryId" => $category,
                 ));
-            }
-
-        }
+            }}
         $msg = "Option Added Successful";
         return View::make('options.add',compact('msg','opt'));
 
-    }
+             }
 
 
     /**
@@ -83,9 +92,19 @@ class OptionsController extends \BaseController {
      */
     public function update($id)
     {
+        if(Input::get('category_option')== 0){
         $opt = Options::find($id);
         $opt->name = Input::get('option_name');
+        $opt->datatypeId = Input::get('data_type');
+        $opt->hasCategories = "false";
         $opt->save();
+        }else{
+            $opt = Options::find($id);
+            $opt->name = Input::get('option_name');
+            $opt->datatypeId = Input::get('data_type');
+            $opt->hasCategories = "true";
+            $opt->save();
+        }
         foreach($opt->categoryOptions as $cats){
             $cats->delete();
         }

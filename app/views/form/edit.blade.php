@@ -28,8 +28,19 @@
                 <div class="form-group">
                     <label class="col-md-2 control-label" id="DataCat"> Form Data(s)</label>
                     <div class="col-md-6">
+                        <?php
+                        $arr = array("0");
+                        if(count($fom->forms()->lists('formId')) != 0){
+                            $arr = $fom->forms()->lists('formId');
+                        }
+                        ?>
                         {{ Form::select('form_data[]',array('0'=>'No Option')+Data::orderBy('id','ASC')->get()->lists('name','id'),'',array('url'=>'posts','class'=>'form-control','required'=>'requiered', 'multiple'=>'multiple')) }}
                     </div>
+                    <script>
+                        $(document).ready(function(){
+                            $('#my-select').multiSelect();
+                        })
+                    </script>
                 </div>
                 <div class="form-group">
                     <div class="col-md-6 text-center">

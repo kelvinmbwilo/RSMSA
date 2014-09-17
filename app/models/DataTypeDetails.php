@@ -18,5 +18,9 @@ class DataTypeDetails extends Eloquent {
     public function Column(){
         return $this->hasMany('Column', 'typeId', 'id');
     }
+    public function options(){
+        return $this->hasMany('Options', 'datatypeId', 'id');
+    }
+
 
 }
