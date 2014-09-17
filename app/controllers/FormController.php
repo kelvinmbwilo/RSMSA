@@ -111,7 +111,7 @@ class FormController extends \BaseController {
         $fom->name = Input::get('form_name');
         $fom->save();
 
-        foreach($fom->forms as $cats){
+        foreach($fom->formData as $cats){
             $cats->delete();}
 
         foreach(Input::get('form_data') as $dataform){
@@ -135,7 +135,7 @@ class FormController extends \BaseController {
     public function destroy($id)
     {
         $fom = Formm::find($id);
-        foreach($fom->forms as $cats){
+        foreach($fom->formData as $cats){
             $cats->delete();}
         $fom->delete();
     }
