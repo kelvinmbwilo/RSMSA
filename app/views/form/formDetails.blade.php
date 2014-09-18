@@ -18,6 +18,7 @@
 
                 <br>
                 <fieldset><legend>{{ $formDetails->dataForm->name }}</legend>
+                  @if( $formDetails->dataForm->hasReference == "false")
                    @foreach($formDetails->dataForm->options as $option)
 
                     <div class="form-group">
@@ -33,6 +34,25 @@
                         @endif
                     </div>
                    @endforeach
+                 @endif
+
+                    @if( $formDetails->dataForm->hasReference == "true")
+                    @foreach($formDetails->dataForm->options as $option)
+
+                    <div class="form-group">
+                        <label for="option{{ $option->options->id }}">{{ $option->options->name }}</label>
+                        @if(count($option->options->categoryOptions) !== 0)
+                        <select class="form-control" name="{{ $option->data->id }}_option_{{ $option->options->id }}">
+                            @foreach($option->options->categoryOptions as $category)
+                            <option value="{{ $category->category->id }}" >{{ $category->category->name }}</option>
+                            @endforeach
+                        </select>
+                        @else
+                        <input type="text" name="{{ $option->data->id }}_option_{{ $option->options->id }}" class="form-control" id="exampleInputEmail1" placeholder="{{ $option->options->name }}">
+                        @endif
+                    </div>
+                    @endforeach
+                    @endif
                 </fieldset>
             @endforeach
 

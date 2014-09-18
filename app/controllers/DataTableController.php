@@ -63,7 +63,8 @@ class DataTableController extends \BaseController {
              */
             $ref = DataReference::create(array(
                 'dataId' => $data->id,
-                'referenceId' => Input::get('reference')
+                'referenceId' => Input::get('reference'),
+                'keyColumnId' => Input::get('referenceKeyColumn')
             ));
         }
 
@@ -112,7 +113,7 @@ class DataTableController extends \BaseController {
     public function update($id)
     {   $data=Data::find($id);
         $dataRef=DataReference::where("dataId",$data->id)->first();
-        $dataRef->referenceId=Input::get('reference');
+       
         $dataRef->save();
 
         $data_option = DataOptions::where("dataId",$data->id)->get();
@@ -155,6 +156,26 @@ class DataTableController extends \BaseController {
             }
           }
         $data->delete();
+    }
+
+    /**
+     * Lists the specified resource from storage.
+     *
+     * @param  int  $id
+     * @return Response
+     */
+
+    public function listReferenceDetails($id)
+    {
+        $options = '';
+        if($id == 0){
+            $options .="<option value='0'>No Reference selected</option>";
+        }else{
+            foreach(Reference::find($id)->referenceDetails as $reference){
+                $options .="<option value='{$reference->id}'>{$reference->name}</option>";
+            }
+        }
+        return $options;
     }
 
 

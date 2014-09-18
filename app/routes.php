@@ -210,6 +210,7 @@ Route::post('data_table/add', array('uses' => 'DataTableController@store')); //p
 Route::get('data_table/edit/{id}', array('uses' => 'DataTableController@edit')); //display a form to update a data table
 Route::post('data_table/edit/{id}', array('uses' => 'DataTableController@update')); //process a form to update a data table
 Route::post('data_table/delete/{id}', array('uses' => 'DataTableController@destroy')); //delete a data table
+Route::post('dataTable/listReferenceDetails/{id}', array('uses' => 'DataTableController@listReferenceDetails')); //delete a data table
 
 
 
