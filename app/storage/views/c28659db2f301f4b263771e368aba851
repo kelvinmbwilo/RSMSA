@@ -1,0 +1,38 @@
+<?php $__env->startSection('contents'); ?>
+
+<section class="panel panel-success">
+    <header class="panel-heading ">
+      Add data to reference
+    </header>
+    <div class="panel-body">
+        <span id="responce" style="opacity: 0; color: "> Successful.. </span>
+      <?php   $reference=Reference::all();
+        $reference->toarray();?>
+        <form class="form" action='<?php echo url("dynamic_table/getColumn"); ?>' method="post">
+            <div class="form-group">
+                <label class="col-lg-2 control-label">Select Reference Type</label>
+                <div class="col-lg-10">
+
+                    <select name="select" class="form-control">
+                        <option>-- select one --</option>
+                        <?php foreach($reference as $ref): ?>
+                        <option value="<?php echo $ref->id; ?>"><?php echo $ref->name; ?></option>
+                        <?php endforeach; ?>
+                    </select>
+                </div>
+                <?php echo Form::submit('Submit', array('class' => 'btn pull-right btn-info')); ?>
+
+                <?php echo Form::close(); ?>
+
+
+                <?php if($errors->any()): ?>
+                <ul>
+                    <?php echo implode('', $errors->all('<li class="error">:message</li>')); ?>
+
+                </ul>
+                <?php endif; ?>
+            </div>
+</section>
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layout.master', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
