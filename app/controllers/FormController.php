@@ -93,7 +93,7 @@ class FormController extends \BaseController {
      */
     public function storeDatabaseCredentials()
     {
-       DatabaseCredentials::create(array(
+       $credentials=DatabaseCredentials::create(array(
             'databaseType' => Input::get('type'),
             'databaseName' =>Input::get('name'),
             'host' =>Input::get('host'),
@@ -104,19 +104,261 @@ class FormController extends \BaseController {
             'schema' => Input::get('schema'),
             'port' => Input::get('port'),
         ));
-        return View::make('form.databaseCredentials');
+        $tag = $credentials->databaseType;
+        if ($tag != '') {
+
+            // response Array
+            $response = array("tag" => $tag, "success" => 0, "error" => 0);
+            // Get tag
+
+
+
+            if($tag == "sqlite")
+            {
+                //Get details for the database
+                $name = $credentials->databaseName;
+
+                define("DB_DATABASE", $name);
+                define("DB_PREFIX", "");
+
+                //its connection details
+
+            }else if($tag == "sqlsrv"){
+
+                //Get details for the database
+                $host = $credentials->host;
+                $DBname = $credentials->databaseName;
+                $user = $credentials->username;
+                $password = $credentials->password;
+
+
+                define("DB_HOST",  $host);
+                define("DB_DATABASE", $DBname);
+                define("DB_USER",  $user);
+                define("DB_PASSWORD", $password);
+                define("DB_PREFIX", "");
+
+                //its connection details
+            }
+            else if($tag == "mysql"){
+                //Get details for the database
+                $host = $credentials->host;
+                $DBname = $credentials->databaseName;
+                $user = $credentials->username;
+                $password = $credentials->password;
+                $charSet = "utf8";
+                $collation = "utf8_unicode_ci";
+
+                define("DB_HOST",  $host);
+                define("DB_DATABASE", $DBname);
+                define("DB_USER",  $user);
+                define("DB_PASSWORD", $password);
+                define("DB_CHARSET", $charSet);
+                define("DB_COLLATION", $collation);
+                define("DB_PREFIX", "");
+
+                //its connection to mysql
+
+                $con =mysql_connect(DB_HOST, DB_USER, DB_PASSWORD);
+                // Check connection
+                if (!$con) {
+                    die('Failed to connect to MySQL: ' . mysql_error());
+                }
+                // selecting database
+                mysql_select_db(DB_DATABASE);
+                $ListOfTables = mysql_query("show tables from ".DB_DATABASE); // run the query and assign the result to $result
+
+                //geting the tables
+
+                if($ListOfTables)
+                {
+
+                    $i=0;$j=0;
+                    while($table = mysql_fetch_array($ListOfTables))
+                    { $i++;
+
+                        $ListOfColumns = mysql_query("SHOW COLUMNS FROM ".$table[0]);
+                        $tableNames["table".$i]=$table[0];
+                        while($column = mysql_fetch_array($ListOfColumns))
+                        {
+                            $j++;
+
+
+                            $response["table".$i]["column".$j]=$column['Field'];
+                        }
+
+                    }
+                    // return View::make('form.importation_mapping', compact('response','tableNames','formData'));
+                    return View::make('form.databaseTables',compact('tableNames','response'));
+
+                }
+                else{
+                    $response["error"] = 0;
+                    $response["error_msg"] = "error in getting database";
+                    echo json_encode($response);
+                }
+            }
+            else if($tag == "pgsql"){
+                //Get details for the database
+                $host = $credentials->host;
+                $DBname = $credentials->databaseName;
+                $user = $credentials->username;
+                $password = $credentials->password;
+                $charSet = "utf8";
+                $schema = "public";
+
+                define("DB_HOST",  $host);
+                define("DB_DATABASE", $DBname);
+                define("DB_USER",  $user);
+                define("DB_PASSWORD", $password);
+                define("DB_CHARSET", $charSet);
+                define("DB_SCHEMA", $schema);
+                define("DB_PREFIX", "");
+
+                //its connection details
+            }
+
+
+        }
+
     }
 
 
     /**
-     * process the specified resource.
-     *
-     *
-     * @return Response
+     * process the specified resource
+     * @param $id
      */
-    public function process()
+ function processFormMapping($id)
     {
        echo "yeyoooooooo";
+
+    }
+
+
+    /**
+     * list the
+     * @param $credentials
+     */
+    public function ListDatabaseDetails($credentials)
+    {
+        $tag = $credentials->databaseType;
+        if ($tag != '') {
+
+            // response Array
+            $response = array("tag" => $tag, "success" => 0, "error" => 0);
+            // Get tag
+
+
+
+            if($tag == "sqlite")
+            {
+               //Get details for the database
+                $name = $credentials->databaseName;
+
+                define("DB_DATABASE", $name);
+                define("DB_PREFIX", "");
+
+                //its connection details
+
+            }else if($tag == "sqlsrv"){
+
+               //Get details for the database
+                $host = $credentials->host;
+                $DBname = $credentials->databaseName;
+                $user = $credentials->username;
+                $password = $credentials->password;
+
+
+                define("DB_HOST",  $host);
+                define("DB_DATABASE", $DBname);
+                define("DB_USER",  $user);
+                define("DB_PASSWORD", $password);
+                define("DB_PREFIX", "");
+
+                //its connection details
+            }
+            else if($tag == "mysql"){
+              //Get details for the database
+                $host = $credentials->host;
+                $DBname = $credentials->databaseName;
+                $user = $credentials->username;
+                $password = $credentials->password;
+                $charSet = "utf8";
+                $collation = "utf8_unicode_ci";
+
+                define("DB_HOST",  $host);
+                define("DB_DATABASE", $DBname);
+                define("DB_USER",  $user);
+                define("DB_PASSWORD", $password);
+                define("DB_CHARSET", $charSet);
+                define("DB_COLLATION", $collation);
+                define("DB_PREFIX", "");
+
+                //its connection to mysql
+
+                $con =mysql_connect(DB_HOST, DB_USER, DB_PASSWORD);
+                // Check connection
+                if (!$con) {
+                    die('Failed to connect to MySQL: ' . mysql_error());
+                }
+                // selecting database
+                mysql_select_db(DB_DATABASE);
+                $ListOfTables = mysql_query("show tables from ".DB_DATABASE); // run the query and assign the result to $result
+
+                //geting the tables
+
+                if($ListOfTables)
+                {
+
+                    $i=0;$j=0;
+                    while($table = mysql_fetch_array($ListOfTables))
+                    { $i++;
+
+                        $ListOfColumns = mysql_query("SHOW COLUMNS FROM ".$table[0]);
+                        $tableNames["table".$i]=$table[0];
+                        while($column = mysql_fetch_array($ListOfColumns))
+                        {
+                            $j++;
+
+
+                            $response["table".$i]["column".$j]=$column['Field'];
+                        }
+
+                    }
+                   // return View::make('form.importation_mapping', compact('response','tableNames','formData'));
+                    return View::make('form.databaseTables',compact('tableNames','response'));
+
+                }
+                else{
+                    $response["error"] = 0;
+                    $response["error_msg"] = "error in getting database";
+                    echo json_encode($response);
+                }
+            }
+            else if($tag == "pgsql"){
+                //Get details for the database
+                $host = $credentials->host;
+                $DBname = $credentials->databaseName;
+                $user = $credentials->username;
+                $password = $credentials->password;
+                $charSet = "utf8";
+                $schema = "public";
+
+                define("DB_HOST",  $host);
+                define("DB_DATABASE", $DBname);
+                define("DB_USER",  $user);
+                define("DB_PASSWORD", $password);
+                define("DB_CHARSET", $charSet);
+                define("DB_SCHEMA", $schema);
+                define("DB_PREFIX", "");
+
+                //its connection details
+            }
+
+
+        }
+        return View::make('form.databaseTables',compact('tableNames','response'));
+
     }
 
     /**

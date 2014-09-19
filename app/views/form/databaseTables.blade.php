@@ -5,14 +5,14 @@
     <div class="col-lg-6 col-md-offset-2 ">
         <section class="panel panel-success">
             <header class="panel-heading">
-                List of Database For Mapping
-
+                List of Database for mapping with the form
             </header>
-         <form class="form-horizontal" id="default" method="post" action="{{ url('formDatabase/add') }}">
+         <form class="form-horizontal" id="default" method="post" action="{{ url('formDatabase/1') }}">
+             <?php $i=1;?>
             @foreach($tableNames as $key=>$table)
             <br>
             <br>
-            <fieldset><legend>{{ $table }}</legend>
+            <fieldset><legend>{{ $table }}</legend><input type="checkbox" value="{{$key}} name"check"{{$i++}}>
 
                 @foreach($response[$key] as $option)
 

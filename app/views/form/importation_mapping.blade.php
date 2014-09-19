@@ -10,7 +10,7 @@
                     New Form<i class="fa fa-plus"></i>
                 </a>
             </header>
-            <form class="form-horizontal" id="default" method="post" action="{{ url('formMapping/add') }}">
+            <form class="form-horizontal" id="default" method="post" action="{{ url('formMapping/{$formData->form->id}') }}">
             @foreach($tableNames as $key=>$table)
             <br>
             <br>
