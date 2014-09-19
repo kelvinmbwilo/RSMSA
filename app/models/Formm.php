@@ -15,7 +15,9 @@ class Formm extends Eloquent {
     public function formData(){
         return $this->hasMany('FormData', 'formId', 'id');
     }
-
+    public function form(){
+        return $this->hasMany('Import', 'formId', 'id');
+    }
 
 }
 
