@@ -20,7 +20,7 @@
                         @endforeach
                     </select>
                 </div>
-                {{ Form::submit('Select', array('class' => 'btn pull-right btn-info')) }}
+                {{ Form::submit('Insert', array('class' => 'btn pull-right btn-info')) }}
                 {{ Form::close() }}
 
                 @if ($errors->any())
@@ -29,6 +29,11 @@
                 </ul>
                 @endif
             </div>
+            <form class="form" action='{{url("databaseCredentials")}}' method="get">
+
+                {{ Form::submit('Import', array('class' => 'btn pull-right btn-info')) }}
+
+            </form>
 </section>
 
 @stop

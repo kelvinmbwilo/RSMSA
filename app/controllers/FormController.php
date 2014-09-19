@@ -62,7 +62,7 @@ class FormController extends \BaseController {
         return View::make('form.createForm',compact('fom'));
     }
 
-    /**
+        /**
      * Display the specified resource.
      *
      *
@@ -74,6 +74,39 @@ class FormController extends \BaseController {
         $formData = FormData::where("formId",Input::get('select'))->get();
         return View::make('form.formDetails',compact('formData','formD'));
     }
+    /**
+     * Display the specified resource.
+     *
+     *
+     * @return Response
+     */
+    public function databaseCredentials()
+    {
+        return View::make('form.databaseCredentials');
+    }
+
+    /**
+     * Display the specified resource.
+     *
+     *
+     * @return Response
+     */
+    public function storeDatabaseCredentials()
+    {
+       DatabaseCredentials::create(array(
+            'databaseType' => Input::get('type'),
+            'databaseName' =>Input::get('name'),
+            'host' =>Input::get('host'),
+            'username' =>Input::get('username'),
+            'password' =>Input::get('password'),
+            'charset' => Input::get('charset'),
+            'prefix' => Input::get('prefix'),
+            'schema' => Input::get('schema'),
+            'port' => Input::get('port'),
+        ));
+        return View::make('form.databaseCredentials');
+    }
+
 
     /**
      * process the specified resource.

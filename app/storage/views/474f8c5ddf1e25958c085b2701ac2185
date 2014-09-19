@@ -19,7 +19,7 @@
                         <?php endforeach; ?>
                     </select>
                 </div>
-                <?php echo Form::submit('Select', array('class' => 'btn pull-right btn-info')); ?>
+                <?php echo Form::submit('Insert', array('class' => 'btn pull-right btn-info')); ?>
 
                 <?php echo Form::close(); ?>
 
@@ -31,6 +31,12 @@
                 </ul>
                 <?php endif; ?>
             </div>
+            <form class="form" action='<?php echo url("databaseCredentials"); ?>' method="get">
+
+                <?php echo Form::submit('Import', array('class' => 'btn pull-right btn-info')); ?>
+
+
+            </form>
 </section>
 
 <?php $__env->stopSection(); ?>
