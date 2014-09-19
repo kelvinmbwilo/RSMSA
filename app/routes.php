@@ -218,6 +218,8 @@ Route::post('data_table/delete/{id}', array('uses' => 'DataTableController@destr
 /***************************************************************/
 Route::get('form', array('uses' => 'FormController@index')); //display a list of form
 Route::get('form_creation', array('uses' => 'FormController@show')); //display a list of form to input data
+Route::get('databaseCredentials', array('uses' => 'FormController@databaseCredentials')); //display a list of form to input data
+Route::post('databaseCredentials', array('uses' => 'FormController@storeDatabaseCredentials')); //process a list of form to input data
 Route::get('form_viewing/{id}', array('uses' => 'DataController@viewtable')); //display a list of form to input data
 Route::post('form_creation', array('uses' => 'FormController@showDetails')); //display a list of form to input data
 Route::post('form_processing', array('uses' => 'DataController@store')); //display a list of form to input data
