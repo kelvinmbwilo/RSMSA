@@ -16,6 +16,7 @@
 
                 <br>
                 <fieldset><legend><?php echo $formDetails->dataForm->name; ?></legend>
+                  <?php if( $formDetails->dataForm->hasReference == "false"): ?>
                    <?php foreach($formDetails->dataForm->options as $option): ?>
 
                     <div class="form-group">
@@ -31,6 +32,25 @@
                         <?php endif; ?>
                     </div>
                    <?php endforeach; ?>
+                 <?php endif; ?>
+
+                    <?php if( $formDetails->dataForm->hasReference == "true"): ?>
+                    <?php foreach($formDetails->dataForm->options as $option): ?>
+
+                    <div class="form-group">
+                        <label for="option<?php echo $option->options->id; ?>"><?php echo $option->options->name; ?></label>
+                        <?php if(count($option->options->categoryOptions) !== 0): ?>
+                        <select class="form-control" name="<?php echo $option->data->id; ?>_option_<?php echo $option->options->id; ?>">
+                            <?php foreach($option->options->categoryOptions as $category): ?>
+                            <option value="<?php echo $category->category->id; ?>" ><?php echo $category->category->name; ?></option>
+                            <?php endforeach; ?>
+                        </select>
+                        <?php else: ?>
+                        <input type="text" name="<?php echo $option->data->id; ?>_option_<?php echo $option->options->id; ?>" class="form-control" id="exampleInputEmail1" placeholder="<?php echo $option->options->name; ?>">
+                        <?php endif; ?>
+                    </div>
+                    <?php endforeach; ?>
+                    <?php endif; ?>
                 </fieldset>
             <?php endforeach; ?>
 

@@ -36,6 +36,7 @@
                 {{ Form::select('reference',array('0'=>'No reference')+Reference::orderBy('id','ASC')->get()->lists('name','id'),$dataRef->referenceData->id,array('class'=>'form-control')) }}
             </div>
         </div>
+
         <script>
             $(document).ready(function(){
                 $('.my-select').multiSelect();
