@@ -19,6 +19,7 @@ class CreateImportFormMappingTable extends Migration {
             $table->string('databaseColumn');
             $table->integer('databaseCredentialsId');
             $table->integer('optionsId');
+            $table->integer('formId');
             $table->timestamps();
         });
     }

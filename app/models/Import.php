@@ -20,6 +20,10 @@ class Import extends Eloquent {
     {
         return $this->belongsTo('Options', 'optionsId', 'id');
     }
+    public function forms()
+    {
+        return $this->belongsTo('Formm', 'formId', 'id');
+    }
 
 }
 
