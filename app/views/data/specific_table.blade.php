@@ -25,10 +25,10 @@
                     <tr>
                         <th>#</th>
                         @foreach($form_head as $formData)
-                        @if($formData)
+                        @if($formData->dataForm)
 
                           @foreach($formData->dataForm->options as $dataDetails)
-                          <th>{{$dataDetails->data->name}}-{{$dataDetails->options->name}}</th>
+                          <th>@if($dataDetails->data){{$dataDetails->data->name}}-{{$dataDetails->options->name}}@endif</th>
 
                           @endforeach
                         @endif
@@ -38,6 +38,7 @@
                     </thead>
                     <tbody>
                     <?php $i=1;?>
+                    @if($dataTag)
                     @foreach($dataTag as $tag)
                     <tr>
                         <td>{{$i++}}</td>
@@ -48,6 +49,7 @@
                         @endforeach
                     </tr>
                     @endforeach
+                    @endif
                     </tbody>
                 </table>
 

@@ -113,7 +113,7 @@ class DataTableController extends \BaseController {
     public function update($id)
     {   $data=Data::find($id);
         $dataRef=DataReference::where("dataId",$data->id)->first();
-       
+
         $dataRef->save();
 
         $data_option = DataOptions::where("dataId",$data->id)->get();

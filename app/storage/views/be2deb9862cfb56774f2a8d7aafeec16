@@ -25,10 +25,10 @@
                     <tr>
                         <th>#</th>
                         <?php foreach($form_head as $formData): ?>
-                        <?php if($formData): ?>
+                        <?php if($formData->dataForm): ?>
 
                           <?php foreach($formData->dataForm->options as $dataDetails): ?>
-                          <th><?php echo $dataDetails->data->name; ?>-<?php echo $dataDetails->options->name; ?></th>
+                          <th><?php if($dataDetails->data): ?><?php echo $dataDetails->data->name; ?>-<?php echo $dataDetails->options->name; ?><?php endif; ?></th>
 
                           <?php endforeach; ?>
                         <?php endif; ?>
@@ -38,6 +38,7 @@
                     </thead>
                     <tbody>
                     <?php $i=1;?>
+                    <?php if($dataTag): ?>
                     <?php foreach($dataTag as $tag): ?>
                     <tr>
                         <td><?php echo $i++; ?></td>
@@ -48,6 +49,7 @@
                         <?php endforeach; ?>
                     </tr>
                     <?php endforeach; ?>
+                    <?php endif; ?>
                     </tbody>
                 </table>
 
