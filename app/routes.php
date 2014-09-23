@@ -226,6 +226,7 @@ Route::post('databaseCredentials', array('uses' => 'FormController@storeDatabase
 Route::get('form_viewing/{id}', array('uses' => 'DataController@viewtable')); //display a list of form to input data
 Route::post('form_creation', array('uses' => 'FormController@showDetails')); //display a list of form to input data
 Route::post('form_processing', array('uses' => 'DataController@store')); //display a list of form to input data
+Route::post('importData', array('uses' => 'FormController@DataImportation')); //display a list of form to input data
 Route::get('form/add', array('uses' => 'FormController@create')); //display a form to create new form
 Route::post('form/add', array('uses' => 'FormController@store')); //process a form to create new form
 Route::get('form/edit/{id}', array('uses' => 'FormController@edit')); //display a form to update a form

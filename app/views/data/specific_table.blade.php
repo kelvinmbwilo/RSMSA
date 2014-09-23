@@ -17,6 +17,12 @@
         <div class="col-lg-12">
             <header class="panel-heading ">
                {{ $form_name->name }} Form
+                @if(isset($msg))
+                <div class="alert alert-success fade in" role="alert">
+                    <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">x</span><span class="sr-only">Close</span></button>
+                    <strong>{{ $msg }}</strong>
+                </div>
+                @endif
             </header>
             <section id="unseen">
 

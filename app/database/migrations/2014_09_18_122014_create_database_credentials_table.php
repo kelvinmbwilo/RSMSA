@@ -24,6 +24,7 @@ class CreateDatabaseCredentialsTable extends Migration {
             $table->string('prefix');
             $table->string('schema');
             $table->integer('port');
+            $table->integer('formId');
             $table->timestamps();
         });
     }

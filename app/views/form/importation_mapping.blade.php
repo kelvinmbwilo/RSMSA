@@ -6,31 +6,30 @@
         <section class="panel panel-success">
             <header class="panel-heading">
                 Importation Form Mapping
-                <a class="btn btn-success pull-right btn-xs" href="{{ url('form/add') }}">
-                    New Form<i class="fa fa-plus"></i>
-                </a>
+
             </header>
-            <form class="form-horizontal" id="default" method="post" action="{{ url('formMapping/{$formData->form->id}') }}">
+            <form class="form-horizontal" id="default" method="post" action='{{ url("formMapping/{$formName->id}") }}'>
             @foreach($tableNames as $key=>$table)
             <br>
             <br>
               <fieldset><legend>{{ $table }}</legend>
-
+                  <input type="hidden" class="form-control" value="{{ $table }}" name="table_name[]">
               @foreach($response[$key] as $option)
-
+                  <input type="hidden" class="form-control" value="{{ $option }}" name="{{$table}}_option_name[]">
                 <div class="form-group">
                     <div class="form-group">
                <label>{{$option}}:</label>
 
-               <select class="form-control col-lg-6" name="{{ $table}}_columns}}">
-                   <option id="0">No mapping required</option>
+               <select class="form-control col-lg-6" name="{{$option}}_columns">
+                   <option value="0">No mapping required</option>
+                   <?php $j=0?>
                   @foreach($formData as $formDetails)
 
-                        @foreach($formDetails->dataForm->options as $option)
+
+                   @foreach($formDetails->dataForm->options as $option)
 
 
-                                <option id="option{{ $option->options->id }}">{{ $option->options->name }}</option>
-
+                                <option value="{{ $option->options->id }}">{{ $option->options->name }}</option>
 
 
 

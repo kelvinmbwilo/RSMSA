@@ -33,10 +33,15 @@
                 </div>
                 <div class="form-group">
                     <div class="col-md-6">Port<br><input type="text"  name= "port" class="form-control"/></div>
-                    <div class="col-md-6"><br></div>
+                    <div class="col-md-6"></div>
                 </div>
                 <div class="form-group">
-                    <div class="col-md-6"><br></div>
+                    <div class="col-md-6">Form Name<select name="formName" class="form-control col-md-5">
+                       <?php $formDetails=Formm::all(); ?>
+                        @foreach($formDetails as $form )
+                        <option value="{{ $form->id }}">{{ $form->name }}</option>
+                        @endforeach
+                    </select></div>
                     <div class="col-md-6"><br></div>
                 </div>
 <!---->

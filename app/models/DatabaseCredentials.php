@@ -12,8 +12,9 @@ class DatabaseCredentials extends Eloquent {
 
     protected  $guarded = array('$id');
 
-    public function credentials(){
-        return $this->hasMany('Import', 'databaseCredentialsId', 'id');
+    public function form()
+    {
+        return $this->belongsTo('Formm', 'formId', 'id');
     }
 
 

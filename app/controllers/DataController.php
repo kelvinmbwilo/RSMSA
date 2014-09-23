@@ -25,65 +25,16 @@ class DataController extends \BaseController {
     public function viewtable($id){
 
 
-        $formData=FormData::where("formId",$id)->get();;
-        //Get details for the database
-        $host = "localhost";
-        $DBname = "psms";
-        $user = "root";
-        $password = "";
-        $charSet = "utf8";
-        $collation = "utf8_unicode_ci";
 
-        define("DB_HOST",  $host);
-        define("DB_DATABASE", $DBname);
-        define("DB_USER",  $user);
-        define("DB_PASSWORD", $password);
-        define("DB_CHARSET", $charSet);
-        define("DB_COLLATION", $collation);
-        define("DB_PREFIX", "");
-
-        //its connection to mysql
-
-        $con =mysql_connect(DB_HOST, DB_USER, DB_PASSWORD);
-        // Check connection
-        if (!$con) {
-            die('Failed to connect to MySQL: ' . mysql_error());
-        }
-        // selecting database
-        mysql_select_db(DB_DATABASE);
-        $ListOfTables = mysql_query("show tables from ".DB_DATABASE); // run the query and assign the result to $result
-
-        //geting the tables
+        $form_name = Formm::find($id);
+        $dataTag = DataTag::where("tableId",$form_name->id)->get();
+        $form_details = Records::where("formDataId",$form_name->id)->get();
+        $form_head =FormData::where("formId",$form_name->id)->get();
 
 
-       // $response["success"] = 1;
-        $i=0;$j=0;
-        while($table = mysql_fetch_array($ListOfTables))
-        { $i++;
-
-            $ListOfColumns = mysql_query("SHOW COLUMNS FROM ".$table[0]);
-            $tableNames["table".$i]=$table[0];
-            while($column = mysql_fetch_array($ListOfColumns))
-            {
-                $j++;
 
 
-                $response["table".$i]["column".$j]=$column['Field'];
-            }
-
-        }
-
-
-        return View::make('form.importation_mapping', compact('response','tableNames','formData'));
-
-//        $form_name = Formm::find($id);
-//        $dataTag = DataTag::where("tableId",$form_name->id)->get();
-//        $form_details = Records::where("formDataId",$form_name->id)->get();
-//        $form_head =FormData::where("formId",$form_name->id)->get();
-//
-//
-//
-//      return View::make('data.specific_table', compact('form_name','form_details','dataTag','form_head'));
+      return View::make('data.specific_table', compact('form_name','form_details','dataTag','form_head'));
 
     }
 

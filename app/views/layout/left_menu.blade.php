@@ -36,6 +36,15 @@
                 <li><a  href="{{ url('location/') }}">Administrative Units</a></li>
                 <li><a  href="{{ url('location/levels') }}">Administrative Levels</a></li>
             </ul>
+        </li>   <li class="sub-menu">
+            <a href="javascript:;" >
+                <i class="fa fa-cogs"></i>
+                <span>Data Importation</span>
+            </a>
+            <ul class="sub">
+                <li><a  href="{{url('databaseCredentials')}}">Script</a></li>
+                <li><a  href="#">Excel</a></li>
+            </ul>
         </li>
 
         <!--multi level menu start-->

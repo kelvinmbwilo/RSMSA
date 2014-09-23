@@ -15,10 +15,11 @@ class CreateImportFormMappingTable extends Migration {
         Schema::create('rsmsa_import_form_mapping', function(Blueprint $table)
         {
             $table->increments('id');
+            $table->string('databaseName');
             $table->string('tableName');
             $table->string('databaseColumn');
-            $table->integer('databaseCredentialsId');
             $table->integer('optionsId');
+            $table->integer('dataId');
             $table->integer('formId');
             $table->timestamps();
         });
