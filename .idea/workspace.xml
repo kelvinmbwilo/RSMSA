@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6662a4ad-95fa-4dcf-82ca-d6bee230b9f9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/views/6f4b189ab4486f4f00ef071e0d9c5247" afterPath="$PROJECT_DIR$/app/storage/views/6f4b189ab4486f4f00ef071e0d9c5247" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/form/createForm.blade.php" afterPath="$PROJECT_DIR$/app/views/form/createForm.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layout/left_menu.blade.php" afterPath="$PROJECT_DIR$/app/views/layout/left_menu.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/style.css" afterPath="$PROJECT_DIR$/public/css/style.css" />
     </list>
     <ignored path="RSMSA.iws" />
     <ignored path=".idea/workspace.xml" />

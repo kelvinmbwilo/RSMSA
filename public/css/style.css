@@ -59,7 +59,7 @@ a, a:hover, a:focus {
     margin: 0;
     padding:20px 15px;
     text-align: center;
-    background: #258525;
+    background: #084408;
     border-radius: 5px 5px 0 0;
     -webkit-border-radius: 5px 5px 0 0;
     color: #fff;
@@ -101,6 +101,7 @@ a, a:hover, a:focus {
 
 .form-signin .btn-login {
     background: #258525;
+	background: #084408;
     color: #fff;
     text-transform: uppercase;
     font-weight: 300;
@@ -169,7 +170,7 @@ a, a:hover, a:focus {
     width: 210px;
     height: 100%;
     position: fixed;
-    background: #258525;
+    background: #084408;
 }
 
 #sidebar ul li {
@@ -343,7 +344,7 @@ ul.sidebar-menu li a.active i {
 }
 
 .white-bg {
-    background: #258525;
+    background: #084408;
     border-bottom: 1px solid #f1f2f7;
 }
 
