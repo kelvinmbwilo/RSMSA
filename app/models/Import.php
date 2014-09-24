@@ -12,15 +12,11 @@ class Import extends Eloquent {
 
     protected  $guarded = array('$id');
 
-    public function credentials(){
-        return $this->belongsTo('DatabaseCredentials', 'databaseCredentialsId', 'id');
-    }
-
-    public function options()
+   public function options()
     {
         return $this->belongsTo('Options', 'optionsId', 'id');
     }
-    public function forms()
+    public function formDetails()
     {
         return $this->belongsTo('Formm', 'formId', 'id');
     }

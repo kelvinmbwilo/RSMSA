@@ -10,34 +10,58 @@
 
 
 
-<section class="wrapper">
+<section class="panel panel-success">
 
-    <div class="row">
-
-        <div class="col-lg-12">
-            <header class="panel-heading ">
+          <div class="col-lg-11">
+            <header class="panel-heading panel-success ">
                {{ $form_name->name }} Form
+                <a class="btn btn-success btn-xs pull-right" href='{{ url("form") }}'>
+                    back to list <i class="fa fa-list"></i>
+                </a>
+                @if(isset($msg))
+                <div class="alert alert-success fade in" role="alert">
+                    <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">x</span><span class="sr-only">Close</span></button>
+                    <strong>{{ $msg }}</strong>
+                </div>
+                @endif
+
             </header>
+            <div class="panel-body">
             <section id="unseen">
 
                 <table class="table table-bordered table-striped table-condensed " id="dynamic-table">
                     <thead>
+
+
                     <tr>
                         <th>#</th>
-                        @foreach($form_head as $formData)
-                        @if($formData)
+                        @if($symbol=="0")
+                        @foreach($form_head1 as $formData)
 
-                          @foreach($formData->dataForm->options as $dataDetails)
-                          <th>{{$dataDetails->data->name}}-{{$dataDetails->options->name}}</th>
+                        <?php $option=Options::find($formData->optionsId); ?>
+                        <th>{{ $form_name->name }}-{{$option->name}}</th>
 
-                          @endforeach
+                        @endforeach
+                        @endif
+                        @if($symbol=="1")
+                        @foreach($form_head2 as $formData)
+
+                        @if($formData->dataForm)
+
+                        @foreach($formData->dataForm->options as $dataDetails)
+                        <th>@if($dataDetails->data){{$dataDetails->data->name}}-{{$dataDetails->options->name}}@endif</th>
+
+                        @endforeach
                         @endif
                         @endforeach
-
+                        @endif
                     </tr>
+
+
                     </thead>
                     <tbody>
                     <?php $i=1;?>
+                    @if($dataTag)
                     @foreach($dataTag as $tag)
                     <tr>
                         <td>{{$i++}}</td>
@@ -48,6 +72,7 @@
                         @endforeach
                     </tr>
                     @endforeach
+                    @endif
                     </tbody>
                 </table>
 

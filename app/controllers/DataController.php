@@ -24,14 +24,18 @@ class DataController extends \BaseController {
      */
     public function viewtable($id){
 
+
+
         $form_name = Formm::find($id);
         $dataTag = DataTag::where("tableId",$form_name->id)->get();
         $form_details = Records::where("formDataId",$form_name->id)->get();
-        $form_head =FormData::where("formId",$form_name->id)->get();
+        $form_head2 =FormData::where("formId",$form_name->id)->get();
+        $symbol="1";
 
 
 
-      return View::make('data.specific_table', compact('form_name','form_details','dataTag','form_head'));
+
+      return View::make('data.specific_table', compact('form_name','form_details','dataTag','form_head2','symbol'));
 
     }
 

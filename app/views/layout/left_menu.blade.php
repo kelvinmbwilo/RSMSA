@@ -36,6 +36,15 @@
                 <li><a  href="{{ url('location/') }}">Administrative Units</a></li>
                 <li><a  href="{{ url('location/levels') }}">Administrative Levels</a></li>
             </ul>
+        </li>   <li class="sub-menu">
+            <a href="javascript:;" >
+                <i class="fa fa-cogs"></i>
+                <span>Data Importation</span>
+            </a>
+            <ul class="sub">
+                <li><a  href="{{url('databaseCredentials')}}">Script</a></li>
+                <li><a  href="#">Excel</a></li>
+            </ul>
         </li>
 
         <!--multi level menu start-->
@@ -46,7 +55,7 @@
             </a>
             <ul class="sub">
                 <li><a  href="{{ url('form') }}">Form Management</a></li>
-                <li><a  href="{{ url('form_creation') }}">Data Entry</a></li>
+                <li><a  href="{{ url('form_creation') }}">Form Creation</a></li>
                 <li><a  href="{{ url('dataTable') }}">Data Management</a></li>
                 <li><a  href="{{ url('mapping') }}">Data Mapping Management</a></li>
                 <li><a  href="{{ url('option') }}">Option Management</a></li>
@@ -54,36 +63,8 @@
 
             </ul>
         </li>
-        <!--multi level menu end-->
+       
 
-        <li class="sub-menu">
-            <a href="javascript:;" >
-                <i class="fa fa-cogs"></i>
-                <span>Records</span>
-            </a>
-            <ul class="sub">
-                <li><a  href="{{ url('data/home') }}">View</a></li>
-                <li><a  href="{{ url('data/add') }}">Add</a></li>
-                <?php
-                    $table = TableName::all();
-                    foreach($table as $tbl){
-                        ?>
-                        <li><a  href='{{ url("data/view/{$tbl->id}") }}'>{{ $tbl->categoryName }}</a></li>
-                    <?php
-                    }
-                ?>
-            </ul>
-        </li>
-        <li class="sub-menu">
-            <a href="javascript:;" >
-                <i class="fa fa-book"></i>
-                <span>Trial</span>
-            </a>
-            <ul class="sub">
-
-                <li><a  href="{{ url('table_name') }}">Data Table Management</a></li>
-             </ul>
-        </li>
         <li>
             <a  href="{{ url('user') }}">
                 <i class="fa fa-user"></i>
