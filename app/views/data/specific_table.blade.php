@@ -12,10 +12,10 @@
 
 <section class="wrapper">
 
-    <div class="row">
+
 
         <div class="col-lg-12">
-            <header class="panel-heading ">
+            <header class="panel-heading panel-success ">
                {{ $form_name->name }} Form
                 @if(isset($msg))
                 <div class="alert alert-success fade in" role="alert">
@@ -24,6 +24,7 @@
                 </div>
                 @endif
             </header>
+            <div class="panel-body">
             <section id="unseen">
 
                 <table class="table table-bordered table-striped table-condensed " id="dynamic-table">
@@ -31,15 +32,11 @@
                     <tr>
                         <th>#</th>
                         @foreach($form_head as $formData)
-                        @if($formData->dataForm)
-
-                          @foreach($formData->dataForm->options as $dataDetails)
-                          <th>@if($dataDetails->data){{$dataDetails->data->name}}-{{$dataDetails->options->name}}@endif</th>
-
-                          @endforeach
-                        @endif
-                        @endforeach
-
+                        @if($formData)
+                        <?php $option=Options::find($formData->optionsId); ?>
+                          <th>{{ $form_name->name }}-{{$option->name}}</th>
+                         @endif
+                         @endforeach
                     </tr>
                     </thead>
                     <tbody>

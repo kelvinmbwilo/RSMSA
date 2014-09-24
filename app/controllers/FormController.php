@@ -569,7 +569,7 @@ class FormController extends \BaseController {
                     $form_name = Formm::find(Input::get('formName'));
                     $dataTag = DataTag::where("tableId",$form_name->id)->get();
                     $form_details = Records::where("formDataId",$form_name->id)->get();
-                    $form_head =FormData::where("formId",$form_name->id)->get();
+                    $form_head =Import::where("formId",$form_name->id)->get();
 
 
 

@@ -12,10 +12,10 @@
 
 <section class="wrapper">
 
-    <div class="row">
+
 
         <div class="col-lg-12">
-            <header class="panel-heading ">
+            <header class="panel-heading panel-success ">
                <?php echo $form_name->name; ?> Form
                 <?php if(isset($msg)): ?>
                 <div class="alert alert-success fade in" role="alert">
@@ -24,6 +24,7 @@
                 </div>
                 <?php endif; ?>
             </header>
+            <div class="panel-body">
             <section id="unseen">
 
                 <table class="table table-bordered table-striped table-condensed " id="dynamic-table">
@@ -31,15 +32,11 @@
                     <tr>
                         <th>#</th>
                         <?php foreach($form_head as $formData): ?>
-                        <?php if($formData->dataForm): ?>
-
-                          <?php foreach($formData->dataForm->options as $dataDetails): ?>
-                          <th><?php if($dataDetails->data): ?><?php echo $dataDetails->data->name; ?>-<?php echo $dataDetails->options->name; ?><?php endif; ?></th>
-
-                          <?php endforeach; ?>
-                        <?php endif; ?>
-                        <?php endforeach; ?>
-
+                        <?php if($formData): ?>
+                        <?php $option=Options::find($formData->optionsId); ?>
+                          <th><?php echo $form_name->name; ?>-<?php echo $option->name; ?></th>
+                         <?php endif; ?>
+                         <?php endforeach; ?>
                     </tr>
                     </thead>
                     <tbody>
