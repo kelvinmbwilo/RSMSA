@@ -46,7 +46,7 @@
             </a>
             <ul class="sub">
                 <li><a  href="{{ url('form') }}">Form Management</a></li>
-                <li><a  href="{{ url('form_creation') }}">Form Creation</a></li>
+                <li><a  href="{{ url('form_creation') }}">Data Entry</a></li>
                 <li><a  href="{{ url('dataTable') }}">Data Management</a></li>
                 <li><a  href="{{ url('mapping') }}">Data Mapping Management</a></li>
                 <li><a  href="{{ url('option') }}">Option Management</a></li>

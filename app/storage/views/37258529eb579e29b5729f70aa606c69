@@ -10,13 +10,12 @@
 
 <?php $__env->startSection('contents'); ?>
 
-<!--main content start-->
-<section class="wrapper">
     <!-- page start-->
     <div class="row">
         <div class="col-lg-12">
-            <section class="panel">
+            <section class="panel panel-success">
                 <header class="panel-heading">
+                    Stakeholders Branches
                 </header>
 
                 <div class="panel-body">
@@ -24,22 +23,24 @@
                         <table id="dynamic-table" class="table table-bordered table-striped table-condensed">
                             <thead>
                             <tr>
-                                <th>Code</th>
+                                <th>#</th>
                                 <th>Branch Name</th>
                                 <th>Stakeholder</th>
-                                <th class="numeric">Created</th>
-                                <th class="numeric">Updated</th>
+                                <th>phone Number</th>
+                                <th>Email</th>
+                                <th>Address</th>
                             </tr>
                             </thead>
                             <tbody>
+                            <?php $i=1; ?>
                             <?php foreach($stakeHolderBranch as $stakeHolderBranch): ?>
                             <tr>
-                                <td>AAC</td>
+                                <td><?php echo $i++; ?></td>
                                 <td><?php echo $stakeHolderBranch->name; ?></td>
-                                <td><?php echo $stakeHolderBranch->stakeholder->name; ?></td>
-                                <td class="numeric"><?php echo $stakeHolderBranch->created_at; ?></td>
-                                <td class="numeric"><?php echo $stakeHolderBranch->updated_at; ?></td>
-
+                                <td><?php if($stakeHolderBranch->stakeholder): ?><?php echo $stakeHolderBranch->stakeholder->name; ?><?php endif; ?></td>
+                                <td><?php echo $stakeHolderBranch->phoneNumber; ?></td>
+                                <td><?php echo $stakeHolderBranch->email; ?></td>
+                                <td><?php echo $stakeHolderBranch->address; ?></td>
                             </tr>
                             <?php endforeach; ?>
                             </tbody>
@@ -50,8 +51,6 @@
         </div>
 
     </div>
-    <!-- page end-->
-</section>
 
 <!--script for this page-->
 
