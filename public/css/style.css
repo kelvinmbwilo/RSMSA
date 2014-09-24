@@ -9,8 +9,8 @@ Website: http://thevectorlab.net/
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic);
 
 body {
-    color: #797979;
-    background: #f1f2f7;
+    color: #302121;
+    background: ;
     font-family: 'Open Sans', sans-serif;
     padding: 0px !important;
     margin: 0px !important;
@@ -47,8 +47,9 @@ a, a:hover, a:focus {
 }
 
 .form-signin {
-    max-width: 330px;
+    max-width: 660px;
     margin: 100px auto 0;
+    margin-top: 150px;
     background: #fff;
     border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -58,7 +59,7 @@ a, a:hover, a:focus {
     margin: 0;
     padding:20px 15px;
     text-align: center;
-    background: #41cac0;
+    background: #258525;
     border-radius: 5px 5px 0 0;
     -webkit-border-radius: 5px 5px 0 0;
     color: #fff;
@@ -99,12 +100,12 @@ a, a:hover, a:focus {
 }
 
 .form-signin .btn-login {
-    background: #f67a6e;
+    background: #258525;
     color: #fff;
     text-transform: uppercase;
     font-weight: 300;
     font-family: 'Open Sans', sans-serif;
-    box-shadow: 0 4px #e56b60;
+    box-shadow: 0 4px #ffffff;
     margin-bottom: 20px;
 }
 
@@ -342,7 +343,7 @@ ul.sidebar-menu li a.active i {
 }
 
 .white-bg {
-    background: #fff;
+    background: #258525;
     border-bottom: 1px solid #f1f2f7;
 }
 
@@ -355,7 +356,7 @@ ul.sidebar-menu li a.active i {
 
 a.logo {
     font-size: 21px;
-    color: #2e2e2e;
+    color: #F8EDED;
     float: left;
     margin-top: 15px;
     text-transform: uppercase;
@@ -391,11 +392,11 @@ a.logo span {
 }
 
 ul.top-menu > li > a {
-    color: #666666;
+    color: #FFFFFF;
     font-size: 16px;
     border-radius: 4px;
     -webkit-border-radius: 4px;
-    border:1px solid #f0f0f8 !important;
+    /*border:1px solid #f0f0f8 !important;*/
     padding: 2px 6px;
     margin-right: 15px;
 }
@@ -593,7 +594,7 @@ ul.top-menu > li > a:hover, ul.top-menu > li > a:focus {
 
 .top-nav .username {
     font-size: 13px;
-    color: #099009;
+    color: #FFFFFF;
 }
 
 .top-nav ul.top-menu > li > a {

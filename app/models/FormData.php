@@ -18,7 +18,7 @@ class FormData extends Eloquent {
 
     public function form()
     {
-        return $this->belongsTo('Form', 'formId', 'id');
+        return $this->belongsTo('Formm', 'formId', 'id');
     }
 
 }

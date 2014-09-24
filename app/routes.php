@@ -173,3 +173,72 @@ Route::get('datatype/delete/{id}', array('uses'=>'DatatypeController@destroy'));
 Route::get('datatype/edit/{id}', array('uses'=>'DatatypeController@update')); //edit specific datatype
 Route::post('datatype/edit/{id}', array('uses'=>'DatatypeController@edit')); //process edited datatype
 Route::get('index', array('uses'=>'DatatypeController@index'));//displaying messages
+
+
+
+/***************************************************************/
+//***************** Category ***************************/
+/***************************************************************/
+Route::get('category', array('uses' => 'CategoryController@index')); //display a list of locations
+Route::get('category/add', array('uses' => 'CategoryController@create')); //display a form to create new location level
+Route::post('category/add', array('uses' => 'CategoryController@store')); //process a form to create new location level
+Route::get('category/edit/{id}', array('uses' => 'CategoryController@edit')); //display a form to update a level of location
+Route::post('category/edit/{id}', array('uses' => 'CategoryController@update')); //process a form to update a level of location
+Route::post('category/delete/{id}', array('uses' => 'CategoryController@destroy')); //delete a level of location
+
+
+/***************************************************************/
+//***************** Options ***************************/
+/***************************************************************/
+Route::get('option', array('uses' => 'OptionsController@index')); //display a list of locations
+Route::get('option/add', array('uses' => 'OptionsController@create')); //display a form to create new location level
+Route::post('option/add', array('uses' => 'OptionsController@store')); //process a form to create new location level
+Route::get('option/edit/{id}', array('uses' => 'OptionsController@edit')); //display a form to update a level of location
+Route::post('option/edit/{id}', array('uses' => 'OptionsController@update')); //process a form to update a level of location
+Route::post('option/delete/{id}', array('uses' => 'OptionsController@destroy')); //delete a level of location
+
+
+
+/***************************************************************/
+//*****************Data_table  ***************************/
+/***************************************************************/
+Route::get('dataTable', array('uses' => 'DataTableController@index')); //display a list of data tables
+Route::get('reference_mapping/{id}', array('uses' => 'DataTableController@mapping')); //display a list of data tables
+Route::post('reference_mapping/{id}', array('uses' => 'DataTableController@Store_mapping')); //display a list of data tables
+Route::get('data_table/add', array('uses' => 'DataTableController@create')); //display a form to create new data table
+Route::post('data_table/add', array('uses' => 'DataTableController@store')); //process a form to create new data table
+Route::get('data_table/edit/{id}', array('uses' => 'DataTableController@edit')); //display a form to update a data table
+Route::post('data_table/edit/{id}', array('uses' => 'DataTableController@update')); //process a form to update a data table
+Route::post('data_table/delete/{id}', array('uses' => 'DataTableController@destroy')); //delete a data table
+Route::post('dataTable/listReferenceDetails/{id}', array('uses' => 'DataTableController@listReferenceDetails')); //delete a data table
+
+
+
+/***************************************************************/
+//***************** form ****************************************/
+/***************************************************************/
+Route::get('form', array('uses' => 'FormController@index')); //display a list of form
+Route::get('form_creation', array('uses' => 'FormController@show')); //display a list of form to input data
+Route::get('databaseCredentials', array('uses' => 'FormController@databaseCredentials')); //display a list of form to input data
+Route::post('formDatabase/{id}', array('uses' => 'FormController@ListDatabaseDetails')); //process a list of form to input data
+Route::post('formMapping/{id}', array('uses' => 'FormController@processFormMapping')); //process a list of form to input data
+Route::post('databaseCredentials', array('uses' => 'FormController@storeDatabaseCredentials')); //process a list of form to input data
+Route::get('form_viewing/{id}', array('uses' => 'DataController@viewtable')); //display a list of form to input data
+Route::post('form_creation', array('uses' => 'FormController@showDetails')); //display a list of form to input data
+Route::post('form_processing', array('uses' => 'DataController@store')); //display a list of form to input data
+Route::post('importData', array('uses' => 'FormController@DataImportation')); //display a list of form to input data
+Route::get('form/add', array('uses' => 'FormController@create')); //display a form to create new form
+Route::post('form/add', array('uses' => 'FormController@store')); //process a form to create new form
+Route::get('form/edit/{id}', array('uses' => 'FormController@edit')); //display a form to update a form
+Route::post('form/edit/{id}', array('uses' => 'FormController@update')); //process a form to update a form
+Route::post('form/delete/{id}', array('uses' => 'FormController@destroy')); //delete a form
+
+
+
+/***************************************************************/
+//***************** data reference mapping ****************************************/
+/***************************************************************/
+Route::get('mapping', array('uses' => 'MappingController@index')); //display a list of data reference mapping
+Route::get('mapping/edit/{id}', array('uses' => 'MappingController@edit')); //display a form to update a data reference mapping
+Route::post('mapping/edit/{id}', array('uses' => 'MappingController@update')); //process a form to update a data reference mapping
+Route::post('mapping/delete/{id}', array('uses' => 'MappingController@destroy')); //delete a data reference mapping

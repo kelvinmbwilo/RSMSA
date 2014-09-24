@@ -12,13 +12,17 @@ class Records extends Eloquent {
 
     protected  $guarded = array('$id');
 
-    public function table()
+    public function formdetails()
     {
-        return $this->belongsTo('TableName', 'tableColumnId', 'id');
+        return $this->belongsTo('Formm', 'formDataId', 'id');
+    }
+    public function data()
+    {
+        return $this->belongsTo('Data', 'dataOptionId', 'id');
     }
 
-    public function column(){
-        return $this->belongsTo('Column', 'columnId', 'id');
+    public function option(){
+        return $this->belongsTo('Options', 'categoryOptionId', 'id');
     }
 
     public function location()

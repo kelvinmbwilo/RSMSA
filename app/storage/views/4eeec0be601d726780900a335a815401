@@ -1,0 +1,204 @@
+<?php $__env->startSection('contents'); ?>
+
+<link href="<?php echo asset('css/style.css'); ?>" rel="stylesheet">
+<link href="<?php echo asset('css/style-responsive.css'); ?>" rel="stylesheet" />
+
+
+        <div class="row">
+            <div class="col-lg-12">
+                <section class="panel panel-success">
+                    <header class="panel-heading panel-success">
+                        Form to complete registration of a Reference
+                    </header>
+                    <div class="panel-body">
+                        <div class="stepy-tab ">
+                            <ul id="default-titles" class="stepy-titles clearfix btn-xs">
+                                <li id="default-title-0" class="current-step">
+                                    <div>Reference</div>
+                                </li>
+                                <li id="default-title-1" class="">
+                                    <div>details</div>
+                                </li>
+                                <li id="default-title-2" class="">
+                                    <div>summary</div>
+                                </li>
+                            </ul>
+                        </div>
+                        <form class="form-horizontal" id="default" method="post" action="<?php echo url('reference/add'); ?>">
+                            <fieldset title="Reference" class="step" id="default-step-0">
+                                <legend> </legend>
+                                <div class="form-group">
+                                    <label class="col-lg-2 control-label">Reference Name</label>
+                                    <div class="col-lg-10">
+                                        <input type="text" class="form-control" placeholder="enter a Name" name="referenceName">
+                                    </div>
+                                </div>
+
+                            </fieldset>
+                            <fieldset title="details" class="step" id="default-step-1" >
+                                <legend> </legend>
+                                <div>
+                                <h4>Enter the columns of <span id="refName"></span>
+                                   <button class="btn-success btn btn-xs pull-right" id="addColumn">add column</button></h4>
+                                   <span class="text-danger" id="errorlebal"></span>
+                                    <div class="form-group">
+                                    <div class="col-md-5">
+                                        <input type="text" class="form-control input-sm columns" placeholder="category name" name="column1">
+                                    </div>
+                                      <div class="col-md-3">
+
+                                        <select name="data1" class="form-control">
+                                            <?php foreach(DataTypeDetails::all() as $data): ?>
+                                            <option value="<?php echo $data->id; ?>" id="option"><?php echo $data->name; ?></option>
+                                            <?php endforeach; ?>
+                                        </select>
+                                       </div>
+
+                                    </div>
+
+
+                                </div>
+                            </fieldset>
+
+
+
+                            </fieldset>
+
+                            <fieldset title="summary" class="step" id="default-step-2" >
+                                <legend> </legend>
+                                <div class="form-group">
+                                    <label class="col-lg-2 control-label">Reference Name</label>
+                                    <div class="col-lg-10">
+                                        <p class="form-control-static refName1">value of reference name</p>
+                                    </div>
+                                </div>
+                                <div id="checkings">
+
+                                </div>
+
+
+                            </fieldset>
+                            <input type="submit" class="finish btn btn-danger" value="Finish"/>
+                        </form>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+
+
+<script src="<?php echo asset('js/jquery.js'); ?>"></script>
+<script src="<?php echo asset('js/bootstrap.min.js'); ?>"></script>
+<script src="<?php echo asset('js/jquery.scrollTo.min.js'); ?>"></script>
+<script src="<?php echo asset('js/jquery.nicescroll.js'); ?>"></script>
+<script src="<?php echo asset('js/respond.min.js'); ?>"></script>
+<script src="<?php echo asset('js/jquery.stepy.js'); ?>"></script>
+
+
+<script src="<?php echo asset('css/style.css'); ?>"></script>
+<script src="<?php echo asset('css/style-responsive.css'); ?>"></script>
+<script src="<?php echo asset('css/styles/colors.css'); ?>"></script>
+
+
+
+
+
+
+    <!--script for this page-->
+
+
+
+<script>
+
+
+    $(function() {
+        var ids = 1;
+       $('#addColumn').click(function(){
+           ids++;
+           var column ='<div class="form-group">';
+               column+='<div class="col-sm-5">';
+               column+='<input type="text" class="form-control input-sm columns" placeholder="column name" name="column'+ids+'">';
+               column+="</div>";
+               column+='<div class="col-sm-3">';
+               column+='<select name="data'+ids+'" class="form-control">';
+               column+="<?php foreach(DataTypeDetails::all() as $data): ?>";
+               column+='<option value="<?php echo $data->id; ?>" ><?php echo $data->name; ?></option>';
+               column+="<?php endforeach; ?>";
+               column+="</select>";
+               column+="</div>";
+               column+="</div>";
+
+
+           $(this).parent().parent().append(column);
+           $('input[name=column'+ids+']').focus();
+
+
+       })
+
+        $('#default').stepy({
+            backLabel: 'Previous',
+            block: true,
+            nextLabel: 'Next',
+            titleClick: true,
+            validate     : false,
+            titleTarget: '.stepy-tab',
+            duration  : 600,
+            transition: 'fade',
+            finish:function(){
+                alert('This will create the reference described')
+            },
+            select: function(index) {
+                if(index == 2){
+                    if($('input[name=referenceName]').val() == ""){
+                        $('form').stepy('step', 1);
+                        $('input[name=referenceName]').attr('placeholder','Please Fill This Area First').focus()
+                    }else{
+                        $("#refName").html($('input[name=referenceName]').val());
+                    }
+                }
+
+                if(index == 3){
+                    if($('input[name=referenceName]').val() == ""){
+                        $('form').stepy('step', 1);
+                        $('input[name=referenceName]').attr('placeholder','Please Fill This Area First').focus()
+
+                    }else{
+                        var reference =  $('input[name=referenceName]').val();
+                        var colums = new Array();
+                        var col ="";
+                        var counter = 0;
+                        var col_count =0;
+                        $(".columns").each(function(){
+                            col_count++;
+                            if($(this).val() != ''){
+                            col +='<div class="form-group">';
+                            col +='<label class="col-lg-2 control-label">category '+ ++counter +'</label>';
+                            col +='<div class="col-lg-10">';
+                            col +='<p class="form-control-static">'+ $(this).val() +'</p>';
+                            col +='</div></div>'
+                            }
+                        });
+                        if(col == ""){
+                            $('form').stepy('step', 2);
+                            $('#errorlebal').fadeIn().html('Fill At least One Characteristic').delay(3000).fadeOut();
+                            $('input[name=column1]').focus()
+                        }else{
+                            $("input[name=col_count]").remove();
+                            $('#default').append('<input type="hidden"  name="col_count" value="'+col_count+'">')
+                            $("#checkings").html('').append(col);
+                            $(".refName1").html(reference);
+                        }
+
+                    }
+                }
+
+
+            }
+        });
+    });
+
+</script>
+
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layout.master', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

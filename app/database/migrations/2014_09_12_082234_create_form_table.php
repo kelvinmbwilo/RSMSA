@@ -15,7 +15,7 @@ class CreateFormTable extends Migration {
         Schema::create('rsmsa_form', function(Blueprint $table)
         {
             $table->increments('id');
-            $table->integer('name');
+            $table->string('name');
             $table->timestamps();
         });
     }

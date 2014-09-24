@@ -1,0 +1,47 @@
+<?php $__env->startSection('contents'); ?>
+
+        <section class="panel panel-success">
+            <header class="panel-heading">
+               Mapping data <?php echo $dataRef->data->name; ?> with  Reference <?php echo $dataRef->referenceData->name; ?>
+
+            </header>
+
+            <div class="panel-body">
+
+
+                    <form class="form-horizontal" id="default" method="post" action="<?php echo url("reference_mapping/{$tableId}"); ?>">
+
+                            <?php $i=1; $j=1; $k=0; ?>
+
+                            <?php foreach($dataArray as $opt): ?>
+
+
+                      <div class="form-group">
+                            <label class="col-sm-2 control-label" id="DataCat"><?php echo $opt->name; ?></label>
+
+
+                           <input type="hidden" class="form-control" value="<?php echo $opt->id; ?>" name="option_name<?php echo $i++; ?>">
+                           <select name="reference<?php echo $j++; ?>" class="form-control">
+                                <option value="0" id="option">No mapping</option>
+                                <?php foreach($reference as $ref): ?>
+                                <option value="<?php echo $ref->id; ?>" id="option"><?php echo $ref->name; ?></option>
+                                <?php endforeach; ?>
+                            </select>
+                          <?php  $k++; ?>
+
+                          </div>
+                <?php endforeach; ?>
+                         <div class="form-group">
+
+                                <input type="submit" value="done" class="btn btn-info">
+
+                        </div>
+                    </form>
+                </div>
+                </section>
+            </div>
+        </section>
+
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layout.master', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

@@ -17,12 +17,12 @@ class DataTag extends Eloquent {
 
     protected  $guarded = array('$id');
 
-    public function data(){
+    public function datatag(){
         return $this->hasMany('Data', 'datTag', 'datatagId');
     }
 
-    public function table(){
-        return $this->belongsTo('TableName', 'tableId', 'id');
+    public function formDetails(){
+        return $this->belongsTo('Formm', 'tableId', 'id');
     }
 
 }

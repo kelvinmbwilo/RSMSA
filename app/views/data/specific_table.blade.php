@@ -8,68 +8,54 @@
 @extends('layout.master')
 @section('contents')
 
-<header class="panel-heading">
-    <a class="btn btn-success pull-right" href={{ url('data/add') }}>
-    <i class="fa fa-adn">
-        New
-    </i>
-    </a>
-</header>
+
 
 <section class="wrapper">
-    <?php
-    $id = $table->id;
-    $count = 0;
-    $columns = $table->column;
-    $tags = $table->tag;
-    $myData = $table->data;
-    $myData->toarray();
-    ?>
-    <div class="row">
-        <!-- Data Table Start -->
+
+
+
         <div class="col-lg-12">
-            <header class="panel-heading">
-                {{ $table->categoryName }} Data
+            <header class="panel-heading panel-success ">
+               {{ $form_name->name }} Form
+                @if(isset($msg))
+                <div class="alert alert-success fade in" role="alert">
+                    <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">x</span><span class="sr-only">Close</span></button>
+                    <strong>{{ $msg }}</strong>
+                </div>
+                @endif
             </header>
+            <div class="panel-body">
             <section id="unseen">
-                <?php
-                    $count = 0;
-                    foreach ($columns as $colm) {
-                        $count++;
-                    }
-                ?>
+
                 <table class="table table-bordered table-striped table-condensed " id="dynamic-table">
                     <thead>
                     <tr>
-                        <th>code</th>
-                        @foreach($columns as $col)
-                        <th>{{ $col->columnName }}</th>
-                        @endforeach
-                        <th>Action</th>
+                        <th>#</th>
+                        @foreach($form_head as $formData)
+                        @if($formData)
+                        <?php $option=Options::find($formData->optionsId); ?>
+                          <th>{{ $form_name->name }}-{{$option->name}}</th>
+                         @endif
+                         @endforeach
                     </tr>
                     </thead>
                     <tbody>
-                    <?php foreach($tags as $tag){
-                        $currentTag = $tag->datatagId;
-                        $data = $tag->data;
-                        ?>
+                    <?php $i=1;?>
+                    @if($dataTag)
+                    @foreach($dataTag as $tag)
                     <tr>
-                           <td>AAC</td>
-                        <?php
-                        foreach($columns as $col){
-                            $temp = $col->id;
-                                 foreach($data as $dat){
-                                     if($dat->column->id == $temp){ ?>
-                                               <td>{{ $dat->value }}</td>
-                                      <?php }
-                                 }
-                        }
-                       ?>
-                           <td><a href="#">Report</a></td>
+                        <td>{{$i++}}</td>
+                        @foreach($form_details as $col)
+                        @if($col->datTag == $tag->datatagId)
+                        <td>{{ $col->value }}</td>
+                        @endif
+                        @endforeach
                     </tr>
-                    <?php } ?>
+                    @endforeach
+                    @endif
                     </tbody>
                 </table>
+
             </section>
         </div>
     </div>

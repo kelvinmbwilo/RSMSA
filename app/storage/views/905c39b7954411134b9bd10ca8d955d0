@@ -29,7 +29,7 @@
                             <tr>
                                 <td><?php echo ++$j; ?></td>
                                 <td><?php echo $level->name; ?></td>
-                                <td><?php echo $level->getlevel->name; ?></td>
+                                <td><?php if($level->getlevel): ?><?php echo $level->getlevel->name; ?><?php endif; ?></td>
                                 <td><?php if($level->parentId != 0): ?><?php echo Location::find($level->parentId)->name; ?>
 
                                     <?php else: ?>
