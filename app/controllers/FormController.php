@@ -569,12 +569,13 @@ class FormController extends \BaseController {
                     $form_name = Formm::find(Input::get('formName'));
                     $dataTag = DataTag::where("tableId",$form_name->id)->get();
                     $form_details = Records::where("formDataId",$form_name->id)->get();
-                    $form_head =Import::where("formId",$form_name->id)->get();
+                    $form_head1 =Import::where("formId",$form_name->id)->get();
+                    $symbol="0";
 
 
 
 
-                    return View::make('data.specific_table', compact('msg','form_name','form_details','dataTag','form_head'));
+                    return View::make('data.specific_table', compact('msg','form_name','form_details','dataTag','form_head1','symbol'));
                 }
                 else{
                     $response["error"] = 0;
