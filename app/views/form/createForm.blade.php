@@ -35,7 +35,7 @@
             <br>
             <form class="form" action='{{url("importData")}}' method="post">
                 <div class="form-group">
-                    <label class="col-lg-2 control-label">Importation </label>
+                    <label class="col-lg-2 control-label">Importation of script</label>
                     <div class="col-lg-7">
 
                         <select name="formName" class="form-control" required="required">

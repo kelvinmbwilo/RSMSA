@@ -63,36 +63,8 @@
 
             </ul>
         </li>
-        <!--multi level menu end-->
+       
 
-        <li class="sub-menu">
-            <a href="javascript:;" >
-                <i class="fa fa-cogs"></i>
-                <span>Records</span>
-            </a>
-            <ul class="sub">
-                <li><a  href="{{ url('data/home') }}">View</a></li>
-                <li><a  href="{{ url('data/add') }}">Add</a></li>
-                <?php
-                    $table = TableName::all();
-                    foreach($table as $tbl){
-                        ?>
-                        <li><a  href='{{ url("data/view/{$tbl->id}") }}'>{{ $tbl->categoryName }}</a></li>
-                    <?php
-                    }
-                ?>
-            </ul>
-        </li>
-        <li class="sub-menu">
-            <a href="javascript:;" >
-                <i class="fa fa-book"></i>
-                <span>Trial</span>
-            </a>
-            <ul class="sub">
-
-                <li><a  href="{{ url('table_name') }}">Data Table Management</a></li>
-             </ul>
-        </li>
         <li>
             <a  href="{{ url('user') }}">
                 <i class="fa fa-user"></i>
