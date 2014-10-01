@@ -12,7 +12,7 @@
         <form class="form" action='{{url("dynamic_table/getColumn")}}' method="post">
             <div class="form-group">
                 <label class="col-lg-2 control-label">Select Reference Type</label>
-                <div class="col-lg-10">
+                <div class="col-lg-8">
 
                     <select name="select" class="form-control">
                         <option>-- select one --</option>
@@ -21,8 +21,9 @@
                         @endforeach
                     </select>
                 </div>
-                {{ Form::submit('Submit', array('class' => 'btn pull-right btn-info')) }}
-                {{ Form::close() }}
+            </div>
+                <input style="margin-right: 10px" type="submit" class=" btn btn-info pull-right" value="Submit">
+        </form>
 
                 @if ($errors->any())
                 <ul>

@@ -20,7 +20,7 @@ class ReferenceController extends \BaseController {
     public function dynamicTable()
     {
         return View::make('reference.dynamic_table.index');
-           }
+    }
 
 
     public function returnReferences(){

@@ -10,7 +10,6 @@ Website: http://thevectorlab.net/
 
 body {
     color: #302121;
-    background: ;
     font-family: 'Open Sans', sans-serif;
     padding: 0px !important;
     margin: 0px !important;
@@ -435,7 +434,7 @@ ul.top-menu > li > a:hover, ul.top-menu > li > a:focus {
     /* Safari and Chrome */
     .dropdown-menu.extended  {
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.176) !important;
-    };
+    }
     }
 
 .dropdown-menu.extended li p {
@@ -1398,7 +1397,7 @@ h3.timeline-title {
     /* Safari and Chrome */
     .panel-footer.revenue-foot {
         margin-bottom: -4px;
-    };
+    }
     }
 
 
@@ -3332,7 +3331,7 @@ table.sliders tr td {
 }
 .has-switch span {
     cursor: pointer;
-    font-size: 14.994px;
+    font-size: 15px;
     font-weight: 700;
     float: left;
     height: 29px;
@@ -5239,10 +5238,6 @@ tr.odd.gradeX td.sorting_1, tr.even.gradeX td.sorting_1, table.display tr.even.g
     transition: all .3s ease;
     /*background: #01a6b2;*/
     font-weight: 300;
-    color: #fff;
-}
-
-.chat-room-head .search-btn:focus::-moz-placeholder {
     color: #fff;
 }
 

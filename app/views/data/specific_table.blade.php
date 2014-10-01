@@ -12,7 +12,7 @@
 
 <section class="panel panel-success">
 
-          <div class="col-lg-11">
+          <div class="col-lg-12">
             <header class="panel-heading panel-success ">
                {{ $form_name->name }} Form
                 <a class="btn btn-success btn-xs pull-right" href='{{ url("form") }}'>

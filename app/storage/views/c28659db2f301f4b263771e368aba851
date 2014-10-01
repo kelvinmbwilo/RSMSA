@@ -11,7 +11,7 @@
         <form class="form" action='<?php echo url("dynamic_table/getColumn"); ?>' method="post">
             <div class="form-group">
                 <label class="col-lg-2 control-label">Select Reference Type</label>
-                <div class="col-lg-10">
+                <div class="col-lg-8">
 
                     <select name="select" class="form-control">
                         <option>-- select one --</option>
@@ -20,10 +20,9 @@
                         <?php endforeach; ?>
                     </select>
                 </div>
-                <?php echo Form::submit('Submit', array('class' => 'btn pull-right btn-info')); ?>
-
-                <?php echo Form::close(); ?>
-
+            </div>
+                <input style="margin-right: 10px" type="submit" class=" btn btn-info pull-right" value="Submit">
+        </form>
 
                 <?php if($errors->any()): ?>
                 <ul>
