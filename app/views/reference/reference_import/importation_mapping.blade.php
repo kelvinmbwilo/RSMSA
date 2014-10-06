@@ -5,10 +5,10 @@
     <div class="col-lg-6 col-md-offset-2 ">
         <section class="panel panel-success">
             <header class="panel-heading">
-                Importation Form Mapping
+                Importation Reference Mapping
 
             </header>
-            <form class="form-horizontal" id="default" method="post" action='{{ url("formMapping/{$formName->id}") }}'>
+            <form class="form-horizontal" id="default" method="post" action='{{ url("referenceMapping/{$referenceName->id}") }}'>
             @foreach($tableNames as $key=>$table)
             <br>
             <br>
@@ -23,12 +23,13 @@
                <select class="form-control col-lg-6" name="{{$option}}_columns">
                    <option value="0">No mapping required</option>
                    <?php $j=0?>
-                  @foreach($formData as $formDetails)
-
-                   @foreach($formDetails->dataForm->options as $option)
+                  @foreach( $referenceDetail as $referenceDetails)
 
 
-                                <option value="{{ $option->options->id }}">{{ $option->options->name }}</option>
+                   @foreach( $referenceDetail->reference->refImport as $option)
+
+
+                                <option value="{{ $option->refImport->id }}">{{ $option->refImport->name }}</option>
 
 
 

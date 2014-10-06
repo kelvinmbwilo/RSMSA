@@ -21,6 +21,7 @@
             </a>
             <ul class="sub">
                 <li><a  href="{{ url('reference') }}">References</a></li>
+                <li><a  href="{{ url('refDatabaseCredentials') }}">Reference import</a></li>
                 <li><a  href="{{ url('dynamic_table') }}">Dynamic table</a></li>
 
             </ul>

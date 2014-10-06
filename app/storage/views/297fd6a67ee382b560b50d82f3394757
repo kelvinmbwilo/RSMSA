@@ -1,0 +1,36 @@
+<?php $__env->startSection('contents'); ?>
+<div class="row">
+    <div class="col-lg-6 col-md-offset-2 ">
+        <section class="panel panel-success">
+            <header class="panel-heading">
+               Select The List of Database for mapping with the form
+            </header>
+         <form class="form-horizontal" id="default" method="post" action='<?php echo url("refDatabase/{$ref}"); ?>'>
+             <?php $i=1;?>
+            <?php foreach($tableNames as $key=>$table): ?>
+            <br>
+            <br>
+            <fieldset><legend><input type="checkbox" value="<?php echo $table; ?>" name="list[<?php echo $i++; ?>]"><?php echo $table; ?></legend>
+
+                <?php foreach($response[$key] as $option): ?>
+                <div class="form-group">
+
+                        <label><?php echo $option; ?>:</label>
+                </div>
+                <?php endforeach; ?>
+            </fieldset>
+            <?php endforeach; ?>
+             <div class="form-group">
+                 <div class="col-md-6 text-center">
+                     <input type="submit" value="Done" class="btn btn-info">
+                 </div>
+             </div>
+         </form>
+        </section>
+    </div>
+</div>
+
+<?php $__env->stopSection(); ?>
+
+
+<?php echo $__env->make('layout.master', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

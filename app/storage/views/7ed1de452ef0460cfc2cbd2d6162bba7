@@ -1,0 +1,58 @@
+<?php $__env->startSection('contents'); ?>
+<div class="row">
+    <div class="col-lg-6 col-md-offset-2 ">
+        <section class="panel panel-success">
+            <header class="panel-heading">
+                Importation Form Mapping
+
+            </header>
+            <form class="form-horizontal" id="default" method="post" action='<?php echo url("formMapping/{$formName->id}"); ?>'>
+            <?php foreach($tableNames as $key=>$table): ?>
+            <br>
+            <br>
+              <fieldset><legend><?php echo $table; ?></legend>
+                  <input type="hidden" class="form-control" value="<?php echo $table; ?>" name="table_name[]">
+              <?php foreach($response[$key] as $option): ?>
+                  <input type="hidden" class="form-control" value="<?php echo $option; ?>" name="<?php echo $table; ?>_option_name[]">
+                <div class="form-group">
+                    <div class="form-group">
+               <label><?php echo $option; ?>:</label>
+
+               <select class="form-control col-lg-6" name="<?php echo $option; ?>_columns">
+                   <option value="0">No mapping required</option>
+                   <?php $j=0?>
+                  <?php foreach($formData as $formDetails): ?>
+
+
+                   <?php foreach($formDetails->dataForm->options as $option): ?>
+
+
+                                <option value="<?php echo $option->options->id; ?>"><?php echo $option->options->name; ?></option>
+
+
+
+                        <?php endforeach; ?>
+                  <?php endforeach; ?>
+
+
+               </select>
+                    </div>
+                </div>
+
+                  <?php endforeach; ?>
+              </fieldset>
+            <?php endforeach; ?>
+            <div class="form-group">
+                <div class="col-md-6 text-center">
+                    <input type="submit" value="Done Mapping" class="btn btn-info">
+                </div>
+            </div>
+            </form>
+        </section>
+    </div>
+</div>
+
+<?php $__env->stopSection(); ?>
+
+
+<?php echo $__env->make('layout.master', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

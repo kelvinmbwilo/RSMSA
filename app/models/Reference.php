@@ -31,6 +31,9 @@ class Reference extends Eloquent {
     {
         return $this->belongsTo('Data', 'hasReference', 'id');
     }
+    public function refImport(){
+        return $this->hasMany('Import', 'referenceId', 'id');
+    }
 
 
 
