@@ -5,9 +5,9 @@
         <div class="col-lg-12">
             <section class="panel panel-success">
                 <header class="panel-heading">
-                   Fields
-                    <a class="btn btn-success pull-right btn-xs" href="{{ url('option/add') }}">
-                    New Field<i class="fa fa-plus"></i>
+                  Lists of Excel
+                    <a class="btn btn-success pull-right btn-xs" href="{{ url('excel/add') }}">
+                    New Excel<i class="fa fa-plus"></i>
                     </a>
                 </header>
 
@@ -18,31 +18,35 @@
                             <tr>
                                 <th>#</th>
                                 <th>Name</th>
+                                <th>Stakeholder</th>
+                                <th>Mapped Form</th>
                                 <th>Action</th>
                             </tr>
                             </thead>
                             <tbody>
-                            <?php $j = 0 ?>
-                            @foreach($option as $opt)
+                            <?php $j = 0; ?>
+                            @foreach($excel as $exc)
                             <tr>
+                                @if($excel)
+
                                 <td>{{ ++$j }}</td>
-                                <td>{{$opt->name}}</td>
-                                <td class="table-condensed col-xs-pull-2" id="{{ $opt->id }}">
+                                <td>{{ $exc->filename }}</td>
+                                <td>{{ $exc->stakeholder->name}}</td>
+                                <td>{{ $exc->form->name}}</td>
+                                <td class="table-condensed col-xs-pull-2" id="">
 
                                     <div class="btn-group btn-group-xs" >
-                                        <a class="btn btn-primary" title="edit option" href='{{ url("option/edit/{$opt->id}") }}'>
+                                        <a class="btn btn-primary" title="edit option" href='{{ url("") }}'>
                                         <i class="fa fa-edit"></i>
                                         </a>
                                         <a class="btn btn-danger deletelevel" title="delete option" href='#delete'>
                                         <i class="fa fa-trash-o"></i>
                                         </a>
-<!--                                        <a class="btn btn-info" href='{{ url("location/level/{$opt->id}/units") }}'>-->
-<!--                                            <i class="fa fa-level-down"></i>-->
-<!--                                            category-->
-<!--                                        </a>-->
 
                                     </div>
                                 </td>
+
+                                @endif
                             </tr>
                             @endforeach
                             </tbody>
@@ -63,7 +67,7 @@
                         });
                         $("#yes").click(function(){
                             $(this).parent().html("<br><i class='fa fa-spinner fa-spin'></i>deleting...");
-                            $.post("<?php echo url('option/delete') ?>/"+id1,function(data){
+                            $.post("<?php echo url('excel/delete') ?>/"+id1,function(data){
                                 btn.hide("slow").next("hr").hide("slow");
                             });
                         });

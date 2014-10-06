@@ -5,7 +5,7 @@
         <div class="col-lg-12">
             <section class="panel panel-success">
                 <header class="panel-heading">
-                   Data Reference Mapping
+                    Section Reference Mapping
 
                 </header>
 
@@ -13,7 +13,7 @@
                     @if(isset($msg))
                     <div class="alert alert-success fade in" role="alert">
                         <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">x</span><span class="sr-only">Close</span></button>
-                        <strong>SUCCESS!</strong> Data Reference Mapping Was Successful.
+                        <strong>SUCCESS!</strong>Section Reference Mapping Was Successful.
 
 
                     </div>
@@ -23,8 +23,8 @@
                             <thead>
                             <tr>
                                 <th>#</th>
-                                <th>Data Name</th>
-                                <th>Option Name</th>
+                                <th>Section Name</th>
+                                <th>Field Name</th>
                                 <th>Reference Details</th>
                                 <th>Action</th>
                             </tr>

@@ -5,9 +5,9 @@
         <div class="col-lg-12">
             <section class="panel panel-success">
                 <header class="panel-heading">
-                   Data Tables
+                   Sections
                     <a class="btn btn-success pull-right btn-xs" href="{{ url('data_table/add') }}">
-                    New Data Table <i class="fa fa-plus"></i>
+                    New Section <i class="fa fa-plus"></i>
                     </a>
                 </header>
 
@@ -15,7 +15,7 @@
                     @if(isset($msg))
                     <div class="alert alert-success fade in" role="alert">
                         <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">x</span><span class="sr-only">Close</span></button>
-                        <strong>SUCCESS!</strong> Data  {{ $data->name }} Updated Successful.
+                        <strong>SUCCESS!</strong> Section  {{ $data->name }} Updated Successful.
                     </div>
                     @endif
                     <section ">

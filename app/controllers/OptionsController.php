@@ -31,19 +31,32 @@ class OptionsController extends \BaseController {
      * @return Response
      */
     public function store(){
+
+        echo Input::get('option_name');
+        echo  Input::get('data_type');
+
+
         if(Input::get('category_option')== 0){
         $opt = Options::create(array(
             'name' => Input::get('option_name'),
             'datatypeId' => Input::get('data_type'),
-            'hasCategories'=>"false"
+            'hasCategories'=>"false",
         ));
+            $opt->name=Input::get('option_name');
+            $opt->datatypeId=Input::get('data_type');
+            $opt->hasCategories="false";
+            $opt->save();
         }
         else{
             $opt = Options::create(array(
                 'name' => Input::get('option_name'),
                 'datatypeId' => Input::get('data_type'),
-                'hasCategories'=>"true"
+                'hasCategories'=>"true",
         ));
+            $opt->name=Input::get('option_name');
+            $opt->datatypeId=Input::get('data_type');
+            $opt->hasCategories="true";
+            $opt->save();
         }
 
         foreach(Input::get('category_option') as $category){

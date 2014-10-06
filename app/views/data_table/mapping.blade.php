@@ -4,7 +4,7 @@
 
         <section class="panel panel-success">
             <header class="panel-heading">
-               Mapping data {{$dataRef->data->name}} with  Reference {{$dataRef->referenceData->name}}
+               Mapping Section {{$dataRef->data->name }} with  Reference {{ $dataRef->referenceData->name }}
             </header>
 
             <div class="panel-body">

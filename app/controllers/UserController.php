@@ -12,6 +12,16 @@ class UserController extends \BaseController {
 
         return View::make('user.index');
 	}
+    /**
+     * Display a listing of the resource.
+     *
+     * @return Response
+     */
+    public function profile()
+    {
+
+        return View::make('user.profile');
+    }
 
 
 	/**
@@ -132,7 +142,6 @@ class UserController extends \BaseController {
         return View::make('user.edit', compact('user'));
 	}
 
-
 	/**
 	 * Remove the specified resource from storage.
 	 *
@@ -168,5 +177,51 @@ class UserController extends \BaseController {
         }
         return $options;
     }
+
+    /**
+     * Show the profile for the given user.
+     */
+    public function showProfile()
+    {
+        return View::make('user.profile');
+    }
+
+
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  int  $id
+     * @return Response
+     */
+    public function updateProfile()
+    {
+        return View::make('user.profileEdit');
+    }
+
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  int  $id
+     * @return Response
+     */
+    public function editProfile($id)
+    {
+
+        $user = User::find($id);
+        $user->firstName=Input::get('firstname');
+        $user->middleName=Input::get('middlename');
+        $user->lastName=Input::get('lastname');
+        $user->username=Input::get('username');
+        $user->email=Input::get('email');
+        $user->phoneNumber=Input::get('phonenumber');
+
+        $user->save();
+
+        return Redirect::to("userprofile")->With("alert-success","Profile edited successful!");
+
+
+}
+
+
 
 }

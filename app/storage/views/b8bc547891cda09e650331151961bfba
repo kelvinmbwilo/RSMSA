@@ -3,9 +3,9 @@
         <div class="col-lg-12">
             <section class="panel panel-success">
                 <header class="panel-heading">
-                    Options
+                   Fields
                     <a class="btn btn-success pull-right btn-xs" href="<?php echo url('option/add'); ?>">
-                    New Options<i class="fa fa-plus"></i>
+                    New Field<i class="fa fa-plus"></i>
                     </a>
                 </header>
 

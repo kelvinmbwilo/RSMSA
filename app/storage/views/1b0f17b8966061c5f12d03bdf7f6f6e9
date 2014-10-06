@@ -1,0 +1,67 @@
+<?php $__env->startSection('contents'); ?>
+<section class="panel panel-success">
+    <header class="panel-heading">
+        Add New Excel File
+        <a class="btn btn-success btn-xs pull-right" href='<?php echo url("excel"); ?>'>
+            back to list <i class="fa fa-list"></i>
+        </a>
+
+    </header>
+    <div class="panel-body">
+   <div class="col-sm-12">
+       <?php if(isset($msg)): ?>
+       <div class="alert alert-success fade in" role="alert">
+           <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">x</span><span class="sr-only">Close</span></button>
+           <strong>SUCCESS!</strong>Excel <?php echo $excel->filename; ?> Uploaded Successful.
+       </div>
+       <?php endif; ?>
+           <form class="form-horizontal" id="default" action="<?php echo url('excel/add'); ?>" method="post" enctype="multipart/form-data">
+               <div class="form-group">
+                  <label class="col-md-3 control-label">Select excel file to upload:</label>
+                   <div class="col-md-6">
+                  <input type="file" name="file" id="file"><br>
+                   </div>
+                </div>
+                <div class="form-group">
+                   <label class="col-md-2 control-label" id="DataCat">Form Name</label>
+                    <div class="col-md-6">
+                       <?php echo Form::select('form_name',array('0'=>'select a form')+Formm::orderBy('id','ASC')->get()->lists('name','id'),'',array('url'=>'posts',"id"=>"my-select",'class'=>'form-control','required'=>'requiered')); ?>
+
+                   </div>
+              </div>
+               <div class="form-group">
+                   <label class="col-md-2 control-label" id="DataCat">Reference Name</label>
+                   <div class="col-md-6">
+                       <?php echo Form::select('reference_name',array('0'=>'select a reference')+Reference::orderBy('id','ASC')->get()->lists('name','id'),'',array('url'=>'posts',"id"=>"my-select",'class'=>'form-control','required'=>'requiered')); ?>
+
+                   </div>
+               </div>
+                  <div class="form-group">
+                   <label class="col-md-2 control-label" id="DataCat"> Stakeholder</label>
+                   <div class="col-md-6">
+                       <?php echo Form::select('stakeholder',array('0'=>'select stakeholder Branch')+StakeHolderBranch::orderBy('id','ASC')->get()->lists('name','id'),'',array('url'=>'posts',"id"=>"my-select",'class'=>'form-control','required'=>'requiered')); ?>
+
+
+                   </div>
+               </div>
+               <div class="form-group">
+                   <label class="col-md-2 control-label" id="DataCat"> Type: </label>
+                   <div class="col-md-6">
+                    <select name="type">
+                    <option value="reference">Reference</option>
+                    <option value="form">Form</option>
+                    </select>
+                  </div>
+               </div>
+               <div class="form-group">
+                   <div class="col-md-6 text-center">
+                       <input type="submit" value="Add" class="btn btn-info">
+                   </div>
+               </div>
+           </form>
+
+   </div>
+        </div>
+    </section>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layout.master', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

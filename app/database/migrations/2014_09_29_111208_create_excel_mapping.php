@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateColumnsTable extends Migration {
+class CreateExcelMapping extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -12,14 +12,13 @@ class CreateColumnsTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('rsmsa_columns', function(Blueprint $table)
+		Schema::create('rsmsa_excel_form_mapping', function(Blueprint $table)
 		{
 			$table->increments('id');
-			$table->string('columnName');
-			$table->integer('tableId');
-			$table->integer('referenceId');
-			$table->integer('columnOptionId');
-            $table->integer('typeId');
+			$table->string('excelColumn');
+			$table->integer('optionsId');
+			$table->integer('dataId');
+			$table->integer('formId');
 			$table->timestamps();
 		});
 	}
@@ -31,7 +30,7 @@ class CreateColumnsTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('rsmsa_columns');
+		Schema::drop('rsmsa_excel_form_mapping');
 	}
 
 }
