@@ -9,6 +9,7 @@
 @section('contents')
 
 
+
 <section class="panel panel-success">
             <header class="panel-heading ">
                {{ $form_name->name }} Form
@@ -49,8 +50,10 @@
                         @endforeach
                         @endif
                     </tr>
-                 </thead>
-                 <tbody>
+
+
+                    </thead>
+                    <tbody>
                     <?php $i=1;?>
                     @if($dataTag)
                     @foreach($dataTag as $tag)
@@ -67,10 +70,10 @@
                     </tbody>
                 </table>
 
-            </div>
-
+            </section>
+        </div>
+    </div>
 </section>
-
 
 <script src="{{ asset('js/dynamic_table_init.js') }}"></script>
 

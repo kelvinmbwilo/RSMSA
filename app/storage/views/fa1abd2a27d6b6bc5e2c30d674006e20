@@ -1,0 +1,87 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Isaiah
+ * Date: 8/19/14
+ * Time: 11:05 AM
+ */ ?>
+
+<?php $__env->startSection('contents'); ?>
+
+
+
+<section class="panel panel-success">
+
+          <div class="col-lg-12">
+            <header class="panel-heading panel-success ">
+               <?php echo $form_name->name; ?> Form
+                <a class="btn btn-success btn-xs pull-right" href='<?php echo url("form"); ?>'>
+                    back to list <i class="fa fa-list"></i>
+                </a>
+                <?php if(isset($msg)): ?>
+                <div class="alert alert-success fade in" role="alert">
+                    <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">x</span><span class="sr-only">Close</span></button>
+                    <strong><?php echo $msg; ?></strong>
+                </div>
+                <?php endif; ?>
+
+            </header>
+            <div class="panel-body">
+            <section id="unseen">
+
+                <table class="table table-bordered table-striped table-condensed " id="dynamic-table">
+                    <thead>
+
+
+                    <tr>
+                        <th>#</th>
+                        <?php if($symbol=="0"): ?>
+                        <?php foreach($form_head1 as $formData): ?>
+
+                        <?php $option=Options::find($formData->optionsId); ?>
+                        <th><?php echo $form_name->name; ?>-<?php echo $option->name; ?></th>
+
+                        <?php endforeach; ?>
+                        <?php endif; ?>
+                        <?php if($symbol=="1"): ?>
+                        <?php foreach($form_head2 as $formData): ?>
+
+                        <?php if($formData->dataForm): ?>
+
+                        <?php foreach($formData->dataForm->options as $dataDetails): ?>
+                        <th><?php if($dataDetails->data): ?><?php echo $dataDetails->data->name; ?>-<?php echo $dataDetails->options->name; ?><?php endif; ?></th>
+
+                        <?php endforeach; ?>
+                        <?php endif; ?>
+                        <?php endforeach; ?>
+                        <?php endif; ?>
+                    </tr>
+
+
+                    </thead>
+                    <tbody>
+                    <?php $i=1;?>
+                    <?php if($dataTag): ?>
+                    <?php foreach($dataTag as $tag): ?>
+                    <tr>
+                        <td><?php echo $i++; ?></td>
+                        <?php foreach($form_details as $col): ?>
+                        <?php if($col->datTag == $tag->datatagId): ?>
+                        <td><?php echo $col->value; ?></td>
+                        <?php endif; ?>
+                        <?php endforeach; ?>
+                    </tr>
+                    <?php endforeach; ?>
+                    <?php endif; ?>
+                    </tbody>
+                </table>
+
+            </section>
+        </div>
+    </div>
+</section>
+
+<script src="<?php echo asset('js/dynamic_table_init.js'); ?>"></script>
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layout.master', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

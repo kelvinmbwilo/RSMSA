@@ -1,0 +1,63 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Isaiah
+ * Date: 8/19/14
+ * Time: 11:05 AM
+ */ ?>
+
+
+
+<?php $__env->startSection('contents'); ?>
+
+    <!-- page start-->
+    <div class="row">
+        <div class="col-lg-12">
+            <section class="panel panel-success">
+                <header class="panel-heading">
+                    Stakeholders Branches
+                </header>
+
+                <div class="panel-body">
+                    <section id="unseen">
+                        <table id="dynamic-table" class="table table-bordered table-striped table-condensed">
+                            <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Branch Name</th>
+                                <th>Stakeholder</th>
+                                <th>phone Number</th>
+                                <th>Email</th>
+                                <th>Address</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <?php $i=1; ?>
+                            <?php foreach($stakeHolderBranch as $stakeHolderBranch): ?>
+                            <tr>
+                                <td><?php echo $i++; ?></td>
+                                <td><?php echo $stakeHolderBranch->name; ?></td>
+                                <td><?php if($stakeHolderBranch->stakeholder): ?><?php echo $stakeHolderBranch->stakeholder->name; ?><?php endif; ?></td>
+                                <td><?php echo $stakeHolderBranch->phoneNumber; ?></td>
+                                <td><?php echo $stakeHolderBranch->email; ?></td>
+                                <td><?php echo $stakeHolderBranch->address; ?></td>
+                            </tr>
+                            <?php endforeach; ?>
+                            </tbody>
+                        </table>
+                    </section>
+                </div>
+            </section>
+        </div>
+
+    </div>
+
+<!--script for this page-->
+
+<script src="<?php echo asset('js/dynamic_table_init.js'); ?>"></script>
+
+
+
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layout.master', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

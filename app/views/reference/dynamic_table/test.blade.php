@@ -12,14 +12,14 @@
                 ?>
                 <div class="form-group">
                     <label >{{ $referencedetails->name }}</label>
-                    <input type="text" class="form-control" name="name{{$referencedetails->id}}" placeholder="Enter name">
+                    <input type="text" class="form-control" name="name{{$referencedetails->id}}" placeholder="Enter {{ $referencedetails->name }}">
                 </div>
             <?php
             }else{
                 ?>
                 <div class="form-group">
                     <label >{{ $referencedetails->name }}</label>
-                    <input type="number" class="form-control" name="name{{$referencedetails->id}}" placeholder="Enter number">
+                    <input type="number" class="form-control" name="name{{$referencedetails->id}}" placeholder="Enter {{ $referencedetails->name }}">
                 </div>
             <?php } ?>
             @endforeach

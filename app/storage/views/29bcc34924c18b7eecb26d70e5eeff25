@@ -1,0 +1,33 @@
+<?php $__env->startSection('contents'); ?>
+<section class="panel panel-success">
+    <div class="panel-body">
+
+        <form action="<?php echo url('dynamic_table/test'); ?>/<?php echo $reference->id; ?>" method="post">
+            <?php foreach($mycol as $referencedetails): ?>
+
+            <?php
+            $datatype = $referencedetails->dataType->name;
+            if($datatype == 'string'){
+                ?>
+                <div class="form-group">
+                    <label ><?php echo $referencedetails->name; ?></label>
+                    <input type="text" class="form-control" name="name<?php echo $referencedetails->id; ?>" placeholder="Enter <?php echo $referencedetails->name; ?>">
+                </div>
+            <?php
+            }else{
+                ?>
+                <div class="form-group">
+                    <label ><?php echo $referencedetails->name; ?></label>
+                    <input type="number" class="form-control" name="name<?php echo $referencedetails->id; ?>" placeholder="Enter <?php echo $referencedetails->name; ?>">
+                </div>
+            <?php } ?>
+            <?php endforeach; ?>
+
+            <button type="submit" class="btn btn-info pull-right">Submit</button>
+        </form>
+
+    </div>
+</section>
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layout.master', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

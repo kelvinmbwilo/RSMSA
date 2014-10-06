@@ -1,0 +1,87 @@
+<div id="sidebar"  class="nav-collapse ">
+    <!-- sidebar menu start-->
+    <ul class="sidebar-menu" id="nav-accordion">
+        <li>
+            <a  href="<?php echo url('dashboard'); ?>"> <i class="fa fa-book"></i>Dashboard</a>
+        </li>
+
+        <li class="sub-menu">
+            <a  href="#">
+                <i class="fa fa-cogs"></i>Stakeholder</a>
+             <ul class="sub">
+                <li><a  href="<?php echo url('stakeholder'); ?>">Main Stakeholders</a></li>
+                <li><a  href="<?php echo url('stakeholderBranch'); ?>">Stakeholder Branches</a></li>
+            </ul>
+        </li>
+
+        <li class="sub-menu">
+            <a href="javascript:;" >
+                <i class="fa fa-th-large"></i>
+                <span>Reference Tables</span>
+            </a>
+            <ul class="sub">
+                <li><a  href="<?php echo url('reference'); ?>">References</a></li>
+                <li><a  href="<?php echo url('dynamic_table'); ?>">Dynamic table</a></li>
+
+            </ul>
+        </li>
+
+
+        <li class="sub-menu">
+            <a href="javascript:;" >
+                <i class="fa fa-cogs"></i>
+                <span>Locations</span>
+            </a>
+            <ul class="sub">
+                <li><a  href="<?php echo url('location/'); ?>">Administrative Units</a></li>
+                <li><a  href="<?php echo url('location/levels'); ?>">Administrative Levels</a></li>
+            </ul>
+        </li>   <li class="sub-menu">
+            <a href="javascript:;" >
+                <i class="fa fa-cogs"></i>
+                <span>Data Importation</span>
+            </a>
+            <ul class="sub">
+                <li><a  href="<?php echo url('databaseCredentials'); ?>">Script</a></li>
+                <li><a  href="#">Excel</a></li>
+            </ul>
+        </li>
+
+        <!--multi level menu start-->
+        <li class="sub-menu">
+            <a href="javascript:;" >
+                <i class="fa fa-sitemap"></i>
+                <span>Table Management</span>
+            </a>
+            <ul class="sub">
+                <li><a  href="<?php echo url('form'); ?>">Form Management</a></li>
+                <li><a  href="<?php echo url('form_creation'); ?>">Form Creation</a></li>
+                <li><a  href="<?php echo url('dataTable'); ?>">Data Management</a></li>
+                <li><a  href="<?php echo url('mapping'); ?>">Data Mapping Management</a></li>
+                <li><a  href="<?php echo url('option'); ?>">Option Management</a></li>
+                <li><a  href="<?php echo url('category'); ?>">Category Management</a></li>
+
+            </ul>
+        </li>
+       
+
+        <li>
+            <a  href="<?php echo url('user'); ?>">
+                <i class="fa fa-user"></i>
+                <span>User</span>
+            </a>
+        </li>
+
+
+<!--        datatype details-->
+        <li>
+            <a  href="<?php echo url('datatype'); ?>">
+                <i class="fa fa-database"></i>
+                <span>Data type</span>
+            </a>
+        </li>
+
+
+    </ul>
+    <!-- sidebar menu end-->
+</div>
