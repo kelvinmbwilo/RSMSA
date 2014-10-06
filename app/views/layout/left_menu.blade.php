@@ -44,7 +44,8 @@
             </a>
             <ul class="sub">
                 <li><a  href="{{url('databaseCredentials')}}">Script</a></li>
-                <li><a  href="#">Excel</a></li>
+                <li><a  href="{{url('excel')}}">Excel</a></li>
+
             </ul>
         </li>
 
@@ -56,15 +57,15 @@
             </a>
             <ul class="sub">
                 <li><a  href="{{ url('form') }}">Form Management</a></li>
-                <li><a  href="{{ url('form_creation') }}">Form Creation</a></li>
-                <li><a  href="{{ url('dataTable') }}">Data Management</a></li>
-                <li><a  href="{{ url('mapping') }}">Data Mapping Management</a></li>
-                <li><a  href="{{ url('option') }}">Option Management</a></li>
+                <li><a  href="{{ url('form_creation') }}">Form Data Entry</a></li>
+                <li><a  href="{{ url('dataTable') }}">Section Management</a></li>
+                <li><a  href="{{ url('mapping') }}">Section Mapping Management</a></li>
+                <li><a  href="{{ url('option') }}">Field Management</a></li>
                 <li><a  href="{{ url('category') }}">Category Management</a></li>
 
             </ul>
         </li>
-       
+
 
         <li>
             <a  href="{{ url('user') }}">

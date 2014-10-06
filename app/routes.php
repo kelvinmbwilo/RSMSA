@@ -144,9 +144,9 @@ Route::post('table_name/add_optionColumn/{id}', array('uses'=>'TableController@s
 
 
 
-//********************************************************/
-//*********************User************************/
-//********************************************************/
+//**********************************************************/
+//********************* User *******************************/
+//*************************************************?********/
 Route::get('user', array('uses'=>'UserController@index')); //display list of users
 Route::get('user/add', array('uses'=>'UserController@create')); //add users
 Route::post('user/add', array('uses'=>'UserController@store')); //processing added users
@@ -163,7 +163,7 @@ Route::post('user/profileEdit/{id}', array('uses'=>'UserController@editProfile')
 
 
 //********************************************************/
-//*********************Login************************/
+//********************* Login **************************/
 //********************************************************/
 Route::get('login', array('uses'=>'LoginController@index')); //display login form
 Route::post('login', array('uses'=>'LoginController@login')); //process login form
@@ -173,7 +173,7 @@ Route::get('logout', array('uses'=>'LoginController@logout')); //process logout 
 
 
 //********************************************************/
-//*********************Data type************************/
+//*********************Data type**************************/
 //********************************************************/
 Route::get('datatype', array('uses'=>'DatatypeController@index')); //display list of datatypes
 Route::get('datatype/add', array('uses'=>'DatatypeController@create')); //add datatypes
@@ -197,7 +197,7 @@ Route::post('category/delete/{id}', array('uses' => 'CategoryController@destroy'
 
 
 /***************************************************************/
-//***************** Options ***************************/
+//***************** Options ************************************/
 /***************************************************************/
 Route::get('option', array('uses' => 'OptionsController@index')); //display a list of locations
 Route::get('option/add', array('uses' => 'OptionsController@create')); //display a form to create new location level
@@ -209,7 +209,7 @@ Route::post('option/delete/{id}', array('uses' => 'OptionsController@destroy'));
 
 
 /***************************************************************/
-//*****************Data_table  ***************************/
+//*****************Data_table  *********************************/
 /***************************************************************/
 Route::get('dataTable', array('uses' => 'DataTableController@index')); //display a list of data tables
 Route::get('reference_mapping/{id}', array('uses' => 'DataTableController@mapping')); //display a list of data tables
@@ -223,9 +223,9 @@ Route::post('dataTable/listReferenceDetails/{id}', array('uses' => 'DataTableCon
 
 
 
-/***************************************************************/
+/****************************************************************/
 //***************** form ****************************************/
-/***************************************************************/
+/****************************************************************/
 Route::get('form', array('uses' => 'FormController@index')); //display a list of form
 Route::get('form_creation', array('uses' => 'FormController@show')); //display a list of form to input data
 Route::get('databaseCredentials', array('uses' => 'FormController@databaseCredentials')); //display a list of form to input data
@@ -244,10 +244,28 @@ Route::post('form/delete/{id}', array('uses' => 'FormController@destroy')); //de
 
 
 
-/***************************************************************/
-//***************** data reference mapping ****************************************/
-/***************************************************************/
+/*******************************************************************/
+//***************** data reference mapping *************************/
+/*******************************************************************/
 Route::get('mapping', array('uses' => 'MappingController@index')); //display a list of data reference mapping
 Route::get('mapping/edit/{id}', array('uses' => 'MappingController@edit')); //display a form to update a data reference mapping
 Route::post('mapping/edit/{id}', array('uses' => 'MappingController@update')); //process a form to update a data reference mapping
 Route::post('mapping/delete/{id}', array('uses' => 'MappingController@destroy')); //delete a data reference mapping
+
+
+
+
+
+/*******************************************************************/
+//************************* excel **********************************/
+/*******************************************************************/
+Route::get('excel', array('uses' => 'ExcelImportationController@index')); //display a list of excel file
+Route::get('excel/add', array('uses' => 'ExcelImportationController@create')); //display a form to update excel file
+Route::post('excel/add', array('uses' => 'ExcelImportationController@store')); //display a form to update a excel file
+Route::post('excel/addReference', array('uses' => 'ExcelImportationController@storeReference')); //display a form to update a excel file
+Route::get('excel/edit/{id}', array('uses' => 'ExcelImportationController@edit')); //display a form to update a excel file
+Route::post('excel/edit/{id}', array('uses' => 'ExcelImportationController@update')); //process a form to update a excel file
+Route::post('excel/delete/{id}', array('uses' => 'ExcelImportationController@destroy')); //delete a excel file
+Route::post('excelMapping/{id}', array('uses' => 'ExcelImportationController@excelMapping')); //mapping a data excel file
+Route::post('importExcelData', array('uses' => 'ExcelImportationController@excel_importation_form')); //import a excel file for  form
+Route::post('importExcelReference', array('uses' => 'ExcelImportationController@excel_importation_reference')); //import a excel file for reference

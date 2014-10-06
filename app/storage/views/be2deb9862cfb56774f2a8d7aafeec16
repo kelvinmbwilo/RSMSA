@@ -9,11 +9,8 @@
 <?php $__env->startSection('contents'); ?>
 
 
-
 <section class="panel panel-success">
-
-          <div class="col-lg-11">
-            <header class="panel-heading panel-success ">
+            <header class="panel-heading ">
                <?php echo $form_name->name; ?> Form
                 <a class="btn btn-success btn-xs pull-right" href='<?php echo url("form"); ?>'>
                     back to list <i class="fa fa-list"></i>
@@ -26,14 +23,10 @@
                 <?php endif; ?>
 
             </header>
-            <div class="panel-body">
-            <section id="unseen">
-
-                <table class="table table-bordered table-striped table-condensed " id="dynamic-table">
-                    <thead>
-
-
-                    <tr>
+           <div class="panel-body">
+               <table  class="display table table-bordered table-striped" id="dynamic-table">
+                <thead>
+                       <tr>
                         <th>#</th>
                         <?php if($symbol=="0"): ?>
                         <?php foreach($form_head1 as $formData): ?>
@@ -56,10 +49,8 @@
                         <?php endforeach; ?>
                         <?php endif; ?>
                     </tr>
-
-
-                    </thead>
-                    <tbody>
+                 </thead>
+                 <tbody>
                     <?php $i=1;?>
                     <?php if($dataTag): ?>
                     <?php foreach($dataTag as $tag): ?>
@@ -76,10 +67,10 @@
                     </tbody>
                 </table>
 
-            </section>
-        </div>
-    </div>
+            </div>
+
 </section>
+
 
 <script src="<?php echo asset('js/dynamic_table_init.js'); ?>"></script>
 

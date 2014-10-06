@@ -14,18 +14,18 @@
     @if(isset($msg))
     <div class="alert alert-success fade in" role="alert">
         <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">x</span><span class="sr-only">Close</span></button>
-        <strong>SUCCESS!</strong> Data  {{ $data->name }} Updated Successful.
+        <strong>SUCCESS!</strong> Section {{ $data->name }} Updated Successful.
     </div>
     @endif
     <form class="form-horizontal" id="default" method="post" action="{{ url('data_table/add') }}">
         <div class="form-group">
-            <label class="col-md-2 control-label" id="DataCat">Data Name</label>
+            <label class="col-md-2 control-label" id="DataCat">Section Name</label>
             <div class="col-md-6">
                 <input type="text" class="form-control" placeholder="Data Name" name="data_name" required="required" value="{{ $data->name }}">
             </div>
         </div>
         <div class="form-group">
-            <label class="col-md-2 control-label" id="DataCat">Options</label>
+            <label class="col-md-2 control-label" id="DataCat">Fields</label>
             <div class="col-md-6">
                 {{ Form::select('option[]',Options::orderBy('id','ASC')->get()->lists('name','id'),$data->options()->lists('optionsId'),array('class'=>'my-select form-control','required'=>'requiered', 'multiple'=>'multiple')) }}
             </div>

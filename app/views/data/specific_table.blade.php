@@ -11,9 +11,7 @@
 
 
 <section class="panel panel-success">
-
-          <div class="col-lg-12">
-            <header class="panel-heading panel-success ">
+            <header class="panel-heading ">
                {{ $form_name->name }} Form
                 <a class="btn btn-success btn-xs pull-right" href='{{ url("form") }}'>
                     back to list <i class="fa fa-list"></i>
@@ -26,14 +24,10 @@
                 @endif
 
             </header>
-            <div class="panel-body">
-            <section id="unseen">
-
-                <table class="table table-bordered table-striped table-condensed " id="dynamic-table">
-                    <thead>
-
-
-                    <tr>
+           <div class="panel-body">
+               <table  class="display table table-bordered table-striped" id="dynamic-table">
+                <thead>
+                       <tr>
                         <th>#</th>
                         @if($symbol=="0")
                         @foreach($form_head1 as $formData)

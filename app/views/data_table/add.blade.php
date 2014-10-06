@@ -3,7 +3,7 @@
 @section('contents')
 <section class="panel panel-success">
     <header class="panel-heading">
-        Add New Data table
+        Add New Section
         <a class="btn btn-success btn-xs pull-right" href='{{ url("dataTable") }}'>
             back to list <i class="fa fa-list"></i>
         </a>
@@ -14,7 +14,7 @@
        @if(isset($msg))
        <div class="alert alert-success fade in" role="alert">
            <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">x</span><span class="sr-only">Close</span></button>
-           <strong>SUCCESS!</strong> Data Table {{ $data->name }} Added Successful.
+           <strong>SUCCESS!</strong> New Section {{ $data->name }} Added Successful.
            <br>
            <br>
          @if($data->hasReference =="true")
@@ -33,7 +33,7 @@
                </div>
            </div>
            <div class="form-group">
-               <label class="col-md-2 control-label" id="DataCat">Options</label>
+               <label class="col-md-2 control-label" id="DataCat">Fields</label>
                <div class="col-md-6">
                    {{ Form::select('option[]',Options::orderBy('id','ASC')->get()->lists('name','id'),'',array('class'=>'my-select form-control','required'=>'requiered', 'multiple'=>'multiple')) }}
                </div>

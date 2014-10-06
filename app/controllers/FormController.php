@@ -59,9 +59,10 @@ class FormController extends \BaseController {
     public function show()
     {
         $fom = Formm::all();
+        $ref = Reference::all();
         $location= Location::all();
         $stakeholder= StakeholderBranch::all();
-        return View::make('form.createForm',compact('fom','location','stakeholder'));
+        return View::make('form.createForm',compact('fom','location','stakeholder','ref'));
     }
 
         /**

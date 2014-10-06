@@ -43,7 +43,8 @@
             </a>
             <ul class="sub">
                 <li><a  href="<?php echo url('databaseCredentials'); ?>">Script</a></li>
-                <li><a  href="#">Excel</a></li>
+                <li><a  href="<?php echo url('excel'); ?>">Excel</a></li>
+
             </ul>
         </li>
 
@@ -56,14 +57,14 @@
             <ul class="sub">
                 <li><a  href="<?php echo url('form'); ?>">Form Management</a></li>
                 <li><a  href="<?php echo url('form_creation'); ?>">Form Data Entry</a></li>
-                <li><a  href="<?php echo url('dataTable'); ?>">Data Management</a></li>
-                <li><a  href="<?php echo url('mapping'); ?>">Data Mapping Management</a></li>
-                <li><a  href="<?php echo url('option'); ?>">Option Management</a></li>
+                <li><a  href="<?php echo url('dataTable'); ?>">Section Management</a></li>
+                <li><a  href="<?php echo url('mapping'); ?>">Section Mapping Management</a></li>
+                <li><a  href="<?php echo url('option'); ?>">Field Management</a></li>
                 <li><a  href="<?php echo url('category'); ?>">Category Management</a></li>
 
             </ul>
         </li>
-       
+
 
         <li>
             <a  href="<?php echo url('user'); ?>">

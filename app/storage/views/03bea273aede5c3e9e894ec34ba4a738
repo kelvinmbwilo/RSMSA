@@ -37,7 +37,7 @@
             <br>
             <form class="form" action='<?php echo url("importData"); ?>' method="post">
                 <div class="form-group">
-                    <label class="col-lg-2 control-label">Importation </label>
+                    <label class="col-lg-2 control-label">Importation of script</label>
                     <div class="col-lg-7">
 
                         <select name="formName" class="form-control" required="required">
@@ -46,7 +46,59 @@
                             <option value="<?php echo $formDetails->id; ?>"><?php echo $formDetails->name; ?></option>
                             <?php endforeach; ?>
                         </select>
-                        </div>
+                    </div>
+
+                    <div class="col-lg-7 col-lg-offset-2">
+                        <select name="location" class="form-control" required="required">
+                            <option>-- Select Location of Stakeholder Branch --</option>
+                           <?php foreach($location as $loc): ?>
+                            <option value="<?php echo $loc->id; ?>"><?php echo $loc->name; ?></option>
+                            <?php endforeach; ?>
+                        </select>
+                    </div>
+
+                    <div class="col-lg-7 col-lg-offset-2">
+                        <select name="stakeholder" class="form-control" required="required">
+                            <option>-- Select Branch Name --</option>
+                            <?php foreach($stakeholder as $branch): ?>
+                            <option value="<?php echo $branch->id; ?>"><?php echo $branch->name; ?></option>
+                            <?php endforeach; ?>
+                        </select>
+                    </div>
+                 </div>
+                <?php echo Form::submit('Import', array('class' => 'btn pull-right btn-info')); ?>
+
+
+            </form>
+            <br><br>
+            <br><br>
+            <br>
+            <br>
+            <hr>
+            <br>
+            <form class="form" action='<?php echo url("importExcelData"); ?>' method="post">
+                <div class="form-group">
+                    <label class="col-lg-2 control-label">Importation of excel</label>
+                    <div class="col-lg-7">
+
+                        <select name="type" class="form-control" required="required">
+                                    <option value="reference">Reference</option>
+                                    <option value="form">Form</option>
+                        </select>
+
+                        <select name="formName" class="form-control" required="required">
+                            <option value="0" >-- select form name --</option>
+                            <?php foreach($fom as $formDetails): ?>
+                            <option value="<?php echo $formDetails->id; ?>"><?php echo $formDetails->name; ?></option>
+                            <?php endforeach; ?>
+                        </select>
+                        <select name="referenceName" class="form-control" required="required">
+                            <option value="0" >-- select reference name --</option>
+                            <?php foreach($ref as $refDetails): ?>
+                            <option value="<?php echo $refDetails->id; ?>"><?php echo $refDetails->name; ?></option>
+                            <?php endforeach; ?>
+                        </select>
+                    </div>
 
                     <div class="col-lg-7 col-lg-offset-2">
                         <select name="location" class="form-control" required="required">

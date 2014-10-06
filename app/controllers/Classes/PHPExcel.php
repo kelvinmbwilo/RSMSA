@@ -159,7 +159,7 @@ class PHPExcel
 	/**
 	* Define if a workbook has macros
 	*
-	* @param true|false
+	* @param bool
 	*/
 	public function setHasMacros($hasMacros=false){
 		$this->_hasMacros=(bool)$hasMacros;

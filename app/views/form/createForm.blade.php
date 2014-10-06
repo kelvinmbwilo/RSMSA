@@ -44,7 +44,58 @@
                             <option value="{{ $formDetails->id }}">{{$formDetails->name}}</option>
                             @endforeach
                         </select>
-                        </div>
+                    </div>
+
+                    <div class="col-lg-7 col-lg-offset-2">
+                        <select name="location" class="form-control" required="required">
+                            <option>-- Select Location of Stakeholder Branch --</option>
+                           @foreach($location as $loc)
+                            <option value="{{ $loc->id }}">{{$loc->name}}</option>
+                            @endforeach
+                        </select>
+                    </div>
+
+                    <div class="col-lg-7 col-lg-offset-2">
+                        <select name="stakeholder" class="form-control" required="required">
+                            <option>-- Select Branch Name --</option>
+                            @foreach($stakeholder as $branch)
+                            <option value="{{ $branch->id }}">{{$branch->name}}</option>
+                            @endforeach
+                        </select>
+                    </div>
+                 </div>
+                {{ Form::submit('Import', array('class' => 'btn pull-right btn-info')) }}
+
+            </form>
+            <br><br>
+            <br><br>
+            <br>
+            <br>
+            <hr>
+            <br>
+            <form class="form" action='{{url("importExcelData")}}' method="post">
+                <div class="form-group">
+                    <label class="col-lg-2 control-label">Importation of excel</label>
+                    <div class="col-lg-7">
+
+                        <select name="type" class="form-control" required="required">
+                                    <option value="reference">Reference</option>
+                                    <option value="form">Form</option>
+                        </select>
+
+                        <select name="formName" class="form-control" required="required">
+                            <option value="0" >-- select form name --</option>
+                            @foreach($fom as $formDetails)
+                            <option value="{{ $formDetails->id }}">{{$formDetails->name}}</option>
+                            @endforeach
+                        </select>
+                        <select name="referenceName" class="form-control" required="required">
+                            <option value="0" >-- select reference name --</option>
+                            @foreach($ref as $refDetails)
+                            <option value="{{ $refDetails->id }}">{{$refDetails->name}}</option>
+                            @endforeach
+                        </select>
+                    </div>
 
                     <div class="col-lg-7 col-lg-offset-2">
                         <select name="location" class="form-control" required="required">

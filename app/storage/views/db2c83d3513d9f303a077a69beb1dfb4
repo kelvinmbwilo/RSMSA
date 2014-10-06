@@ -1,0 +1,66 @@
+<?php $__env->startSection('contents'); ?>
+<div class="row">
+    <div class="col-lg-8">
+        <section class="panel panel-success">
+            <header class="panel-heading">
+                Excel Mapping
+
+            </header>
+
+            <div class="panel-body">
+                <?php if(isset($msg)): ?>
+                <div class="alert alert-success fade in" role="alert">
+                    <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">x</span><span class="sr-only">Close</span></button>
+                    <strong>SUCCESS!</strong> Data Reference Mapping Was Successful.
+                </div>
+                <?php endif; ?>
+                <form class="form-horizontal" id="default" method="post" action='<?php echo url("excelMapping/{$excel->type}"); ?>'>
+                    <?php $i=0 ?>
+                <?php foreach($val as $column): ?>
+                <input type="hidden" value="<?php echo $column; ?>" name="column_name[]">
+                <input type="hidden" class="form-control" value="<?php echo $columnVal[$i++]; ?>" name="columnId[]">
+                <div class="form-group">
+                    <div class="form-group">
+                        <label ><?php echo $column; ?>:</label>
+
+                  <select name="selection[]" class="form-control col-md-4">
+
+                     <?php if($excel->type=="form"): ?>
+                    <?php foreach($formData as $formDetails): ?>
+                    <option value="0">No mapping required</option>
+                    <?php foreach($formDetails->dataForm->options as $option): ?>
+
+                    <option value="<?php echo $option->options->id; ?>"><?php echo $option->options->name; ?></option>
+                    <?php endforeach; ?>
+                    <?php endforeach; ?>
+                     <?php endif; ?>
+                    <?php if($excel->type=="reference"): ?>
+                      <option value="0">No mapping required</option>
+                    <?php foreach($formData as $formDetails): ?>
+
+                    <option value="<?php echo $formDetails->id; ?>"><?php echo $formDetails->name; ?></option>
+                    <?php endforeach; ?>
+
+                    <?php endif; ?>
+                    </select>
+                     </div>
+                    </div>
+                <?php endforeach; ?>
+                <br>
+                <div class="form-group">
+                    <div class="col-md-6 text-center">
+                        <input type="submit" value="Done Mapping" class="btn btn-info">
+                    </div>
+                </div>
+                </form>
+</div>
+        </section>
+
+    </div>
+
+</div>
+<!-- page end-->
+
+<script src="<?php echo asset('js/dynamic_table_init.js'); ?>"></script>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layout.master', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

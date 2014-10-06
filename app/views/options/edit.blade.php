@@ -14,13 +14,13 @@
     @if(isset($msg))
     <div class="alert alert-success fade in" role="alert">
         <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">x</span><span class="sr-only">Close</span></button>
-        <strong>SUCCESS!</strong> Option {{ $opt->name }} Updated Successful.
+        <strong>SUCCESS!</strong> Field {{ $opt->name }} Updated Successful.
     </div>
     @endif
 <!--    <h3>Update Location Level Information<a href="{{ url('location/levels') }}" class="btn btn-xs btn-info pull-right">Back to List</a></h3>-->
     <form class="form-horizontal" id="default" method="post" action='{{ url("option/edit/{$opt->id}") }}'>
         <div class="form-group">
-            <label class="col-md-2 control-label" id="DataCat">Option Name</label>
+            <label class="col-md-2 control-label" id="DataCat">Field Name</label>
             <div class="col-md-6">
                 <input type="text" value="{{ $opt->name }}" class="form-control" placeholder="Option Name" name="option_name">
             </div>
@@ -32,7 +32,7 @@
             </div>
         </div>
         <div class="form-group">
-            <label class="col-md-2 control-label" id="DataCat"> Category Option</label>
+            <label class="col-md-2 control-label" id="DataCat"> Category Field</label>
             <div class="col-md-6">
                 <?php
                 $arr = array("0");
