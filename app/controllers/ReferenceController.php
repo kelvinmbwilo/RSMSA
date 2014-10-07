@@ -782,18 +782,18 @@ class ReferenceController extends \BaseController {
                         }
 
 
+                            $reference=Reference::all();
+                            $id = DB::table($tableName)->insertGetId(
+                                array('created_at'=>(new DateTime())->format('Y-m-d H:i:s'),
+                                    'updated_at'=>(new DateTime())->format('Y-m-d H:i:s'),
 
-                            for($i=0; $i<$no; $i++){
-                                echo "got in";
-                                Records::create(array(
-                                    'formDataId' => Input::get('formName'),   //form id
-                                    'dataOptionId' => "1",      //data id
-                                    'categoryOptionId' => $optionId[$i],      //data id
-                                    'value' => $row[$i],              //actual value
-                                    'datTag' => $t,
-                                    'locationId' => $location,
-                                    'stakeholderId' => $branch
+
                                 ));
+                            foreach ($reference->referenceDetails as $col){
+                                DB::table($tableName)
+                                    ->where('id',$id)
+                                    ->update(array($col->name => Input::get('name'.$col->id)));
+
 
                             }
 
