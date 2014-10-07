@@ -17,10 +17,11 @@
                 </div>
                 @endif
                 <form class="form-horizontal" id="default" method="post" action='{{ url("excelMapping/{$excel->type}") }}'>
-                    <?php $i=0 ?>
+                    <?php $i=0; $j=0; ?>
                 @foreach($val as $column)
                 <input type="hidden" value="{{$column}}" name="column_name[]">
                 <input type="hidden" class="form-control" value="{{ $columnVal[$i++] }}" name="columnId[]">
+
                 <div class="form-group">
                     <div class="form-group">
                         <label >{{$column}}:</label>
@@ -29,14 +30,17 @@
 
                      @if($excel->type=="form")
                     @foreach($formData as $formDetails)
+
                     <option value="0">No mapping required</option>
                     @foreach($formDetails->dataForm->options as $option)
 
                     <option value="{{ $option->options->id }}">{{ $option->options->name }}</option>
                     @endforeach
+                      <input type="hidden" class="form-control" value="{{ $formDetails->id }}" name="formId[]">
                     @endforeach
                      @endif
                     @if($excel->type=="reference")
+                      <input type="hidden" class="form-control" value="0" name="formId[]">
                       <option value="0">No mapping required</option>
                     @foreach($formData as $formDetails)
 

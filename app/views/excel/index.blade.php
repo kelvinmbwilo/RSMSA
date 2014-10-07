@@ -32,7 +32,7 @@
                                 <td>{{ ++$j }}</td>
                                 <td>{{ $exc->filename }}</td>
                                 <td>{{ $exc->stakeholder->name}}</td>
-                                <td>{{ $exc->form->name}}</td>
+                                <td>{{ $exc->form->name}} ({{$exc->type}})</td>
                                 <td class="table-condensed col-xs-pull-2" id="">
 
                                     <div class="btn-group btn-group-xs" >

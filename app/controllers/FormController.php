@@ -239,7 +239,7 @@ class FormController extends \BaseController {
         $credentials=DatabaseCredentials::where("formId",$id)->first();
         $Tables=Input::get('table_name');
 
-       print_r($Tables);
+
 
 
 

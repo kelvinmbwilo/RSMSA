@@ -10,20 +10,47 @@
         $reference->toarray();?>
         <form class="form" action='<?php echo url("dynamic_table/getColumn"); ?>' method="post">
             <div class="form-group">
-                <label class="col-lg-2 control-label">Select Reference Type</label>
-                <div class="col-lg-10">
+                <label class="col-lg-2 control-label">Manually</label>
+                <div class="col-lg-8">
 
                     <select name="select" class="form-control">
-                        <option>-- select one --</option>
+                        <option>-- select referenc Name --</option>
                         <?php foreach($reference as $ref): ?>
                         <option value="<?php echo $ref->id; ?>"><?php echo $ref->name; ?></option>
                         <?php endforeach; ?>
                     </select>
                 </div>
-                <?php echo Form::submit('Submit', array('class' => 'btn pull-right btn-info')); ?>
+            </div>
+                <input style="margin-right: 10px" type="submit" class=" btn btn-info pull-right" value="Import">
+        </form>
+        <br><br>
+        <br><br>
+        <br>
+        <br>
+        <hr>
+        <br>
 
-                <?php echo Form::close(); ?>
+        <form class="form" action='<?php echo url("importExcelData"); ?>' method="post">
+            <div class="form-group">
+                <label class="col-lg-2 control-label">Importation of excel</label>
+                <div class="col-lg-7">
+                <input type="hidden" value="reference" name="type">
+                <input type="hidden" value="0" name="formName">
+                <input type="hidden" value="0" name="location">
+                <input type="hidden" value="0" name="stakeholder">
+                <select name="referenceName" class="form-control" required="required">
+                        <option value="0" >-- select reference name --</option>
+                        <?php foreach($reference as $refDetails): ?>
+                        <option value="<?php echo $refDetails->id; ?>"><?php echo $refDetails->name; ?></option>
+                        <?php endforeach; ?>
+                </select>
+                </div>
 
+            </div>
+            <?php echo Form::submit('Import', array('class' => 'btn pull-right btn-info')); ?>
+
+
+        </form>
 
                 <?php if($errors->any()): ?>
                 <ul>

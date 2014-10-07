@@ -15,10 +15,11 @@
                 </div>
                 <?php endif; ?>
                 <form class="form-horizontal" id="default" method="post" action='<?php echo url("excelMapping/{$excel->type}"); ?>'>
-                    <?php $i=0 ?>
+                    <?php $i=0; $j=0; ?>
                 <?php foreach($val as $column): ?>
                 <input type="hidden" value="<?php echo $column; ?>" name="column_name[]">
                 <input type="hidden" class="form-control" value="<?php echo $columnVal[$i++]; ?>" name="columnId[]">
+
                 <div class="form-group">
                     <div class="form-group">
                         <label ><?php echo $column; ?>:</label>
@@ -27,14 +28,17 @@
 
                      <?php if($excel->type=="form"): ?>
                     <?php foreach($formData as $formDetails): ?>
+
                     <option value="0">No mapping required</option>
                     <?php foreach($formDetails->dataForm->options as $option): ?>
 
                     <option value="<?php echo $option->options->id; ?>"><?php echo $option->options->name; ?></option>
                     <?php endforeach; ?>
+                      <input type="hidden" class="form-control" value="<?php echo $formDetails->id; ?>" name="formId[]">
                     <?php endforeach; ?>
                      <?php endif; ?>
                     <?php if($excel->type=="reference"): ?>
+                      <input type="hidden" class="form-control" value="0" name="formId[]">
                       <option value="0">No mapping required</option>
                     <?php foreach($formData as $formDetails): ?>
 

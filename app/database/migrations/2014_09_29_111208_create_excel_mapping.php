@@ -19,6 +19,7 @@ class CreateExcelMapping extends Migration {
 			$table->integer('optionsId');
 			$table->integer('dataId');
 			$table->integer('formId');
+			$table->string('type');
 			$table->timestamps();
 		});
 	}
