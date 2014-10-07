@@ -37,7 +37,9 @@ class Options extends Eloquent {
     public function options(){
         return $this->hasMany('Import', 'optionsId', 'id');
     }
-
+    public function refImport(){
+        return $this->hasMany('ReferenceImport', 'optionsId', 'id');
+    }
 
 }
 

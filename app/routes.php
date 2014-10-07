@@ -110,6 +110,12 @@ Route::get('reference/deleteColumn/{id}', array('uses'=>'ReferenceController@del
 Route::get('dynamic_table', array('uses'=>'ReferenceController@dynamicTable')); //displaying list of references
 Route::post('dynamic_table/getColumn', array('uses' => 'ReferenceController@returnReferences'));//return form for specific reference
 Route::post('dynamic_table/test/{id}', array('uses'=>'ReferenceController@storeDynamicTable')); //processing added users
+Route::get('refDatabaseCredentials', array('uses' => 'ReferenceController@databaseCredentials')); //display a list of form to input data
+Route::post('refDatabaseCredentials', array('uses' => 'ReferenceController@storeDatabaseCredentials')); //process a list of form to input data
+Route::post('refDatabase/{id}', array('uses' => 'ReferenceController@ListDatabaseDetails')); //process a list of form to input data
+Route::post('referenceMapping/{id}', array('uses' => 'ReferenceController@processFormMapping')); //process a list of form to input data
+Route::post('importData', array('uses' => 'ReferenceController@DataImportation')); //display a list of form to input data
+
 
 
 

@@ -21,6 +21,7 @@
             </a>
             <ul class="sub">
                 <li><a  href="<?php echo url('reference'); ?>">References</a></li>
+                <li><a  href="<?php echo url('refDatabaseCredentials'); ?>">Reference import</a></li>
                 <li><a  href="<?php echo url('dynamic_table'); ?>">Dynamic table</a></li>
 
             </ul>
@@ -36,6 +37,16 @@
                 <li><a  href="<?php echo url('location/'); ?>">Administrative Units</a></li>
                 <li><a  href="<?php echo url('location/levels'); ?>">Administrative Levels</a></li>
             </ul>
+        </li>   <li class="sub-menu">
+            <a href="javascript:;" >
+                <i class="fa fa-cogs"></i>
+                <span>Data Importation</span>
+            </a>
+            <ul class="sub">
+                <li><a  href="<?php echo url('databaseCredentials'); ?>">Script</a></li>
+                <li><a  href="<?php echo url('excel'); ?>">Excel</a></li>
+
+            </ul>
         </li>
 
         <!--multi level menu start-->
@@ -46,44 +57,16 @@
             </a>
             <ul class="sub">
                 <li><a  href="<?php echo url('form'); ?>">Form Management</a></li>
-                <li><a  href="<?php echo url('form_creation'); ?>">Data Entry</a></li>
-                <li><a  href="<?php echo url('dataTable'); ?>">Data Management</a></li>
-                <li><a  href="<?php echo url('mapping'); ?>">Data Mapping Management</a></li>
-                <li><a  href="<?php echo url('option'); ?>">Option Management</a></li>
+                <li><a  href="<?php echo url('form_creation'); ?>">Form Data Entry</a></li>
+                <li><a  href="<?php echo url('dataTable'); ?>">Section Management</a></li>
+                <li><a  href="<?php echo url('mapping'); ?>">Section Mapping Management</a></li>
+                <li><a  href="<?php echo url('option'); ?>">Field Management</a></li>
                 <li><a  href="<?php echo url('category'); ?>">Category Management</a></li>
 
             </ul>
         </li>
-        <!--multi level menu end-->
 
-        <li class="sub-menu">
-            <a href="javascript:;" >
-                <i class="fa fa-cogs"></i>
-                <span>Records</span>
-            </a>
-            <ul class="sub">
-                <li><a  href="<?php echo url('data/home'); ?>">View</a></li>
-                <li><a  href="<?php echo url('data/add'); ?>">Add</a></li>
-                <?php
-                    $table = TableName::all();
-                    foreach($table as $tbl){
-                        ?>
-                        <li><a  href='<?php echo url("data/view/{$tbl->id}"); ?>'><?php echo $tbl->categoryName; ?></a></li>
-                    <?php
-                    }
-                ?>
-            </ul>
-        </li>
-        <li class="sub-menu">
-            <a href="javascript:;" >
-                <i class="fa fa-book"></i>
-                <span>Trial</span>
-            </a>
-            <ul class="sub">
 
-                <li><a  href="<?php echo url('table_name'); ?>">Data Table Management</a></li>
-             </ul>
-        </li>
         <li>
             <a  href="<?php echo url('user'); ?>">
                 <i class="fa fa-user"></i>

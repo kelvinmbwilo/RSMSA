@@ -33,6 +33,9 @@ protected  $guarded = array('$id');
     {
         return $this->belongsTo('Reference', 'hasReference', 'id');
     }
+    public function data(){
+        return $this->hasMany('ReferenceImport', 'dataId', 'id');
+    }
 
 }
 

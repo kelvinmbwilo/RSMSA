@@ -5,7 +5,7 @@
         Add Database Credentials
     </header>
     <div class="panel-body">
-        <form action="<?php echo url('databaseCredentials'); ?>" method="post">
+        <form action="<?php echo url('refDatabaseCredentials'); ?>" method="post">
 
             <div class="entry">
                     <div class="form-group">
@@ -34,10 +34,10 @@
                     <div class="col-md-6"></div>
                 </div>
                 <div class="form-group">
-                    <div class="col-md-6">Form Name<select name="formName" class="form-control col-md-5">
-                       <?php $formDetails=Formm::all(); ?>
-                        <?php foreach($formDetails as $form ): ?>
-                        <option value="<?php echo $form->id; ?>"><?php echo $form->name; ?></option>
+                    <div class="col-md-6">Reference Name<select name="referenceName" class="form-control col-md-5">
+                       <?php $referenceDetails=Reference::all(); ?>
+                        <?php foreach($referenceDetails as $ref ): ?>
+                        <option value="<?php echo $ref->id; ?>"><?php echo $ref->name; ?></option>
                         <?php endforeach; ?>
                     </select></div>
                     <div class="col-md-6"><br></div>
