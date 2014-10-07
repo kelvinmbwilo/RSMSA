@@ -24,10 +24,10 @@
                   <?php foreach( $referenceDetail as $referenceDetails): ?>
 
 
-                   <?php foreach( $referenceDetail->reference->refImport as $option): ?>
+                   <?php foreach( $referenceDetails->data->options as $option): ?>
 
 
-                                <option value="<?php echo $option->refImport->id; ?>"><?php echo $option->refImport->name; ?></option>
+                                <option value="<?php echo $option->options->id; ?>"><?php echo $option->options->name; ?></option>
 
 
 

@@ -26,10 +26,10 @@
                   @foreach( $referenceDetail as $referenceDetails)
 
 
-                   @foreach( $referenceDetail->reference->refImport as $option)
+                   @foreach( $referenceDetails->data->options as $option)
 
 
-                                <option value="{{ $option->refImport->id }}">{{ $option->refImport->name }}</option>
+                                <option value="{{ $option->options->id }}">{{ $option->options->name }}</option>
 
 
 

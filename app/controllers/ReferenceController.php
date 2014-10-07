@@ -488,7 +488,7 @@ class ReferenceController extends \BaseController {
         $tag = $credentials->databaseType;
         $selectedTables=Input::get('list');
         $referenceName=Reference::find($id);
-        $referenceDetail=ReferenceDetails::where("referenceId",$id)->get();
+        $referenceDetail=ReferenceImport::where("referenceId",$id)->get();
 
         if ($tag != '') {
 
@@ -615,7 +615,7 @@ class ReferenceController extends \BaseController {
     function processFormMapping($id)
     {
         $ref=Reference::find($id);
-        $credentials=ReferenceDatabaseCredentials::where("refId",$id)->first();
+        $credentials=ReferenceDatabaseCredentials::where("referenceId",$id)->first();
         $Tables=Input::get('table_name');
 
         print_r($Tables);
@@ -815,16 +815,16 @@ class ReferenceController extends \BaseController {
 
                     }
                     $msg= "The Importation of data to the form was a success!!";
-                    $form_name = Formm::find(Input::get('formName'));
-                    $dataTag = DataTag::where("tableId",$form_name->id)->get();
-                    $form_details = Records::where("formDataId",$form_name->id)->get();
-                    $form_head1 =Import::where("formId",$form_name->id)->get();
+                    $reference_name = Reference::find(Input::get('referenceName'));
+                    $dataTag = DataTag::where("tableId",$reference_name->id)->get();
+                    $reference_details = $tableName::where("referenceId",$reference_name->id)->get();
+                    $reference_head1 =ReferenceImport::where("referenceId",$reference_name->id)->get();
                     $symbol="0";
 
 
 
 
-                    return View::make('data.specific_table', compact('msg','form_name','form_details','dataTag','form_head1','symbol'));
+                    return View::make('data.specific_table', compact('msg','reference_name','reference_details','dataTag','reference_head1','symbol'));
                 }
                 else{
                     $response["error"] = 0;

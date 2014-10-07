@@ -23,7 +23,6 @@
                    <?php $j=0?>
                   <?php foreach($formData as $formDetails): ?>
 
-
                    <?php foreach($formDetails->dataForm->options as $option): ?>
 
 
