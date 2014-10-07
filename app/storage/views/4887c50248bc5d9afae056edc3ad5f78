@@ -30,7 +30,7 @@
                                 <td><?php echo ++$j; ?></td>
                                 <td><?php echo $exc->filename; ?></td>
                                 <td><?php echo $exc->stakeholder->name; ?></td>
-                                <td><?php echo $exc->form->name; ?></td>
+                                <td><?php echo $exc->form->name; ?> (<?php echo $exc->type; ?>)</td>
                                 <td class="table-condensed col-xs-pull-2" id="">
 
                                     <div class="btn-group btn-group-xs" >

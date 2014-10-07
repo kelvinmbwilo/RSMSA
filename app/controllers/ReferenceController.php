@@ -18,8 +18,8 @@ class ReferenceController extends \BaseController {
      * @return Response
      */
     public function dynamicTable()
-    {
-        return View::make('reference.dynamic_table.index');
+    {   $referenceDetails=ReferenceDetails::all();
+        return View::make('reference.dynamic_table.index',compact('referenceDetails'));
     }
 
 

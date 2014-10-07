@@ -89,6 +89,7 @@ class ExcelImportationController extends \BaseController {
 
             if(Input::get('type')=="form"){
               $formData=FormData::where("formId",$excel->formId)->get();
+                $formData->toarray();
             }else{
                 $formData=ReferenceDetails::where("referenceId",$excel->formId)->get();
             }
@@ -168,7 +169,7 @@ class ExcelImportationController extends \BaseController {
                 $refDet[]=$padamaz->name;
             }
             $mapping=ExcelMapping::where("dataId",$credentials->formId)->get();
-            echo implode(",",$refDet);
+
         }
 
         $location=Input::get('location');
@@ -215,7 +216,9 @@ class ExcelImportationController extends \BaseController {
                         }
 
                     }
-                }   $tag=DataTag::create(array(
+
+                }
+                $tag=DataTag::create(array(
                     'tableId' => Input::get('formName'),
                     'datatagId' => $t
                 ));
@@ -245,17 +248,16 @@ class ExcelImportationController extends \BaseController {
 
                         if($column == $map->excelColumn && $cont==0 ){
                             $colu=ReferenceDetails::find($map->optionsId);
-                            echo "$colu->name ";
-                            echo "$val ";
+
                            DB::statement("INSERT INTO rsmsa_dynamic_".$referenceName->name." (".$colu->name.") VALUES ('".$val."')");
                             $uid= DB::table('rsmsa_dynamic_'.$referenceName->name)->where($colu->name, $val)->pluck('id');
-                            echo $uid." ==";
+
 
 
 
 
                             $cont=$cont+1;
-                            echo $cont;
+
                        }
                         else if($column == $map->excelColumn && $cont>0){
 
@@ -268,7 +270,8 @@ class ExcelImportationController extends \BaseController {
             }
 
         }
-
+            $msg= "The Importation of data to the form was a success!!";
+            return View::make('reference.dynamic_table.list', compact('msg'));
      }
     }
 
@@ -287,7 +290,10 @@ class ExcelImportationController extends \BaseController {
         $columnId=Input::get('columnId');
         $columnName=Input::get('column_name');
         $optionId=Input::get('selection');
+        $formId=Input::get('formId');
         $type=$id;
+        $new="";
+        $msg="";
 
 
 
@@ -299,14 +305,16 @@ class ExcelImportationController extends \BaseController {
             {
 
                 if($type=="form"){
+               $fom=FormData::find($formId[$i]);
 
                     if($optionId[$i]!="0"){
                         $dataId=DataOptions::where("optionsId",$optionId[$i])->first();
-                        ExcelMapping::create(array(
+                        $new=ExcelMapping::create(array(
                             'excelColumn' => $columnId[$i],
                             'optionsId' =>$optionId[$i],
                             'dataId' =>$dataId->dataId,
-                            'formId' =>$id,
+                            'type' =>"form",
+                            'formId' =>$fom->formId,
 
                         ));
                     }else{
@@ -319,10 +327,11 @@ class ExcelImportationController extends \BaseController {
 
                         $dataId=ReferenceDetails::find($optionId[$i]);
 
-                        ExcelMapping::create(array(
+                        $new=ExcelMapping::create(array(
                             'excelColumn' => $columnId[$i],
                             'optionsId' =>$optionId[$i],
                             'dataId' => $dataId->referenceId,
+                            'type' =>"reference",
                             'formId' =>"0",
 
                         ));
@@ -335,12 +344,21 @@ class ExcelImportationController extends \BaseController {
         }
 
     }
+                if($new->type=="form"){
+                    $msg="Mapping of The Reference";
+                    $mapping=ExcelMapping::where("type","form")->get();
+                    return View::make('excel.list_mapping',compact('mapping','type','msg'));
 
-                $mapping=ExcelMapping::where("formId","0")->get();
+                }else{
+                    $mapping=ExcelMapping::where("formId","0")->get();
+                    $msg="Mapping of The Reference";
+                    return View::make('excel.list_mapping_reference',compact('mapping','type','msg'));
+
+                }
 
 
 
-        return View::make('excel.list_mapping_reference',compact('mapping','type'));
+
 
 }
 }

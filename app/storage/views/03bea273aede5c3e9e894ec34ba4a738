@@ -81,10 +81,8 @@
                     <label class="col-lg-2 control-label">Importation of excel</label>
                     <div class="col-lg-7">
 
-                        <select name="type" class="form-control" required="required">
-                                    <option value="reference">Reference</option>
-                                    <option value="form">Form</option>
-                        </select>
+                        <input type="hidden" value="form" name="type">
+                        <input type="hidden" value="0" name="referenceName">
 
                         <select name="formName" class="form-control" required="required">
                             <option value="0" >-- select form name --</option>
@@ -92,12 +90,7 @@
                             <option value="<?php echo $formDetails->id; ?>"><?php echo $formDetails->name; ?></option>
                             <?php endforeach; ?>
                         </select>
-                        <select name="referenceName" class="form-control" required="required">
-                            <option value="0" >-- select reference name --</option>
-                            <?php foreach($ref as $refDetails): ?>
-                            <option value="<?php echo $refDetails->id; ?>"><?php echo $refDetails->name; ?></option>
-                            <?php endforeach; ?>
-                        </select>
+
                     </div>
 
                     <div class="col-lg-7 col-lg-offset-2">

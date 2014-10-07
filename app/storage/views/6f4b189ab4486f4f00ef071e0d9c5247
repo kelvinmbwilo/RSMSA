@@ -21,6 +21,7 @@
             </a>
             <ul class="sub">
                 <li><a  href="<?php echo url('reference'); ?>">References</a></li>
+                <li><a  href="<?php echo url('refDatabaseCredentials'); ?>">Reference import</a></li>
                 <li><a  href="<?php echo url('dynamic_table'); ?>">Dynamic table</a></li>
 
             </ul>

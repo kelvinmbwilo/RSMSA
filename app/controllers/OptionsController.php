@@ -32,8 +32,7 @@ class OptionsController extends \BaseController {
      */
     public function store(){
 
-        echo Input::get('option_name');
-        echo  Input::get('data_type');
+
 
 
         if(Input::get('category_option')== 0){
