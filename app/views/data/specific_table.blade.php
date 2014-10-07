@@ -33,7 +33,7 @@
                         @foreach($form_head1 as $formData)
 
                         <?php $option=Options::find($formData->optionsId); ?>
-                        <th>{{ $form_name->name }}-{{$option->name}}</th>
+                        <th>{{$option->name}}</th>
 
                         @endforeach
                         @endif

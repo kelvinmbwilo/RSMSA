@@ -439,7 +439,6 @@ class FormController extends \BaseController {
 
         }
 
-     print_r($tables);
         if ($tag != '') {
 
 
@@ -514,14 +513,13 @@ class FormController extends \BaseController {
                             $optionId[]=$col->optionsId;
                             }
                         }
-                    echo "   ".(implode(",",$list));
+
 
 
                        $columnValue = mysql_query("select ".implode(",",$list)." FROM ".$tableName);
                        $no=sizeof($list);
 
-                      echo "   from   ";
-                      echo $tableName."   ";
+
 
 
                        $tag=DataTag::orderBy("datatagId","DESC")->first();
@@ -536,7 +534,7 @@ class FormController extends \BaseController {
 
 
                                     for($i=0; $i<$no; $i++){
-                                        echo "got in";
+
                                     Records::create(array(
                                         'formDataId' => Input::get('formName'),   //form id
                                         'dataOptionId' => "1",      //data id

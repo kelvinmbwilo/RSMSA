@@ -32,8 +32,8 @@
                         <?php if($symbol=="0"): ?>
                         <?php foreach($form_head1 as $formData): ?>
 
-                        <?php $option=Options::find($formData->optionsId); ?>
-                        <th><?php echo $form_name->name; ?>-<?php echo $option->name; ?></th>
+                        <?php $option="nn"; ?>
+                        <th><?php echo $option; ?></th>
 
                         <?php endforeach; ?>
                         <?php endif; ?>
