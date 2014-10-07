@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6662a4ad-95fa-4dcf-82ca-d6bee230b9f9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/FormController.php" afterPath="$PROJECT_DIR$/app/controllers/FormController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/views/be2deb9862cfb56774f2a8d7aafeec16" afterPath="$PROJECT_DIR$/app/storage/views/be2deb9862cfb56774f2a8d7aafeec16" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/views/f76ecefb3f5d07e91429dbb864d30d9b" afterPath="$PROJECT_DIR$/app/storage/views/f76ecefb3f5d07e91429dbb864d30d9b" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/data/specific_table.blade.php" afterPath="$PROJECT_DIR$/app/views/data/specific_table.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="RSMSA.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,7 +37,7 @@
       <file leaf-file-name="specific_table.blade.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/data/specific_table.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="50" selection-start="1257" selection-end="1257" vertical-scroll-proportion="0.4243028" vertical-offset="297" max-vertical-offset="1360">
+            <state line="35" column="50" selection-start="1257" selection-end="1257" vertical-scroll-proportion="1.42" vertical-offset="297" max-vertical-offset="1360">
               <folding />
             </state>
           </provider>
@@ -515,10 +512,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3284553" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.040783033" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.6150082" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3284553" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16993958" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -858,7 +855,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/data/specific_table.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="50" selection-start="1257" selection-end="1257" vertical-scroll-proportion="0.4243028" vertical-offset="297" max-vertical-offset="1360">
+        <state line="35" column="50" selection-start="1257" selection-end="1257" vertical-scroll-proportion="1.42" vertical-offset="297" max-vertical-offset="1360">
           <folding />
         </state>
       </provider>
